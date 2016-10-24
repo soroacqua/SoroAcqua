@@ -4,13 +4,17 @@ import { MyApp } from './app.component';
 import { Home } from '../pages/home/home';
 import { Rio } from '../pages/rio/rio';
 import { Mapa } from '../pages/mapa/mapa';
+import { Agua } from '../pages/agua/agua';
+import { Saae } from '../pages/saae/saae';
 
 @NgModule({
   declarations: [
     MyApp,
     Home,
     Rio,
-    Mapa
+    Mapa,
+    Agua,
+    Saae
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -20,7 +24,9 @@ import { Mapa } from '../pages/mapa/mapa';
     MyApp,
     Home,
     Rio,
-    Mapa
+    Mapa,
+    Agua,
+    Saae
   ],
   providers: []
 })

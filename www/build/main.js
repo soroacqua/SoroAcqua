@@ -81060,7 +81060,7 @@ var Home = (function () {
     };
     Home = __decorate$108([
         Component({
-            selector: 'page-home',template:/*ion-inline-start:"C:\Users\rosan\Documents\Iniciação Científica\SoroAcqua\SoroAcqua\src\pages\home\home.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Home</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  Home Page\n</ion-content>\n'/*ion-inline-end:"C:\Users\rosan\Documents\Iniciação Científica\SoroAcqua\SoroAcqua\src\pages\home\home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"C:\Users\anaar\Documents\FATEC\Iniciação Científica\Projeto\SoroAcqua\SoroAcqua\src\pages\home\home.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Home</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  Home Page\n</ion-content>\n'/*ion-inline-end:"C:\Users\anaar\Documents\FATEC\Iniciação Científica\Projeto\SoroAcqua\SoroAcqua\src\pages\home\home.html"*/
         }), 
         __metadata$2('design:paramtypes', [NavController])
     ], Home);
@@ -81085,7 +81085,7 @@ var Mapa = (function () {
     };
     Mapa = __decorate$110([
         Component({
-            selector: 'page-mapa',template:/*ion-inline-start:"C:\Users\rosan\Documents\Iniciação Científica\SoroAcqua\SoroAcqua\src\pages\mapa\mapa.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>mapa</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\rosan\Documents\Iniciação Científica\SoroAcqua\SoroAcqua\src\pages\mapa\mapa.html"*/
+            selector: 'page-mapa',template:/*ion-inline-start:"C:\Users\anaar\Documents\FATEC\Iniciação Científica\Projeto\SoroAcqua\SoroAcqua\src\pages\mapa\mapa.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>mapa</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\anaar\Documents\FATEC\Iniciação Científica\Projeto\SoroAcqua\SoroAcqua\src\pages\mapa\mapa.html"*/
         }), 
         __metadata$4('design:paramtypes', [NavController])
     ], Mapa);
@@ -81147,7 +81147,7 @@ var Rio = (function () {
     ], Rio.prototype, "nav", void 0);
     Rio = __decorate$109([
         Component({
-            selector: 'page-rio',template:/*ion-inline-start:"C:\Users\rosan\Documents\Iniciação Científica\SoroAcqua\SoroAcqua\src\pages\rio\rio.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Rio Sorocaba</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <button ion-item *ngFor="let item of items" (click)="openPage(item)">\n      <ion-icon [name]="item.icon" item-left></ion-icon>\n      {{item.title}}\n    </button>\n  </ion-list>\n  <div *ngIf="selectedItem" padding>\n    You navigated here from <b>{{selectedItem.title}}</b>\n  </div>\n</ion-content>\n'/*ion-inline-end:"C:\Users\rosan\Documents\Iniciação Científica\SoroAcqua\SoroAcqua\src\pages\rio\rio.html"*/
+            selector: 'page-rio',template:/*ion-inline-start:"C:\Users\anaar\Documents\FATEC\Iniciação Científica\Projeto\SoroAcqua\SoroAcqua\src\pages\rio\rio.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Rio Sorocaba</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <button ion-item *ngFor="let item of items" (click)="openPage(item)">\n      <ion-icon [name]="item.icon" item-left></ion-icon>\n      {{item.title}}\n    </button>\n  </ion-list>\n  <div *ngIf="selectedItem" padding>\n    You navigated here from <b>{{selectedItem.title}}</b>\n  </div>\n</ion-content>\n'/*ion-inline-end:"C:\Users\anaar\Documents\FATEC\Iniciação Científica\Projeto\SoroAcqua\SoroAcqua\src\pages\rio\rio.html"*/
         }), 
         __metadata$3('design:paramtypes', [NavController, NavParams])
     ], Rio);
@@ -81192,7 +81192,7 @@ var MyApp = (function () {
         __metadata$1('design:type', Nav)
     ], MyApp.prototype, "nav", void 0);
     MyApp = __decorate$1([
-        Component({template:/*ion-inline-start:"C:\Users\rosan\Documents\Iniciação Científica\SoroAcqua\SoroAcqua\src\app\app.html"*/'<ion-menu [content]="content">\n  <ion-header>\n    <ion-toolbar>\n      <ion-title>Menu</ion-title>\n    </ion-toolbar>\n  </ion-header>\n\n  <ion-content>\n    <ion-list>\n      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n        <ion-icon [name]="p.icon" item-left></ion-icon>\n        {{p.title}}\n      </button>\n    </ion-list>\n  </ion-content>\n\n</ion-menu>\n\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>\n'/*ion-inline-end:"C:\Users\rosan\Documents\Iniciação Científica\SoroAcqua\SoroAcqua\src\app\app.html"*/
+        Component({template:/*ion-inline-start:"C:\Users\anaar\Documents\FATEC\Iniciação Científica\Projeto\SoroAcqua\SoroAcqua\src\app\app.html"*/'<ion-menu [content]="content">\n  <ion-header>\n    <ion-toolbar>\n      <ion-title>Menu</ion-title>\n    </ion-toolbar>\n  </ion-header>\n\n  <ion-content>\n    <ion-list>\n      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n        <ion-icon [name]="p.icon" item-left></ion-icon>\n        {{p.title}}\n      </button>\n    </ion-list>\n  </ion-content>\n\n</ion-menu>\n\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>\n'/*ion-inline-end:"C:\Users\anaar\Documents\FATEC\Iniciação Científica\Projeto\SoroAcqua\SoroAcqua\src\app\app.html"*/
         }), 
         __metadata$1('design:paramtypes', [Platform])
     ], MyApp);
