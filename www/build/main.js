@@ -81045,17 +81045,51 @@ var __decorate$108 = (undefined && undefined.__decorate) || function (decorators
 var __metadata$2 = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var Page1 = (function () {
-    function Page1(navCtrl) {
+/*
+  Generated class for the Home page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+*/
+var Home = (function () {
+    function Home(navCtrl) {
         this.navCtrl = navCtrl;
     }
-    Page1 = __decorate$108([
+    Home.prototype.ionViewDidLoad = function () {
+        console.log('Hello Home Page');
+    };
+    Home = __decorate$108([
         Component({
-            selector: 'page-page1',template:/*ion-inline-start:"C:\Users\rosan\Documents\Iniciação Científica\SoroAcqua\SoroAcqua\src\pages\page1\page1.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Page One</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <h3>Ionic Menu Starter</h3>\n\n  <p>\n    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.\n  </p>\n\n  <button ion-button secondary menuToggle>Toggle Menu</button>\n</ion-content>\n'/*ion-inline-end:"C:\Users\rosan\Documents\Iniciação Científica\SoroAcqua\SoroAcqua\src\pages\page1\page1.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"C:\Users\rosan\Documents\Iniciação Científica\SoroAcqua\SoroAcqua\src\pages\home\home.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Home</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  Home Page\n</ion-content>\n'/*ion-inline-end:"C:\Users\rosan\Documents\Iniciação Científica\SoroAcqua\SoroAcqua\src\pages\home\home.html"*/
         }), 
         __metadata$2('design:paramtypes', [NavController])
-    ], Page1);
-    return Page1;
+    ], Home);
+    return Home;
+}());
+
+var __decorate$110 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata$4 = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var Mapa = (function () {
+    function Mapa(navCtrl) {
+        this.navCtrl = navCtrl;
+    }
+    Mapa.prototype.ionViewDidLoad = function () {
+        console.log('Hello Mapa Page');
+    };
+    Mapa = __decorate$110([
+        Component({
+            selector: 'page-mapa',template:/*ion-inline-start:"C:\Users\rosan\Documents\Iniciação Científica\SoroAcqua\SoroAcqua\src\pages\mapa\mapa.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>mapa</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\rosan\Documents\Iniciação Científica\SoroAcqua\SoroAcqua\src\pages\mapa\mapa.html"*/
+        }), 
+        __metadata$4('design:paramtypes', [NavController])
+    ], Mapa);
+    return Mapa;
 }());
 
 var __decorate$109 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
@@ -81067,37 +81101,57 @@ var __decorate$109 = (undefined && undefined.__decorate) || function (decorators
 var __metadata$3 = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var Page2 = (function () {
-    function Page2(navCtrl, navParams) {
+var Rio = (function () {
+    function Rio(navCtrl, navParams) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
-        // If we navigated to this page, we will have an item available as a nav param
         this.selectedItem = navParams.get('item');
-        // Let's populate this page with some filler content for funzies
-        this.icons = ['flask', 'wifi', 'beer', 'football', 'basketball', 'paper-plane',
-            'american-football', 'boat', 'bluetooth', 'build'];
         this.items = [];
-        for (var i = 1; i < 11; i++) {
-            this.items.push({
-                title: 'Item ' + i,
-                note: 'This is item #' + i,
-                icon: this.icons[Math.floor(Math.random() * this.icons.length)]
-            });
-        }
-    }
-    Page2.prototype.itemTapped = function (event, item) {
-        // That's right, we're pushing to ourselves!
-        this.navCtrl.push(Page2, {
-            item: item
+        this.items.push({
+            title: 'Mapa',
+            icon: 'map',
+            component: Mapa
         });
+        this.items.push({
+            title: 'História',
+            icon: 'paper',
+            component: Mapa
+        });
+        this.items.push({
+            title: 'Nosa Flora',
+            icon: 'flower',
+            component: Mapa
+        });
+        this.items.push({
+            title: 'Nossa Fauna',
+            icon: 'flower',
+            component: Mapa
+        });
+        this.items.push({
+            title: 'Despoluição',
+            icon: 'water',
+            component: Mapa
+        });
+        this.items.push({
+            title: 'Projetos',
+            icon: 'clipboard',
+            component: Mapa
+        });
+    }
+    Rio.prototype.openPage = function (item) {
+        this.nav.setRoot(item.component);
     };
-    Page2 = __decorate$109([
+    __decorate$109([
+        ViewChild(Nav), 
+        __metadata$3('design:type', Nav)
+    ], Rio.prototype, "nav", void 0);
+    Rio = __decorate$109([
         Component({
-            selector: 'page-page2',template:/*ion-inline-start:"C:\Users\rosan\Documents\Iniciação Científica\SoroAcqua\SoroAcqua\src\pages\page2\page2.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Page Two</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">\n      <ion-icon [name]="item.icon" item-left></ion-icon>\n      {{item.title}}\n      <div class="item-note" item-right>\n        {{item.note}}\n      </div>\n    </button>\n  </ion-list>\n  <div *ngIf="selectedItem" padding>\n    You navigated here from <b>{{selectedItem.title}}</b>\n  </div>\n</ion-content>\n'/*ion-inline-end:"C:\Users\rosan\Documents\Iniciação Científica\SoroAcqua\SoroAcqua\src\pages\page2\page2.html"*/
+            selector: 'page-rio',template:/*ion-inline-start:"C:\Users\rosan\Documents\Iniciação Científica\SoroAcqua\SoroAcqua\src\pages\rio\rio.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Rio Sorocaba</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <button ion-item *ngFor="let item of items" (click)="openPage(item)">\n      <ion-icon [name]="item.icon" item-left></ion-icon>\n      {{item.title}}\n    </button>\n  </ion-list>\n  <div *ngIf="selectedItem" padding>\n    You navigated here from <b>{{selectedItem.title}}</b>\n  </div>\n</ion-content>\n'/*ion-inline-end:"C:\Users\rosan\Documents\Iniciação Científica\SoroAcqua\SoroAcqua\src\pages\rio\rio.html"*/
         }), 
         __metadata$3('design:paramtypes', [NavController, NavParams])
-    ], Page2);
-    return Page2;
+    ], Rio);
+    return Rio;
 }());
 
 var __decorate$1 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
@@ -81112,12 +81166,12 @@ var __metadata$1 = (undefined && undefined.__metadata) || function (k, v) {
 var MyApp = (function () {
     function MyApp(platform) {
         this.platform = platform;
-        this.rootPage = Page1;
+        this.rootPage = Home;
         this.initializeApp();
         // used for an example of ngFor and navigation
         this.pages = [
-            { title: 'Page One', component: Page1 },
-            { title: 'Page Two', component: Page2 }
+            { title: 'Home', component: Home, icon: 'home' },
+            { title: 'Nosso Rio', component: Rio, icon: 'water' }
         ];
     }
     MyApp.prototype.initializeApp = function () {
@@ -81138,7 +81192,7 @@ var MyApp = (function () {
         __metadata$1('design:type', Nav)
     ], MyApp.prototype, "nav", void 0);
     MyApp = __decorate$1([
-        Component({template:/*ion-inline-start:"C:\Users\rosan\Documents\Iniciação Científica\SoroAcqua\SoroAcqua\src\app\app.html"*/'<ion-menu [content]="content">\n  <ion-header>\n    <ion-toolbar>\n      <ion-title>Menu</ion-title>\n    </ion-toolbar>\n  </ion-header>\n\n  <ion-content>\n    <ion-list>\n      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n        {{p.title}}\n      </button>\n    </ion-list>\n  </ion-content>\n\n</ion-menu>\n\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>'/*ion-inline-end:"C:\Users\rosan\Documents\Iniciação Científica\SoroAcqua\SoroAcqua\src\app\app.html"*/
+        Component({template:/*ion-inline-start:"C:\Users\rosan\Documents\Iniciação Científica\SoroAcqua\SoroAcqua\src\app\app.html"*/'<ion-menu [content]="content">\n  <ion-header>\n    <ion-toolbar>\n      <ion-title>Menu</ion-title>\n    </ion-toolbar>\n  </ion-header>\n\n  <ion-content>\n    <ion-list>\n      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n        <ion-icon [name]="p.icon" item-left></ion-icon>\n        {{p.title}}\n      </button>\n    </ion-list>\n  </ion-content>\n\n</ion-menu>\n\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>\n'/*ion-inline-end:"C:\Users\rosan\Documents\Iniciação Científica\SoroAcqua\SoroAcqua\src\app\app.html"*/
         }), 
         __metadata$1('design:paramtypes', [Platform])
     ], MyApp);
@@ -81161,8 +81215,9 @@ var AppModule = (function () {
         NgModule({
             declarations: [
                 MyApp,
-                Page1,
-                Page2
+                Home,
+                Rio,
+                Mapa
             ],
             imports: [
                 IonicModule.forRoot(MyApp)
@@ -81170,8 +81225,9 @@ var AppModule = (function () {
             bootstrap: [IonicApp],
             entryComponents: [
                 MyApp,
-                Page1,
-                Page2
+                Home,
+                Rio,
+                Mapa
             ],
             providers: []
         }), 
