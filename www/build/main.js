@@ -81139,7 +81139,7 @@ var Rio = (function () {
         });
     }
     Rio.prototype.openPage = function (item) {
-        this.nav.setRoot(item.component);
+        //this.nav.setRoot(item.component);
     };
     __decorate$109([
         ViewChild(Nav), 
