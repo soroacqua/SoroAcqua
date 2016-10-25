@@ -81154,6 +81154,37 @@ var Rio = (function () {
     return Rio;
 }());
 
+var __decorate$111 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata$5 = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+/*
+  Generated class for the Agua page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+*/
+var Agua = (function () {
+    function Agua(navCtrl) {
+        this.navCtrl = navCtrl;
+    }
+    Agua.prototype.ionViewDidLoad = function () {
+        console.log('Hello Agua Page');
+    };
+    Agua = __decorate$111([
+        Component({
+            selector: 'page-agua',template:/*ion-inline-start:"C:\Users\anaar\Documents\FATEC\Iniciação Científica\Projeto\SoroAcqua\SoroAcqua\src\pages\agua\agua.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Nossa Água</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\anaar\Documents\FATEC\Iniciação Científica\Projeto\SoroAcqua\SoroAcqua\src\pages\agua\agua.html"*/
+        }), 
+        __metadata$5('design:paramtypes', [NavController])
+    ], Agua);
+    return Agua;
+}());
+
 var __decorate$1 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -81171,7 +81202,8 @@ var MyApp = (function () {
         // used for an example of ngFor and navigation
         this.pages = [
             { title: 'Home', component: Home, icon: 'home' },
-            { title: 'Nosso Rio', component: Rio, icon: 'water' }
+            { title: 'Nosso Rio', component: Rio, icon: 'water' },
+            { title: 'Nossa Água', component: Agua, icon: 'ios-water-outline' }
         ];
     }
     MyApp.prototype.initializeApp = function () {
@@ -81199,6 +81231,48 @@ var MyApp = (function () {
     return MyApp;
 }());
 
+var __decorate$112 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata$6 = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var Saae = (function () {
+    function Saae(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        // If we navigated to this page, we will have an item available as a nav param
+        this.selectedItem = navParams.get('item');
+        // Let's populate this page with some filler content for funzies
+        this.icons = ['flask', 'wifi', 'beer', 'football', 'basketball', 'paper-plane',
+            'american-football', 'boat', 'bluetooth', 'build'];
+        this.items = [];
+        for (var i = 1; i < 11; i++) {
+            this.items.push({
+                title: 'Item ' + i,
+                note: 'This is item #' + i,
+                icon: this.icons[Math.floor(Math.random() * this.icons.length)]
+            });
+        }
+    }
+    Saae.prototype.itemTapped = function (event, item) {
+        // That's right, we're pushing to ourselves!
+        this.navCtrl.push(Saae, {
+            item: item
+        });
+    };
+    Saae = __decorate$112([
+        Component({
+            selector: 'page-saae',template:/*ion-inline-start:"C:\Users\anaar\Documents\FATEC\Iniciação Científica\Projeto\SoroAcqua\SoroAcqua\src\pages\saae\saae.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>SAAE</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">\n      <ion-icon [name]="item.icon" item-left></ion-icon>\n      {{item.title}}\n      <div class="item-note" item-right>\n        {{item.note}}\n      </div>\n    </button>\n  </ion-list>\n  <div *ngIf="selectedItem" padding>\n    You navigated here from <b>{{selectedItem.title}}</b>\n  </div>\n</ion-content>\n'/*ion-inline-end:"C:\Users\anaar\Documents\FATEC\Iniciação Científica\Projeto\SoroAcqua\SoroAcqua\src\pages\saae\saae.html"*/
+        }), 
+        __metadata$6('design:paramtypes', [NavController, NavParams])
+    ], Saae);
+    return Saae;
+}());
+
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -81217,7 +81291,9 @@ var AppModule = (function () {
                 MyApp,
                 Home,
                 Rio,
-                Mapa
+                Mapa,
+                Agua,
+                Saae
             ],
             imports: [
                 IonicModule.forRoot(MyApp)
@@ -81227,7 +81303,9 @@ var AppModule = (function () {
                 MyApp,
                 Home,
                 Rio,
-                Mapa
+                Mapa,
+                Agua,
+                Saae
             ],
             providers: []
         }), 
