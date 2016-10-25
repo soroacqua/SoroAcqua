@@ -25,7 +25,7 @@ export class MyApp {
     this.pages = [
       { title: 'Home', component: Home, icon: 'home'},
       { title: 'Nosso Rio', component: Rio, icon: 'water'},
-      { title: 'Nossa Água', component: Agua, icon: 'ios-water-outline'}
+      { title: 'Nossa Água', component: Agua, icon: 'water'}
     ];
 
   }
