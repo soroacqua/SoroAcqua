@@ -3,9 +3,8 @@ import { Nav, Platform } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
 
 import { Home } from '../pages/home/home';
-import { Rio } from '../pages/rio/rio';
+import { Rio } from '../pages/nosso-rio/rio/rio';
 import { Agua } from '../pages/agua/agua';
-import { Saae } from '../pages/saae/saae';
 
 @Component({
   templateUrl: 'app.html'

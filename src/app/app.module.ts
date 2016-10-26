@@ -2,19 +2,15 @@ import { NgModule } from '@angular/core';
 import { IonicApp, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { Home } from '../pages/home/home';
-import { Rio } from '../pages/rio/rio';
-import { Mapa } from '../pages/mapa/mapa';
+import { Rio } from '../pages/nosso-rio/rio/rio';
 import { Agua } from '../pages/agua/agua';
-import { Saae } from '../pages/saae/saae';
 
 @NgModule({
   declarations: [
     MyApp,
     Home,
     Rio,
-    Mapa,
-    Agua,
-    Saae
+    Agua
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -24,9 +20,7 @@ import { Saae } from '../pages/saae/saae';
     MyApp,
     Home,
     Rio,
-    Mapa,
-    Agua,
-    Saae
+    Agua
   ],
   providers: []
 })
