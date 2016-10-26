@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
 })
 export class Data {
 
-  constructor(public title: string, public details: string, public icon: string, public showDetails: boolean) {}
+  constructor(public title: string, public itens: Array<{title: string, component: any, icon: string}>,
+    public icon: string, public showDetails: boolean) {}
 
 }

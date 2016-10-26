@@ -81036,35 +81036,206 @@ setTimeout(function () {
     }
 }, DEVICE_READY_TIMEOUT);
 
-var __decorate$108 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+var __decorate$109 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata$2 = (undefined && undefined.__metadata) || function (k, v) {
+var __metadata$3 = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var Data = (function () {
+    function Data(title, itens, icon, showDetails) {
+        this.title = title;
+        this.itens = itens;
+        this.icon = icon;
+        this.showDetails = showDetails;
+    }
+    Data = __decorate$109([
+        Component({
+            selector: 'data',template:/*ion-inline-start:"C:\Users\rosan\Documents\Iniciação Científica\SoroAcqua\SoroAcqua\src\components\data\data.html"*/''/*ion-inline-end:"C:\Users\rosan\Documents\Iniciação Científica\SoroAcqua\SoroAcqua\src\components\data\data.html"*/
+        }), 
+        __metadata$3('design:paramtypes', [String, Array, String, Boolean])
+    ], Data);
+    return Data;
+}());
+
+var __decorate$111 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata$5 = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var Mapa = (function () {
+    function Mapa(navCtrl) {
+        this.navCtrl = navCtrl;
+    }
+    Mapa = __decorate$111([
+        Component({
+            selector: 'page-mapa',template:/*ion-inline-start:"C:\Users\rosan\Documents\Iniciação Científica\SoroAcqua\SoroAcqua\src\pages\nosso-rio\mapa\mapa.html"*/'<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>mapa</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\rosan\Documents\Iniciação Científica\SoroAcqua\SoroAcqua\src\pages\nosso-rio\mapa\mapa.html"*/
+        }), 
+        __metadata$5('design:paramtypes', [NavController])
+    ], Mapa);
+    return Mapa;
+}());
+
+var __decorate$112 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata$6 = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 /*
-  Generated class for the Home page.
+  Generated class for the Historia page.
 
   See http://ionicframework.com/docs/v2/components/#navigation for more info on
   Ionic pages and navigation.
 */
-var Home = (function () {
-    function Home(navCtrl) {
+var Historia = (function () {
+    function Historia(navCtrl) {
         this.navCtrl = navCtrl;
     }
-    Home.prototype.ionViewDidLoad = function () {
-        console.log('Hello Home Page');
+    Historia.prototype.ionViewDidLoad = function () {
+        console.log('Hello Historia Page');
     };
-    Home = __decorate$108([
+    Historia = __decorate$112([
         Component({
-            selector: 'page-home',template:/*ion-inline-start:"C:\Users\rosan\Documents\Iniciação Científica\SoroAcqua\SoroAcqua\src\pages\home\home.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Home</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  Home Page\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\rosan\Documents\Iniciação Científica\SoroAcqua\SoroAcqua\src\pages\home\home.html"*/
+            selector: 'page-historia',template:/*ion-inline-start:"C:\Users\rosan\Documents\Iniciação Científica\SoroAcqua\SoroAcqua\src\pages\nosso-rio\historia\historia.html"*/'<!--\n\n  Generated template for the Historia page.\n\n\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>historia</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\rosan\Documents\Iniciação Científica\SoroAcqua\SoroAcqua\src\pages\nosso-rio\historia\historia.html"*/
         }), 
-        __metadata$2('design:paramtypes', [NavController])
-    ], Home);
-    return Home;
+        __metadata$6('design:paramtypes', [NavController])
+    ], Historia);
+    return Historia;
+}());
+
+var __decorate$113 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata$7 = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+/*
+  Generated class for the Flora page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+*/
+var Flora = (function () {
+    function Flora(navCtrl) {
+        this.navCtrl = navCtrl;
+    }
+    Flora.prototype.ionViewDidLoad = function () {
+        console.log('Hello Flora Page');
+    };
+    Flora = __decorate$113([
+        Component({
+            selector: 'page-flora',template:/*ion-inline-start:"C:\Users\rosan\Documents\Iniciação Científica\SoroAcqua\SoroAcqua\src\pages\nosso-rio\flora\flora.html"*/'<!--\n\n  Generated template for the Flora page.\n\n\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>flora</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\rosan\Documents\Iniciação Científica\SoroAcqua\SoroAcqua\src\pages\nosso-rio\flora\flora.html"*/
+        }), 
+        __metadata$7('design:paramtypes', [NavController])
+    ], Flora);
+    return Flora;
+}());
+
+var __decorate$114 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata$8 = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+/*
+  Generated class for the Fauna page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+*/
+var Fauna = (function () {
+    function Fauna(navCtrl) {
+        this.navCtrl = navCtrl;
+    }
+    Fauna.prototype.ionViewDidLoad = function () {
+        console.log('Hello Fauna Page');
+    };
+    Fauna = __decorate$114([
+        Component({
+            selector: 'page-fauna',template:/*ion-inline-start:"C:\Users\rosan\Documents\Iniciação Científica\SoroAcqua\SoroAcqua\src\pages\nosso-rio\fauna\fauna.html"*/'<!--\n\n  Generated template for the Fauna page.\n\n\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>fauna</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\rosan\Documents\Iniciação Científica\SoroAcqua\SoroAcqua\src\pages\nosso-rio\fauna\fauna.html"*/
+        }), 
+        __metadata$8('design:paramtypes', [NavController])
+    ], Fauna);
+    return Fauna;
+}());
+
+var __decorate$115 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata$9 = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+/*
+  Generated class for the Despoluicao page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+*/
+var Despoluicao = (function () {
+    function Despoluicao(navCtrl) {
+        this.navCtrl = navCtrl;
+    }
+    Despoluicao.prototype.ionViewDidLoad = function () {
+        console.log('Hello Despoluicao Page');
+    };
+    Despoluicao = __decorate$115([
+        Component({
+            selector: 'page-despoluicao',template:/*ion-inline-start:"C:\Users\rosan\Documents\Iniciação Científica\SoroAcqua\SoroAcqua\src\pages\nosso-rio\despoluicao\despoluicao.html"*/'<!--\n\n  Generated template for the Despoluicao page.\n\n\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>despoluicao</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\rosan\Documents\Iniciação Científica\SoroAcqua\SoroAcqua\src\pages\nosso-rio\despoluicao\despoluicao.html"*/
+        }), 
+        __metadata$9('design:paramtypes', [NavController])
+    ], Despoluicao);
+    return Despoluicao;
+}());
+
+var __decorate$116 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata$10 = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+/*
+  Generated class for the ProjetosRio page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+*/
+var ProjetosRio = (function () {
+    function ProjetosRio(navCtrl) {
+        this.navCtrl = navCtrl;
+    }
+    ProjetosRio.prototype.ionViewDidLoad = function () {
+        console.log('Hello ProjetosRio Page');
+    };
+    ProjetosRio = __decorate$116([
+        Component({
+            selector: 'page-projetos-rio',template:/*ion-inline-start:"C:\Users\rosan\Documents\Iniciação Científica\SoroAcqua\SoroAcqua\src\pages\nosso-rio\projetos-rio\projetos-rio.html"*/'<!--\n\n  Generated template for the ProjetosRio page.\n\n\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>projetos-rio</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\rosan\Documents\Iniciação Científica\SoroAcqua\SoroAcqua\src\pages\nosso-rio\projetos-rio\projetos-rio.html"*/
+        }), 
+        __metadata$10('design:paramtypes', [NavController])
+    ], ProjetosRio);
+    return ProjetosRio;
 }());
 
 var __decorate$110 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
@@ -81074,31 +81245,6 @@ var __decorate$110 = (undefined && undefined.__decorate) || function (decorators
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var __metadata$4 = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-var Mapa = (function () {
-    function Mapa(navCtrl) {
-        this.navCtrl = navCtrl;
-    }
-    Mapa.prototype.ionViewDidLoad = function () {
-        console.log('Hello Mapa Page');
-    };
-    Mapa = __decorate$110([
-        Component({
-            selector: 'page-mapa',template:/*ion-inline-start:"C:\Users\rosan\Documents\Iniciação Científica\SoroAcqua\SoroAcqua\src\pages\nosso-rio\mapa\mapa.html"*/'<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>mapa</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\rosan\Documents\Iniciação Científica\SoroAcqua\SoroAcqua\src\pages\nosso-rio\mapa\mapa.html"*/
-        }), 
-        __metadata$4('design:paramtypes', [NavController])
-    ], Mapa);
-    return Mapa;
-}());
-
-var __decorate$109 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata$3 = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var Rio = (function () {
@@ -81115,52 +81261,48 @@ var Rio = (function () {
         this.items.push({
             title: 'História',
             icon: 'paper',
-            component: Mapa
+            component: Historia
         });
         this.items.push({
             title: 'Nosa Flora',
             icon: 'flower',
-            component: Mapa
+            component: Flora
         });
         this.items.push({
             title: 'Nossa Fauna',
             icon: 'flower',
-            component: Mapa
+            component: Fauna
         });
         this.items.push({
             title: 'Despoluição',
             icon: 'water',
-            component: Mapa
+            component: Despoluicao
         });
         this.items.push({
             title: 'Projetos',
             icon: 'clipboard',
-            component: Mapa
+            component: ProjetosRio
         });
     }
     Rio.prototype.openPage = function (item) {
-        this.nav.setRoot(item.component);
+        this.navCtrl.push(item.component);
     };
-    __decorate$109([
-        ViewChild(Nav), 
-        __metadata$3('design:type', Nav)
-    ], Rio.prototype, "nav", void 0);
-    Rio = __decorate$109([
+    Rio = __decorate$110([
         Component({
             selector: 'page-rio',template:/*ion-inline-start:"C:\Users\rosan\Documents\Iniciação Científica\SoroAcqua\SoroAcqua\src\pages\nosso-rio\rio\rio.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Rio Sorocaba</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n  <ion-list>\n\n    <button ion-item *ngFor="let item of items" (click)="openPage(item)">\n\n      <ion-icon [name]="item.icon" item-left></ion-icon>\n\n      {{item.title}}\n\n    </button>\n\n  </ion-list>\n\n  <div *ngIf="selectedItem" padding>\n\n    You navigated here from <b>{{selectedItem.title}}</b>\n\n  </div>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\rosan\Documents\Iniciação Científica\SoroAcqua\SoroAcqua\src\pages\nosso-rio\rio\rio.html"*/
         }), 
-        __metadata$3('design:paramtypes', [NavController, NavParams])
+        __metadata$4('design:paramtypes', [NavController, NavParams])
     ], Rio);
     return Rio;
 }());
 
-var __decorate$111 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+var __decorate$117 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata$5 = (undefined && undefined.__metadata) || function (k, v) {
+var __metadata$11 = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 /*
@@ -81176,13 +81318,155 @@ var Agua = (function () {
     Agua.prototype.ionViewDidLoad = function () {
         console.log('Hello Agua Page');
     };
-    Agua = __decorate$111([
+    Agua = __decorate$117([
         Component({
             selector: 'page-agua',template:/*ion-inline-start:"C:\Users\rosan\Documents\Iniciação Científica\SoroAcqua\SoroAcqua\src\pages\agua\agua.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Nossa Água</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  <ion-card>\n\n  <img src="imagens/agua.png"/>\n\n  <ion-card-content>\n\n    <ion-card-title>\n\n      Importância da Água\n\n      </ion-card-title>\n\n    <p>\n\n      teste\n\n    </p>\n\n  </ion-card-content>\n\n</ion-card>\n\n\n\n<ion-card>\n\n  <img src="imagens/vida-nova.jpg"/>\n\n  <div class="card-title">Saae está finalizando novo reservatório de 2 milhões de litros no \'Vida Nova Sorocaba\'</div>\n\n  <div class="card-subtitle">Postado em 14 de julho de 2016, por Carlos Lara, Publicado em Notícias</div>\n\n</ion-card>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\rosan\Documents\Iniciação Científica\SoroAcqua\SoroAcqua\src\pages\agua\agua.html"*/
         }), 
-        __metadata$5('design:paramtypes', [NavController])
+        __metadata$11('design:paramtypes', [NavController])
     ], Agua);
     return Agua;
+}());
+
+var __decorate$118 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata$12 = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+/*
+  Generated class for the Eventos page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+*/
+var Eventos = (function () {
+    function Eventos(navCtrl) {
+        this.navCtrl = navCtrl;
+    }
+    Eventos.prototype.ionViewDidLoad = function () {
+        console.log('Hello Eventos Page');
+    };
+    Eventos = __decorate$118([
+        Component({
+            selector: 'page-eventos',template:/*ion-inline-start:"C:\Users\rosan\Documents\Iniciação Científica\SoroAcqua\SoroAcqua\src\pages\agua\eventos\eventos.html"*/'<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Eventos</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\rosan\Documents\Iniciação Científica\SoroAcqua\SoroAcqua\src\pages\agua\eventos\eventos.html"*/
+        }), 
+        __metadata$12('design:paramtypes', [NavController])
+    ], Eventos);
+    return Eventos;
+}());
+
+var __decorate$119 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata$13 = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+/*
+  Generated class for the Projetos page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+*/
+var Projetos = (function () {
+    function Projetos(navCtrl) {
+        this.navCtrl = navCtrl;
+    }
+    Projetos.prototype.ionViewDidLoad = function () {
+        console.log('Hello Projetos Page');
+    };
+    Projetos = __decorate$119([
+        Component({
+            selector: 'page-projetos',template:/*ion-inline-start:"C:\Users\rosan\Documents\Iniciação Científica\SoroAcqua\SoroAcqua\src\pages\agua\projetos\projetos.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>Projetos</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content padding class="card-background-page">\n\n  <ion-card>\n\n    <img src="img/vida-nova.jpg"/>\n\n    <div class="card-title">Saae está finalizando novo reservatório de 2 milhões de litros no \'Vida Nova Sorocaba\'</div>\n\n    <div class="card-subtitle">Postado em 14 de julho de 2016, por Carlos Lara, Publicado em Notícias</div>\n\n  </ion-card>\n\n\n\n  <ion-card>\n\n    <img src="img/card-amsterdam.png"/>\n\n    <div class="card-title">Amsterdam</div>\n\n    <div class="card-subtitle">64 Listings</div>\n\n  </ion-card>\n\n\n\n  <ion-card>\n\n    <img src="img/card-sf.png"/>\n\n    <div class="card-title">San Francisco</div>\n\n    <div class="card-subtitle">72 Listings</div>\n\n  </ion-card>\n\n\n\n  <ion-card>\n\n    <img src="img/card-madison.png"/>\n\n    <div class="card-title">Madison</div>\n\n    <div class="card-subtitle">28 Listings</div>\n\n  </ion-card>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\rosan\Documents\Iniciação Científica\SoroAcqua\SoroAcqua\src\pages\agua\projetos\projetos.html"*/
+        }), 
+        __metadata$13('design:paramtypes', [NavController])
+    ], Projetos);
+    return Projetos;
+}());
+
+var __decorate$120 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata$14 = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var Saae = (function () {
+    function Saae(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        // If we navigated to this page, we will have an item available as a nav param
+        this.selectedItem = navParams.get('item');
+        // Let's populate this page with some filler content for funzies
+        this.icons = ['flask', 'wifi', 'beer', 'football', 'basketball', 'paper-plane',
+            'american-football', 'boat', 'bluetooth', 'build'];
+        this.items = [];
+        for (var i = 1; i < 11; i++) {
+            this.items.push({
+                title: 'Item ' + i,
+                note: 'This is item #' + i,
+                icon: this.icons[Math.floor(Math.random() * this.icons.length)]
+            });
+        }
+    }
+    Saae.prototype.itemTapped = function (event, item) {
+        // That's right, we're pushing to ourselves!
+        this.navCtrl.push(Saae, {
+            item: item
+        });
+    };
+    Saae = __decorate$120([
+        Component({
+            selector: 'page-saae',template:/*ion-inline-start:"C:\Users\rosan\Documents\Iniciação Científica\SoroAcqua\SoroAcqua\src\pages\agua\saae\saae.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>SAAE</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n  <ion-list>\n\n    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">\n\n      <ion-icon [name]="item.icon" item-left></ion-icon>\n\n      {{item.title}}\n\n      <div class="item-note" item-right>\n\n        {{item.note}}\n\n      </div>\n\n    </button>\n\n  </ion-list>\n\n  <div *ngIf="selectedItem" padding>\n\n    You navigated here from <b>{{selectedItem.title}}</b>\n\n  </div>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\rosan\Documents\Iniciação Científica\SoroAcqua\SoroAcqua\src\pages\agua\saae\saae.html"*/
+        }), 
+        __metadata$14('design:paramtypes', [NavController, NavParams])
+    ], Saae);
+    return Saae;
+}());
+
+var __decorate$108 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata$2 = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var Home = (function () {
+    function Home(navCtrl) {
+        this.navCtrl = navCtrl;
+        this.dataList = [
+            new Data('Home', [], '', false),
+            new Data('Nossa Água', [{ title: 'Água', component: Agua, icon: 'water' },
+                { title: 'Eventos', component: Eventos, icon: 'calendar' },
+                { title: 'Projetos', component: Projetos, icon: 'paper' },
+                { title: 'Saae', component: Saae, icon: 'water' }
+            ], 'add-circle', false),
+            new Data('Nosso Rio', [{ title: 'Mapa', component: Mapa, icon: 'map' },
+                { title: 'O Rio', component: Rio, icon: 'water' },
+                { title: 'Sua Historia', component: Historia, icon: 'water' },
+                { title: 'Sua Flora', component: Flora, icon: 'flower' },
+                { title: 'Sua Fauna', component: Fauna, icon: 'flower' },
+                { title: 'A Despolição', component: Despoluicao, icon: 'water' },
+                { title: 'Seus Projetos', component: ProjetosRio, icon: 'paper' }
+            ], 'add-circle', false)
+        ];
+    }
+    Home = __decorate$108([
+        Component({
+            selector: 'page-home',template:/*ion-inline-start:"C:\Users\rosan\Documents\Iniciação Científica\SoroAcqua\SoroAcqua\src\pages\home\home.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Home</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  <data-cards [data]="dataList"></data-cards>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\rosan\Documents\Iniciação Científica\SoroAcqua\SoroAcqua\src\pages\home\home.html"*/
+        }), 
+        __metadata$2('design:paramtypes', [NavController])
+    ], Home);
+    return Home;
 }());
 
 var __decorate$1 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
@@ -81231,6 +81515,44 @@ var MyApp = (function () {
     return MyApp;
 }());
 
+var __decorate$121 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata$15 = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var DataCards = (function () {
+    function DataCards(navCtrl) {
+        this.navCtrl = navCtrl;
+    }
+    DataCards.prototype.toggleDetails = function (data) {
+        if (data.showDetails) {
+            data.showDetails = false;
+            data.icon = 'add-circle';
+        }
+        else {
+            data.showDetails = true;
+            data.icon = 'remove';
+        }
+    };
+    DataCards.prototype.openPage = function (data, page) {
+        data.showDetails = false;
+        data.icon = 'add-circle';
+        this.navCtrl.push(page.component);
+    };
+    DataCards = __decorate$121([
+        Component({
+            selector: 'data-cards',
+            inputs: ['data'],template:/*ion-inline-start:"C:\Users\rosan\Documents\Iniciação Científica\SoroAcqua\SoroAcqua\src\components\data-cards\data-cards.html"*/'<ion-list>\n\n  <ion-item padding *ngFor="let d of data" (click)="toggleDetails(d)"><ion-icon primary item-right [name]="d.icon"></ion-icon>\n\n    {{d.title}}\n\n    <div *ngIf="d.showDetails" text-wrap>\n\n\n\n      <ion-item padding *ngFor="let i of d.itens" (click)="openPage(d, i)">\n\n        <ion-icon [name]="i.icon" item-left></ion-icon>\n\n        {{i.title}}\n\n      </ion-item>\n\n\n\n    </div>\n\n  </ion-item>\n\n</ion-list>\n\n'/*ion-inline-end:"C:\Users\rosan\Documents\Iniciação Científica\SoroAcqua\SoroAcqua\src\components\data-cards\data-cards.html"*/
+        }), 
+        __metadata$15('design:paramtypes', [NavController])
+    ], DataCards);
+    return DataCards;
+}());
+
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -81249,7 +81571,18 @@ var AppModule = (function () {
                 MyApp,
                 Home,
                 Rio,
-                Agua
+                Agua,
+                Eventos,
+                Projetos,
+                Saae,
+                Data,
+                DataCards,
+                Mapa,
+                Historia,
+                Flora,
+                Fauna,
+                Despoluicao,
+                ProjetosRio
             ],
             imports: [
                 IonicModule.forRoot(MyApp)
@@ -81259,7 +81592,18 @@ var AppModule = (function () {
                 MyApp,
                 Home,
                 Rio,
-                Agua
+                Agua,
+                Eventos,
+                Projetos,
+                Saae,
+                Data,
+                DataCards,
+                Mapa,
+                Historia,
+                Flora,
+                Fauna,
+                Despoluicao,
+                ProjetosRio
             ],
             providers: []
         }), 

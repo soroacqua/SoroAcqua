@@ -1,14 +1,18 @@
-import { Component, ViewChild } from '@angular/core';
-import { Nav, NavController, NavParams  } from 'ionic-angular';
+import { Component } from '@angular/core';
+import { NavController, NavParams  } from 'ionic-angular';
 
 import { Mapa } from '../mapa/mapa';
+import { Historia } from '../historia/historia';
+import { Flora } from '../flora/flora';
+import { Fauna } from '../fauna/fauna';
+import { Despoluicao } from '../despoluicao/despoluicao';
+import { ProjetosRio } from '../projetos-rio/projetos-rio';
 
 @Component({
   selector: 'page-rio',
   templateUrl: 'rio.html'
 })
 export class Rio {
-  @ViewChild(Nav) nav: Nav;
 
   selectedItem: any;
 
@@ -28,32 +32,32 @@ export class Rio {
       this.items.push({
         title: 'História',
         icon: 'paper',
-        component: Mapa
+        component: Historia
       });
       this.items.push({
         title: 'Nosa Flora',
         icon: 'flower',
-        component: Mapa
+        component: Flora
       });
       this.items.push({
         title: 'Nossa Fauna',
         icon: 'flower',
-        component: Mapa
+        component: Fauna
       });
       this.items.push({
         title: 'Despoluição',
         icon: 'water',
-        component: Mapa
+        component: Despoluicao
       });
       this.items.push({
         title: 'Projetos',
         icon: 'clipboard',
-        component: Mapa
+        component: ProjetosRio
       });
   }
 
   openPage(item) {
-    this.nav.setRoot(item.component);
+    this.navCtrl.push(item.component);
   }
 
 }

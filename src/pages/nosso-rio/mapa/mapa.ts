@@ -9,8 +9,4 @@ export class Mapa {
 
   constructor(public navCtrl: NavController) {}
 
-  ionViewDidLoad() {
-    console.log('Hello Mapa Page');
-  }
-
 }

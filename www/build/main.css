@@ -21127,3 +21127,16 @@ page-agua .card-background-page .card-subtitle {
   width: 100%;
   color: #fff;
 }
+
+page-home data-cards ion-item {
+  background-color: transparent;
+  padding-left: 0;
+  position: relative;
+}
+
+page-home data-cards ion-label div {
+  text-transform: none;
+  font-size: 0.8em;
+  padding: 0.5em 0;
+  white-space: normal;
+}
