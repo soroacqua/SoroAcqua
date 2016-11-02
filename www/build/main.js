@@ -81351,7 +81351,7 @@ var Eventos = (function () {
     };
     Eventos = __decorate$118([
         Component({
-            selector: 'page-eventos',template:/*ion-inline-start:"C:\Users\anaar\Documents\FATEC\Iniciação Científica\Projeto\SoroAcqua\SoroAcqua\src\pages\agua\eventos\eventos.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>Eventos</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\anaar\Documents\FATEC\Iniciação Científica\Projeto\SoroAcqua\SoroAcqua\src\pages\agua\eventos\eventos.html"*/
+            selector: 'page-eventos',template:/*ion-inline-start:"C:\Users\anaar\Documents\FATEC\Iniciação Científica\Projeto\SoroAcqua\SoroAcqua\src\pages\agua\eventos\eventos.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>Eventos</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  \n\n</ion-content>\n'/*ion-inline-end:"C:\Users\anaar\Documents\FATEC\Iniciação Científica\Projeto\SoroAcqua\SoroAcqua\src\pages\agua\eventos\eventos.html"*/
         }), 
         __metadata$12('design:paramtypes', [NavController])
     ], Eventos);
@@ -81403,32 +81403,87 @@ var Saae = (function () {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
         // If we navigated to this page, we will have an item available as a nav param
-        this.selectedItem = navParams.get('item');
-        // Let's populate this page with some filler content for funzies
-        this.icons = ['flask', 'wifi', 'beer', 'football', 'basketball', 'paper-plane',
-            'american-football', 'boat', 'bluetooth', 'build'];
-        this.items = [];
-        for (var i = 1; i < 11; i++) {
-            this.items.push({
-                title: 'Item ' + i,
-                note: 'This is item #' + i,
-                icon: this.icons[Math.floor(Math.random() * this.icons.length)]
-            });
-        }
+        this.item = navParams.data.item;
     }
-    Saae.prototype.itemTapped = function (event, item) {
-        // That's right, we're pushing to ourselves!
-        this.navCtrl.push(Saae, {
-            item: item
-        });
-    };
     Saae = __decorate$120([
         Component({
-            selector: 'page-saae',template:/*ion-inline-start:"C:\Users\anaar\Documents\FATEC\Iniciação Científica\Projeto\SoroAcqua\SoroAcqua\src\pages\agua\saae\saae.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>SAAE</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">\n      <ion-icon [name]="item.icon" item-left></ion-icon>\n      {{item.title}}\n      <div class="item-note" item-right>\n        {{item.note}}\n      </div>\n    </button>\n  </ion-list>\n  <div *ngIf="selectedItem" padding>\n    You navigated here from <b>{{selectedItem.title}}</b>\n  </div>\n</ion-content>\n'/*ion-inline-end:"C:\Users\anaar\Documents\FATEC\Iniciação Científica\Projeto\SoroAcqua\SoroAcqua\src\pages\agua\saae\saae.html"*/
+            selector: 'page-saae',template:/*ion-inline-start:"C:\Users\anaar\Documents\FATEC\Iniciação Científica\Projeto\SoroAcqua\SoroAcqua\src\pages\agua\saae\saae.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>SAAE</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <ion-icon [name]="\'logo-\' + item.icon" [ngStyle]="{\'color\': item.color}"></ion-icon>\n  {{ item.description }}\n</ion-content>\n'/*ion-inline-end:"C:\Users\anaar\Documents\FATEC\Iniciação Científica\Projeto\SoroAcqua\SoroAcqua\src\pages\agua\saae\saae.html"*/
         }), 
         __metadata$14('design:paramtypes', [NavController, NavParams])
     ], Saae);
     return Saae;
+}());
+var SaaePage = (function () {
+    function SaaePage(nav) {
+        this.nav = nav;
+        this.items = [];
+        this.items = [
+            {
+                'title': 'Angular',
+                'icon': 'angular',
+                'description': 'A powerful Javascript framework for building single page apps. Angular is open source, and maintained by Google.',
+                'color': '#E63135'
+            },
+            {
+                'title': 'CSS3',
+                'icon': 'css3',
+                'description': 'The latest version of cascading stylesheets - the styling language of the web!',
+                'color': '#0CA9EA'
+            },
+            {
+                'title': 'HTML5',
+                'icon': 'html5',
+                'description': 'The latest version of the web\'s markup language.',
+                'color': '#F46529'
+            },
+            {
+                'title': 'JavaScript',
+                'icon': 'javascript',
+                'description': 'One of the most popular programming languages on the Web!',
+                'color': '#FFD439'
+            },
+            {
+                'title': 'Sass',
+                'icon': 'sass',
+                'description': 'Syntactically Awesome Stylesheets - a mature, stable, and powerful professional grade CSS extension.',
+                'color': '#CE6296'
+            },
+            {
+                'title': 'NodeJS',
+                'icon': 'nodejs',
+                'description': 'An open-source, cross-platform runtime environment for developing server-side Web applications.',
+                'color': '#78BD43'
+            },
+            {
+                'title': 'Python',
+                'icon': 'python',
+                'description': 'A clear and powerful object-oriented programming language!',
+                'color': '#3575AC'
+            },
+            {
+                'title': 'Markdown',
+                'icon': 'markdown',
+                'description': 'A super simple way to add formatting like headers, bold, bulleted lists, and so on to plain text.',
+                'color': '#412159'
+            },
+            {
+                'title': 'Tux',
+                'icon': 'tux',
+                'description': 'The official mascot of the Linux kernel!',
+                'color': '#000'
+            },
+        ];
+    }
+    SaaePage.prototype.openNavDetailsPage = function (item) {
+        this.nav.push(Saae, { item: item });
+    };
+    SaaePage = __decorate$120([
+        Component({
+            template: "\n  <ion-header>\n    <ion-navbar>\n      <ion-title>Navigation</ion-title>\n    </ion-navbar>\n  </ion-header>\n  <ion-content>\n    <ion-list>\n      <button ion-item *ngFor=\"let item of items\" (click)=\"openNavDetailsPage(item)\" icon-left>\n        <ion-icon [name]=\"'logo-' + item.icon\" [ngStyle]=\"{'color': item.color}\" item-left></ion-icon>\n        {{ item.title }}\n      </button>\n    </ion-list>\n  </ion-content>\n  "
+        }), 
+        __metadata$14('design:paramtypes', [NavController])
+    ], SaaePage);
+    return SaaePage;
 }());
 
 var __decorate$108 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
