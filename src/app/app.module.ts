@@ -15,6 +15,8 @@ import { Flora } from '../pages/nosso-rio/flora/flora';
 import { Fauna } from '../pages/nosso-rio/fauna/fauna';
 import { Despoluicao } from '../pages/nosso-rio/despoluicao/despoluicao';
 import { ProjetosRio } from '../pages/nosso-rio/projetos-rio/projetos-rio';
+import { AguaDetalhes } from '../pages/agua/agua-detalhes/agua-detalhes';
+import { AguaConsultaQualidade } from '../pages/agua/agua-consulta-qualidade/agua-consulta-qualidade';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { ProjetosRio } from '../pages/nosso-rio/projetos-rio/projetos-rio';
     Flora,
     Fauna,
     Despoluicao,
-    ProjetosRio
+    ProjetosRio,
+    AguaDetalhes,
+    AguaConsultaQualidade
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -53,7 +57,9 @@ import { ProjetosRio } from '../pages/nosso-rio/projetos-rio/projetos-rio';
     Flora,
     Fauna,
     Despoluicao,
-    ProjetosRio
+    ProjetosRio,
+    AguaDetalhes,
+    AguaConsultaQualidade
   ],
   providers: []
 })

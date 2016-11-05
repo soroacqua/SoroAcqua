@@ -1,12 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { AguaDetalhes } from './agua-detalhes/agua-detalhes';
 
-/*
-  Generated class for the Agua page.
-
-  See http://ionicframework.com/docs/v2/components/#navigation for more info on
-  Ionic pages and navigation.
-*/
 @Component({
   selector: 'page-agua',
   templateUrl: 'agua.html'
@@ -18,5 +13,10 @@ export class Agua {
   ionViewDidLoad() {
     console.log('Hello Agua Page');
   }
+
+  openPageAguaDetalhe(){
+      this.navCtrl.push(AguaDetalhes);
+  }
+
 
 }
