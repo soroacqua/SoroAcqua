@@ -1,18 +1,40 @@
-<!--
-  Generated template for the AguaConsultaQualidade page.
-
-  See http://ionicframework.com/docs/v2/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
-
   <ion-navbar>
     <ion-title>agua-consulta-qualidade</ion-title>
   </ion-navbar>
-
 </ion-header>
 
 
 <ion-content padding>
+
+  <ion-list>
+
+    <ion-item>
+      <!-- Especificar o tamanho limite do campo CEP-->
+      <ion-input type="number" placeholder="CEP"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Selecione o seu bairro</ion-label>
+      <ion-select item>
+          <!-- Existem mais bairros-->
+        <ion-option>Alto da Boa Vista</ion-option>
+        <ion-option>Jardim Novo Eldorado</ion-option>
+        <ion-option>Vergueiro</ion-option>
+        <ion-option>Centro</ion-option>
+        <ion-option>Jd Portal da Colina</ion-option>
+        <ion-option>Jardim Portal da Colina</ion-option>
+        <ion-option>Itanguá</ion-option>
+        <ion-option>Jardim Panorama</ion-option>
+      </ion-select>
+
+    </ion-item>
+
+  </ion-list>
+
+
+
+
+<button ion-button block>Consultar</button>   <!-- Fazer a busca no Banco-->
 
 </ion-content>

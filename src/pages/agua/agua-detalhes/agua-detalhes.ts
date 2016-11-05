@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { AguaConsultaQualidade } from './agua-consulta-qualidade/agua-consulta-qualidade/';
+import { AguaConsultaQualidade } from '../agua-consulta-qualidade/agua-consulta-qualidade/';
 
 @Component({
   selector: 'page-agua-detalhes',
