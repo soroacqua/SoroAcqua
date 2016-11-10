@@ -17,7 +17,7 @@ import { Despoluicao } from '../pages/nosso-rio/despoluicao/despoluicao';
 import { ProjetosRio } from '../pages/nosso-rio/projetos-rio/projetos-rio';
 import { AguaDetalhes } from '../pages/agua/agua-detalhes/agua-detalhes';
 import { AguaConsultaQualidade } from '../pages/agua/agua-consulta-qualidade/agua-consulta-qualidade';
-import { ProjetoDetalhes } from '../pages/projetos/projeto-detalhes/projeto-detalhes';
+//import { ProjetoDetalhes } from '../pages/projetos/projeto-detalhes/projeto-detalhes';
 
 @NgModule({
   declarations: [
@@ -37,8 +37,8 @@ import { ProjetoDetalhes } from '../pages/projetos/projeto-detalhes/projeto-deta
     Despoluicao,
     ProjetosRio,
     AguaDetalhes,
-    AguaConsultaQualidade,
-    ProjetoDetalhes
+    AguaConsultaQualidade
+//    ProjetoDetalhes
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -61,8 +61,8 @@ import { ProjetoDetalhes } from '../pages/projetos/projeto-detalhes/projeto-deta
     Despoluicao,
     ProjetosRio,
     AguaDetalhes,
-    AguaConsultaQualidade,
-    ProjetoDetalhes
+    AguaConsultaQualidade
+  //  ProjetoDetalhes
   ],
   providers: []
 })
