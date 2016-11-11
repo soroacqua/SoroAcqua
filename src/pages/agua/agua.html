@@ -7,184 +7,142 @@
   </ion-navbar>
 </ion-header>
 
-
 <ion-content padding>
-
-
-
-
-
-<ion-list>
-  <ion-item>
-    <ion-label>Reservatórios de água da nossa cidade</ion-label>
-    <ion-select [(ngModel)]="gaming">
-      <ion-option value="cerrado">ETA – Cerrado</ion-option>
-      <ion-option value="parada-do-alto">Parada do Alto</ion-option>
-      <ion-option value="sevilha">Sevilha</ion-option>
-      <ion-option value="vila-haro">Vila Haro</ion-option>
-      <ion-option value="joao-romao">João Romão</ion-option>
-      <ion-option value="sao-bento">São Bento – Centro</ion-option>
-      <ion-option value="vila-barao">Vila Barão</ion-option>
-      <ion-option value="terra-vermelha">Terra Vermelha</ion-option>
-      <ion-option value="santana">Santana</ion-option>
-      <ion-option value="central-parque">Central Parque</ion-option>
-      <ion-option value="maria-eugenia">Maria Eugênia</ion-option>
-      <ion-option value="granja-olga">Granja Olga</ion-option>
-      <ion-option value="fazenda-imperial">Fazenda Imperial</ion-option>
-      <ion-option value="vitoria-regia">Vitória Régia</ion-option>
-      <ion-option value="ykk">YKK</ion-option>
-      <ion-option value="planalto">Planalto</ion-option>
-      <ion-option value="parque-sao-bento">Parque São Bento</ion-option>
-      <ion-option value="eden">ETA – Éden</ion-option>
-      <ion-option value="parque-campolim">Parque Campolim</ion-option>
-      <ion-option value="aparecidinha">Aparecidinha</ion-option>
-      <ion-option value="novo-eldorado">Novo Eldorado</ion-option>
-      <ion-option value="cajuru">Cajurú</ion-option>
-      <ion-option value="sorocaba-1">Sorocaba 1</ion-option>
-      <ion-option value="iporanga">Iporanga</ion-option>
-      <ion-option value="parque-tecnologico">Parque Tecnológico</ion-option>
-    </ion-select>
-  </ion-item>
-</ion-list>
-
-
 <ion-card>
-
   <ion-card-header>
-  Reservatórios da nossa cidade
- </ion-card-header>
+  Consulte a qualidade da água em cada Reservatório
+</ion-card-header>
 
 <ion-list>
-   <button ion-item>
+   <button (click)="openPageAguaDetalhe()" ion-item>
      <ion-icon name="ios-water-outline" item-left></ion-icon>
      ETA – Cerrado
    </button>
 
-   <button ion-item>
+   <button (click)="openPageAguaDetalhe()" ion-item>
      <ion-icon name="ios-water-outline" item-left></ion-icon>
      Parada do Alto
    </button>
 
-   <button ion-item>
+   <button (click)="openPageAguaDetalhe()" ion-item>
      <ion-icon name="ios-water-outline" item-left></ion-icon>
      Sevilha
    </button>
 
-   <button ion-item>
+   <button (click)="openPageAguaDetalhe()" ion-item>
      <ion-icon name="ios-water-outline" item-left></ion-icon>
      Vila Haro
    </button>
 
-   <button ion-item>
+   <button (click)="openPageAguaDetalhe()" ion-item>
      <ion-icon name="ios-water-outline" item-left></ion-icon>
      Vila Haro
    </button>
 
-   <button ion-item>
+   <button (click)="openPageAguaDetalhe()" ion-item>
      <ion-icon name="ios-water-outline" item-left></ion-icon>
      João Romão
    </button>
 
-   <button ion-item>
+   <button (click)="openPageAguaDetalhe()" ion-item>
      <ion-icon name="ios-water-outline" item-left></ion-icon>
      São Bento – Centro
    </button>
 
-   <button ion-item>
+   <button (click)="openPageAguaDetalhe()" ion-item>
      <ion-icon name="ios-water-outline" item-left></ion-icon>
      Vila Barão
    </button>
 
-   <button ion-item>
+   <button (click)="openPageAguaDetalhe()" ion-item>
      <ion-icon name="ios-water-outline" item-left></ion-icon>
      Terra Vermelha
    </button>
 
-   <button ion-item>
+   <button (click)="openPageAguaDetalhe()" ion-item>
      <ion-icon name="ios-water-outline" item-left></ion-icon>
      Santana
    </button>
 
-   <button ion-item>
+   <button (click)="openPageAguaDetalhe()" ion-item>
      <ion-icon name="ios-water-outline" item-left></ion-icon>
      Central Parque
    </button>
 
-   <button ion-item>
+   <button (click)="openPageAguaDetalhe()" ion-item>
      <ion-icon name="ios-water-outline" item-left></ion-icon>
      Maria Eugênia
    </button>
 
-   <button ion-item>
+   <button (click)="openPageAguaDetalhe()" ion-item>
      <ion-icon name="ios-water-outline" item-left></ion-icon>
      Granja Olga
    </button>
 
-   <button ion-item>
+   <button (click)="openPageAguaDetalhe()" ion-item>
      <ion-icon name="ios-water-outline" item-left></ion-icon>
      Fazenda Imperial
    </button>
 
-   <button ion-item>
+   <button (click)="openPageAguaDetalhe()" ion-item>
      <ion-icon name="ios-water-outline" item-left></ion-icon>
      Vitória Régia
    </button>
 
-   <button ion-item>
+   <button (click)="openPageAguaDetalhe()" ion-item>
      <ion-icon name="ios-water-outline" item-left></ion-icon>
      YKK
    </button>
 
-   <button ion-item>
+   <button (click)="openPageAguaDetalhe()" ion-item>
      <ion-icon name="ios-water-outline" item-left></ion-icon>
      Planalto
    </button>
 
-   <button ion-item>
+   <button (click)="openPageAguaDetalhe()" ion-item>
      <ion-icon name="ios-water-outline" item-left></ion-icon>
      Parque São Bento
    </button>
 
-   <button ion-item>
+   <button (click)="openPageAguaDetalhe()" ion-item>
      <ion-icon name="ios-water-outline" item-left></ion-icon>
      ETA – Éden
    </button>
 
-   <button ion-item>
+   <button (click)="openPageAguaDetalhe()" ion-item>
      <ion-icon name="ios-water-outline" item-left></ion-icon>
      Parque Campolim
    </button>
 
-   <button ion-item>
+   <button (click)="openPageAguaDetalhe()" ion-item>
      <ion-icon name="ios-water-outline" item-left></ion-icon>
      Aparecidinha
    </button>
 
-   <button ion-item>
+   <button (click)="openPageAguaDetalhe()" ion-item>
      <ion-icon name="ios-water-outline" item-left></ion-icon>
      Novo Eldorado
    </button>
 
-   <button ion-item>
+   <button (click)="openPageAguaDetalhe()" ion-item>
      <ion-icon name="ios-water-outline" item-left></ion-icon>
      Cajurú
    </button>
 
-   <button ion-item>
+   <button (click)="openPageAguaDetalhe()" ion-item>
      <ion-icon name="ios-water-outline" item-left></ion-icon>
      Sorocaba 1
    </button>
 
-   <button ion-item>
+   <button (click)="openPageAguaDetalhe()" ion-item>
      <ion-icon name="ios-water-outline" item-left></ion-icon>
     Iporanga
    </button>
 
-   <button ion-item>
+   <button (click)="openPageAguaDetalhe()" ion-item>
      <ion-icon name="ios-water-outline" item-left></ion-icon>
      Parque Tecnológico
    </button>
  </ion-list>
 </ion-card>
-
 </ion-content>

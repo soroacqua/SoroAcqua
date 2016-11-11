@@ -1,18 +1,16 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
-
 @Component({
-  selector: 'page-projetos',
-  templateUrl: 'projetos.html'
+  selector: 'page-agua-consulta-qualidade',
+  templateUrl: 'agua-consulta-qualidade.html'
 })
-export class Projetos {
+export class AguaConsultaQualidade {
 
   constructor(public navCtrl: NavController) {}
 
   ionViewDidLoad() {
-    console.log('Hello Projetos Page');
+    console.log('Hello AguaConsultaQualidade Page');
   }
-
 
 }

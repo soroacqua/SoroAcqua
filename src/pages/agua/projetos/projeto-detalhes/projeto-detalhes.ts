@@ -1,18 +1,16 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
-
 @Component({
-  selector: 'page-projetos',
-  templateUrl: 'projetos.html'
+  selector: 'page-projeto-detalhes',
+  templateUrl: 'projeto-detalhes.html'
 })
-export class Projetos {
+export class ProjetoDetalhes {
 
   constructor(public navCtrl: NavController) {}
 
   ionViewDidLoad() {
-    console.log('Hello Projetos Page');
+    console.log('Hello ProjetoDetalhes Page');
   }
-
 
 }
