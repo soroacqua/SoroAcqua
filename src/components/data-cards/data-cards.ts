@@ -14,12 +14,16 @@ export class DataCards {
   constructor(public navCtrl: NavController) {}
 
   toggleDetails(data: Data) {
-    if (data.showDetails) {
-        data.showDetails = false;
-        data.icon = 'add-circle';
-    } else {
-        data.showDetails = true;
-        data.icon = 'remove';
+    if(data.title != "Home"){
+      if (data.showDetails) {
+          data.showDetails = false;
+          data.icon = 'add-circle';
+      } else {
+          data.showDetails = true;
+          data.icon = 'remove';
+      }
+    } else{
+      this.navCtrl.push(data.title);
     }
   }
 
