@@ -8,6 +8,5 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-icon [name]="'logo-' + item.icon" [ngStyle]="{'color': item.color}"></ion-icon>
-  {{ item.description }}
+  <data-cards [data]="dataList"></data-cards>
 </ion-content>

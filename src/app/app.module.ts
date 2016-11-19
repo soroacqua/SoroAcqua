@@ -6,7 +6,15 @@ import { Rio } from '../pages/nosso-rio/rio/rio';
 import { Agua } from '../pages/agua/agua';
 import { Eventos } from '../pages/agua/eventos/eventos';
 import { Projetos } from '../pages/agua/projetos/projetos';
+<<<<<<< HEAD
 import { Saae } from '../pages/agua/saae/saae';
+=======
+import { SaaePage } from '../pages/agua/saae/saae';
+import { Data } from '../components/data/data';
+import { DataCards } from '../components/data-cards/data-cards';
+import { DataSaae } from '../components/data-saae/data-saae';
+import { DataCardSaae } from '../components/data-card-saae/data-card-saae';
+>>>>>>> f1f75f008343efb9a0aa8b6947bd21261b215fc2
 import { Mapa } from '../pages/nosso-rio/mapa/mapa';
 import { Historia } from '../pages/nosso-rio/historia/historia';
 import { Flora } from '../pages/nosso-rio/flora/flora';
@@ -27,7 +35,15 @@ import { Sobre } from '../pages/sobre/sobre';
     Agua,
     Eventos,
     Projetos,
+<<<<<<< HEAD
     Saae,
+=======
+    SaaePage,
+    Data,
+    DataCards,
+    DataSaae,
+    DataCardSaae,
+>>>>>>> f1f75f008343efb9a0aa8b6947bd21261b215fc2
     Mapa,
     Historia,
     Flora,
@@ -51,7 +67,15 @@ import { Sobre } from '../pages/sobre/sobre';
     Agua,
     Eventos,
     Projetos,
+<<<<<<< HEAD
     Saae,
+=======
+    SaaePage,
+    Data,
+    DataCards,
+    DataSaae,
+    DataCardSaae,
+>>>>>>> f1f75f008343efb9a0aa8b6947bd21261b215fc2
     Mapa,
     Historia,
     Flora,

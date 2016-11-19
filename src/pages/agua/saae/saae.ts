@@ -1,14 +1,17 @@
 import { Component } from '@angular/core';
+import { NavController } from 'ionic-angular';
+import { DataSaae } from '../../../components/data-saae/data-saae';
 
-import { NavController, NavParams } from 'ionic-angular';
+import { SaaeHistoria } from 'saae-historia/saae-historia';
+
 
 @Component({
   selector: 'page-saae',
   templateUrl: 'saae.html'
 })
-export class Saae {
-  item;
+export class SaaePage {
 
+<<<<<<< HEAD
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     // If we navigated to this page, we will have an item available as a nav param
      this.item = navParams.data.item;
@@ -33,69 +36,17 @@ export class Saae {
   })
   export class SaaePage {
     items = [];
+=======
+  public dataList: DataSaae[];
+>>>>>>> f1f75f008343efb9a0aa8b6947bd21261b215fc2
 
-    constructor(public nav: NavController) {
-      this.items = [
-        {
-          'title': 'Angular',
-          'icon': 'angular',
-          'description': 'A powerful Javascript framework for building single page apps. Angular is open source, and maintained by Google.',
-          'color': '#E63135'
-        },
-        {
-          'title': 'CSS3',
-          'icon': 'css3',
-          'description': 'The latest version of cascading stylesheets - the styling language of the web!',
-          'color': '#0CA9EA'
-        },
-        {
-          'title': 'HTML5',
-          'icon': 'html5',
-          'description': 'The latest version of the web\'s markup language.',
-          'color': '#F46529'
-        },
-        {
-          'title': 'JavaScript',
-          'icon': 'javascript',
-          'description': 'One of the most popular programming languages on the Web!',
-          'color': '#FFD439'
-        },
-        {
-          'title': 'Sass',
-          'icon': 'sass',
-          'description': 'Syntactically Awesome Stylesheets - a mature, stable, and powerful professional grade CSS extension.',
-          'color': '#CE6296'
-        },
-        {
-          'title': 'NodeJS',
-          'icon': 'nodejs',
-          'description': 'An open-source, cross-platform runtime environment for developing server-side Web applications.',
-          'color': '#78BD43'
-        },
-        {
-          'title': 'Python',
-          'icon': 'python',
-          'description': 'A clear and powerful object-oriented programming language!',
-          'color': '#3575AC'
-        },
-        {
-          'title': 'Markdown',
-          'icon': 'markdown',
-          'description': 'A super simple way to add formatting like headers, bold, bulleted lists, and so on to plain text.',
-          'color': '#412159'
-        },
-        {
-          'title': 'Tux',
-          'icon': 'tux',
-          'description': 'The official mascot of the Linux kernel!',
-          'color': '#000'
-        },
-      ]
+    constructor(public navCtrl: NavController) {
+      this.dataList = [
+          new DataSaae('Saae', [{title: 'História', component: SaaeHistoria, icon: 'ios-albums-outline'}
+                              ],'add-circle', false)
+      ];
     }
 
-    openNavDetailsPage(item) {
-      this.nav.push(Saae, { item: item });
-    }
 
   }
 */
