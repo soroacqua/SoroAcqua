@@ -14,7 +14,12 @@
 </ion-card-header>
 
 <ion-list>
-   <button (click)="openPageAguaDetalhe()" ion-item>
+  <button *ngFor="let reservat of meusreservatorios" (click)="openPageAguaDetalhe(reservat.cod)" ion-item>
+    <ion-icon name="ios-water-outline" item-left></ion-icon>
+    {{reservat.nome}}
+  </button>
+</ion-list>
+<!--   <button (click)="openPageAguaDetalhe()" ion-item>
      <ion-icon name="ios-water-outline" item-left></ion-icon>
      ETA – Cerrado
    </button>
@@ -143,6 +148,6 @@
      <ion-icon name="ios-water-outline" item-left></ion-icon>
      Parque Tecnológico
    </button>
- </ion-list>
+ </ion-list>-->
 </ion-card>
 </ion-content>

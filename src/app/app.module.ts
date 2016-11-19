@@ -6,9 +6,11 @@ import { Rio } from '../pages/nosso-rio/rio/rio';
 import { Agua } from '../pages/agua/agua';
 import { Eventos } from '../pages/agua/eventos/eventos';
 import { Projetos } from '../pages/agua/projetos/projetos';
-import { Saae } from '../pages/agua/saae/saae';
+import { SaaePage } from '../pages/agua/saae/saae';
 import { Data } from '../components/data/data';
 import { DataCards } from '../components/data-cards/data-cards';
+import { DataSaae } from '../components/data-saae/data-saae';
+import { DataCardSaae } from '../components/data-card-saae/data-card-saae';
 import { Mapa } from '../pages/nosso-rio/mapa/mapa';
 import { Historia } from '../pages/nosso-rio/historia/historia';
 import { Flora } from '../pages/nosso-rio/flora/flora';
@@ -27,9 +29,11 @@ import { AguaConsultaQualidade } from '../pages/agua/agua-consulta-qualidade/agu
     Agua,
     Eventos,
     Projetos,
-    Saae,
+    SaaePage,
     Data,
     DataCards,
+    DataSaae,
+    DataCardSaae,
     Mapa,
     Historia,
     Flora,
@@ -51,9 +55,11 @@ import { AguaConsultaQualidade } from '../pages/agua/agua-consulta-qualidade/agu
     Agua,
     Eventos,
     Projetos,
-    Saae,
+    SaaePage,
     Data,
     DataCards,
+    DataSaae,
+    DataCardSaae,
     Mapa,
     Historia,
     Flora,

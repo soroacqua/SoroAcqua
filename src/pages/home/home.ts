@@ -6,7 +6,7 @@ import { Rio } from '../nosso-rio/rio/rio';
 import { Agua } from '../agua/agua';
 import { Eventos } from '../agua/eventos/eventos';
 import { Projetos } from '../agua/projetos/projetos';
-import { Saae } from '../agua/saae/saae';
+import { SaaePage } from '../agua/saae/saae';
 import { Mapa } from '../nosso-rio/mapa/mapa';
 import { Historia } from '../nosso-rio/historia/historia';
 import { Flora } from '../nosso-rio/flora/flora';
@@ -28,7 +28,7 @@ export class Home {
       new Data('Nossa Água', [{title: 'Água', component: Agua, icon: 'water'},
                               {title: 'Eventos', component: Eventos, icon: 'calendar'},
                               {title: 'Projetos', component: Projetos, icon: 'paper'},
-                              {title: 'Saae', component: Saae, icon: 'water'}
+                              {title: 'Saae', component: SaaePage, icon: 'water'}
                               ],'add-circle', false),
       new Data('Nosso Rio', [{title: 'Mapa', component: Mapa, icon: 'map'},
                               {title: 'O Rio', component: Rio, icon: 'water'},
