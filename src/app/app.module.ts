@@ -7,8 +7,6 @@ import { Agua } from '../pages/agua/agua';
 import { Eventos } from '../pages/agua/eventos/eventos';
 import { Projetos } from '../pages/agua/projetos/projetos';
 import { Saae } from '../pages/agua/saae/saae';
-import { Data } from '../components/data/data';
-import { DataCards } from '../components/data-cards/data-cards';
 import { Mapa } from '../pages/nosso-rio/mapa/mapa';
 import { Historia } from '../pages/nosso-rio/historia/historia';
 import { Flora } from '../pages/nosso-rio/flora/flora';
@@ -17,7 +15,9 @@ import { Despoluicao } from '../pages/nosso-rio/despoluicao/despoluicao';
 import { ProjetosRio } from '../pages/nosso-rio/projetos-rio/projetos-rio';
 import { AguaDetalhes } from '../pages/agua/agua-detalhes/agua-detalhes';
 import { AguaConsultaQualidade } from '../pages/agua/agua-consulta-qualidade/agua-consulta-qualidade';
-//import { ProjetoDetalhes } from '../pages/projetos/projeto-detalhes/projeto-detalhes';
+import { ProjetoDetalhes } from '../pages/agua/projetos/projeto-detalhes/projeto-detalhes';
+import { Configuracoes } from '../pages/configuracoes/configuracoes';
+import { Sobre } from '../pages/sobre/sobre';
 
 @NgModule({
   declarations: [
@@ -28,8 +28,6 @@ import { AguaConsultaQualidade } from '../pages/agua/agua-consulta-qualidade/agu
     Eventos,
     Projetos,
     Saae,
-    Data,
-    DataCards,
     Mapa,
     Historia,
     Flora,
@@ -37,8 +35,10 @@ import { AguaConsultaQualidade } from '../pages/agua/agua-consulta-qualidade/agu
     Despoluicao,
     ProjetosRio,
     AguaDetalhes,
-    AguaConsultaQualidade
-//    ProjetoDetalhes
+    AguaConsultaQualidade,
+    ProjetoDetalhes,
+    Configuracoes,
+    Sobre
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -52,8 +52,6 @@ import { AguaConsultaQualidade } from '../pages/agua/agua-consulta-qualidade/agu
     Eventos,
     Projetos,
     Saae,
-    Data,
-    DataCards,
     Mapa,
     Historia,
     Flora,
@@ -61,8 +59,10 @@ import { AguaConsultaQualidade } from '../pages/agua/agua-consulta-qualidade/agu
     Despoluicao,
     ProjetosRio,
     AguaDetalhes,
-    AguaConsultaQualidade
-  //  ProjetoDetalhes
+    AguaConsultaQualidade,
+    ProjetoDetalhes,
+    Configuracoes,
+    Sobre
   ],
   providers: []
 })

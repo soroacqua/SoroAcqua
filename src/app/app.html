@@ -7,13 +7,22 @@
 
   <ion-content>
     <ion-list>
-      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
-        <ion-icon [name]="p.icon" item-left></ion-icon>
-        {{p.title}}
-      </button>
+      <ion-item padding *ngFor="let p of pages" (click)="toggleDetails(p)">
+        <!--<ion-icon [name]="p.icon" item-left></ion-icon>-->
+         {{p.title}}
+
+         <div *ngIf="p.showDetails" text-wrap>
+
+           <ion-item padding  ion-item menuClose padding *ngFor="let i of p.itens" (click)="openPage(i)">
+             <ion-icon [name]="i.icon" item-left></ion-icon>
+             {{i.title}}
+           </ion-item>
+
+         </div>
+
+      </ion-item>
     </ion-list>
   </ion-content>
-
 </ion-menu>
 
 <!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->

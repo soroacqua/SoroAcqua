@@ -1,3 +1,12 @@
-page-mapa {
 
-}
+  ion-app._gmaps_cdv_ .nav-decor{
+    background-color: transparent !important;
+  }
+
+  page-mapa {
+
+      #map {
+          height: 100%;
+      }
+
+  }
