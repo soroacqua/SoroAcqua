@@ -81085,11 +81085,7 @@ var Home = (function () {
     }
     Home = __decorate$108([
         Component({
-<<<<<<< HEAD
             selector: 'page-home',template:/*ion-inline-start:"C:\Users\rosan\Documents\IC\SoroAcqua\SoroAcqua\src\pages\home\home.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Home</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  Conteudo do Home\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\rosan\Documents\IC\SoroAcqua\SoroAcqua\src\pages\home\home.html"*/
-=======
-            selector: 'data',template:/*ion-inline-start:"C:\Users\anaar\Documents\FATEC\Iniciação Científica\Projeto\SoroAcqua\SoroAcqua\src\components\data\data.html"*/''/*ion-inline-end:"C:\Users\anaar\Documents\FATEC\Iniciação Científica\Projeto\SoroAcqua\SoroAcqua\src\components\data\data.html"*/
->>>>>>> f1f75f008343efb9a0aa8b6947bd21261b215fc2
         }), 
         __metadata$2('design:paramtypes', [])
     ], Home);
@@ -81143,11 +81139,7 @@ var Mapa = (function () {
     };
     Mapa = __decorate$110([
         Component({
-<<<<<<< HEAD
             selector: 'page-mapa',template:/*ion-inline-start:"C:\Users\rosan\Documents\IC\SoroAcqua\SoroAcqua\src\pages\nosso-rio\mapa\mapa.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>\n\n      Mapa\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n    <div id="map"></div>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\rosan\Documents\IC\SoroAcqua\SoroAcqua\src\pages\nosso-rio\mapa\mapa.html"*/
-=======
-            selector: 'page-mapa',template:/*ion-inline-start:"C:\Users\anaar\Documents\FATEC\Iniciação Científica\Projeto\SoroAcqua\SoroAcqua\src\pages\nosso-rio\mapa\mapa.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>mapa</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\anaar\Documents\FATEC\Iniciação Científica\Projeto\SoroAcqua\SoroAcqua\src\pages\nosso-rio\mapa\mapa.html"*/
->>>>>>> f1f75f008343efb9a0aa8b6947bd21261b215fc2
         }), 
         __metadata$4('design:paramtypes', [NavController, Platform])
     ], Mapa);
@@ -81178,11 +81170,7 @@ var Historia = (function () {
     };
     Historia = __decorate$111([
         Component({
-<<<<<<< HEAD
             selector: 'page-historia',template:/*ion-inline-start:"C:\Users\rosan\Documents\IC\SoroAcqua\SoroAcqua\src\pages\nosso-rio\historia\historia.html"*/'<ion-header>\n\n\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>historia</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\rosan\Documents\IC\SoroAcqua\SoroAcqua\src\pages\nosso-rio\historia\historia.html"*/
-=======
-            selector: 'page-historia',template:/*ion-inline-start:"C:\Users\anaar\Documents\FATEC\Iniciação Científica\Projeto\SoroAcqua\SoroAcqua\src\pages\nosso-rio\historia\historia.html"*/'<!--\n  Generated template for the Historia page.\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>historia</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\anaar\Documents\FATEC\Iniciação Científica\Projeto\SoroAcqua\SoroAcqua\src\pages\nosso-rio\historia\historia.html"*/
->>>>>>> f1f75f008343efb9a0aa8b6947bd21261b215fc2
         }), 
         __metadata$5('design:paramtypes', [NavController])
     ], Historia);
@@ -81213,11 +81201,7 @@ var Flora = (function () {
     };
     Flora = __decorate$112([
         Component({
-<<<<<<< HEAD
             selector: 'page-flora',template:/*ion-inline-start:"C:\Users\rosan\Documents\IC\SoroAcqua\SoroAcqua\src\pages\nosso-rio\flora\flora.html"*/'<ion-header>\n\n\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>flora</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\rosan\Documents\IC\SoroAcqua\SoroAcqua\src\pages\nosso-rio\flora\flora.html"*/
-=======
-            selector: 'page-flora',template:/*ion-inline-start:"C:\Users\anaar\Documents\FATEC\Iniciação Científica\Projeto\SoroAcqua\SoroAcqua\src\pages\nosso-rio\flora\flora.html"*/'<!--\n  Generated template for the Flora page.\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>flora</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\anaar\Documents\FATEC\Iniciação Científica\Projeto\SoroAcqua\SoroAcqua\src\pages\nosso-rio\flora\flora.html"*/
->>>>>>> f1f75f008343efb9a0aa8b6947bd21261b215fc2
         }), 
         __metadata$6('design:paramtypes', [NavController])
     ], Flora);
@@ -81248,11 +81232,7 @@ var Fauna = (function () {
     };
     Fauna = __decorate$113([
         Component({
-<<<<<<< HEAD
             selector: 'page-fauna',template:/*ion-inline-start:"C:\Users\rosan\Documents\IC\SoroAcqua\SoroAcqua\src\pages\nosso-rio\fauna\fauna.html"*/'<ion-header>\n\n\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>fauna</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\rosan\Documents\IC\SoroAcqua\SoroAcqua\src\pages\nosso-rio\fauna\fauna.html"*/
-=======
-            selector: 'page-fauna',template:/*ion-inline-start:"C:\Users\anaar\Documents\FATEC\Iniciação Científica\Projeto\SoroAcqua\SoroAcqua\src\pages\nosso-rio\fauna\fauna.html"*/'<!--\n  Generated template for the Fauna page.\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>fauna</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\anaar\Documents\FATEC\Iniciação Científica\Projeto\SoroAcqua\SoroAcqua\src\pages\nosso-rio\fauna\fauna.html"*/
->>>>>>> f1f75f008343efb9a0aa8b6947bd21261b215fc2
         }), 
         __metadata$7('design:paramtypes', [NavController])
     ], Fauna);
@@ -81276,11 +81256,7 @@ var Despoluicao = (function () {
     };
     Despoluicao = __decorate$114([
         Component({
-<<<<<<< HEAD
             selector: 'page-despoluicao',template:/*ion-inline-start:"C:\Users\rosan\Documents\IC\SoroAcqua\SoroAcqua\src\pages\nosso-rio\despoluicao\despoluicao.html"*/'<ion-header>\n\n\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>despoluicao</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\rosan\Documents\IC\SoroAcqua\SoroAcqua\src\pages\nosso-rio\despoluicao\despoluicao.html"*/
-=======
-            selector: 'page-despoluicao',template:/*ion-inline-start:"C:\Users\anaar\Documents\FATEC\Iniciação Científica\Projeto\SoroAcqua\SoroAcqua\src\pages\nosso-rio\despoluicao\despoluicao.html"*/'<!--\n  Generated template for the Despoluicao page.\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>despoluicao</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\anaar\Documents\FATEC\Iniciação Científica\Projeto\SoroAcqua\SoroAcqua\src\pages\nosso-rio\despoluicao\despoluicao.html"*/
->>>>>>> f1f75f008343efb9a0aa8b6947bd21261b215fc2
         }), 
         __metadata$8('design:paramtypes', [])
     ], Despoluicao);
@@ -81311,11 +81287,7 @@ var ProjetosRio = (function () {
     };
     ProjetosRio = __decorate$115([
         Component({
-<<<<<<< HEAD
             selector: 'page-projetos-rio',template:/*ion-inline-start:"C:\Users\rosan\Documents\IC\SoroAcqua\SoroAcqua\src\pages\nosso-rio\projetos-rio\projetos-rio.html"*/'<ion-header>\n\n\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>projetos-rio</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\rosan\Documents\IC\SoroAcqua\SoroAcqua\src\pages\nosso-rio\projetos-rio\projetos-rio.html"*/
-=======
-            selector: 'page-projetos-rio',template:/*ion-inline-start:"C:\Users\anaar\Documents\FATEC\Iniciação Científica\Projeto\SoroAcqua\SoroAcqua\src\pages\nosso-rio\projetos-rio\projetos-rio.html"*/'<!--\n  Generated template for the ProjetosRio page.\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>projetos-rio</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\anaar\Documents\FATEC\Iniciação Científica\Projeto\SoroAcqua\SoroAcqua\src\pages\nosso-rio\projetos-rio\projetos-rio.html"*/
->>>>>>> f1f75f008343efb9a0aa8b6947bd21261b215fc2
         }), 
         __metadata$9('design:paramtypes', [NavController])
     ], ProjetosRio);
@@ -81373,32 +81345,20 @@ var Rio = (function () {
     };
     Rio = __decorate$109([
         Component({
-<<<<<<< HEAD
             selector: 'page-rio',template:/*ion-inline-start:"C:\Users\rosan\Documents\IC\SoroAcqua\SoroAcqua\src\pages\nosso-rio\rio\rio.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Rio Sorocaba</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n  <ion-list>\n\n    <button ion-item *ngFor="let item of items" (click)="openPage(item)">\n\n      <ion-icon [name]="item.icon" item-left></ion-icon>\n\n      {{item.title}}\n\n    </button>\n\n  </ion-list>\n\n  <div *ngIf="selectedItem" padding>\n\n    You navigated here from <b>{{selectedItem.title}}</b>\n\n  </div>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\rosan\Documents\IC\SoroAcqua\SoroAcqua\src\pages\nosso-rio\rio\rio.html"*/
-=======
-            selector: 'page-rio',template:/*ion-inline-start:"C:\Users\anaar\Documents\FATEC\Iniciação Científica\Projeto\SoroAcqua\SoroAcqua\src\pages\nosso-rio\rio\rio.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Rio Sorocaba</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <button ion-item *ngFor="let item of items" (click)="openPage(item)">\n      <ion-icon [name]="item.icon" item-left></ion-icon>\n      {{item.title}}\n    </button>\n  </ion-list>\n  <div *ngIf="selectedItem" padding>\n    You navigated here from <b>{{selectedItem.title}}</b>\n  </div>\n</ion-content>\n'/*ion-inline-end:"C:\Users\anaar\Documents\FATEC\Iniciação Científica\Projeto\SoroAcqua\SoroAcqua\src\pages\nosso-rio\rio\rio.html"*/
->>>>>>> f1f75f008343efb9a0aa8b6947bd21261b215fc2
         }), 
         __metadata$3('design:paramtypes', [NavController, NavParams])
     ], Rio);
     return Rio;
 }());
 
-<<<<<<< HEAD
 var __decorate$118 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-=======
-var __decorate$119 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
->>>>>>> f1f75f008343efb9a0aa8b6947bd21261b215fc2
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-<<<<<<< HEAD
 var __metadata$12 = (undefined && undefined.__metadata) || function (k, v) {
-=======
-var __metadata$13 = (undefined && undefined.__metadata) || function (k, v) {
->>>>>>> f1f75f008343efb9a0aa8b6947bd21261b215fc2
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var AguaConsultaQualidade = (function () {
@@ -81408,54 +81368,15 @@ var AguaConsultaQualidade = (function () {
     AguaConsultaQualidade.prototype.ionViewDidLoad = function () {
         console.log('Hello AguaConsultaQualidade Page');
     };
-<<<<<<< HEAD
     AguaConsultaQualidade = __decorate$118([
         Component({
-            selector: 'page-agua-consulta-qualidade',template:/*ion-inline-start:"C:\Users\rosan\Documents\IC\SoroAcqua\SoroAcqua\src\pages\agua\agua-consulta-qualidade\agua-consulta-qualidade.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>agua-consulta-qualidade</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n  <ion-list>\n\n\n\n    <ion-item>\n\n      <!-- Especificar o tamanho limite do campo CEP-->\n\n      <ion-input type="number" placeholder="CEP"></ion-input>\n\n    </ion-item>\n\n\n\n    <ion-item>\n\n      <ion-label>Selecione o seu bairro</ion-label>\n\n      <ion-select item>\n\n          <!-- Existem mais bairros-->\n\n        <ion-option>Alto da Boa Vista</ion-option>\n\n        <ion-option>Jardim Novo Eldorado</ion-option>\n\n        <ion-option>Vergueiro</ion-option>\n\n        <ion-option>Centro</ion-option>\n\n        <ion-option>Jd Portal da Colina</ion-option>\n\n        <ion-option>Jardim Portal da Colina</ion-option>\n\n        <ion-option>Itanguá</ion-option>\n\n        <ion-option>Jardim Panorama</ion-option>\n\n      </ion-select>\n\n\n\n    </ion-item>\n\n\n\n  </ion-list>\n\n\n\n\n\n\n\n\n\n<button ion-button block>Consultar</button>   <!-- Fazer a busca no Banco-->\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\rosan\Documents\IC\SoroAcqua\SoroAcqua\src\pages\agua\agua-consulta-qualidade\agua-consulta-qualidade.html"*/
+            selector: 'page-agua-consulta-qualidade',template:/*ion-inline-start:"C:\Users\rosan\Documents\IC\SoroAcqua\SoroAcqua\src\pages\agua\agua-consulta-qualidade\agua-consulta-qualidade.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>Consulta de qualidade</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n  <ion-list>\n\n\n\n    <ion-item>\n\n      <!-- Especificar o tamanho limite do campo CEP-->\n\n      <ion-input type="number" placeholder="CEP"></ion-input>\n\n    </ion-item>\n\n\n\n    <ion-item>\n\n      <ion-label>Selecione o seu bairro</ion-label>\n\n      <ion-select item>\n\n          <!-- Existem mais bairros-->\n\n        <ion-option>Alto da Boa Vista</ion-option>\n\n        <ion-option>Jardim Novo Eldorado</ion-option>\n\n        <ion-option>Vergueiro</ion-option>\n\n        <ion-option>Centro</ion-option>\n\n        <ion-option>Jd Portal da Colina</ion-option>\n\n        <ion-option>Jardim Portal da Colina</ion-option>\n\n        <ion-option>Itanguá</ion-option>\n\n        <ion-option>Jardim Panorama</ion-option>\n\n      </ion-select>\n\n\n\n    </ion-item>\n\n\n\n  </ion-list>\n\n\n\n\n\n\n\n\n\n<button ion-button block>Consultar</button>   <!-- Fazer a busca no Banco-->\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\rosan\Documents\IC\SoroAcqua\SoroAcqua\src\pages\agua\agua-consulta-qualidade\agua-consulta-qualidade.html"*/
         }), 
         __metadata$12('design:paramtypes', [NavController])
-=======
-    AguaConsultaQualidade = __decorate$119([
-        Component({
-            selector: 'page-agua-consulta-qualidade',template:/*ion-inline-start:"C:\Users\anaar\Documents\FATEC\Iniciação Científica\Projeto\SoroAcqua\SoroAcqua\src\pages\agua\agua-consulta-qualidade\agua-consulta-qualidade.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Consulta de qualidade</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content padding>\n\n  <ion-list>\n\n    <ion-item>\n      <!-- Especificar o tamanho limite do campo CEP-->\n      <ion-input type="number" placeholder="CEP"></ion-input>\n    </ion-item>\n\n    <ion-item>\n      <ion-label>Selecione o seu bairro</ion-label>\n      <ion-select item>\n          <!-- Existem mais bairros-->\n        <ion-option>Alto da Boa Vista</ion-option>\n        <ion-option>Jardim Novo Eldorado</ion-option>\n        <ion-option>Vergueiro</ion-option>\n        <ion-option>Centro</ion-option>\n        <ion-option>Jd Portal da Colina</ion-option>\n        <ion-option>Jardim Portal da Colina</ion-option>\n        <ion-option>Itanguá</ion-option>\n        <ion-option>Jardim Panorama</ion-option>\n      </ion-select>\n\n    </ion-item>\n\n  </ion-list>\n\n\n\n\n<button ion-button block>Consultar</button>   <!-- Fazer a busca no Banco-->\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\anaar\Documents\FATEC\Iniciação Científica\Projeto\SoroAcqua\SoroAcqua\src\pages\agua\agua-consulta-qualidade\agua-consulta-qualidade.html"*/
-        }), 
-        __metadata$13('design:paramtypes', [NavController])
->>>>>>> f1f75f008343efb9a0aa8b6947bd21261b215fc2
     ], AguaConsultaQualidade);
     return AguaConsultaQualidade;
 }());
 
-<<<<<<< HEAD
-=======
-var __decorate$118 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata$12 = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-var AguaDetalhes = (function () {
-    function AguaDetalhes(navCtrl) {
-        this.navCtrl = navCtrl;
-    }
-    AguaDetalhes.prototype.ionViewDidLoad = function () {
-        console.log('Hello AguaDetalhes Page');
-    };
-    AguaDetalhes.prototype.openPageConsultaQualidade = function () {
-        this.navCtrl.push(AguaConsultaQualidade);
-    };
-    AguaDetalhes = __decorate$118([
-        Component({
-            selector: 'page-agua-detalhes',template:/*ion-inline-start:"C:\Users\anaar\Documents\FATEC\Iniciação Científica\Projeto\SoroAcqua\SoroAcqua\src\pages\agua\agua-detalhes\agua-detalhes.html"*/'<ion-header>\n  <ion-navbar>\n\n <!-- Colocar aqui o nome que vem do banco {{banco.nome}} -->\n    <ion-title>Descrição</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content padding>\n  <!-- Colocar aqui a descricao que vem do banco {{banco.descricao}} -->\n   <ion-label>Descrição</ion-label>\n\n  <!-- Colocar aqui o endereco que vem do banco {{banco.endereco}} -->\n   <ion-label>Endereço</ion-label>\n\n  <!-- Colocar aqui os dados da agua que vem do banco {{banco.dados}} -->\n   <ion-label>Dados</ion-label>\n     <!-- 1 -->\n     <!-- 2 -->\n\n    <button (click)="openPageConsultaQualidade()" ion-button block>Qualidade da água na sua casa</button>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\anaar\Documents\FATEC\Iniciação Científica\Projeto\SoroAcqua\SoroAcqua\src\pages\agua\agua-detalhes\agua-detalhes.html"*/
-        }), 
-        __metadata$12('design:paramtypes', [NavController])
-    ], AguaDetalhes);
-    return AguaDetalhes;
-}());
-
->>>>>>> f1f75f008343efb9a0aa8b6947bd21261b215fc2
 var __decorate$117 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -81465,7 +81386,6 @@ var __decorate$117 = (undefined && undefined.__decorate) || function (decorators
 var __metadata$11 = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-<<<<<<< HEAD
 var AguaDetalhes = (function () {
     function AguaDetalhes(navCtrl) {
         this.navCtrl = navCtrl;
@@ -81478,7 +81398,7 @@ var AguaDetalhes = (function () {
     };
     AguaDetalhes = __decorate$117([
         Component({
-            selector: 'page-agua-detalhes',template:/*ion-inline-start:"C:\Users\rosan\Documents\IC\SoroAcqua\SoroAcqua\src\pages\agua\agua-detalhes\agua-detalhes.html"*/'<ion-header>\n\n  <ion-navbar>\n\n\n\n <!-- Colocar aqui o nome que vem do banco {{banco.nome}} -->\n\n    <ion-title>agua-detalhes</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  <!-- Colocar aqui a descricao que vem do banco {{banco.descricao}} -->\n\n   <ion-label>Descrição</ion-label>\n\n\n\n  <!-- Colocar aqui o endereco que vem do banco {{banco.endereco}} -->\n\n   <ion-label>Endereço</ion-label>\n\n\n\n  <!-- Colocar aqui os dados da agua que vem do banco {{banco.dados}} -->\n\n   <ion-label>Dados</ion-label>\n\n     <!-- 1 -->\n\n     <!-- 2 -->\n\n\n\n    <button (click)="openPageConsultaQualidade()" ion-button block>Consulte a qualidade da água na sua casa</button>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\rosan\Documents\IC\SoroAcqua\SoroAcqua\src\pages\agua\agua-detalhes\agua-detalhes.html"*/
+            selector: 'page-agua-detalhes',template:/*ion-inline-start:"C:\Users\rosan\Documents\IC\SoroAcqua\SoroAcqua\src\pages\agua\agua-detalhes\agua-detalhes.html"*/'<ion-header>\n\n  <ion-navbar>\n\n\n\n <!-- Colocar aqui o nome que vem do banco {{banco.nome}} -->\n\n    <ion-title>Descrição</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  <!-- Colocar aqui a descricao que vem do banco {{banco.descricao}} -->\n\n   <ion-label>Descrição</ion-label>\n\n\n\n  <!-- Colocar aqui o endereco que vem do banco {{banco.endereco}} -->\n\n   <ion-label>Endereço</ion-label>\n\n\n\n  <!-- Colocar aqui os dados da agua que vem do banco {{banco.dados}} -->\n\n   <ion-label>Dados</ion-label>\n\n     <!-- 1 -->\n\n     <!-- 2 -->\n\n\n\n    <button (click)="openPageConsultaQualidade()" ion-button block>Qualidade da água na sua casa</button>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\rosan\Documents\IC\SoroAcqua\SoroAcqua\src\pages\agua\agua-detalhes\agua-detalhes.html"*/
         }), 
         __metadata$11('design:paramtypes', [NavController])
     ], AguaDetalhes);
@@ -81494,7 +81414,6 @@ var __decorate$116 = (undefined && undefined.__decorate) || function (decorators
 var __metadata$10 = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-=======
 var Reservatorio = (function () {
     function Reservatorio() {
     }
@@ -81505,7 +81424,6 @@ var reservatorios = [
     { cod: 2, nome: 'Cerrado2', end: 'General Carneiro' },
     { cod: 3, nome: 'Cerrado3', end: 'General Carneiro' }
 ];
->>>>>>> f1f75f008343efb9a0aa8b6947bd21261b215fc2
 var Agua = (function () {
     function Agua(navCtrl) {
         this.navCtrl = navCtrl;
@@ -81515,43 +81433,26 @@ var Agua = (function () {
     Agua.prototype.ionViewDidLoad = function () {
         console.log('Hello Agua Page');
     };
-<<<<<<< HEAD
-    Agua.prototype.openPageAguaDetalhe = function () {
-        this.navCtrl.push(AguaDetalhes);
-    };
-    Agua = __decorate$116([
-        Component({
-            selector: 'page-agua',template:/*ion-inline-start:"C:\Users\rosan\Documents\IC\SoroAcqua\SoroAcqua\src\pages\agua\agua.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Nossa Água</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n<ion-card>\n\n  <ion-card-header>\n\n  Consulte a qualidade da água em cada Reservatório\n\n</ion-card-header>\n\n\n\n<ion-list>\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n\n     ETA – Cerrado\n\n   </button>\n\n\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n\n     Parada do Alto\n\n   </button>\n\n\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n\n     Sevilha\n\n   </button>\n\n\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n\n     Vila Haro\n\n   </button>\n\n\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n\n     Vila Haro\n\n   </button>\n\n\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n\n     João Romão\n\n   </button>\n\n\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n\n     São Bento – Centro\n\n   </button>\n\n\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n\n     Vila Barão\n\n   </button>\n\n\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n\n     Terra Vermelha\n\n   </button>\n\n\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n\n     Santana\n\n   </button>\n\n\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n\n     Central Parque\n\n   </button>\n\n\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n\n     Maria Eugênia\n\n   </button>\n\n\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n\n     Granja Olga\n\n   </button>\n\n\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n\n     Fazenda Imperial\n\n   </button>\n\n\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n\n     Vitória Régia\n\n   </button>\n\n\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n\n     YKK\n\n   </button>\n\n\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n\n     Planalto\n\n   </button>\n\n\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n\n     Parque São Bento\n\n   </button>\n\n\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n\n     ETA – Éden\n\n   </button>\n\n\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n\n     Parque Campolim\n\n   </button>\n\n\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n\n     Aparecidinha\n\n   </button>\n\n\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n\n     Novo Eldorado\n\n   </button>\n\n\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n\n     Cajurú\n\n   </button>\n\n\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n\n     Sorocaba 1\n\n   </button>\n\n\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n\n    Iporanga\n\n   </button>\n\n\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n\n     Parque Tecnológico\n\n   </button>\n\n </ion-list>\n\n</ion-card>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\rosan\Documents\IC\SoroAcqua\SoroAcqua\src\pages\agua\agua.html"*/
-=======
     Agua.prototype.openPageAguaDetalhe = function (codReserv) {
         console.log(codReserv);
         this.navCtrl.push(AguaDetalhes);
     };
-    Agua = __decorate$117([
+    Agua = __decorate$116([
         Component({
-            selector: 'page-agua',template:/*ion-inline-start:"C:\Users\anaar\Documents\FATEC\Iniciação Científica\Projeto\SoroAcqua\SoroAcqua\src\pages\agua\agua.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Nossa Água</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n<ion-card>\n  <ion-card-header>\n  Consulte a qualidade da água em cada Reservatório\n</ion-card-header>\n\n<ion-list>\n  <button *ngFor="let reservat of meusreservatorios" (click)="openPageAguaDetalhe(reservat.cod)" ion-item>\n    <ion-icon name="ios-water-outline" item-left></ion-icon>\n    {{reservat.nome}}\n  </button>\n</ion-list>\n<!--   <button (click)="openPageAguaDetalhe()" ion-item>\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n     ETA – Cerrado\n   </button>\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n     Parada do Alto\n   </button>\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n     Sevilha\n   </button>\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n     Vila Haro\n   </button>\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n     Vila Haro\n   </button>\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n     João Romão\n   </button>\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n     São Bento – Centro\n   </button>\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n     Vila Barão\n   </button>\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n     Terra Vermelha\n   </button>\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n     Santana\n   </button>\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n     Central Parque\n   </button>\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n     Maria Eugênia\n   </button>\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n     Granja Olga\n   </button>\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n     Fazenda Imperial\n   </button>\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n     Vitória Régia\n   </button>\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n     YKK\n   </button>\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n     Planalto\n   </button>\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n     Parque São Bento\n   </button>\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n     ETA – Éden\n   </button>\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n     Parque Campolim\n   </button>\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n     Aparecidinha\n   </button>\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n     Novo Eldorado\n   </button>\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n     Cajurú\n   </button>\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n     Sorocaba 1\n   </button>\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n    Iporanga\n   </button>\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n     Parque Tecnológico\n   </button>\n </ion-list>-->\n</ion-card>\n</ion-content>\n'/*ion-inline-end:"C:\Users\anaar\Documents\FATEC\Iniciação Científica\Projeto\SoroAcqua\SoroAcqua\src\pages\agua\agua.html"*/
->>>>>>> f1f75f008343efb9a0aa8b6947bd21261b215fc2
+            selector: 'page-agua',template:/*ion-inline-start:"C:\Users\rosan\Documents\IC\SoroAcqua\SoroAcqua\src\pages\agua\agua.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Nossa Água</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n<ion-card>\n\n  <ion-card-header>\n\n  Consulte a qualidade da água em cada Reservatório\n\n</ion-card-header>\n\n\n\n<ion-list>\n\n  <button *ngFor="let reservat of meusreservatorios" (click)="openPageAguaDetalhe(reservat.cod)" ion-item>\n\n    <ion-icon name="ios-water-outline" item-left></ion-icon>\n\n    {{reservat.nome}}\n\n  </button>\n\n</ion-list>\n\n<!--   <button (click)="openPageAguaDetalhe()" ion-item>\n\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n\n     ETA – Cerrado\n\n   </button>\n\n\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n\n     Parada do Alto\n\n   </button>\n\n\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n\n     Sevilha\n\n   </button>\n\n\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n\n     Vila Haro\n\n   </button>\n\n\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n\n     Vila Haro\n\n   </button>\n\n\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n\n     João Romão\n\n   </button>\n\n\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n\n     São Bento – Centro\n\n   </button>\n\n\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n\n     Vila Barão\n\n   </button>\n\n\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n\n     Terra Vermelha\n\n   </button>\n\n\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n\n     Santana\n\n   </button>\n\n\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n\n     Central Parque\n\n   </button>\n\n\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n\n     Maria Eugênia\n\n   </button>\n\n\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n\n     Granja Olga\n\n   </button>\n\n\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n\n     Fazenda Imperial\n\n   </button>\n\n\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n\n     Vitória Régia\n\n   </button>\n\n\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n\n     YKK\n\n   </button>\n\n\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n\n     Planalto\n\n   </button>\n\n\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n\n     Parque São Bento\n\n   </button>\n\n\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n\n     ETA – Éden\n\n   </button>\n\n\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n\n     Parque Campolim\n\n   </button>\n\n\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n\n     Aparecidinha\n\n   </button>\n\n\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n\n     Novo Eldorado\n\n   </button>\n\n\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n\n     Cajurú\n\n   </button>\n\n\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n\n     Sorocaba 1\n\n   </button>\n\n\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n\n    Iporanga\n\n   </button>\n\n\n\n   <button (click)="openPageAguaDetalhe()" ion-item>\n\n     <ion-icon name="ios-water-outline" item-left></ion-icon>\n\n     Parque Tecnológico\n\n   </button>\n\n </ion-list>-->\n\n</ion-card>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\rosan\Documents\IC\SoroAcqua\SoroAcqua\src\pages\agua\agua.html"*/
         }), 
         __metadata$10('design:paramtypes', [NavController])
     ], Agua);
     return Agua;
 }());
 
-<<<<<<< HEAD
 var __decorate$119 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-=======
-var __decorate$120 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
->>>>>>> f1f75f008343efb9a0aa8b6947bd21261b215fc2
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-<<<<<<< HEAD
 var __metadata$13 = (undefined && undefined.__metadata) || function (k, v) {
-=======
-var __metadata$14 = (undefined && undefined.__metadata) || function (k, v) {
->>>>>>> f1f75f008343efb9a0aa8b6947bd21261b215fc2
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 /*
@@ -81567,38 +81468,22 @@ var Eventos = (function () {
     Eventos.prototype.ionViewDidLoad = function () {
         console.log('Hello Eventos Page');
     };
-<<<<<<< HEAD
     Eventos = __decorate$119([
         Component({
             selector: 'page-eventos',template:/*ion-inline-start:"C:\Users\rosan\Documents\IC\SoroAcqua\SoroAcqua\src\pages\agua\eventos\eventos.html"*/'<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Eventos</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  \n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\rosan\Documents\IC\SoroAcqua\SoroAcqua\src\pages\agua\eventos\eventos.html"*/
         }), 
         __metadata$13('design:paramtypes', [NavController])
-=======
-    Eventos = __decorate$120([
-        Component({
-            selector: 'page-eventos',template:/*ion-inline-start:"C:\Users\anaar\Documents\FATEC\Iniciação Científica\Projeto\SoroAcqua\SoroAcqua\src\pages\agua\eventos\eventos.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>Eventos</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  \n\n</ion-content>\n'/*ion-inline-end:"C:\Users\anaar\Documents\FATEC\Iniciação Científica\Projeto\SoroAcqua\SoroAcqua\src\pages\agua\eventos\eventos.html"*/
-        }), 
-        __metadata$14('design:paramtypes', [NavController])
->>>>>>> f1f75f008343efb9a0aa8b6947bd21261b215fc2
     ], Eventos);
     return Eventos;
 }());
 
-<<<<<<< HEAD
 var __decorate$120 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-=======
-var __decorate$121 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
->>>>>>> f1f75f008343efb9a0aa8b6947bd21261b215fc2
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-<<<<<<< HEAD
 var __metadata$14 = (undefined && undefined.__metadata) || function (k, v) {
-=======
-var __metadata$15 = (undefined && undefined.__metadata) || function (k, v) {
->>>>>>> f1f75f008343efb9a0aa8b6947bd21261b215fc2
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var Projetos = (function () {
@@ -81608,182 +81493,44 @@ var Projetos = (function () {
     Projetos.prototype.ionViewDidLoad = function () {
         console.log('Hello Projetos Page');
     };
-<<<<<<< HEAD
     Projetos = __decorate$120([
         Component({
             selector: 'page-projetos',template:/*ion-inline-start:"C:\Users\rosan\Documents\IC\SoroAcqua\SoroAcqua\src\pages\agua\projetos\projetos.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>Projetos</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content padding class="card-background-page">\n\n  <ion-card>\n\n    <img src="imagens/vida-nova.jpg"/>\n\n    <div class="card-title">Reservatório de 2 milhões de litros</div>\n\n  </ion-card>\n\n\n\n  <ion-card>\n\n    <img src="imagens/recuperacao.jpg"/>\n\n    <div class="card-title">Urbanização e Recuperação</div>\n\n  </ion-card>\n\n\n\n  <ion-card>\n\n    <img src="imagens/clip_image002.jpg"/>\n\n    <div class="card-title">Captura da água de chuva</div>\n\n  </ion-card>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\rosan\Documents\IC\SoroAcqua\SoroAcqua\src\pages\agua\projetos\projetos.html"*/
         }), 
         __metadata$14('design:paramtypes', [NavController])
-=======
-    Projetos = __decorate$121([
-        Component({
-            selector: 'page-projetos',template:/*ion-inline-start:"C:\Users\anaar\Documents\FATEC\Iniciação Científica\Projeto\SoroAcqua\SoroAcqua\src\pages\agua\projetos\projetos.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Projetos</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content padding class="card-background-page">\n  <ion-card>\n    <img src="imagens/vida-nova.jpg"/>\n    <div class="card-title">Reservatório de 2 milhões de litros</div>\n  </ion-card>\n\n  <ion-card>\n    <img src="imagens/recuperacao.jpg"/>\n    <div class="card-title">Urbanização e Recuperação</div>\n  </ion-card>\n\n  <ion-card>\n    <img src="imagens/clip_image002.jpg"/>\n    <div class="card-title">Captura da água de chuva</div>\n  </ion-card>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\anaar\Documents\FATEC\Iniciação Científica\Projeto\SoroAcqua\SoroAcqua\src\pages\agua\projetos\projetos.html"*/
-        }), 
-        __metadata$15('design:paramtypes', [NavController])
->>>>>>> f1f75f008343efb9a0aa8b6947bd21261b215fc2
     ], Projetos);
     return Projetos;
 }());
 
-<<<<<<< HEAD
 var __decorate$121 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-=======
-var __decorate$123 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
->>>>>>> f1f75f008343efb9a0aa8b6947bd21261b215fc2
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-<<<<<<< HEAD
 var __metadata$15 = (undefined && undefined.__metadata) || function (k, v) {
-=======
-var __metadata$17 = (undefined && undefined.__metadata) || function (k, v) {
->>>>>>> f1f75f008343efb9a0aa8b6947bd21261b215fc2
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var DataSaae = (function () {
-    function DataSaae(title, itens, icon, showDetails) {
-        this.title = title;
-        this.itens = itens;
-        this.icon = icon;
-        this.showDetails = showDetails;
-    }
-    DataSaae = __decorate$123([
-        Component({
-            selector: 'page-data-saae',template:/*ion-inline-start:"C:\Users\anaar\Documents\FATEC\Iniciação Científica\Projeto\SoroAcqua\SoroAcqua\src\components\data-saae\data-saae.html"*/''/*ion-inline-end:"C:\Users\anaar\Documents\FATEC\Iniciação Científica\Projeto\SoroAcqua\SoroAcqua\src\components\data-saae\data-saae.html"*/
-        }), 
-        __metadata$17('design:paramtypes', [String, Array, String, Boolean])
-    ], DataSaae);
-    return DataSaae;
-}());
-
-var __decorate$124 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata$18 = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-/*
-  Generated class for the SaaeHistoria page.
-
-  See http://ionicframework.com/docs/v2/components/#navigation for more info on
-  Ionic pages and navigation.
-*/
-var SaaeHistoria = (function () {
-    function SaaeHistoria(navCtrl) {
+//import { DataSaae } from '../../../components/data-saae/data-saae';
+//import { SaaeHistoria } from 'saae-historia/saae-historia';
+var SaaePage = (function () {
+    //items = [];
+    //public dataList: DataSaae[];
+    function SaaePage(navCtrl) {
         this.navCtrl = navCtrl;
+        /*this.dataList = [
+            new DataSaae('Saae', [{title: 'História', component: SaaeHistoria, icon: 'ios-albums-outline'}
+                                ],'add-circle', false)
+        ];*/
     }
-<<<<<<< HEAD
-    Saae = __decorate$121([
+    SaaePage = __decorate$121([
         Component({
-            selector: 'page-saae',template:/*ion-inline-start:"C:\Users\rosan\Documents\IC\SoroAcqua\SoroAcqua\src\pages\agua\saae\saae.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>SAAE</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <ion-icon [name]="\'logo-\' + item.icon" [ngStyle]="{\'color\': item.color}"></ion-icon>\n\n  {{ item.description }}\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\rosan\Documents\IC\SoroAcqua\SoroAcqua\src\pages\agua\saae\saae.html"*/
+            selector: 'page-saae',template:/*ion-inline-start:"C:\Users\rosan\Documents\IC\SoroAcqua\SoroAcqua\src\pages\agua\saae\saae.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>SAAE</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <!--<data-cards [data]="dataList"></data-cards>-->\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\rosan\Documents\IC\SoroAcqua\SoroAcqua\src\pages\agua\saae\saae.html"*/
         }), 
-        __metadata$15('design:paramtypes', [NavController, NavParams])
-    ], Saae);
-    return Saae;
-}()); /*
-@Component({
-  template: `
-<ion-header>
-  <ion-navbar>
-    <ion-title>Navigation</ion-title>
-  </ion-navbar>
-</ion-header>
-<ion-content>
-  <ion-list>
-    <button ion-item *ngFor="let item of items" (click)="openNavDetailsPage(item)" icon-left>
-      <ion-icon [name]="'logo-' + item.icon" [ngStyle]="{'color': item.color}" item-left></ion-icon>
-      {{ item.title }}
-    </button>
-  </ion-list>
-</ion-content>
-`
-})
-export class SaaePage {
-  items = [];
-
-  constructor(public nav: NavController) {
-    this.items = [
-      {
-        'title': 'Angular',
-        'icon': 'angular',
-        'description': 'A powerful Javascript framework for building single page apps. Angular is open source, and maintained by Google.',
-        'color': '#E63135'
-      },
-      {
-        'title': 'CSS3',
-        'icon': 'css3',
-        'description': 'The latest version of cascading stylesheets - the styling language of the web!',
-        'color': '#0CA9EA'
-      },
-      {
-        'title': 'HTML5',
-        'icon': 'html5',
-        'description': 'The latest version of the web\'s markup language.',
-        'color': '#F46529'
-      },
-      {
-        'title': 'JavaScript',
-        'icon': 'javascript',
-        'description': 'One of the most popular programming languages on the Web!',
-        'color': '#FFD439'
-      },
-      {
-        'title': 'Sass',
-        'icon': 'sass',
-        'description': 'Syntactically Awesome Stylesheets - a mature, stable, and powerful professional grade CSS extension.',
-        'color': '#CE6296'
-      },
-      {
-        'title': 'NodeJS',
-        'icon': 'nodejs',
-        'description': 'An open-source, cross-platform runtime environment for developing server-side Web applications.',
-        'color': '#78BD43'
-      },
-      {
-        'title': 'Python',
-        'icon': 'python',
-        'description': 'A clear and powerful object-oriented programming language!',
-        'color': '#3575AC'
-      },
-      {
-        'title': 'Markdown',
-        'icon': 'markdown',
-        'description': 'A super simple way to add formatting like headers, bold, bulleted lists, and so on to plain text.',
-        'color': '#412159'
-      },
-      {
-        'title': 'Tux',
-        'icon': 'tux',
-        'description': 'The official mascot of the Linux kernel!',
-        'color': '#000'
-      },
-    ]
-  }
-
-  openNavDetailsPage(item) {
-    this.nav.push(Saae, { item: item });
-  }
-
-}
-*/
-=======
-    SaaeHistoria.prototype.ionViewDidLoad = function () {
-        console.log('Hello SaaeHistoria Page');
-    };
-    SaaeHistoria = __decorate$124([
-        Component({
-            selector: 'page-saae-historia',template:/*ion-inline-start:"C:\Users\anaar\Documents\FATEC\Iniciação Científica\Projeto\SoroAcqua\SoroAcqua\src\pages\agua\saae\saae-historia\saae-historia.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>saae-historia</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n<ion-card>\nO Serviço Autônomo de Água e Esgoto (Saae) foi criado pela Lei número 1.390, de 31/12/65,\ncomo entidade autárquica municipal, com personalidade jurídica própria, sede e foro na cidade de Sorocaba,\ndispondo de autonomia financeira e administrativa dentro dos limites estabelecidos pela referida Lei.\n\nA história do sistema de distribuição de água no município de Sorocaba, porém,\ntem como marco um sobressalto ocorrido em 1885, com a primeira greve de trabalhadores do setor.\nEram os pipeiros, carroceiros que retiravam água do rio Sorocaba e transportavam em carroções-pipa para vender à população.\n</ion-card>\n</ion-content>\n'/*ion-inline-end:"C:\Users\anaar\Documents\FATEC\Iniciação Científica\Projeto\SoroAcqua\SoroAcqua\src\pages\agua\saae\saae-historia\saae-historia.html"*/
-        }), 
-        __metadata$18('design:paramtypes', [NavController])
-    ], SaaeHistoria);
-    return SaaeHistoria;
+        __metadata$15('design:paramtypes', [NavController])
+    ], SaaePage);
+    return SaaePage;
 }());
->>>>>>> f1f75f008343efb9a0aa8b6947bd21261b215fc2
 
 var __decorate$122 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -81794,7 +81541,6 @@ var __decorate$122 = (undefined && undefined.__decorate) || function (decorators
 var __metadata$16 = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-<<<<<<< HEAD
 var Configuracoes = (function () {
     function Configuracoes(navCtrl) {
         this.navCtrl = navCtrl;
@@ -81806,23 +81552,6 @@ var Configuracoes = (function () {
         __metadata$16('design:paramtypes', [NavController])
     ], Configuracoes);
     return Configuracoes;
-=======
-var SaaePage = (function () {
-    function SaaePage(navCtrl) {
-        this.navCtrl = navCtrl;
-        this.dataList = [
-            new DataSaae('História', [{ title: 'História', component: SaaeHistoria, icon: 'ios-albums-outline' }
-            ], 'add-circle', false)
-        ];
-    }
-    SaaePage = __decorate$122([
-        Component({
-            selector: 'page-saae',template:/*ion-inline-start:"C:\Users\anaar\Documents\FATEC\Iniciação Científica\Projeto\SoroAcqua\SoroAcqua\src\pages\agua\saae\saae.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>SAAE</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <data-cards [data]="dataList"></data-cards>\n</ion-content>\n'/*ion-inline-end:"C:\Users\anaar\Documents\FATEC\Iniciação Científica\Projeto\SoroAcqua\SoroAcqua\src\pages\agua\saae\saae.html"*/
-        }), 
-        __metadata$16('design:paramtypes', [NavController])
-    ], SaaePage);
-    return SaaePage;
->>>>>>> f1f75f008343efb9a0aa8b6947bd21261b215fc2
 }());
 
 var __decorate$123 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
@@ -81837,33 +81566,10 @@ var __metadata$17 = (undefined && undefined.__metadata) || function (k, v) {
 var Sobre = (function () {
     function Sobre(navCtrl) {
         this.navCtrl = navCtrl;
-<<<<<<< HEAD
-=======
-        this.dataList = [
-            new Data('Home', [], '', false),
-            new Data('Nossa Água', [{ title: 'Água', component: Agua, icon: 'water' },
-                { title: 'Eventos', component: Eventos, icon: 'calendar' },
-                { title: 'Projetos', component: Projetos, icon: 'paper' },
-                { title: 'Saae', component: SaaePage, icon: 'water' }
-            ], 'add-circle', false),
-            new Data('Nosso Rio', [{ title: 'Mapa', component: Mapa, icon: 'map' },
-                { title: 'O Rio', component: Rio, icon: 'water' },
-                { title: 'Sua Historia', component: Historia, icon: 'water' },
-                { title: 'Sua Flora', component: Flora, icon: 'flower' },
-                { title: 'Sua Fauna', component: Fauna, icon: 'flower' },
-                { title: 'A Despolição', component: Despoluicao, icon: 'water' },
-                { title: 'Seus Projetos', component: ProjetosRio, icon: 'paper' }
-            ], 'add-circle', false)
-        ];
->>>>>>> f1f75f008343efb9a0aa8b6947bd21261b215fc2
     }
     Sobre = __decorate$123([
         Component({
-<<<<<<< HEAD
             selector: 'page-sobre',template:/*ion-inline-start:"C:\Users\rosan\Documents\IC\SoroAcqua\SoroAcqua\src\pages\sobre\sobre.html"*/'<ion-header>\n\n\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Sobre</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  Sobre\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\rosan\Documents\IC\SoroAcqua\SoroAcqua\src\pages\sobre\sobre.html"*/
-=======
-            selector: 'page-home',template:/*ion-inline-start:"C:\Users\anaar\Documents\FATEC\Iniciação Científica\Projeto\SoroAcqua\SoroAcqua\src\pages\home\home.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Home</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <data-cards [data]="dataList"></data-cards>\n</ion-content>\n'/*ion-inline-end:"C:\Users\anaar\Documents\FATEC\Iniciação Científica\Projeto\SoroAcqua\SoroAcqua\src\pages\home\home.html"*/
->>>>>>> f1f75f008343efb9a0aa8b6947bd21261b215fc2
         }), 
         __metadata$17('design:paramtypes', [NavController])
     ], Sobre);
@@ -81905,7 +81611,7 @@ var MyApp = (function () {
                     { title: 'Sub-Estações', component: '', icon: '' },
                     { title: 'Tratamento', component: '', icon: '' },
                     { title: 'Qualidade', component: AguaConsultaQualidade, icon: '' },
-                    { title: 'Saae', component: Saae, icon: '' },
+                    { title: 'Saae', component: SaaePage, icon: '' },
                     { title: 'Projetos', component: Projetos, icon: 'paper' },
                     { title: 'Eventos', component: Eventos, icon: 'calendar' }
                 ], showDetails: false },
@@ -81947,32 +81653,20 @@ var MyApp = (function () {
         __metadata$1('design:type', Nav)
     ], MyApp.prototype, "nav", void 0);
     MyApp = __decorate$1([
-<<<<<<< HEAD
         Component({template:/*ion-inline-start:"C:\Users\rosan\Documents\IC\SoroAcqua\SoroAcqua\src\app\app.html"*/'<ion-menu [content]="content">\n\n  <ion-header>\n\n    <ion-toolbar>\n\n      <ion-title>Menu</ion-title>\n\n    </ion-toolbar>\n\n  </ion-header>\n\n\n\n  <ion-content>\n\n    <ion-list>\n\n      <ion-item padding *ngFor="let p of pages" (click)="toggleDetails(p)">\n\n        <!--<ion-icon [name]="p.icon" item-left></ion-icon>-->\n\n         {{p.title}}\n\n\n\n         <div *ngIf="p.showDetails" text-wrap>\n\n\n\n           <ion-item padding  ion-item menuClose padding *ngFor="let i of p.itens" (click)="openPage(i)">\n\n             <ion-icon [name]="i.icon" item-left></ion-icon>\n\n             {{i.title}}\n\n           </ion-item>\n\n\n\n         </div>\n\n\n\n      </ion-item>\n\n    </ion-list>\n\n  </ion-content>\n</ion-menu>\n\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>\n\n'/*ion-inline-end:"C:\Users\rosan\Documents\IC\SoroAcqua\SoroAcqua\src\app\app.html"*/
-=======
-        Component({template:/*ion-inline-start:"C:\Users\anaar\Documents\FATEC\Iniciação Científica\Projeto\SoroAcqua\SoroAcqua\src\app\app.html"*/'<ion-menu [content]="content">\n  <ion-header>\n    <ion-toolbar>\n      <ion-title>Menu</ion-title>\n    </ion-toolbar>\n  </ion-header>\n\n  <ion-content>\n    <ion-list>\n      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n        <ion-icon [name]="p.icon" item-left></ion-icon>\n        {{p.title}}\n      </button>\n    </ion-list>\n  </ion-content>\n\n</ion-menu>\n\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>\n'/*ion-inline-end:"C:\Users\anaar\Documents\FATEC\Iniciação Científica\Projeto\SoroAcqua\SoroAcqua\src\app\app.html"*/
->>>>>>> f1f75f008343efb9a0aa8b6947bd21261b215fc2
         }), 
         __metadata$1('design:paramtypes', [Platform, MenuController])
     ], MyApp);
     return MyApp;
 }());
 
-<<<<<<< HEAD
 var __decorate$124 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-=======
-var __decorate$125 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
->>>>>>> f1f75f008343efb9a0aa8b6947bd21261b215fc2
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-<<<<<<< HEAD
 var __metadata$18 = (undefined && undefined.__metadata) || function (k, v) {
-=======
-var __metadata$19 = (undefined && undefined.__metadata) || function (k, v) {
->>>>>>> f1f75f008343efb9a0aa8b6947bd21261b215fc2
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var ProjetoDetalhes = (function () {
@@ -81982,7 +81676,6 @@ var ProjetoDetalhes = (function () {
     ProjetoDetalhes.prototype.ionViewDidLoad = function () {
         console.log('Hello ProjetoDetalhes Page');
     };
-<<<<<<< HEAD
     ProjetoDetalhes = __decorate$124([
         Component({
             selector: 'page-projeto-detalhes',template:/*ion-inline-start:"C:\Users\rosan\Documents\IC\SoroAcqua\SoroAcqua\src\pages\agua\projetos\projeto-detalhes\projeto-detalhes.html"*/'<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>projeto-detalhes</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\rosan\Documents\IC\SoroAcqua\SoroAcqua\src\pages\agua\projetos\projeto-detalhes\projeto-detalhes.html"*/
@@ -81990,58 +81683,6 @@ var ProjetoDetalhes = (function () {
         __metadata$18('design:paramtypes', [NavController])
     ], ProjetoDetalhes);
     return ProjetoDetalhes;
-=======
-    DataCards = __decorate$125([
-        Component({
-            selector: 'data-cards',
-            inputs: ['data'],template:/*ion-inline-start:"C:\Users\anaar\Documents\FATEC\Iniciação Científica\Projeto\SoroAcqua\SoroAcqua\src\components\data-cards\data-cards.html"*/'<ion-list>\n  <ion-item padding *ngFor="let d of data" (click)="toggleDetails(d)"><ion-icon primary item-right [name]="d.icon"></ion-icon>\n    {{d.title}}\n    <div *ngIf="d.showDetails" text-wrap>\n\n      <ion-item padding *ngFor="let i of d.itens" (click)="openPage(d, i)">\n        <ion-icon [name]="i.icon" item-left></ion-icon>\n        {{i.title}}\n      </ion-item>\n\n    </div>\n  </ion-item>\n</ion-list>\n'/*ion-inline-end:"C:\Users\anaar\Documents\FATEC\Iniciação Científica\Projeto\SoroAcqua\SoroAcqua\src\components\data-cards\data-cards.html"*/
-        }), 
-        __metadata$19('design:paramtypes', [NavController])
-    ], DataCards);
-    return DataCards;
->>>>>>> f1f75f008343efb9a0aa8b6947bd21261b215fc2
-}());
-
-var __decorate$126 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata$20 = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-var DataCardSaae = (function () {
-    function DataCardSaae(navCtrl) {
-        this.navCtrl = navCtrl;
-    }
-    DataCardSaae.prototype.toggleDetails = function (datasaae) {
-        if (datasaae.title != "Home") {
-            if (datasaae.showDetails) {
-                datasaae.showDetails = false;
-                datasaae.icon = 'add-circle';
-            }
-            else {
-                datasaae.showDetails = true;
-                datasaae.icon = 'remove';
-            }
-        }
-        else {
-            this.navCtrl.push(datasaae.title);
-        }
-    };
-    DataCardSaae.prototype.openPage = function (datasaae, page) {
-        datasaae.showDetails = false;
-        datasaae.icon = 'add-circle';
-        this.navCtrl.push(page.component);
-    };
-    DataCardSaae = __decorate$126([
-        Component({
-            selector: 'page-data-card-saae',template:/*ion-inline-start:"C:\Users\anaar\Documents\FATEC\Iniciação Científica\Projeto\SoroAcqua\SoroAcqua\src\components\data-card-saae\data-card-saae.html"*/'<!--\n  Generated template for the DataCardSaae page.\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>data-card-saae</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\anaar\Documents\FATEC\Iniciação Científica\Projeto\SoroAcqua\SoroAcqua\src\components\data-card-saae\data-card-saae.html"*/
-        }), 
-        __metadata$20('design:paramtypes', [NavController])
-    ], DataCardSaae);
-    return DataCardSaae;
 }());
 
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
@@ -82053,7 +81694,6 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-//import { ProjetoDetalhes } from '../pages/projetos/projeto-detalhes/projeto-detalhes';
 var AppModule = (function () {
     function AppModule() {
     }
@@ -82066,15 +81706,7 @@ var AppModule = (function () {
                 Agua,
                 Eventos,
                 Projetos,
-<<<<<<< HEAD
-                Saae,
-=======
                 SaaePage,
-                Data,
-                DataCards,
-                DataSaae,
-                DataCardSaae,
->>>>>>> f1f75f008343efb9a0aa8b6947bd21261b215fc2
                 Mapa,
                 Historia,
                 Flora,
@@ -82082,14 +81714,10 @@ var AppModule = (function () {
                 Despoluicao,
                 ProjetosRio,
                 AguaDetalhes,
-<<<<<<< HEAD
                 AguaConsultaQualidade,
                 ProjetoDetalhes,
                 Configuracoes,
                 Sobre
-=======
-                AguaConsultaQualidade
->>>>>>> f1f75f008343efb9a0aa8b6947bd21261b215fc2
             ],
             imports: [
                 IonicModule.forRoot(MyApp)
@@ -82102,15 +81730,7 @@ var AppModule = (function () {
                 Agua,
                 Eventos,
                 Projetos,
-<<<<<<< HEAD
-                Saae,
-=======
                 SaaePage,
-                Data,
-                DataCards,
-                DataSaae,
-                DataCardSaae,
->>>>>>> f1f75f008343efb9a0aa8b6947bd21261b215fc2
                 Mapa,
                 Historia,
                 Flora,
@@ -82118,14 +81738,10 @@ var AppModule = (function () {
                 Despoluicao,
                 ProjetosRio,
                 AguaDetalhes,
-<<<<<<< HEAD
                 AguaConsultaQualidade,
                 ProjetoDetalhes,
                 Configuracoes,
                 Sobre
-=======
-                AguaConsultaQualidade
->>>>>>> f1f75f008343efb9a0aa8b6947bd21261b215fc2
             ],
             providers: []
         }), 

@@ -7,7 +7,7 @@ import { Rio } from '../pages/nosso-rio/rio/rio';
 import { Agua } from '../pages/agua/agua';
 import { Eventos } from '../pages/agua/eventos/eventos';
 import { Projetos } from '../pages/agua/projetos/projetos';
-import { Saae } from '../pages/agua/saae/saae';
+import { SaaePage } from '../pages/agua/saae/saae';
 import { Mapa } from '../pages/nosso-rio/mapa/mapa';
 import { Historia } from '../pages/nosso-rio/historia/historia';
 import { Flora } from '../pages/nosso-rio/flora/flora';
@@ -58,7 +58,7 @@ export class MyApp {
         { title: 'Sub-Estações', component: '', icon: ''},
         { title: 'Tratamento', component: '', icon: ''},
         { title: 'Qualidade', component: AguaConsultaQualidade, icon: ''},
-        { title: 'Saae', component: Saae, icon: ''},
+        { title: 'Saae', component: SaaePage, icon: ''},
         { title: 'Projetos', component: Projetos, icon: 'paper'},
         { title: 'Eventos', component: Eventos, icon: 'calendar'}
       ], showDetails: false},
