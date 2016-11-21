@@ -54,8 +54,29 @@
         },
         "is_top_level": true,
         "variables": {
-            "API_KEY_FOR_ANDROID": "YOUR_ANDROID_API_KEY_IS_HERE",
-            "API_KEY_FOR_IOS": "YOUR_IOS_API_KEY_IS_HERE"
+            "API_KEY_FOR_ANDROID": "AIzaSyBJv1tEDNRYJ-IgighL5qo3uXKw5HKOjac",
+            "API_KEY_FOR_IOS": "AIzaSyBJv1tEDNRYJ-IgighL5qo3uXKw5HKOjac"
+        }
+    },
+    "com.googlemaps.ios": {
+        "source": {
+            "type": "git",
+            "url": "https://bitbucket.org/nightstomp/cordova-plugin-googlemaps-sdk.git",
+            "subdir": ".",
+            "ref": "master"
+        },
+        "is_top_level": false,
+        "variables": {}
+    },
+    "cordova-plugin-googlemaps": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/phonegap-googlemaps-plugin/cordova-plugin-googlemaps",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {
+            "API_KEY_FOR_ANDROID": "AIzaSyBJv1tEDNRYJ-IgighL5qo3uXKw5HKOjac"
         }
     }
 }

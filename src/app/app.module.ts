@@ -18,6 +18,10 @@ import { AguaConsultaQualidade } from '../pages/agua/agua-consulta-qualidade/agu
 import { ProjetoDetalhes } from '../pages/agua/projetos/projeto-detalhes/projeto-detalhes';
 import { Configuracoes } from '../pages/configuracoes/configuracoes';
 import { Sobre } from '../pages/sobre/sobre';
+import { QualidadeAguaRio } from '../pages/nosso-rio/qualidade-agua-rio/qualidade-agua-rio';
+import { EventosRio } from '../pages/nosso-rio/eventos-rio/eventos-rio';
+import { PassagemRio } from '../pages/nosso-rio/passagem-rio/passagem-rio';
+import { SaaeHistoria } from '../pages/agua/saae/saae-historia/saae-historia';
 
 @NgModule({
   declarations: [
@@ -38,7 +42,11 @@ import { Sobre } from '../pages/sobre/sobre';
     AguaConsultaQualidade,
     ProjetoDetalhes,
     Configuracoes,
-    Sobre
+    Sobre,
+    QualidadeAguaRio,
+    EventosRio,
+    PassagemRio,
+    SaaeHistoria
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -62,7 +70,11 @@ import { Sobre } from '../pages/sobre/sobre';
     AguaConsultaQualidade,
     ProjetoDetalhes,
     Configuracoes,
-    Sobre
+    Sobre,
+    QualidadeAguaRio,
+    EventosRio,
+    PassagemRio,
+    SaaeHistoria
   ],
   providers: []
 })

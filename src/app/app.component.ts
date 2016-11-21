@@ -14,11 +14,12 @@ import { Flora } from '../pages/nosso-rio/flora/flora';
 import { Fauna } from '../pages/nosso-rio/fauna/fauna';
 import { Despoluicao } from '../pages/nosso-rio/despoluicao/despoluicao';
 import { ProjetosRio } from '../pages/nosso-rio/projetos-rio/projetos-rio';
-//import { AguaDetalhes } from '../pages/agua/agua-detalhes/agua-detalhes';
 import { AguaConsultaQualidade } from '../pages/agua/agua-consulta-qualidade/agua-consulta-qualidade';
-//import { ProjetoDetalhes } from '../pages/agua/projetos/projeto-detalhes/projeto-detalhes';
 import { Configuracoes } from '../pages/configuracoes/configuracoes';
 import { Sobre } from '../pages/sobre/sobre';
+import { QualidadeAguaRio } from '../pages/nosso-rio/qualidade-agua-rio/qualidade-agua-rio';
+import { EventosRio } from '../pages/nosso-rio/eventos-rio/eventos-rio';
+import { PassagemRio } from '../pages/nosso-rio/passagem-rio/passagem-rio';
 
 @Component({
   templateUrl: 'app.html'
@@ -44,13 +45,13 @@ export class MyApp {
         { title: 'Rio', component: Rio, icon: 'boat'},
         { title: 'História', component: Historia, icon: 'book'},
         { title: 'Mapa', component: Mapa, icon: 'map'},
-        { title: 'Qualidade da Água', component: '', icon: ''},
+        { title: 'Qualidade da Água', component: QualidadeAguaRio, icon: ''},
         { title: 'Despoluição', component: Despoluicao, icon: '',},
         { title: 'Projetos', component: ProjetosRio, icon: 'paper'},
-        { title: 'Eventos', component: '', icon: 'calendar'},
+        { title: 'Eventos', component: EventosRio, icon: 'calendar'},
         { title: 'Flora', component: Flora, icon: 'flower'},
         { title: 'Fauna', component: Fauna, icon: 'paw'},
-        { title: 'Por Onde Passa', component: '', icon: 'pin'}
+        { title: 'Por Onde Passa', component: PassagemRio, icon: 'pin'}
       ], showDetails: false},
 
       { title: 'Nossa Água', component: '', icon: 'water', itens: [

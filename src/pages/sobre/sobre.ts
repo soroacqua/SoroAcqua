@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
 
 @Component({
   selector: 'page-sobre',
@@ -7,5 +6,5 @@ import { NavController } from 'ionic-angular';
 })
 export class Sobre {
 
-  constructor(public navCtrl: NavController) {}
+  constructor() {}
 }

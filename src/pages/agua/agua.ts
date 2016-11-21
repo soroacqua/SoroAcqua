@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { AguaDetalhes } from './agua-detalhes/agua-detalhes';
 
-
-class Reservatorio{
+//coloquei export na frente da classe pois não compilava para android
+export class Reservatorio{
   cod:number;
   nome:string;
   end:string;
@@ -20,8 +20,9 @@ const reservatorios:Reservatorio[] = [
   templateUrl: 'agua.html'
 })
 export class Agua {
-  private reserv:Reservatorio;
-  private meusreservatorios:Reservatorio[];
+  //alterado para public pois não compila para android
+  public reserv:Reservatorio;
+  public meusreservatorios:Reservatorio[];
   constructor(public navCtrl: NavController) {
     this.meusreservatorios = reservatorios;
     this.reserv = new Reservatorio;

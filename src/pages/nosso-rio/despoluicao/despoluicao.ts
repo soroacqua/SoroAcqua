@@ -8,8 +8,4 @@ export class Despoluicao {
 
   constructor() {}
 
-  ionViewDidLoad() {
-    console.log('Hello Despoluicao Page');
-  }
-
 }
