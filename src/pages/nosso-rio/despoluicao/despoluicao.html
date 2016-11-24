@@ -4,12 +4,57 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Despoluicao</ion-title>
+    <ion-title>Despolução</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only>
+        <ion-icon name="more"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-  Informativo sobre o processo de despoluiçao do Rio Sorocaba
+  <ion-slides [options]="{pager:true}">
+
+    <ion-slide style="background-color: #00CED1">
+      <div class="capa">Programa de Despoluição do Rio Sorocaba</div>
+    <br><br>
+      <img src="imagens/rio-sorocaba.jpg" class="img"/>
+    </ion-slide>
+
+    <ion-slide style="background-color: #00CED1">
+      <div class="titulo">Sobre o Projeto</div>
+      <div class="corpo">
+        <p class="title-corpo">Início das obras</p>
+        <p>Ano 2000</p>
+        <p class="title-corpo">Término</p> <p>Capacidade de tratamento de 100% até o final de 2016</p>
+        <p class="title-corpo">Investimento</p> <p>R$ 180 milhões (recursos próprios e
+        financiamentos de programas de saneamento do Governo Federal)</p>
+     </div>
+    </ion-slide>
+
+    <ion-slide style="background-color: #00CED1">
+      <div class="capa">Etapas Concluídas</div>
+    </ion-slide>
+
+    <ion-slide style="background-color: #20B2AA">
+      <div class="corpo">28 km de interceptores de esgoto implantados ao
+        longo das duas margens do rio Sorocaba<br><br>
+        Início<br>
+        <div style="background-color: blue">Rodovia Raposo Tavares</div>
+        <img src="imagens/home-seta.png" class="img-seta"/>
+        <br>Fim<br>
+        <div style="background-color: blue">Parque Vitório Regia</div>
+      </div>
+      <img src="imagens/interceptor.jpg" />
+    </ion-slide>
+
+    <ion-slide style="background-color: #008B8B">
+      <ion-label>Etapa 1</ion-label>
+      <img src="" />
+    </ion-slide>
+
+  </ion-slides>
 </ion-content>

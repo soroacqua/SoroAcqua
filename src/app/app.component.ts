@@ -27,7 +27,7 @@ import { PassagemRio } from '../pages/nosso-rio/passagem-rio/passagem-rio';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = Home;
+  rootPage: any = Despoluicao;
   menu: MenuController;
 
   pages: Array<{title: string, component: any, icon: string,
