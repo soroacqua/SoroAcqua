@@ -11,5 +11,34 @@
 
 
 <ion-content padding>
-  Incluir Eventos do Rio
+  <ion-card  *ngFor="let e of eventos">
+    <img [src]="e.imagem"/>
+    <ion-card-content>
+      <ion-card-title (click)="openPage(e)">
+        {{e.titulo}}
+      </ion-card-title>
+      <div class="chamada" (click)="openPage(e)">
+        {{e.texto}}
+      </div>
+      <ion-row>
+        <ion-col text-center>
+          <button ion-button clear icon-left small >
+            <ion-icon name="share-alt">
+            </ion-icon>
+            <div>
+              Compartilhar
+            </div>
+          </button>
+        </ion-col>
+        <ion-col text-center>
+          <button ion-button clear small icon-left (click)="openPage(e)">
+            <ion-icon name="add-circle"></ion-icon>
+            <div>
+                Mais
+            </div>
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

@@ -8,7 +8,7 @@ import { GoogleMap, GoogleMapsEvent, GoogleMapsLatLng } from 'ionic-native';
 })
 export class Mapa {
 
-  map: GoogleMap;
+  public map: GoogleMap;
 
     constructor(public navCtrl: NavController, public platform: Platform) {
         platform.ready().then(() => {

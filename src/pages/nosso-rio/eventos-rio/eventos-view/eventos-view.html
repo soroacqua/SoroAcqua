@@ -1,0 +1,68 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{evento.titulo}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card>
+  <img [src]="evento.imagem"/>
+  <ion-card-content>
+    <ion-card-title>
+      {{evento.titulo}}
+    </ion-card-title>
+    <div>
+      {{evento.texto}}
+    </div>
+    <br>
+    <hr>
+    <ion-row>
+      <ion-col text-left>
+        <b>Data:</b>
+      </ion-col>
+      <ion-col text-left>
+        {{evento.data}}
+      </ion-col>
+    </ion-row>
+    <hr>
+    <ion-row>
+      <ion-col text-left>
+      <b>Hora:</b>
+      </ion-col>
+      <ion-col text-left>
+      {{evento.hora}}
+      </ion-col>
+    </ion-row>
+    <hr>
+    <ion-row>
+      <ion-col text-left>
+      <b>Valor:</b>
+      </ion-col>
+      <ion-col text-left>
+      {{evento.valor}}
+      </ion-col>
+    </ion-row>
+    <hr>
+    <ion-row>
+      <ion-col text-left>
+      <b>Inscrições:</b>
+      </ion-col>
+      <ion-col text-left>
+      {{evento.inscricoes}}
+      </ion-col>
+    </ion-row>
+    <hr>
+    <ion-row>
+      <ion-col text-left>
+      <b>Local:</b>
+      </ion-col>
+      <ion-col text-left>
+      {{evento.local}}
+      </ion-col>
+    </ion-row>
+  </ion-card-content>
+</ion-card>
+</ion-content>
