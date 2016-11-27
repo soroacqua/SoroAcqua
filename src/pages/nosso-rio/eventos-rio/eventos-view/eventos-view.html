@@ -1,6 +1,6 @@
 <ion-header>
 
-  <ion-navbar>
+  <ion-navbar color="head">
     <ion-title>{{evento.titulo}}</ion-title>
   </ion-navbar>
 
@@ -20,47 +20,74 @@
     <br>
     <hr>
     <ion-row>
-      <ion-col text-left>
+      <ion-col text-left width-10>
+        <ion-icon name="calendar"></ion-icon>
+      </ion-col>
+      <ion-col text-left width-33>
         <b>Data:</b>
       </ion-col>
-      <ion-col text-left>
+      <ion-col text-left width-77>
         {{evento.data}}
       </ion-col>
     </ion-row>
     <hr>
     <ion-row>
-      <ion-col text-left>
+      <ion-col text-left width-10>
+        <ion-icon name="time"></ion-icon>
+      </ion-col>
+      <ion-col text-left width-33>
       <b>Hora:</b>
       </ion-col>
-      <ion-col text-left>
+      <ion-col text-left width-77>
       {{evento.hora}}
       </ion-col>
     </ion-row>
     <hr>
     <ion-row>
-      <ion-col text-left>
+      <ion-col text-left width-10>
+        <ion-icon name="cash"></ion-icon>
+      </ion-col>
+      <ion-col text-left width-33>
       <b>Valor:</b>
       </ion-col>
-      <ion-col text-left>
+      <ion-col text-left width-77>
       {{evento.valor}}
       </ion-col>
     </ion-row>
     <hr>
     <ion-row>
-      <ion-col text-left>
+      <ion-col text-left width-10>
+        <ion-icon name="calendar"></ion-icon>
+      </ion-col>
+      <ion-col text-left width-33>
       <b>Inscrições:</b>
       </ion-col>
-      <ion-col text-left>
+      <ion-col text-left width-77>
       {{evento.inscricoes}}
       </ion-col>
     </ion-row>
     <hr>
     <ion-row>
-      <ion-col text-left>
+      <ion-col text-left width-10>
+        <ion-icon name="pin"></ion-icon>
+      </ion-col>
+      <ion-col text-left width-33>
       <b>Local:</b>
       </ion-col>
-      <ion-col text-left>
+      <ion-col text-left width-77>
       {{evento.local}}
+      </ion-col>
+    </ion-row>
+    <hr>
+    <ion-row>
+      <ion-col text-right>
+        <button ion-button outline icon-left block (click)="openMenu()">
+          <ion-icon name="md-share">
+          </ion-icon>
+          <div>
+            Compartilhar
+          </div>
+        </button>
       </ion-col>
     </ion-row>
   </ion-card-content>

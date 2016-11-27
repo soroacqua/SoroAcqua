@@ -39,14 +39,14 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Início', component: Home, icon: 'home', itens: [], showDetails: false},
+      { title: 'Início', component: Home, icon: '', itens: [], showDetails: false},
 
-      { title: 'Nosso Rio', component: '', icon: 'boat', itens: [
+      { title: 'Nosso Rio', component: '', icon: 'arrow-dropright', itens: [
         { title: 'Rio', component: Rio, icon: 'boat'},
         { title: 'História', component: Historia, icon: 'book'},
         { title: 'Mapa', component: Mapa, icon: 'map'},
-        { title: 'Qualidade da Água', component: QualidadeAguaRio, icon: ''},
-        { title: 'Despoluição', component: Despoluicao, icon: '',},
+        { title: 'Qualidade da Água', component: QualidadeAguaRio, icon: 'checkmark-circle'},
+        { title: 'Despoluição', component: Despoluicao, icon: 'thumbs-up',},
         { title: 'Projetos', component: ProjetosRio, icon: 'paper'},
         { title: 'Eventos', component: EventosRio, icon: 'calendar'},
         { title: 'Flora', component: Flora, icon: 'flower'},
@@ -54,7 +54,7 @@ export class MyApp {
         { title: 'Por Onde Passa', component: PassagemRio, icon: 'pin'}
       ], showDetails: false},
 
-      { title: 'Nossa Água', component: '', icon: 'water', itens: [
+      { title: 'Nossa Água', component: '', icon: 'arrow-dropright', itens: [
         { title: 'Água', component: Agua, icon: 'water'},
         { title: 'Sub-Estações', component: '', icon: ''},
         { title: 'Tratamento', component: '', icon: ''},
@@ -64,8 +64,8 @@ export class MyApp {
         { title: 'Eventos', component: Eventos, icon: 'calendar'}
       ], showDetails: false},
 
-      { title: 'Configurações', component: Configuracoes, icon: 'settings', itens: [], showDetails: false},
-      { title: 'Sobre', component: Sobre, icon: 'information-circle', itens: [], showDetails: false}
+      { title: 'Configurações', component: Configuracoes, icon: '', itens: [], showDetails: false},
+      { title: 'Sobre', component: Sobre, icon: '', itens: [], showDetails: false}
     ];
 
   }
@@ -92,11 +92,12 @@ export class MyApp {
     if(page.component == ''){
       if (page.showDetails) {
        page.showDetails = false;
-          //page.icon = 'add-circle';
+          page.icon = 'arrow-dropright';
 
       } else {
           page.showDetails = true;
-          //page.icon = 'remove';
+          //page.icon = 'arrow-dropdown-circle';
+          page.icon = '';
       }
     } else{
         this.menu.close();
