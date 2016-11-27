@@ -11,14 +11,14 @@
 
 <ion-content padding>
   <ion-searchbar placeholder="Digite o nome do evento..." (ionInput)="getItems($event)"></ion-searchbar>
-  <ion-card *ngFor="let item of eventos">
-    <img [src]="item.imagem"/>
+  <ion-card *ngFor="let e of eventos">
+    <img [src]="e.imagem"/>
     <ion-card-content>
-      <ion-card-title (click)="openPage(item)">
-        {{item.titulo}}
+      <ion-card-title (click)="openPage(e)">
+        {{e.titulo}}
       </ion-card-title>
-      <div class="chamada" (click)="openPage(item)">
-        {{item.texto}}
+      <div class="chamada" (click)="openPage(e)">
+        {{e.texto}}
       </div>
       <ion-row>
         <ion-col text-center>
@@ -31,7 +31,7 @@
           </button>
         </ion-col>
         <ion-col text-center>
-          <button ion-button clear small icon-left (click)="openPage(item)">
+          <button ion-button clear small icon-left (click)="openPage(e)">
             <ion-icon name="add-circle"></ion-icon>
             <div>
                 Mais

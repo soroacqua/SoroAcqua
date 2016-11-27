@@ -39,14 +39,6 @@
         "is_top_level": true,
         "variables": {}
     },
-    "ionic-plugin-keyboard": {
-        "source": {
-            "type": "registry",
-            "id": "ionic-plugin-keyboard"
-        },
-        "is_top_level": true,
-        "variables": {}
-    },
     "plugin.google.maps": {
         "source": {
             "type": "registry",
@@ -78,5 +70,13 @@
         "variables": {
             "API_KEY_FOR_ANDROID": "AIzaSyBJv1tEDNRYJ-IgighL5qo3uXKw5HKOjac"
         }
+    },
+    "ionic-plugin-keyboard": {
+        "source": {
+            "type": "registry",
+            "id": "ionic-plugin-keyboard@~2.2.1"
+        },
+        "is_top_level": true,
+        "variables": {}
     }
 }

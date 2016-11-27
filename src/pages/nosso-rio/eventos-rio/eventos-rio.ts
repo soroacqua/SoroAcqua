@@ -8,7 +8,7 @@ import { EventosView } from './eventos-view/eventos-view'
 })
 export class EventosRio {
 
-  private eventos: Array<any>;
+  public eventos: Array<any>;
 
   constructor(public navCtrl: NavController, public platform: Platform, public actionsheetCtrl: ActionSheetController,
               public alertCtrl: AlertController) {
@@ -22,21 +22,21 @@ export class EventosRio {
             data: '19/03/2016', hora: '08:30', valor: 'Gratuito',
             inscricoes: 'Para participar da Caminhada Ecológica os interessados devem se inscrever no início da atividade',
             local: 'CEA Rio Sorocaba - Av. Dom Aguirre - Centro (em frente ao Poupatempo)',
-            imagem: 'imagens/rio/eventos/caminhada-ecologica.jpg'},
+            imagem: 'imagens/caminhada-ecologica.jpg'},
             //--
             {titulo: 'Plantio de mudas',
             texto: 'Além do plantio os agentes da secretaria fizeram a coleta de materiais recicláveis à margem do rio. A retirada ocorreu próximo ao plantio. O objetivo da ação é conscientizar a população da importância em manter o espaço sempre limpo. O plantio de 60 mudas de árvores nativas ocorreu na área atrás do terminal de ônibus, onde serão plantadas diversas mudas da vegetação regional e com funções ecológicas, como produção de néctar e frutos para a fauna silvestre. Entre as mudas plantadas estão aroeira mansa, guatambu, jequitibá branco, urucum, peito de pomba, ingá, entre outras. Com essa ação a Sema pretende incrementar a vegetação na margem do Rio Sorocaba, proporcionando a redução do assoreamento do leito do rio, bem como auxiliando na manutenção da qualidade das águas e na propagação da vegetação como habitat à fauna silvestre.',
             data: '08/06/2016', hora: '09:00', valor: 'Gratuito',
             inscricoes: 'Basta comparecer no CEA Rio Sorocaba',
             local: 'CEA Rio Sorocaba - Av. Dom Aguirre - Centro (em frente ao Poupatempo)',
-            imagem: 'imagens/rio/eventos/plantio-mudas.jpg'},
+            imagem: 'imagens/plantio-mudas.jpg'},
             //--
             {titulo: 'Tour do Rio Sorocaba',
             texto: 'Nesta quarta-feira (dia 28), a população pode participar gratuitamente do Tour do Rio Sorocaba em três horários: das 8h às 10h, das 10h às 12h e das 14h às 17h. Já os servidores públicos terão a mesma oportunidade das 14h às 17h. O passeio ocorrerá num ônibus movido a gás natural veicular (GNV) ou biometano, considerado o primeiro do Brasil. Pela manhã, partindo do Centro de Educação Ambiental do Rio Sorocaba (CEA Rio Sorocaba), localizado em frente ao Poupatempo, os participantes vão percorrer o trecho urbano do rio, passando pela Praça da Biodiversidade, Parque Municipal “Porto das Águas” e o Parque das Águas, no Jardim Abaeté. Em cada parada, os técnicos abordarão as questões ambientais e as curiosidades de cada local.',
             data: '28/09/2016', hora: 'das 8h às 10h, das 10h às 12h e das 14h às 17h', valor: 'Gratuito',
             inscricoes: 'As inscrições podem ser feitas gratuitamente, das 8h às 17h, pelo telefone (15) 3238.2366 ou pessoalmente na Secretaria do Meio Ambiente (Sema), até esta terça-feira (27)',
             local: 'CEA Rio Sorocaba - Av. Dom Aguirre - Centro (em frente ao Poupatempo)',
-            imagem: 'imagens/rio/eventos/tour-rio.jpg'}
+            imagem: 'imagens/tour-rio.jpg'}
     ];
   }
 

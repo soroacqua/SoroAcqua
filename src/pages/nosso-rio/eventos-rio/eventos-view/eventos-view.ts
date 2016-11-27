@@ -7,7 +7,7 @@ import {NavController, NavParams, ActionSheetController, Platform, AlertControll
 })
 export class EventosView {
 
-  private evento;
+  public evento;
 
   constructor(private navController: NavController, private navParams: NavParams,
               public platform: Platform, public actionsheetCtrl: ActionSheetController,
