@@ -23,7 +23,8 @@ import { EventosRio } from '../pages/nosso-rio/eventos-rio/eventos-rio';
 import { PassagemRio } from '../pages/nosso-rio/passagem-rio/passagem-rio';
 import { SaaeHistoria } from '../pages/agua/saae/saae-historia/saae-historia';
 import { EventosView } from '../pages/nosso-rio/eventos-rio/eventos-view/eventos-view';
-import { More } from '../pages/more/more';
+import { DetalhesParametros } from '../pages/nosso-rio/qualidade-agua-rio/detalhes-parametros/detalhes-parametros';
+import { ProjetosView } from '../pages/nosso-rio/projetos-rio/projetos-view/projetos-view';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { More } from '../pages/more/more';
     PassagemRio,
     SaaeHistoria,
     EventosView,
-    More
+    DetalhesParametros,
+    ProjetosView
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -80,7 +82,8 @@ import { More } from '../pages/more/more';
     PassagemRio,
     SaaeHistoria,
     EventosView,
-    More
+    DetalhesParametros,
+    ProjetosView
   ],
   providers: []
 })

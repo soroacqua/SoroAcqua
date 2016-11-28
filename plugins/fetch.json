@@ -62,14 +62,11 @@
     },
     "cordova-plugin-googlemaps": {
         "source": {
-            "type": "git",
-            "url": "https://github.com/phonegap-googlemaps-plugin/cordova-plugin-googlemaps",
-            "subdir": "."
+            "type": "registry",
+            "id": "cordova-plugin-googlemaps"
         },
         "is_top_level": true,
-        "variables": {
-            "API_KEY_FOR_ANDROID": "AIzaSyBJv1tEDNRYJ-IgighL5qo3uXKw5HKOjac"
-        }
+        "variables": {}
     },
     "ionic-plugin-keyboard": {
         "source": {
