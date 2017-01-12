@@ -22730,7 +22730,7 @@ page-agua ion-content.content-md ion-slides ion-slide .titulo {
   color: blue;
   font-size: 25px;
   position: relative;
-  top: 0;
+  top: 1;
   left: 30;
   z-index: 50;
   background: #6CA6CD;
@@ -22754,12 +22754,28 @@ page-agua ion-content.content-md ion-slides ion-slide .title-corpo {
   text-align: justify;
 }
 
+page-agua ion-content.content-md ion-slides ion-slide .title-corpo2 {
+  color: white;
+  text-align: justify;
+  font-weight: 600;
+  font-size: 20px;
+}
+
 page-agua ion-content.content-md ion-slides ion-slide .img {
   max-width: 200px;
   max-height: 150px;
   width: auto;
   height: auto;
   border-radius: 20px;
+}
+
+page-agua ion-content.content-md ion-slides ion-slide .img2 {
+  max-width: 200px;
+  max-height: 150px;
+  width: auto;
+  height: auto;
+  border-radius: 20px;
+  border: 5px solid #87CEFA;
 }
 
 page-agua ion-content.content-md ion-slides ion-slide .img-seta {
