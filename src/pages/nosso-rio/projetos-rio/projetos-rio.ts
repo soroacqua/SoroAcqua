@@ -67,7 +67,6 @@ export class ProjetosRio {
           text: 'Facebook',
           icon: 'logo-facebook',
           handler: () => {
-            console.log('Facebook clicked');
 
             //alert
             let alert = this.alertCtrl.create({
@@ -82,7 +81,6 @@ export class ProjetosRio {
           text: 'WhatsApp',
           icon: 'logo-whatsapp',
           handler: () => {
-              console.log('WhatsApp clicked');
 
               //alert
               let alert = this.alertCtrl.create({
@@ -96,7 +94,6 @@ export class ProjetosRio {
           text: 'Gmail',
           icon: 'mail',
           handler: () => {
-              console.log('Gmail clicked');
 
               //alert
               let alert = this.alertCtrl.create({
@@ -110,7 +107,6 @@ export class ProjetosRio {
           text: 'Outlook',
           icon: 'mail',
           handler: () => {
-              console.log('Outlook clicked');
 
               //alert
               let alert = this.alertCtrl.create({
@@ -124,9 +120,6 @@ export class ProjetosRio {
           text: 'Cancel',
           role: 'cancel',
           icon: 'close',
-          handler: () => {
-              console.log('Cancel clicked');
-          }
         }
       ]
     });

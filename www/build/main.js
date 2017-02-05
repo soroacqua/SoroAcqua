@@ -81082,13 +81082,13 @@ var __metadata$2 = (undefined && undefined.__metadata) || function (k, v) {
 };
 var Home = (function () {
     function Home(platform) {
-        this.pet = "puppies";
+        this.itens = "agua";
         this.isAndroid = false;
         this.isAndroid = platform.is('android');
     }
     Home = __decorate$108([
         Component({
-            selector: 'page-home',template:/*ion-inline-start:"C:\Users\rosan\Documents\IC\SoroAcqua\SoroAcqua\src\pages\home\home.html"*/'<ion-header>\n\n  <ion-navbar color="head">\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Início Teste</ion-title>\n\n  </ion-navbar>\n\n\n\n  <ion-toolbar no-border-top>\n\n    <ion-segment [(ngModel)]="pet">\n\n      <ion-segment-button value="puppies">\n\n        Puppies\n\n      </ion-segment-button>\n\n      <ion-segment-button value="kittens">\n\n        Kittens\n\n      </ion-segment-button>\n\n      <ion-segment-button value="ducklings">\n\n        Ducklings\n\n      </ion-segment-button>\n\n    </ion-segment>\n\n  </ion-toolbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n  <div [ngSwitch]="pet">\n\n    <ion-list *ngSwitchCase="\'puppies\'">\n\n      <ion-item>\n\n        <h2>Zoey</h2>\n\n      </ion-item>\n\n      <ion-item>\n\n        <h2>Otto</h2>\n\n      </ion-item>\n\n    </ion-list>\n\n\n\n    <ion-list *ngSwitchCase="\'kittens\'">\n\n      <ion-item>\n\n        <h2>Luna</h2>\n\n      </ion-item>\n\n      <ion-item>\n\n        <h2>Milo</h2>\n\n      </ion-item>\n\n      <ion-item>\n\n        <h2>Bandit</h2>\n\n      </ion-item>\n\n      <ion-item>\n\n        <h2>Nala</h2>\n\n      </ion-item>\n\n    </ion-list>\n\n\n\n    <ion-list *ngSwitchCase="\'ducklings\'">\n\n      <ion-item>\n\n        <h2>Daffy</h2>\n\n      </ion-item>\n\n      <ion-item>\n\n        <h2>Huey</h2>\n\n      </ion-item>\n\n      <ion-item>\n\n        <h2>Dewey</h2>\n\n      </ion-item>\n\n      <ion-item>\n\n        <h2>Louie</h2>\n\n      </ion-item>\n\n    </ion-list>\n\n  </div>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\rosan\Documents\IC\SoroAcqua\SoroAcqua\src\pages\home\home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"C:\Users\rosan\Documents\IC\SoroAcqua\SoroAcqua\src\pages\home\home.html"*/'<ion-header>\n\n  <ion-navbar color="head">\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Início</ion-title>\n\n  </ion-navbar>\n\n\n\n  <ion-toolbar no-border-top color="head">\n\n    <ion-segment [(ngModel)]="itens">\n\n      <ion-segment-button value="agua">\n\n        Água\n\n      </ion-segment-button>\n\n      <ion-segment-button value="rio">\n\n        Rio\n\n      </ion-segment-button>\n\n    </ion-segment>\n\n  </ion-toolbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n  <div [ngSwitch]="itens">\n\n    <ion-card *ngSwitchCase="\'agua\'">\n\n        Qualidade da água\n\n    </ion-card>\n\n    <ion-card *ngSwitchCase="\'agua\'">\n\n        Estações de Tratamento\n\n    </ion-card>\n\n\n\n    <ion-card *ngSwitchCase="\'rio\'">\n\n      Qualidade do Rio\n\n    </ion-card>\n\n    <ion-card *ngSwitchCase="\'rio\'">\n\n      Mapa do Rio\n\n    </ion-card>\n\n  </div>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\rosan\Documents\IC\SoroAcqua\SoroAcqua\src\pages\home\home.html"*/
         }), 
         __metadata$2('design:paramtypes', [Platform])
     ], Home);
@@ -81598,7 +81598,6 @@ var ProjetosRio = (function () {
                     text: 'Facebook',
                     icon: 'logo-facebook',
                     handler: function () {
-                        console.log('Facebook clicked');
                         //alert
                         var alert = _this.alertCtrl.create({
                             //title: 'Facebook',
@@ -81612,7 +81611,6 @@ var ProjetosRio = (function () {
                     text: 'WhatsApp',
                     icon: 'logo-whatsapp',
                     handler: function () {
-                        console.log('WhatsApp clicked');
                         //alert
                         var alert = _this.alertCtrl.create({
                             subTitle: 'O projeto foi compartilhado com sucesso no WhatsApp!',
@@ -81625,7 +81623,6 @@ var ProjetosRio = (function () {
                     text: 'Gmail',
                     icon: 'mail',
                     handler: function () {
-                        console.log('Gmail clicked');
                         //alert
                         var alert = _this.alertCtrl.create({
                             subTitle: 'O projeto foi compartilhado com sucesso no Gmail!',
@@ -81638,7 +81635,6 @@ var ProjetosRio = (function () {
                     text: 'Outlook',
                     icon: 'mail',
                     handler: function () {
-                        console.log('Outlook clicked');
                         //alert
                         var alert = _this.alertCtrl.create({
                             subTitle: 'O projeto foi compartilhado com sucesso no Outlook!',
@@ -81651,9 +81647,6 @@ var ProjetosRio = (function () {
                     text: 'Cancel',
                     role: 'cancel',
                     icon: 'close',
-                    handler: function () {
-                        console.log('Cancel clicked');
-                    }
                 }
             ]
         });
@@ -81926,7 +81919,6 @@ var EventosRio = (function () {
                     text: 'Facebook',
                     icon: 'logo-facebook',
                     handler: function () {
-                        console.log('Facebook clicked');
                         //alert
                         var alert = _this.alertCtrl.create({
                             //title: 'Facebook',
@@ -81940,7 +81932,6 @@ var EventosRio = (function () {
                     text: 'WhatsApp',
                     icon: 'logo-whatsapp',
                     handler: function () {
-                        console.log('WhatsApp clicked');
                         //alert
                         var alert = _this.alertCtrl.create({
                             subTitle: 'O evento foi compartilhado com sucesso no WhatsApp!',
@@ -81953,7 +81944,6 @@ var EventosRio = (function () {
                     text: 'Gmail',
                     icon: 'mail',
                     handler: function () {
-                        console.log('Gmail clicked');
                         //alert
                         var alert = _this.alertCtrl.create({
                             subTitle: 'O evento foi compartilhado com sucesso no Gmail!',
@@ -81966,7 +81956,6 @@ var EventosRio = (function () {
                     text: 'Outlook',
                     icon: 'mail',
                     handler: function () {
-                        console.log('Outlook clicked');
                         //alert
                         var alert = _this.alertCtrl.create({
                             subTitle: 'O evento foi compartilhado com sucesso no Outlook!',
@@ -81979,9 +81968,6 @@ var EventosRio = (function () {
                     text: 'Cancel',
                     role: 'cancel',
                     icon: 'close',
-                    handler: function () {
-                        console.log('Cancel clicked');
-                    }
                 }
             ]
         });
@@ -82010,7 +81996,7 @@ var PassagemRio = (function () {
     }
     PassagemRio = __decorate$129([
         Component({
-            selector: 'page-passagem-rio',template:/*ion-inline-start:"C:\Users\rosan\Documents\IC\SoroAcqua\SoroAcqua\src\pages\nosso-rio\passagem-rio\passagem-rio.html"*/'<ion-header>\n\n\n\n  <ion-navbar color="head">\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Por Onde Passa</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  Cidades em que o Rio Sorocaba passa, mostrando sua nascente e onde desagua\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\rosan\Documents\IC\SoroAcqua\SoroAcqua\src\pages\nosso-rio\passagem-rio\passagem-rio.html"*/
+            selector: 'page-passagem-rio',template:/*ion-inline-start:"C:\Users\rosan\Documents\IC\SoroAcqua\SoroAcqua\src\pages\nosso-rio\passagem-rio\passagem-rio.html"*/'<ion-header>\n\n\n\n  <ion-navbar color="head">\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Por onde passa</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n    Cidades em que o Rio Sorocaba passa, mostrando sua nascente e onde desagua\n\n    Imagens do rio em cada cidade\n\n\n\n    Imagem como plano de fundo e na frente botoes que descreve um pouco sobre a cidade\n\n    e a qualidade da água lá.\n\n\n\n    Usar o grid para colocar as imagens nos pontos certos no mapa\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\rosan\Documents\IC\SoroAcqua\SoroAcqua\src\pages\nosso-rio\passagem-rio\passagem-rio.html"*/
         }), 
         __metadata$23('design:paramtypes', [])
     ], PassagemRio);
@@ -82029,7 +82015,7 @@ var __metadata$1 = (undefined && undefined.__metadata) || function (k, v) {
 var MyApp = (function () {
     function MyApp(platform, menu) {
         this.platform = platform;
-        this.rootPage = Home;
+        this.rootPage = PassagemRio;
         this.initializeApp();
         this.menu = menu;
         // used for an example of ngFor and navigation

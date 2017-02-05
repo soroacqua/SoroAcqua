@@ -3,63 +3,35 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Início Teste</ion-title>
+    <ion-title>Início</ion-title>
   </ion-navbar>
 
-  <ion-toolbar no-border-top>
-    <ion-segment [(ngModel)]="pet">
-      <ion-segment-button value="puppies">
-        Puppies
+  <ion-toolbar no-border-top color="head">
+    <ion-segment [(ngModel)]="itens">
+      <ion-segment-button value="agua">
+        Água
       </ion-segment-button>
-      <ion-segment-button value="kittens">
-        Kittens
-      </ion-segment-button>
-      <ion-segment-button value="ducklings">
-        Ducklings
+      <ion-segment-button value="rio">
+        Rio
       </ion-segment-button>
     </ion-segment>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <div [ngSwitch]="pet">
-    <ion-list *ngSwitchCase="'puppies'">
-      <ion-item>
-        <h2>Zoey</h2>
-      </ion-item>
-      <ion-item>
-        <h2>Otto</h2>
-      </ion-item>
-    </ion-list>
+  <div [ngSwitch]="itens">
+    <ion-card *ngSwitchCase="'agua'">
+        Qualidade da água
+    </ion-card>
+    <ion-card *ngSwitchCase="'agua'">
+        Estações de Tratamento
+    </ion-card>
 
-    <ion-list *ngSwitchCase="'kittens'">
-      <ion-item>
-        <h2>Luna</h2>
-      </ion-item>
-      <ion-item>
-        <h2>Milo</h2>
-      </ion-item>
-      <ion-item>
-        <h2>Bandit</h2>
-      </ion-item>
-      <ion-item>
-        <h2>Nala</h2>
-      </ion-item>
-    </ion-list>
-
-    <ion-list *ngSwitchCase="'ducklings'">
-      <ion-item>
-        <h2>Daffy</h2>
-      </ion-item>
-      <ion-item>
-        <h2>Huey</h2>
-      </ion-item>
-      <ion-item>
-        <h2>Dewey</h2>
-      </ion-item>
-      <ion-item>
-        <h2>Louie</h2>
-      </ion-item>
-    </ion-list>
+    <ion-card *ngSwitchCase="'rio'">
+      Qualidade do Rio
+    </ion-card>
+    <ion-card *ngSwitchCase="'rio'">
+      Mapa do Rio
+    </ion-card>
   </div>
 </ion-content>
