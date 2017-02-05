@@ -19,4 +19,5 @@ import { NavController } from 'ionic-angular';
                               ],'add-circle', false)
       ];*/
     }
+
   }

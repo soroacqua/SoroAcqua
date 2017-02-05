@@ -22718,12 +22718,79 @@ sub {
   }
 }
 
-page-agua .card-background-page ion-card {
+page-agua ion-content.content-md ion-slides ion-slide .capa {
+  color: blue;
+  line-height: 50px;
+  text-align: center;
+  font-size: 55px;
+  vertical-align: text-top;
+}
+
+page-agua ion-content.content-md ion-slides ion-slide .titulo {
+  color: blue;
+  font-size: 25px;
+  position: relative;
+  top: 1;
+  left: 30;
+  z-index: 50;
+  background: #6CA6CD;
+  padding: 10px;
+  border: 0px solid #CCCCCC;
+  text-align: center;
+  font-weight: bold;
+  width: 100%;
+  border-radius: 20px;
+}
+
+page-agua ion-content.content-md ion-slides ion-slide .corpo {
+  color: black;
+  padding: 25px;
+  text-align: center;
+}
+
+page-agua ion-content.content-md ion-slides ion-slide .title-corpo {
+  font-weight: 590;
+  font-size: 18px;
+  text-align: justify;
+}
+
+page-agua ion-content.content-md ion-slides ion-slide .title-corpo2 {
+  color: white;
+  text-align: justify;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+page-agua ion-content.content-md ion-slides ion-slide .img {
+  max-width: 200px;
+  max-height: 150px;
+  width: auto;
+  height: auto;
+  border-radius: 20px;
+}
+
+page-agua ion-content.content-md ion-slides ion-slide .img2 {
+  max-width: 200px;
+  max-height: 150px;
+  width: auto;
+  height: auto;
+  border-radius: 20px;
+  border: 5px solid #87CEFA;
+}
+
+page-agua ion-content.content-md ion-slides ion-slide .img-seta {
+  max-width: 100px;
+  max-height: 50px;
+  width: auto;
+  height: auto;
+}
+
+page-eventos ion-card {
   position: relative;
   text-align: center;
 }
 
-page-agua .card-background-page .card-title {
+page-eventos .card-title {
   position: absolute;
   top: 36%;
   font-size: 2.0em;
@@ -22732,7 +22799,7 @@ page-agua .card-background-page .card-title {
   color: #fff;
 }
 
-page-agua .card-background-page .card-subtitle {
+page-eventos .card-subtitle {
   font-size: 1.0em;
   position: absolute;
   top: 52%;
