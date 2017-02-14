@@ -7,7 +7,7 @@ import { Platform } from 'ionic-angular';
 })
 export class Home {
 
-  pet: string = "puppies";
+  itens: string = "agua";
   isAndroid: boolean = false;
 
   constructor(platform: Platform) {

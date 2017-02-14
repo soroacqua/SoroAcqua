@@ -22900,6 +22900,11 @@ page-mapa #map {
   height: 100%;
 }
 
+page-passagem-rio ion-content.content-md {
+  background-image: url("../imagens/agua.png");
+  background-size: 100% 100%;
+}
+
 page-projetos-rio ion-content.content-md ion-card {
   background-color: #FFF;
 }

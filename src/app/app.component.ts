@@ -1,5 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import { Platform, Nav, MenuController } from 'ionic-angular';
+import { Platform, Nav, MenuController, AlertController  } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
 
 import { Home } from '../pages/home/home';
@@ -33,7 +33,7 @@ export class MyApp {
   pages: Array<{title: string, component: any, icon: string,
         itens: Array<{title: string, component: any, icon: string}>, showDetails: boolean }>;
 
-  constructor(public platform: Platform, menu: MenuController) {
+  constructor(public platform: Platform, menu: MenuController, public alertCtrl: AlertController) {
     this.initializeApp();
     this.menu = menu;
 
