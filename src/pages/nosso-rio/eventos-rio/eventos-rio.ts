@@ -125,5 +125,4 @@ export class EventosRio {
     });
     actionSheet.present();
   }
-
 }

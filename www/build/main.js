@@ -81675,7 +81675,7 @@ var Configuracoes = (function () {
     }
     Configuracoes = __decorate$123([
         Component({
-            selector: 'page-configuracoes',template:/*ion-inline-start:"C:\Users\rosan\Documents\IC\SoroAcqua\SoroAcqua\src\pages\configuracoes\configuracoes.html"*/'<ion-header>\n\n  <ion-navbar color="head">\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Configuracoes</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  <ion-item>\n\n    <ion-label>Notificações</ion-label>\n\n    <ion-toggle color="energized" checked="false"></ion-toggle>\n\n  </ion-item>\n\n  <br>\n\n  <ion-item>\n\n      <ion-label>Período de notificação</ion-label>\n\n      <ion-select [(ngModel)]="gaming">\n\n        <ion-option value="manha">Manhã</ion-option>\n\n        <ion-option value="tarde">Tarde</ion-option>\n\n        <ion-option value="noite">Noite</ion-option>\n\n      </ion-select>\n\n  </ion-item>\n\n  <br>\n\n  <ion-item>\n\n  <ion-label align=left> Iluminação</ion-label>\n\n  <ion-range [(ngModel)]="brightness">\n\n    <ion-icon range-left small name="sunny"></ion-icon>\n\n    <ion-icon range-right name="sunny"></ion-icon>\n\n  </ion-range>\n\n</ion-item>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\rosan\Documents\IC\SoroAcqua\SoroAcqua\src\pages\configuracoes\configuracoes.html"*/
+            selector: 'page-configuracoes',template:/*ion-inline-start:"C:\Users\rosan\Documents\IC\SoroAcqua\SoroAcqua\src\pages\configuracoes\configuracoes.html"*/'<ion-header>\n\n  <ion-navbar color="head">\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Configuracoes</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  <ion-item>\n\n    <ion-label>Notificações</ion-label>\n\n    <ion-toggle color="energized" checked="false"></ion-toggle>\n\n  </ion-item>\n\n  <br>\n\n  <ion-item>\n\n      <ion-label>Período de notificação</ion-label>\n\n      <!--<ion-select [(ngModel)]="gaming">-->\n\n      <ion-select>\n\n        <ion-option value="manha">Manhã</ion-option>\n\n        <ion-option value="tarde">Tarde</ion-option>\n\n        <ion-option value="noite">Noite</ion-option>\n\n      </ion-select>\n\n  </ion-item>\n\n  <br>\n\n  <ion-item>\n\n  <ion-label align=left> Iluminação</ion-label>\n\n  <!--<ion-range [(ngModel)]="brightness">-->\n\n  <ion-range>\n\n    <ion-icon range-left small name="sunny"></ion-icon>\n\n    <ion-icon range-right name="sunny"></ion-icon>\n\n  </ion-range>\n\n</ion-item>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\rosan\Documents\IC\SoroAcqua\SoroAcqua\src\pages\configuracoes\configuracoes.html"*/
         }), 
         __metadata$17('design:paramtypes', [])
     ], Configuracoes);
@@ -82013,8 +82013,9 @@ var __metadata$1 = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var MyApp = (function () {
-    function MyApp(platform, menu) {
+    function MyApp(platform, menu, alertCtrl) {
         this.platform = platform;
+        this.alertCtrl = alertCtrl;
         this.rootPage = Home;
         this.initializeApp();
         this.menu = menu;
@@ -82085,7 +82086,7 @@ var MyApp = (function () {
     MyApp = __decorate$1([
         Component({template:/*ion-inline-start:"C:\Users\rosan\Documents\IC\SoroAcqua\SoroAcqua\src\app\app.html"*/'<ion-menu [content]="content">\n\n  <ion-header>\n\n    <ion-toolbar color="head">\n\n      <ion-title>Menu</ion-title>\n\n    </ion-toolbar>\n\n  </ion-header>\n\n\n\n  <ion-content>\n\n    <ion-list>\n\n      <ion-item padding *ngFor="let p of pages" (click)="toggleDetails(p)">\n\n          {{p.title}} <ion-icon [name]="p.icon" item-right></ion-icon>\n\n\n\n         <div *ngIf="p.showDetails" text-wrap>\n\n\n\n           <ion-item padding  ion-item menuClose *ngFor="let i of p.itens" (click)="openPage(i)">\n\n             <ion-icon [name]="i.icon" item-left></ion-icon>\n\n             {{i.title}}\n\n           </ion-item>\n\n\n\n         </div>\n\n\n\n      </ion-item>\n\n    </ion-list>\n\n  </ion-content>\n</ion-menu>\n\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>\n\n'/*ion-inline-end:"C:\Users\rosan\Documents\IC\SoroAcqua\SoroAcqua\src\app\app.html"*/
         }), 
-        __metadata$1('design:paramtypes', [Platform, MenuController])
+        __metadata$1('design:paramtypes', [Platform, MenuController, AlertController])
     ], MyApp);
     return MyApp;
 }());
@@ -82146,6 +82147,37 @@ var SaaeHistoria = (function () {
     return SaaeHistoria;
 }());
 
+var __decorate$132 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata$26 = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+/*
+  Generated class for the Tratamento page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+*/
+var Tratamento = (function () {
+    function Tratamento(navCtrl) {
+        this.navCtrl = navCtrl;
+    }
+    Tratamento.prototype.ionViewDidLoad = function () {
+        console.log('Hello Tratamento Page');
+    };
+    Tratamento = __decorate$132([
+        Component({
+            selector: 'page-tratamento',template:/*ion-inline-start:"C:\Users\rosan\Documents\IC\SoroAcqua\SoroAcqua\src\pages\tratamento\tratamento.html"*/'<!--\n\n  Generated template for the Tratamento page.\n\n\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>tratamento</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\rosan\Documents\IC\SoroAcqua\SoroAcqua\src\pages\tratamento\tratamento.html"*/
+        }), 
+        __metadata$26('design:paramtypes', [NavController])
+    ], Tratamento);
+    return Tratamento;
+}());
+
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -82185,7 +82217,8 @@ var AppModule = (function () {
                 SaaeHistoria,
                 EventosView,
                 DetalhesParametros,
-                ProjetosView
+                ProjetosView,
+                Tratamento
             ],
             imports: [
                 IonicModule.forRoot(MyApp)
@@ -82216,7 +82249,8 @@ var AppModule = (function () {
                 SaaeHistoria,
                 EventosView,
                 DetalhesParametros,
-                ProjetosView
+                ProjetosView,
+                Tratamento
             ],
             providers: []
         }), 
