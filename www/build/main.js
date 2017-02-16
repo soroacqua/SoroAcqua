@@ -97480,16 +97480,9 @@ var __decorate$131 = (undefined && undefined.__decorate) || function (decorators
 var __metadata$25 = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-/*
-  Generated class for the MyCEP provider.
-
-  See https://angular.io/docs/ts/latest/guide/dependency-injection.html
-  for more info on providers and Angular 2 DI.
-*/
 var MyCEP = (function () {
     function MyCEP(http) {
         this.http = http;
-        console.log('Hello MyCEP Provider');
     }
     MyCEP.prototype.getEnderecoCompleto = function (cep) {
         var headers = new Headers({ 'Content-Type': 'application/json' });
@@ -97513,25 +97506,28 @@ var __decorate$130 = (undefined && undefined.__decorate) || function (decorators
 var __metadata$24 = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-/*
-  Generated class for the Cep page.
-
-  See http://ionicframework.com/docs/v2/components/#navigation for more info on
-  Ionic pages and navigation.
-*/
 var Cep = (function () {
     function Cep(navCtrl, mycep) {
-        var _this = this;
         this.navCtrl = navCtrl;
         this.mycep = mycep;
-        this.mycep.getEnderecoCompleto("18057060").subscribe(function (res) {
-            _this.resposta = res;
-            console.log(_this.resposta);
-        });
     }
+    Cep.prototype.getEndereco = function (numCEP) {
+        var _this = this;
+        if (numCEP == null) {
+            console.log("Numero do CEP inválido");
+        }
+        else {
+            this.mycep.getEnderecoCompleto(numCEP).subscribe(function (res) {
+                _this.resposta = [{ bairro: res.bairro, cep: res.cep, complemento: res.complemento,
+                        gia: res.gia, ibge: res.ibge, localidade: res.localidade, logradouro: res.logradouro,
+                        uf: res.uf, unidade: res.unidade }];
+                console.log(res);
+            });
+        }
+    };
     Cep = __decorate$130([
         Component({
-            selector: 'page-cep',template:/*ion-inline-start:"C:\Users\rosan\Documents\IC\SoroAcqua\SoroAcqua\src\pages\cep\cep.html"*/'<!--\n\n  Generated template for the Cep page.\n\n\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>cep</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n<ion-card>\n\n\n\n{{resposta.Logradouro}}\n\n{{resposta.complemento}}\n\n{{resposta.bairro}}\n\n{{resposta.localidade}}\n\n</ion-card>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\rosan\Documents\IC\SoroAcqua\SoroAcqua\src\pages\cep\cep.html"*/,
+            selector: 'page-cep',template:/*ion-inline-start:"C:\Users\rosan\Documents\IC\SoroAcqua\SoroAcqua\src\pages\cep\cep.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Consulte o CEP</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n    <ion-input type="text" [(ngModel)]="numCEP" placeholder="Digite o CEP"></ion-input>\n\n    <button ion-button icon-left block (click)="getEndereco(numCEP)">Buscar Endereço</button>\n\n\n\n\n\n    <ion-item *ngFor="let resp of resposta">\n\n        Rua: {{resp.logradouro}}<br>\n\n        Bairro: {{resp.bairro}}<br>\n\n        Cidade: {{resp.localidade}}<br>\n\n        Estado: {{resp.uf}}<br>\n\n        CEP: {{resp.cep}}<br>\n\n    </ion-item>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\rosan\Documents\IC\SoroAcqua\SoroAcqua\src\pages\cep\cep.html"*/,
             providers: [MyCEP]
         }), 
         __metadata$24('design:paramtypes', [NavController, MyCEP])

@@ -1,20 +1,12 @@
 import { Injectable } from '@angular/core';
-import { Http, Response, Headers, RequestOptions } from '@angular/http';
+import { Http, /*Response,*/ Headers, RequestOptions } from '@angular/http';
 import {Observable} from 'rxjs/Rx'
 
-/*
-  Generated class for the MyCEP provider.
-
-  See https://angular.io/docs/ts/latest/guide/dependency-injection.html
-  for more info on providers and Angular 2 DI.
-*/
 @Injectable()
 export class MyCEP {
 
 
-  constructor(public http: Http) {
-    console.log('Hello MyCEP Provider');
-  }
+  constructor(public http: Http) {}
 
   getEnderecoCompleto(cep:string){
 

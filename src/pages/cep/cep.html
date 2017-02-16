@@ -1,25 +1,24 @@
-<!--
-  Generated template for the Cep page.
-
-  See http://ionicframework.com/docs/v2/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
-
   <ion-navbar>
-    <ion-title>cep</ion-title>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Consulte o CEP</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-<ion-card>
+    <ion-input type="text" [(ngModel)]="numCEP" placeholder="Digite o CEP"></ion-input>
+    <button ion-button icon-left block (click)="getEndereco(numCEP)">Buscar Endereço</button>
 
-{{resposta.Logradouro}}
-{{resposta.complemento}}
-{{resposta.bairro}}
-{{resposta.localidade}}
-</ion-card>
 
+    <ion-item *ngFor="let resp of resposta">
+        Rua: {{resp.logradouro}}<br>
+        Bairro: {{resp.bairro}}<br>
+        Cidade: {{resp.localidade}}<br>
+        Estado: {{resp.uf}}<br>
+        CEP: {{resp.cep}}<br>
+    </ion-item>
 </ion-content>
