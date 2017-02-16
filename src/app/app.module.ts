@@ -26,6 +26,8 @@ import { EventosView } from '../pages/nosso-rio/eventos-rio/eventos-view/eventos
 import { DetalhesParametros } from '../pages/nosso-rio/qualidade-agua-rio/detalhes-parametros/detalhes-parametros';
 import { ProjetosView } from '../pages/nosso-rio/projetos-rio/projetos-view/projetos-view';
 import { Tratamento } from '../pages/tratamento/tratamento';
+import { Cep } from '../pages/cep/cep';
+
 
 @NgModule({
   declarations: [
@@ -54,7 +56,8 @@ import { Tratamento } from '../pages/tratamento/tratamento';
     EventosView,
     DetalhesParametros,
     ProjetosView,
-    Tratamento
+    Tratamento,
+    Cep
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -86,7 +89,8 @@ import { Tratamento } from '../pages/tratamento/tratamento';
     EventosView,
     DetalhesParametros,
     ProjetosView,
-    Tratamento
+    Tratamento,
+    Cep
   ],
   providers: []
 })

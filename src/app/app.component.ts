@@ -20,6 +20,7 @@ import { Sobre } from '../pages/sobre/sobre';
 import { QualidadeAguaRio } from '../pages/nosso-rio/qualidade-agua-rio/qualidade-agua-rio';
 import { EventosRio } from '../pages/nosso-rio/eventos-rio/eventos-rio';
 import { PassagemRio } from '../pages/nosso-rio/passagem-rio/passagem-rio';
+import { Cep } from '../pages/cep/cep';
 
 @Component({
   templateUrl: 'app.html'
@@ -65,7 +66,8 @@ export class MyApp {
       ], showDetails: false},
 
       { title: 'Configurações', component: Configuracoes, icon: '', itens: [], showDetails: false},
-      { title: 'Sobre', component: Sobre, icon: '', itens: [], showDetails: false}
+      { title: 'Sobre', component: Sobre, icon: '', itens: [], showDetails: false},
+      { title: 'Cep', component: Cep, icon: '', itens: [], showDetails: false}
     ];
 
   }
