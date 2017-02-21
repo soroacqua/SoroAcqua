@@ -58,7 +58,7 @@ export class MyApp {
 
       { title: 'Nossa Água', component: '', icon: 'arrow-dropright', itens: [
         { title: 'Água', component: Agua, icon: 'water'},
-        { title: 'Sub-Estações', component: Estacoes, icon: 'albums'},
+        { title: 'Estações', component: Estacoes, icon: 'color-fill'},
         { title: 'Tratamento', component: '', icon: 'construct'},
         { title: 'Qualidade', component: AguaConsultaQualidade, icon: 'stats'},
         { title: 'Saae', component: SaaePage, icon: 'people'},

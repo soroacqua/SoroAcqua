@@ -1,18 +1,49 @@
-<!--
-  Generated template for the Estacoes page.
-
-  See http://ionicframework.com/docs/v2/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
-
   <ion-navbar>
-    <ion-title>estacoes</ion-title>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Estações</ion-title>
   </ion-navbar>
-
 </ion-header>
-
 
 <ion-content padding>
 
+  <ion-slides [options]="{pager:true}">
+
+    <ion-slide style="background-color: #E0EEEE">
+      <div class="capa">Nossas Estações</div>
+    </ion-slide>
+
+    <ion-slide style="background-color: #E0EEEE">
+      <div class="titulo"></div>
+      <div class="corpo">
+        <p class="title-corpo" align=justify>O Saae possui duas Estações de Tratamento de Água: ETA/Cerrado e a ETA/Éden.</p>
+        <br>
+     </div>
+       <div class="titulo"></div>
+    </ion-slide>
+
+<ion-slide style="background-color: #E0EEEE">
+  <div class="titulo">ETA/Éden</div>
+  <div class="corpo">
+    <p class="title-corpo">Localização <ion-icon  md="md-arrow-round-forward"></ion-icon> Rua Pereira da Fonseca, bairro do Éden</p><br>
+    <p class="title-corpo">Responsável por abastecer <ion-icon  md="md-arrow-round-down"></ion-icon> </p>
+    <p class="title-corpo">Bairros do Éden, Aparecidinha, Cajuru e grande parte da Zona Industrial do município</p>
+    <br>
+      <img src="imagens/ETA_Eden.jpg" class="img"/>
+  <br>
+ </div>
+</ion-slide>
+
+<ion-slide style="background-color: #E0EEEE">
+  <div class="titulo">ETA/Cerrado</div>
+  <div class="corpo">
+  <p class="title-corpo">Localização <ion-icon  md="md-arrow-round-forward"></ion-icon><p class="title-corpo">Avenida General Carneiro, bairro Cerrado</p>
+  <br>
+    <img src="imagens/ETA_Cerrado.jpg" class="img"/>
+    <br>
+ </div>
+</ion-slide>
+</ion-slides>
 </ion-content>
