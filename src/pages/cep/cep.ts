@@ -8,15 +8,16 @@ import { MyCEP } from '../../providers/my-cep';
   providers: [MyCEP]
 })
 export class Cep {
-  private resposta : Array<{bairro: string, cep: string, complemento: string,
+  //Não conseguir usar private resposta, pois não pode ser usado no getEndereço. Porque??? Pesquisar
+  resposta : Array<{bairro: string, cep: any, complemento: string,
                             gia: string, ibge: string, localidade: string, logradouro: string,
                             uf: string, unidade: string}>;
 
   constructor(public navCtrl: NavController, private mycep : MyCEP ) {
   }
 
-  getEndereco(numCEP){
-    if(numCEP == null){
+  /*getEndereco(numCEP){
+    if(numCEP == 0){
       console.log("Numero do CEP inválido");
     }
     else{
@@ -27,5 +28,5 @@ export class Cep {
             console.log(res);
         });
     }
-  }
+  }*/
 }

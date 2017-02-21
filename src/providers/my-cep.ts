@@ -8,7 +8,7 @@ export class MyCEP {
 
   constructor(public http: Http) {}
 
-  getEnderecoCompleto(cep:string){
+  getEnderecoCompleto(cep:Number){
 
     var headers = new Headers({'Content-Type':'application/json'});
 
