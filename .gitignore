@@ -26,8 +26,13 @@ platforms/
 plugins/
 plugins/android.json
 plugins/ios.json
-www/
 $RECYCLE.BIN/
+www/assets/
+www/build/
+www/.gitkeep
+www/index.html
+www/manifest.json
+www/service-worker.js
 
 .DS_Store
 Thumbs.db
