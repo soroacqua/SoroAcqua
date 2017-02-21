@@ -21,6 +21,7 @@ import { QualidadeAguaRio } from '../pages/nosso-rio/qualidade-agua-rio/qualidad
 import { EventosRio } from '../pages/nosso-rio/eventos-rio/eventos-rio';
 import { PassagemRio } from '../pages/nosso-rio/passagem-rio/passagem-rio';
 import { Cep } from '../pages/cep/cep';
+import { Estacoes } from '../pages/agua/estacoes/estacoes';
 
 @Component({
   templateUrl: 'app.html'
@@ -57,7 +58,7 @@ export class MyApp {
 
       { title: 'Nossa Água', component: '', icon: 'arrow-dropright', itens: [
         { title: 'Água', component: Agua, icon: 'water'},
-        { title: 'Sub-Estações', component: '', icon: 'albums'},
+        { title: 'Sub-Estações', component: Estacoes, icon: 'albums'},
         { title: 'Tratamento', component: '', icon: 'construct'},
         { title: 'Qualidade', component: AguaConsultaQualidade, icon: 'stats'},
         { title: 'Saae', component: SaaePage, icon: 'people'},
