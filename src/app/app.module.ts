@@ -27,7 +27,7 @@ import { DetalhesParametros } from '../pages/nosso-rio/qualidade-agua-rio/detalh
 import { ProjetosView } from '../pages/nosso-rio/projetos-rio/projetos-view/projetos-view';
 import { Tratamento } from '../pages/tratamento/tratamento';
 import { Cep } from '../pages/cep/cep';
-
+import { Estacoes } from '../pages/agua/estacoes/estacoes';
 
 @NgModule({
   declarations: [
@@ -57,7 +57,8 @@ import { Cep } from '../pages/cep/cep';
     DetalhesParametros,
     ProjetosView,
     Tratamento,
-    Cep
+    Cep,
+    Estacoes
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -90,7 +91,8 @@ import { Cep } from '../pages/cep/cep';
     DetalhesParametros,
     ProjetosView,
     Tratamento,
-    Cep
+    Cep,
+    Estacoes
   ],
   providers: []
 })
