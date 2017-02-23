@@ -10,9 +10,9 @@
 
 
 <ion-content padding>
-    <!--<ion-input type="text" [(ngModel)]="numCEP" placeholder="Digite o CEP"></ion-input>
-    <button ion-button icon-left block (click)="getEndereco()">Buscar Endereço</button>
-
+    <ion-input type="text" [(ngModel)]="numCEP" placeholder="Digite o CEP"></ion-input>
+    <!--<ion-input type="text" formControlName="numCEP" id="numCEP" placeholder="Digite o CEP"></ion-input>-->
+    <button ion-button icon-left block (click)="getEndereco(numCEP)">Buscar Endereço</button>
 
     <ion-item *ngFor="let resp of resposta">
         Rua: {{resp.logradouro}}<br>
@@ -20,5 +20,5 @@
         Cidade: {{resp.localidade}}<br>
         Estado: {{resp.uf}}<br>
         CEP: {{resp.cep}}<br>
-    </ion-item>-->
+    </ion-item>
 </ion-content>
