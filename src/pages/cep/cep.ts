@@ -18,7 +18,6 @@ export class Cep {
   }
 
   getEndereco(numCEP){
-    console.log("Numero do cep"+this.numCEP);
     if(this.numCEP == null){
       console.log("Numero do CEP inválido");
     }
