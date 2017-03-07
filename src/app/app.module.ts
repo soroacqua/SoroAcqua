@@ -4,7 +4,6 @@ import { MyApp } from './app.component';
 import { Home } from '../pages/home/home';
 import { Rio } from '../pages/nosso-rio/rio/rio';
 import { Agua } from '../pages/agua/agua';
-import { Eventos } from '../pages/agua/eventos/eventos';
 import { Projetos } from '../pages/agua/projetos/projetos';
 import { SaaePage } from '../pages/agua/saae/saae';
 import { Mapa } from '../pages/nosso-rio/mapa/mapa';
@@ -35,7 +34,6 @@ import { Estacoes } from '../pages/agua/estacoes/estacoes';
     Home,
     Rio,
     Agua,
-    Eventos,
     Projetos,
     SaaePage,
     Mapa,
@@ -69,7 +67,6 @@ import { Estacoes } from '../pages/agua/estacoes/estacoes';
     Home,
     Rio,
     Agua,
-    Eventos,
     Projetos,
     SaaePage,
     Mapa,

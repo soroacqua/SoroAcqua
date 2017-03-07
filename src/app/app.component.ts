@@ -5,7 +5,6 @@ import { StatusBar, Splashscreen } from 'ionic-native';
 import { Home } from '../pages/home/home';
 import { Rio } from '../pages/nosso-rio/rio/rio';
 import { Agua } from '../pages/agua/agua';
-import { Eventos } from '../pages/agua/eventos/eventos';
 import { Projetos } from '../pages/agua/projetos/projetos';
 import { SaaePage } from '../pages/agua/saae/saae';
 import { Mapa } from '../pages/nosso-rio/mapa/mapa';
@@ -22,6 +21,7 @@ import { EventosRio } from '../pages/nosso-rio/eventos-rio/eventos-rio';
 import { PassagemRio } from '../pages/nosso-rio/passagem-rio/passagem-rio';
 import { Cep } from '../pages/cep/cep';
 import { Estacoes } from '../pages/agua/estacoes/estacoes';
+
 
 @Component({
   templateUrl: 'app.html'
@@ -62,10 +62,9 @@ export class MyApp {
         { title: 'Tratamento', component: '', icon: 'construct'},
         { title: 'Qualidade', component: AguaConsultaQualidade, icon: 'stats'},
         { title: 'Saae', component: SaaePage, icon: 'people'},
-        { title: 'Projetos', component: Projetos, icon: 'paper'},
-        { title: 'Eventos', component: Eventos, icon: 'calendar'}
+        { title: 'Projetos', component: Projetos, icon: 'paper'}
       ], showDetails: false},
-
+      { title: 'Eventos', component: Home, icon: '', itens: [], showDetails: false},
       { title: 'Configurações', component: Configuracoes, icon: '', itens: [], showDetails: false},
       { title: 'Sobre', component: Sobre, icon: '', itens: [], showDetails: false},
       { title: 'Cep', component: Cep, icon: '', itens: [], showDetails: false}
