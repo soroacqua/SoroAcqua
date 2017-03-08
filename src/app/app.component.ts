@@ -5,19 +5,18 @@ import { StatusBar, Splashscreen } from 'ionic-native';
 import { Home } from '../pages/home/home';
 import { Rio } from '../pages/nosso-rio/rio/rio';
 import { Agua } from '../pages/agua/agua';
-import { Projetos } from '../pages/agua/projetos/projetos';
 import { SaaePage } from '../pages/agua/saae/saae';
 import { Mapa } from '../pages/nosso-rio/mapa/mapa';
 import { Historia } from '../pages/nosso-rio/historia/historia';
 import { Flora } from '../pages/nosso-rio/flora/flora';
 import { Fauna } from '../pages/nosso-rio/fauna/fauna';
 import { Despoluicao } from '../pages/nosso-rio/despoluicao/despoluicao';
-import { ProjetosRio } from '../pages/nosso-rio/projetos-rio/projetos-rio';
+import { Projetos } from '../pages/projetos/projetos';
 import { AguaConsultaQualidade } from '../pages/agua/agua-consulta-qualidade/agua-consulta-qualidade';
 import { Configuracoes } from '../pages/configuracoes/configuracoes';
 import { Sobre } from '../pages/sobre/sobre';
 import { QualidadeAguaRio } from '../pages/nosso-rio/qualidade-agua-rio/qualidade-agua-rio';
-import { EventosRio } from '../pages/nosso-rio/eventos-rio/eventos-rio';
+import { Eventos } from '../pages/eventos/eventos';
 import { PassagemRio } from '../pages/nosso-rio/passagem-rio/passagem-rio';
 import { Cep } from '../pages/cep/cep';
 import { Estacoes } from '../pages/agua/estacoes/estacoes';
@@ -49,8 +48,6 @@ export class MyApp {
         { title: 'Mapa', component: Mapa, icon: 'map'},
         { title: 'Qualidade da Água', component: QualidadeAguaRio, icon: 'checkmark-circle'},
         { title: 'Despoluição', component: Despoluicao, icon: 'thumbs-up',},
-        { title: 'Projetos', component: ProjetosRio, icon: 'paper'},
-        { title: 'Eventos', component: EventosRio, icon: 'calendar'},
         { title: 'Flora', component: Flora, icon: 'flower'},
         { title: 'Fauna', component: Fauna, icon: 'paw'},
         { title: 'Por Onde Passa', component: PassagemRio, icon: 'pin'}
@@ -62,9 +59,9 @@ export class MyApp {
         { title: 'Tratamento', component: '', icon: 'construct'},
         { title: 'Qualidade', component: AguaConsultaQualidade, icon: 'stats'},
         { title: 'Saae', component: SaaePage, icon: 'people'},
-        { title: 'Projetos', component: Projetos, icon: 'paper'}
       ], showDetails: false},
-      { title: 'Eventos', component: Home, icon: '', itens: [], showDetails: false},
+      { title: 'Eventos', component: Eventos, icon: 'calendar', itens: [], showDetails: false},
+      { title: 'Projetos', component: Eventos, icon: 'paper', itens: [], showDetails: false},
       { title: 'Configurações', component: Configuracoes, icon: '', itens: [], showDetails: false},
       { title: 'Sobre', component: Sobre, icon: '', itens: [], showDetails: false},
       { title: 'Cep', component: Cep, icon: '', itens: [], showDetails: false}

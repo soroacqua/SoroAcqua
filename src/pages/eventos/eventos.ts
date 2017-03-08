@@ -1,22 +1,26 @@
 import { Component } from '@angular/core';
 import { NavController, ActionSheetController, Platform, AlertController } from 'ionic-angular';
-import { ProjetosView } from './projetos-view/projetos-view'
+import { EventosView } from './eventos-view/eventos-view';
+import { PrvNoticia } from '../../providers/prv-noticia';
+
 
 @Component({
-  selector: 'page-projetos-rio',
-  templateUrl: 'projetos-rio.html'
+  selector: 'page-eventos',
+  templateUrl: 'eventos.html',
+  providers: [PrvNoticia]
 })
-export class ProjetosRio {
+export class Eventos {
 
-  public projetos: Array<any>;
+  public eventos;
 
   constructor(public navCtrl: NavController, public platform: Platform, public actionsheetCtrl: ActionSheetController,
-              public alertCtrl: AlertController) {
-    this.carregarProjetos();
+              public alertCtrl: AlertController, private prvNoticia: PrvNoticia) {
+    this.eventos = [];
+    this.carregarEventos();
   }
 
-  carregarProjetos(){
-    this.projetos = [
+  carregarEventos(){
+    /*this.eventos = [
             {titulo: 'Caminhada Ecológica',
             texto: 'No dia 19 de março, a partir das 8h30, acontece a segunda edição da Caminhada Ecológica pelo Parque Linear do Rio Sorocaba e a tradicional Expedição do Rio Sorocaba, que já está em sua oitava edição. Na caminhada os participantes vão recolher os resíduos depositado às margens do rio Sorocaba. A ação visa sensibilizar as pessoas sobre os impactos da disposição incorreta do lixo nas ruas, arrastado pelas chuvas até o manancial. O início da ação ocorrerá em duas frentes de trabalho: no Centro de Educação Ambiental do Rio Sorocaba (CEA Rio Sorocaba) e no Parque das Águas, no Jardim Abaeté. Quem escolher sair do CEA Rio Sorocaba percorrerá cerca de 8 quilômetros até o Parque das Águas. Já quem quiser ir direto ao parque participará de um mutirão de limpeza na área. O grupo da caminhada se encontrará aproximadamente às 10h com o grupo da expedição, momento onde ocorrerá a saída de bairro, que vai percorrer o trecho entre a Ponte Padre Madureira e o Parque das Águas. Nesta edição, a expedição conta com o apoio e a participação da Polícia Ambiental, Corpo de Bombeiros, SAAE Sorocaba, Defesa Civil e Prefeitura de Votorantim. ',
             data: '19/03/2016', hora: '08:30', valor: 'Gratuito',
@@ -37,22 +41,30 @@ export class ProjetosRio {
             inscricoes: 'As inscrições podem ser feitas gratuitamente, das 8h às 17h, pelo telefone (15) 3238.2366 ou pessoalmente na Secretaria do Meio Ambiente (Sema), até esta terça-feira (27)',
             local: 'CEA Rio Sorocaba - Av. Dom Aguirre - Centro (em frente ao Poupatempo)',
             imagem: 'imagens/tour-rio.jpg'}
-    ];
+    ];*/
+
+    this.prvNoticia.getNoticia().subscribe(res=>{
+      console.log(res[0]);
+      for (let i = 0; i < res.length; i++) {
+          this.eventos.push(res[i]);
+      }
+
+    });
   }
 
-  openPage(projeto){
-      this.navCtrl.push(ProjetosView, {
-        projeto: projeto
+  openPage(evento){
+      this.navCtrl.push(EventosView, {
+        evento: evento
       });
   }
 
   getItems(ev) {
-    this.carregarProjetos();
+    this.carregarEventos();
 
     var val = ev.target.value;
 
     if (val && val.trim() != '') {
-      this.projetos = this.projetos.filter((item) => {
+      this.eventos = this.eventos.filter((item) => {
         return (item.titulo.toLowerCase().indexOf(val.toLowerCase()) > -1);
       })
     }
@@ -71,7 +83,7 @@ export class ProjetosRio {
             //alert
             let alert = this.alertCtrl.create({
                 //title: 'Facebook',
-                subTitle: 'O projeto foi compartilhado com sucesso no Facebook!',
+                subTitle: 'O evento foi compartilhado com sucesso no Facebook!',
                 buttons: ['OK']
               });
               alert.present();
@@ -84,7 +96,7 @@ export class ProjetosRio {
 
               //alert
               let alert = this.alertCtrl.create({
-                  subTitle: 'O projeto foi compartilhado com sucesso no WhatsApp!',
+                  subTitle: 'O evento foi compartilhado com sucesso no WhatsApp!',
                   buttons: ['OK']
                 });
                 alert.present();
@@ -97,7 +109,7 @@ export class ProjetosRio {
 
               //alert
               let alert = this.alertCtrl.create({
-                  subTitle: 'O projeto foi compartilhado com sucesso no Gmail!',
+                  subTitle: 'O evento foi compartilhado com sucesso no Gmail!',
                   buttons: ['OK']
                 });
                 alert.present();
@@ -110,7 +122,7 @@ export class ProjetosRio {
 
               //alert
               let alert = this.alertCtrl.create({
-                  subTitle: 'O projeto foi compartilhado com sucesso no Outlook!',
+                  subTitle: 'O evento foi compartilhado com sucesso no Outlook!',
                   buttons: ['OK']
                 });
                 alert.present();

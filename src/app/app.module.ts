@@ -4,26 +4,25 @@ import { MyApp } from './app.component';
 import { Home } from '../pages/home/home';
 import { Rio } from '../pages/nosso-rio/rio/rio';
 import { Agua } from '../pages/agua/agua';
-import { Projetos } from '../pages/agua/projetos/projetos';
 import { SaaePage } from '../pages/agua/saae/saae';
 import { Mapa } from '../pages/nosso-rio/mapa/mapa';
 import { Historia } from '../pages/nosso-rio/historia/historia';
 import { Flora } from '../pages/nosso-rio/flora/flora';
 import { Fauna } from '../pages/nosso-rio/fauna/fauna';
 import { Despoluicao } from '../pages/nosso-rio/despoluicao/despoluicao';
-import { ProjetosRio } from '../pages/nosso-rio/projetos-rio/projetos-rio';
+import { Projetos } from '../pages/projetos/projetos';
 import { AguaDetalhes } from '../pages/agua/agua-detalhes/agua-detalhes';
 import { AguaConsultaQualidade } from '../pages/agua/agua-consulta-qualidade/agua-consulta-qualidade';
 import { ProjetoDetalhes } from '../pages/agua/projetos/projeto-detalhes/projeto-detalhes';
 import { Configuracoes } from '../pages/configuracoes/configuracoes';
 import { Sobre } from '../pages/sobre/sobre';
 import { QualidadeAguaRio } from '../pages/nosso-rio/qualidade-agua-rio/qualidade-agua-rio';
-import { EventosRio } from '../pages/nosso-rio/eventos-rio/eventos-rio';
+import { Eventos } from '../pages/eventos/eventos';
 import { PassagemRio } from '../pages/nosso-rio/passagem-rio/passagem-rio';
 import { SaaeHistoria } from '../pages/agua/saae/saae-historia/saae-historia';
-import { EventosView } from '../pages/nosso-rio/eventos-rio/eventos-view/eventos-view';
+import { EventosView } from '../pages/eventos/eventos-view/eventos-view';
 import { DetalhesParametros } from '../pages/nosso-rio/qualidade-agua-rio/detalhes-parametros/detalhes-parametros';
-import { ProjetosView } from '../pages/nosso-rio/projetos-rio/projetos-view/projetos-view';
+import { ProjetosView } from '../pages/projetos/projetos-view/projetos-view';
 import { Tratamento } from '../pages/tratamento/tratamento';
 import { Cep } from '../pages/cep/cep';
 import { Estacoes } from '../pages/agua/estacoes/estacoes';
@@ -34,21 +33,20 @@ import { Estacoes } from '../pages/agua/estacoes/estacoes';
     Home,
     Rio,
     Agua,
-    Projetos,
     SaaePage,
     Mapa,
     Historia,
     Flora,
     Fauna,
     Despoluicao,
-    ProjetosRio,
+    Projetos,
     AguaDetalhes,
     AguaConsultaQualidade,
     ProjetoDetalhes,
     Configuracoes,
     Sobre,
     QualidadeAguaRio,
-    EventosRio,
+    Eventos,
     PassagemRio,
     SaaeHistoria,
     EventosView,
@@ -67,21 +65,20 @@ import { Estacoes } from '../pages/agua/estacoes/estacoes';
     Home,
     Rio,
     Agua,
-    Projetos,
     SaaePage,
     Mapa,
     Historia,
     Flora,
     Fauna,
     Despoluicao,
-    ProjetosRio,
+    Projetos,
     AguaDetalhes,
     AguaConsultaQualidade,
     ProjetoDetalhes,
     Configuracoes,
     Sobre,
     QualidadeAguaRio,
-    EventosRio,
+    Eventos,
     PassagemRio,
     SaaeHistoria,
     EventosView,
