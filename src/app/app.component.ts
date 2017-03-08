@@ -61,7 +61,7 @@ export class MyApp {
         { title: 'Saae', component: SaaePage, icon: 'people'},
       ], showDetails: false},
       { title: 'Eventos', component: Eventos, icon: 'calendar', itens: [], showDetails: false},
-      { title: 'Projetos', component: Eventos, icon: 'paper', itens: [], showDetails: false},
+      { title: 'Projetos', component: Projetos, icon: 'paper', itens: [], showDetails: false},
       { title: 'Configurações', component: Configuracoes, icon: '', itens: [], showDetails: false},
       { title: 'Sobre', component: Sobre, icon: '', itens: [], showDetails: false},
       { title: 'Cep', component: Cep, icon: '', itens: [], showDetails: false}
