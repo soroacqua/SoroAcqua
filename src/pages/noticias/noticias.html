@@ -4,21 +4,22 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Projetos</ion-title>
+    <ion-title>Notícias</ion-title>
   </ion-navbar>
 
 </ion-header>
 
+
 <ion-content padding>
-  <ion-searchbar placeholder="Digite o nome do projeto..." [(ngModel)]="query" (ionInput)="getItems()"></ion-searchbar>
-  <ion-card *ngFor="let p of projetos">
-    <img [src]="p.imagem"/>
+  <ion-searchbar placeholder="Digite o nome da notícia..." [(ngModel)]="query" (ionInput)="getItems()"></ion-searchbar>
+  <ion-card *ngFor="let n of noticias">
+    <img [src]="n.imagem"/>
     <ion-card-content>
-      <ion-card-title (click)="openPage(p)">
-        {{p.titulo}}
+      <ion-card-title (click)="openPage(n)">
+        {{n.titulo}}
       </ion-card-title>
-      <div class="chamada" (click)="openPage(p)">
-        {{p.descricao}}
+      <div class="chamada" (click)="openPage(n)">
+        {{n.descricao}}
       </div>
       <ion-row>
         <ion-col text-center>
@@ -31,7 +32,7 @@
           </button>
         </ion-col>
         <ion-col text-center>
-          <button ion-button clear small icon-left (click)="openPage(p)">
+          <button ion-button clear small icon-left (click)="openPage(n)">
             <ion-icon name="add-circle"></ion-icon>
             <div>
                 Mais

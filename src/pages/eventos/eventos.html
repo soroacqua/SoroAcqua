@@ -4,13 +4,13 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Eventos Rio Sorocaba</ion-title>
+    <ion-title>Eventos</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 <ion-content padding>
-  <ion-searchbar placeholder="Digite o nome do evento..." (ionInput)="getItems($event)"></ion-searchbar>
+  <ion-searchbar placeholder="Digite o nome do evento..." [(ngModel)]="query" (ionInput)="getItems()"></ion-searchbar>
   <ion-card *ngFor="let e of eventos">
     <img [src]="e.imagem"/>
     <ion-card-content>

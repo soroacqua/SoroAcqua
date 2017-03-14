@@ -15,7 +15,7 @@
       {{evento.titulo}}
     </ion-card-title>
     <div>
-      {{evento.texto}}
+      {{evento.descricao}}
     </div>
     <br>
     <hr>
@@ -27,7 +27,7 @@
         <b>Data:</b>
       </ion-col>
       <ion-col text-left width-77>
-        {{evento.data}}
+        {{evento.dt.publicado}}
       </ion-col>
     </ion-row>
     <hr>
@@ -51,7 +51,7 @@
       <b>Valor:</b>
       </ion-col>
       <ion-col text-left width-77>
-      {{evento.valor}}
+      {{evento.Taxa}}
       </ion-col>
     </ion-row>
     <hr>
@@ -63,7 +63,7 @@
       <b>Inscrições:</b>
       </ion-col>
       <ion-col text-left width-77>
-      {{evento.inscricoes}}
+      {{evento.incricao}}
       </ion-col>
     </ion-row>
     <hr>

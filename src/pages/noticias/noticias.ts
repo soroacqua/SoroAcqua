@@ -1,53 +1,52 @@
 import { Component } from '@angular/core';
 import { NavController, ActionSheetController, Platform, AlertController } from 'ionic-angular';
-import { EventosView } from './eventos-view/eventos-view';
-import { PrvEventos } from '../../providers/prv-eventos';
-
+import { NoticiasView } from './noticias-view/noticias-view';
+import { PrvNoticia } from '../../providers/prv-noticia';
 
 @Component({
-  selector: 'page-eventos',
-  templateUrl: 'eventos.html',
-  providers: [PrvEventos]
+  selector: 'page-noticias',
+  templateUrl: 'noticias.html',
+  providers: [PrvNoticia]
 })
-export class Eventos {
+export class Noticias {
 
-  public eventos: Array<any>;
+  public noticias: Array<any>;
   private query:string;
 
   constructor(public navCtrl: NavController, public platform: Platform, public actionsheetCtrl: ActionSheetController,
-              public alertCtrl: AlertController, private prvEventos: PrvEventos) {
-    this.eventos = [];
-    this.carregarEventos();
+              public alertCtrl: AlertController, private prvNoticias: PrvNoticia) {
+    this.noticias = [];
+    this.carregarNoticias();
     this.query = '';
   }
 
-  carregarEventos(){
-    this.prvEventos.getEvento().subscribe(res=>{
+  carregarNoticias(){
+    this.prvNoticias.getNoticia().subscribe(res=>{
       console.log(res);
       for (let i = 0; i < res.length; i++) {
-          this.eventos.push(res[i]);
+          this.noticias.push(res[i]);
       }
 
     });
   }
 
-  openPage(evento){
-      this.navCtrl.push(EventosView, {
-        evento: evento
+  openPage(noticia){
+      this.navCtrl.push(NoticiasView, {
+        noticia: noticia
       });
   }
 
   getItems() {
-    this.eventos=[];
+    this.noticias=[];
     if(this.query == ''){
-      this.carregarEventos();
+      this.carregarNoticias();
     }
     else{
-      this.prvEventos.getEvento().subscribe(res=>{
+      this.prvNoticias.getNoticia().subscribe(res=>{
         for (let i = 0; i < res.length; i++) {
           //verifica se o valor digitado no input é igual ou parcialmete igual ao titulo do evento no banco
           if(res[i].titulo.toLowerCase().indexOf(this.query.toLowerCase()) > -1){
-            this.eventos.push(res[i]);
+            this.noticias.push(res[i]);
           }
         }
       });
@@ -67,7 +66,7 @@ export class Eventos {
             //alert
             let alert = this.alertCtrl.create({
                 //title: 'Facebook',
-                subTitle: 'O evento foi compartilhado com sucesso no Facebook!',
+                subTitle: 'A notícia foi compartilhada com sucesso no Facebook!',
                 buttons: ['OK']
               });
               alert.present();
@@ -80,7 +79,7 @@ export class Eventos {
 
               //alert
               let alert = this.alertCtrl.create({
-                  subTitle: 'O evento foi compartilhado com sucesso no WhatsApp!',
+                  subTitle: 'A notícia foi compartilhada com sucesso no WhatsApp!',
                   buttons: ['OK']
                 });
                 alert.present();
@@ -93,7 +92,7 @@ export class Eventos {
 
               //alert
               let alert = this.alertCtrl.create({
-                  subTitle: 'O evento foi compartilhado com sucesso no Gmail!',
+                  subTitle: 'A notícia foi compartilhada com sucesso no Gmail!',
                   buttons: ['OK']
                 });
                 alert.present();
@@ -106,7 +105,7 @@ export class Eventos {
 
               //alert
               let alert = this.alertCtrl.create({
-                  subTitle: 'O evento foi compartilhado com sucesso no Outlook!',
+                  subTitle: 'A notícia foi compartilhada com sucesso no Outlook!',
                   buttons: ['OK']
                 });
                 alert.present();
@@ -121,4 +120,5 @@ export class Eventos {
     });
     actionSheet.present();
   }
+
 }
