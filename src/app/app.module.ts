@@ -13,7 +13,6 @@ import { Despoluicao } from '../pages/nosso-rio/despoluicao/despoluicao';
 import { Projetos } from '../pages/projetos/projetos';
 import { AguaDetalhes } from '../pages/agua/agua-detalhes/agua-detalhes';
 import { AguaConsultaQualidade } from '../pages/agua/agua-consulta-qualidade/agua-consulta-qualidade';
-import { ProjetoDetalhes } from '../pages/agua/projetos/projeto-detalhes/projeto-detalhes';
 import { Configuracoes } from '../pages/configuracoes/configuracoes';
 import { Sobre } from '../pages/sobre/sobre';
 import { QualidadeAguaRio } from '../pages/nosso-rio/qualidade-agua-rio/qualidade-agua-rio';
@@ -42,7 +41,6 @@ import { Estacoes } from '../pages/agua/estacoes/estacoes';
     Projetos,
     AguaDetalhes,
     AguaConsultaQualidade,
-    ProjetoDetalhes,
     Configuracoes,
     Sobre,
     QualidadeAguaRio,
@@ -74,7 +72,6 @@ import { Estacoes } from '../pages/agua/estacoes/estacoes';
     Projetos,
     AguaDetalhes,
     AguaConsultaQualidade,
-    ProjetoDetalhes,
     Configuracoes,
     Sobre,
     QualidadeAguaRio,
