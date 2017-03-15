@@ -20,7 +20,7 @@ import { Eventos } from '../pages/eventos/eventos';
 import { PassagemRio } from '../pages/nosso-rio/passagem-rio/passagem-rio';
 import { Cep } from '../pages/cep/cep';
 import { Estacoes } from '../pages/agua/estacoes/estacoes';
-
+import { Noticias } from '../pages/noticias/noticias';
 
 @Component({
   templateUrl: 'app.html'
@@ -40,7 +40,7 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Início', component: Home, icon: '', itens: [], showDetails: false},
+      { title: 'Início', component: Home, icon: 'home', itens: [], showDetails: false},
 
       { title: 'Nosso Rio', component: '', icon: 'arrow-dropright', itens: [
         { title: 'Rio', component: Rio, icon: 'boat'},
@@ -60,11 +60,13 @@ export class MyApp {
         { title: 'Qualidade', component: AguaConsultaQualidade, icon: 'stats'},
         { title: 'Saae', component: SaaePage, icon: 'people'},
       ], showDetails: false},
+      { title: 'Notícias', component: Noticias, icon: 'paper', itens: [], showDetails: false},
       { title: 'Eventos', component: Eventos, icon: 'calendar', itens: [], showDetails: false},
       { title: 'Projetos', component: Projetos, icon: 'paper', itens: [], showDetails: false},
-      { title: 'Configurações', component: Configuracoes, icon: '', itens: [], showDetails: false},
-      { title: 'Sobre', component: Sobre, icon: '', itens: [], showDetails: false},
-      { title: 'Cep', component: Cep, icon: '', itens: [], showDetails: false}
+      { title: 'Configurações', component: Configuracoes, icon: 'settings', itens: [], showDetails: false},
+      { title: 'Sobre', component: Sobre, icon: 'information-circle', itens: [], showDetails: false},
+      { title: 'Cep', component: Cep, icon: '', itens: [], showDetails: false},
+      { title: 'Sair', component: '', icon: 'log-out', itens: [], showDetails: false}
     ];
 
   }

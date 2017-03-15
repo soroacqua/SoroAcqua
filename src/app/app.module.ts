@@ -25,6 +25,8 @@ import { ProjetosView } from '../pages/projetos/projetos-view/projetos-view';
 import { Tratamento } from '../pages/tratamento/tratamento';
 import { Cep } from '../pages/cep/cep';
 import { Estacoes } from '../pages/agua/estacoes/estacoes';
+import { Noticias } from '../pages/noticias/noticias';
+import { NoticiasView } from '../pages/noticias/noticias-view/noticias-view';
 
 @NgModule({
   declarations: [
@@ -52,7 +54,9 @@ import { Estacoes } from '../pages/agua/estacoes/estacoes';
     ProjetosView,
     Tratamento,
     Cep,
-    Estacoes
+    Estacoes,
+    Noticias,
+    NoticiasView
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -83,7 +87,9 @@ import { Estacoes } from '../pages/agua/estacoes/estacoes';
     ProjetosView,
     Tratamento,
     Cep,
-    Estacoes
+    Estacoes,
+    Noticias,
+    NoticiasView
   ],
   providers: []
 })
