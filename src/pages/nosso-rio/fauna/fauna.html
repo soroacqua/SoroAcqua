@@ -12,4 +12,18 @@
 
 <ion-content padding>
   Listagem sobre a fauna do Rio Sorocaba
+
+  <ion-item>
+      <ion-label>Operating System</ion-label>
+      <ion-select [(ngModel)]="os" submitText="Ok" cancelText="Cancelar" (ionChange)="getSelected($event)">
+
+        <ion-option value="dos">DOS</ion-option>
+        <ion-option value="lunix">Linux</ion-option>
+        <ion-option value="mac7">Mac OS 7</ion-option>
+        <ion-option value="mac8">Mac OS 8</ion-option>
+        <ion-option value="win3.1">Windows 3.1</ion-option>
+        <ion-option value="win95">Windows 95</ion-option>
+        <ion-option value="win98">Windows 98</ion-option>
+      </ion-select>
+    </ion-item>
 </ion-content>
