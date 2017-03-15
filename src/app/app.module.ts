@@ -6,7 +6,6 @@ import { Rio } from '../pages/nosso-rio/rio/rio';
 import { Agua } from '../pages/agua/agua';
 import { SaaePage } from '../pages/agua/saae/saae';
 import { Mapa } from '../pages/nosso-rio/mapa/mapa';
-import { Historia } from '../pages/nosso-rio/historia/historia';
 import { Flora } from '../pages/nosso-rio/flora/flora';
 import { Fauna } from '../pages/nosso-rio/fauna/fauna';
 import { Despoluicao } from '../pages/nosso-rio/despoluicao/despoluicao';
@@ -37,7 +36,6 @@ import { NoticiasView } from '../pages/noticias/noticias-view/noticias-view';
     Agua,
     SaaePage,
     Mapa,
-    Historia,
     Flora,
     Fauna,
     Despoluicao,
@@ -71,7 +69,6 @@ import { NoticiasView } from '../pages/noticias/noticias-view/noticias-view';
     Agua,
     SaaePage,
     Mapa,
-    Historia,
     Flora,
     Fauna,
     Despoluicao,

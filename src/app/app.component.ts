@@ -7,7 +7,6 @@ import { Rio } from '../pages/nosso-rio/rio/rio';
 import { Agua } from '../pages/agua/agua';
 import { SaaePage } from '../pages/agua/saae/saae';
 import { Mapa } from '../pages/nosso-rio/mapa/mapa';
-import { Historia } from '../pages/nosso-rio/historia/historia';
 import { Flora } from '../pages/nosso-rio/flora/flora';
 import { Fauna } from '../pages/nosso-rio/fauna/fauna';
 import { Despoluicao } from '../pages/nosso-rio/despoluicao/despoluicao';
@@ -44,7 +43,6 @@ export class MyApp {
 
       { title: 'Nosso Rio', component: '', icon: 'arrow-dropright', itens: [
         { title: 'Rio', component: Rio, icon: 'boat'},
-        { title: 'História', component: Historia, icon: 'book'},
         { title: 'Mapa', component: Mapa, icon: 'map'},
         { title: 'Qualidade da Água', component: QualidadeAguaRio, icon: 'checkmark-circle'},
         { title: 'Despoluição', component: Despoluicao, icon: 'thumbs-up',},
@@ -62,7 +60,7 @@ export class MyApp {
       ], showDetails: false},
       { title: 'Notícias', component: Noticias, icon: 'paper', itens: [], showDetails: false},
       { title: 'Eventos', component: Eventos, icon: 'calendar', itens: [], showDetails: false},
-      { title: 'Projetos', component: Projetos, icon: 'paper', itens: [], showDetails: false},
+      { title: 'Projetos', component: Projetos, icon: 'book', itens: [], showDetails: false},
       { title: 'Configurações', component: Configuracoes, icon: 'settings', itens: [], showDetails: false},
       { title: 'Sobre', component: Sobre, icon: 'information-circle', itens: [], showDetails: false},
       { title: 'Cep', component: Cep, icon: '', itens: [], showDetails: false},
