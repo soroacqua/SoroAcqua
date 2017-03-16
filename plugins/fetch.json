@@ -39,25 +39,12 @@
         "is_top_level": true,
         "variables": {}
     },
-    "plugin.google.maps": {
+    "ionic-plugin-keyboard": {
         "source": {
             "type": "registry",
-            "id": "cordova-plugin-googlemaps"
+            "id": "ionic-plugin-keyboard@~2.2.1"
         },
         "is_top_level": true,
-        "variables": {
-            "API_KEY_FOR_ANDROID": "AIzaSyBJv1tEDNRYJ-IgighL5qo3uXKw5HKOjac",
-            "API_KEY_FOR_IOS": "AIzaSyBJv1tEDNRYJ-IgighL5qo3uXKw5HKOjac"
-        }
-    },
-    "com.googlemaps.ios": {
-        "source": {
-            "type": "git",
-            "url": "https://bitbucket.org/nightstomp/cordova-plugin-googlemaps-sdk.git",
-            "subdir": ".",
-            "ref": "master"
-        },
-        "is_top_level": false,
         "variables": {}
     },
     "cordova-plugin-googlemaps": {
@@ -66,14 +53,18 @@
             "id": "cordova-plugin-googlemaps"
         },
         "is_top_level": true,
-        "variables": {}
+        "variables": {
+            "API_KEY_FOR_ANDROID": "AIzaSyAtiqHmZyldB4QIVfCKWVq29rLdHgrDK38",
+            "API_KEY_FOR_IOS": "AIzaSyAtiqHmZyldB4QIVfCKWVq29rLdHgrDK38"
+        }
     },
-    "ionic-plugin-keyboard": {
+    "com.googlemaps.ios": {
         "source": {
-            "type": "registry",
-            "id": "ionic-plugin-keyboard@~2.2.1"
+            "type": "git",
+            "url": "https://github.com/mapsplugin/cordova-plugin-googlemaps-sdk",
+            "subdir": "."
         },
-        "is_top_level": true,
+        "is_top_level": false,
         "variables": {}
     }
 }

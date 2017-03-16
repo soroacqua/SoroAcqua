@@ -7,9 +7,4 @@ import { Component } from '@angular/core';
 export class Fauna {
 
   constructor() {}
-
-
-  getSelected(event){
-    console.log("Opção Selecionada = " + event);
-  }
 }

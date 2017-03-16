@@ -11,7 +11,7 @@ import { PrvProjetos } from '../../providers/prv-projetos';
 export class Projetos {
 
   public projetos: Array<any>;
-  private query:string;
+  public query:string;
 
   constructor(public navCtrl: NavController, public platform: Platform, public actionsheetCtrl: ActionSheetController,
               public alertCtrl: AlertController, private prvProjetos: PrvProjetos) {

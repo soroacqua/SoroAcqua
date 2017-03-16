@@ -12,7 +12,7 @@ import { PrvEventos } from '../../providers/prv-eventos';
 export class Eventos {
 
   public eventos: Array<any>;
-  private query:string;
+  public query:string;
 
   constructor(public navCtrl: NavController, public platform: Platform, public actionsheetCtrl: ActionSheetController,
               public alertCtrl: AlertController, private prvEventos: PrvEventos) {

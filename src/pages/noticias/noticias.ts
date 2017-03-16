@@ -11,7 +11,7 @@ import { PrvNoticia } from '../../providers/prv-noticia';
 export class Noticias {
 
   public noticias: Array<any>;
-  private query:string;
+  public query:string;
 
   constructor(public navCtrl: NavController, public platform: Platform, public actionsheetCtrl: ActionSheetController,
               public alertCtrl: AlertController, private prvNoticias: PrvNoticia) {
