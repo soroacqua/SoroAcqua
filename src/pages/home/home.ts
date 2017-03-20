@@ -1,16 +1,25 @@
 import { Component } from '@angular/core';
 import { Platform } from 'ionic-angular';
+import { ViewChild } from '@angular/core';
+import { Slides } from 'ionic-angular';
 
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
 })
 export class Home {
-
-  itens: string = "agua";
-  isAndroid: boolean = false;
+  @ViewChild(Slides) slides: Slides;
 
   constructor(platform: Platform) {
-    this.isAndroid = platform.is('android');
   }
+
+  homeOptions = {
+    initialSlide: 0,
+    loop: true,
+    autoplay:3000,
+    autoplayDisableOnInteraction: false,
+    pager:true,
+    nextButton:true,
+    prevButton:true
+      };
 }

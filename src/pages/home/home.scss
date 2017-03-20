@@ -1,3 +1,34 @@
 page-home {
+  ion-content.content-md {
+    ion-card{
+        height: 30%;
 
+    ion-slides{
+      ion-slide{
+        .card-title {
+          position: absolute;
+          top: 30%;
+          font-size: 2.0em;
+          width: 100%;
+          font-weight: bold;
+          color: #fff;
+          text-shadow: 1px 1px 1px #000;
+        }
+
+        .card-subtitle {
+          font-size: 1.0em;
+          position: absolute;
+          top: 55%;
+          width: 100%;
+          color: #fff;
+          text-shadow: 1px 1px 1px #000;
+        }
+
+        img{
+          filter: invert(20%);
+        }
+      }
+    }
+    }
+  }
 }

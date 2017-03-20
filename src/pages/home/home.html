@@ -5,33 +5,38 @@
     </button>
     <ion-title>Início</ion-title>
   </ion-navbar>
-
-  <ion-toolbar no-border-top color="head">
-    <ion-segment [(ngModel)]="itens">
-      <ion-segment-button value="agua">
-        Água
-      </ion-segment-button>
-      <ion-segment-button value="rio">
-        Rio
-      </ion-segment-button>
-    </ion-segment>
-  </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <div [ngSwitch]="itens">
-    <ion-card *ngSwitchCase="'agua'">
-        Qualidade da água
-    </ion-card>
-    <ion-card *ngSwitchCase="'agua'">
-        Estações de Tratamento
-    </ion-card>
+  <ion-card>
+      <ion-slides [options]="homeOptions" nextButton prevButton>
+          <ion-slide>
+                <img src="imagens/ibiuna-rio-sorocaba.jpg"/>
+                <div class="card-title">Evento</div>
+                <div class="card-subtitle">Evento no rio sorocaba</div>
+          </ion-slide>
 
-    <ion-card *ngSwitchCase="'rio'">
-      Qualidade do Rio
-    </ion-card>
-    <ion-card *ngSwitchCase="'rio'">
-      Mapa do Rio
-    </ion-card>
-  </div>
+          <ion-slide>
+                <img src="imagens/agua.png"/>
+                <div class="card-title">Notícia</div>
+                <div class="card-subtitle">Notícia Qualidade Água</div>
+          </ion-slide>
+
+          <ion-slide>
+                <img src="imagens/plantio-mudas.jpg"/>
+                <div class="card-title">Projetos</div>
+                <div class="card-subtitle">Novos projetos</div>
+          </ion-slide>
+      </ion-slides>
+  </ion-card>
+
+  <ion-card>
+    Qualidade da Água
+      <!--<iframe src="../agua/agua-consulta-qualidade/agua-consulta-qualidade"></iframe>-->
+  </ion-card>
+
+  <ion-card>
+      Notícias
+  </ion-card>
+
 </ion-content>
