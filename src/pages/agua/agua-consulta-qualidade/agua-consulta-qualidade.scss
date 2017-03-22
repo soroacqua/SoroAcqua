@@ -1,13 +1,7 @@
 page-agua-consulta-qualidade {
 
-ion-list{
-    .capa{
-      color: red;
-      line-height: 50px;
-      text-align: center;
-      font-size: 55px;
-      vertical-align: text-top;
-    }
+ion-select{
+    max-width: 100% !important;
   }
 
 }

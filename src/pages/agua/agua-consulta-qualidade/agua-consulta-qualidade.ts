@@ -1,20 +1,44 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, ActionSheetController, Platform, AlertController } from 'ionic-angular';
+import { AguaConsultaQualidadeView } from './agua-consulta-qualidade-view/agua-consulta-qualidade-view';
+import { PrvBairro } from '../../../providers/prv-bairro';
 
 
 
 @Component({
   selector: 'page-agua-consulta-qualidade',
-  templateUrl: 'agua-consulta-qualidade.html'
-})
-export class AguaConsultaQualidade {
+  templateUrl: 'agua-consulta-qualidade.html',
+  providers: [PrvBairro]
+  })
 
-  constructor(public navCtrl: NavController) {
-    
+export class AguaConsultaQualidade {
+  os : string;
+  public bairros: Array<any>;
+
+  constructor(public navCtrl: NavController, public platform: Platform, public actionsheetCtrl: ActionSheetController,
+              public alertCtrl: AlertController, private prvBairro: PrvBairro) {
+    this.bairros = [];
+    this.carregarBairros();
   }
+
+  carregarBairros(){
+    this.prvBairro.getBairros().subscribe(res=>{
+      console.log(res);
+      for (let i = 0; i < res.length; i++) {
+          this.bairros.push(res[i]);
+      }
+
+    });
+  }
+
 
   ionViewDidLoad() {
     console.log('Hello AguaConsultaQualidade Page');
   }
+
+  getSelect(){
+    console.log("Bairro selecionado = " + this.os);
+  }
+
 
 }
