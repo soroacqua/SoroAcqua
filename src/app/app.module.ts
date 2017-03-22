@@ -12,6 +12,7 @@ import { Despoluicao } from '../pages/nosso-rio/despoluicao/despoluicao';
 import { Projetos } from '../pages/projetos/projetos';
 import { AguaDetalhes } from '../pages/agua/agua-detalhes/agua-detalhes';
 import { AguaConsultaQualidade } from '../pages/agua/agua-consulta-qualidade/agua-consulta-qualidade';
+import { AguaConsultaQualidadeView } from '../pages/agua/agua-consulta-qualidade/agua-consulta-qualidade-view/agua-consulta-qualidade-view';
 import { Configuracoes } from '../pages/configuracoes/configuracoes';
 import { Sobre } from '../pages/sobre/sobre';
 import { QualidadeAguaRio } from '../pages/nosso-rio/qualidade-agua-rio/qualidade-agua-rio';
@@ -41,6 +42,7 @@ import { NoticiasView } from '../pages/noticias/noticias-view/noticias-view';
     Projetos,
     AguaDetalhes,
     AguaConsultaQualidade,
+    AguaConsultaQualidadeView,
     Configuracoes,
     Sobre,
     QualidadeAguaRio,
@@ -73,6 +75,7 @@ import { NoticiasView } from '../pages/noticias/noticias-view/noticias-view';
     Projetos,
     AguaDetalhes,
     AguaConsultaQualidade,
+    AguaConsultaQualidadeView,
     Configuracoes,
     Sobre,
     QualidadeAguaRio,

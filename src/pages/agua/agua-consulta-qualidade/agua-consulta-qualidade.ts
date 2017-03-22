@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, ActionSheetController, Platform, AlertController } from 'ionic-angular';
-import { AguaConsultaQualidadeView } from './agua-consulta-qualidade-view/agua-consulta-qualidade-view';
+//import { AguaConsultaQualidadeView } from './agua-consulta-qualidade-view/agua-consulta-qualidade-view';
 import { PrvBairro } from '../../../providers/prv-bairro';
 
 
