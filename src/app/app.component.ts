@@ -17,7 +17,6 @@ import { Sobre } from '../pages/sobre/sobre';
 import { QualidadeAguaRio } from '../pages/nosso-rio/qualidade-agua-rio/qualidade-agua-rio';
 import { Eventos } from '../pages/eventos/eventos';
 import { PassagemRio } from '../pages/nosso-rio/passagem-rio/passagem-rio';
-import { Cep } from '../pages/cep/cep';
 import { Estacoes } from '../pages/agua/estacoes/estacoes';
 import { Noticias } from '../pages/noticias/noticias';
 
@@ -63,7 +62,6 @@ export class MyApp {
       { title: 'Projetos', component: Projetos, icon: 'book', itens: [], showDetails: false},
       { title: 'Configurações', component: Configuracoes, icon: 'settings', itens: [], showDetails: false},
       { title: 'Sobre', component: Sobre, icon: 'information-circle', itens: [], showDetails: false},
-      { title: 'Cep', component: Cep, icon: '', itens: [], showDetails: false},
       { title: 'Sair', component: '', icon: 'log-out', itens: [], showDetails: false}
     ];
 
