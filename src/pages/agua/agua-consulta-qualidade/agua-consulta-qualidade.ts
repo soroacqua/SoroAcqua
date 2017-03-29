@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, ActionSheetController, Platform, AlertController } from 'ionic-angular';
-//import { AguaConsultaQualidadeView } from './agua-consulta-qualidade-view/agua-consulta-qualidade-view';
 import { PrvBairro } from '../../../providers/prv-bairro';
+import {AguaConsultaQualidadeView} from './agua-consulta-qualidade-view/agua-consulta-qualidade-view';
 
 
 
@@ -31,12 +31,15 @@ export class AguaConsultaQualidade {
     });
   }
 
-
   ionViewDidLoad() {
     console.log('Hello AguaConsultaQualidade Page');
   }
 
-  getSelect(){
+  getSelect(os){
+    this.navCtrl.push(AguaConsultaQualidadeView, {
+      os: os
+    });
+
     console.log("Bairro selecionado = " + this.os);
   }
 
