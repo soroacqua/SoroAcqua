@@ -27,8 +27,7 @@
         <b>Data:</b>
       </ion-col>
       <ion-col text-left width-77>
-        <!--Conferir nome do campo na tabela-->
-        <!--{{evento.dt.publicado}}-->
+        {{evento.data  | date: 'dd/MM/yyyy'}}
       </ion-col>
     </ion-row>
     <hr>
@@ -40,7 +39,7 @@
       <b>Hora:</b>
       </ion-col>
       <ion-col text-left width-77>
-      {{evento.hora}}
+      {{evento.hora | date: 'H:mm'}}
       </ion-col>
     </ion-row>
     <hr>
@@ -52,7 +51,7 @@
       <b>Valor:</b>
       </ion-col>
       <ion-col text-left width-77>
-      {{evento.Taxa}}
+      {{evento.taxa}}
       </ion-col>
     </ion-row>
     <hr>

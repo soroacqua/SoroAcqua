@@ -26,7 +26,6 @@ export class Projetos {
       for (let i = 0; i < res.length; i++) {
           this.projetos.push(res[i]);
       }
-
     });
   }
 

@@ -19,6 +19,8 @@ export class PrvBairro {
 
     return this.http.get(this.url, options)
             .map(res=>res.json()).catch(error=>Observable.throw(error.json().error||'Ocorreu um erro'));
+
+
   }
 
 }
