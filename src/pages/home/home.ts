@@ -1,16 +1,23 @@
 import { Component } from '@angular/core';
-import { Platform } from 'ionic-angular';
+import { Platform, NavController } from 'ionic-angular';
 import { ViewChild } from '@angular/core';
 import { Slides } from 'ionic-angular';
+import { NoticiasView } from '../noticias/noticias-view/noticias-view';
+import { PrvNoticia } from '../../providers/prv-noticia';
 
 @Component({
   selector: 'page-home',
-  templateUrl: 'home.html'
+  templateUrl: 'home.html',
+  providers: [PrvNoticia]
 })
 export class Home {
   @ViewChild(Slides) slides: Slides;
 
-  constructor(platform: Platform) {
+  public noticias: Array<any>;
+
+  constructor(platform: Platform, private prvNoticias: PrvNoticia, public navCtrl: NavController) {
+    this.noticias = [];
+    this.carregarNoticias();
   }
 
   homeOptions = {
@@ -22,4 +29,20 @@ export class Home {
     nextButton:true,
     prevButton:true
       };
+
+    carregarNoticias(){
+      this.prvNoticias.getNoticia().subscribe(res=>{
+        for (let i = 0; i < res.length; i++) {
+            this.noticias.push(res[i]);
+        }
+
+      });
+    }
+
+    openPageNoticiaView(noticia){
+        this.navCtrl.push(NoticiasView, {
+          noticia: noticia
+        });
+    }
+
 }

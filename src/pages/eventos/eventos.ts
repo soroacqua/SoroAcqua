@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, ActionSheetController, Platform, AlertController } from 'ionic-angular';
+import { NavController, ActionSheetController, Platform, AlertController, LoadingController } from 'ionic-angular';
 import { EventosView } from './eventos-view/eventos-view';
 import { PrvEventos } from '../../providers/prv-eventos';
 
@@ -15,13 +15,15 @@ export class Eventos {
   public query:string;
 
   constructor(public navCtrl: NavController, public platform: Platform, public actionsheetCtrl: ActionSheetController,
-              public alertCtrl: AlertController, private prvEventos: PrvEventos) {
+              public alertCtrl: AlertController, private prvEventos: PrvEventos, public loadingCtrl: LoadingController) {
     this.eventos = [];
     this.carregarEventos();
     this.query = '';
   }
 
   carregarEventos(){
+    this.presentLoadingDefault();
+
     this.prvEventos.getEvento().subscribe(res=>{
       console.log(res);
       for (let i = 0; i < res.length; i++) {
@@ -53,6 +55,18 @@ export class Eventos {
       });
     }
   }
+
+  presentLoadingDefault() {
+      let loading = this.loadingCtrl.create({
+        content: 'Por favor espere...'
+      });
+
+      loading.present();
+
+      setTimeout(() => {
+        loading.dismiss();
+      }, 2000);
+    }
 
   openMenu() {
     let actionSheet = this.actionsheetCtrl.create({

@@ -10,33 +10,21 @@
 <ion-content>
   <ion-card>
       <ion-slides [options]="homeOptions" nextButton prevButton>
-          <ion-slide>
-                <img src="imagens/ibiuna-rio-sorocaba.jpg"/>
-                <div class="card-title">Evento</div>
-                <div class="card-subtitle">Evento no rio sorocaba</div>
-          </ion-slide>
-
-          <ion-slide>
-                <img src="imagens/agua.png"/>
-                <div class="card-title">Notícia</div>
-                <div class="card-subtitle">Notícia Qualidade Água</div>
-          </ion-slide>
-
-          <ion-slide>
-                <img src="imagens/plantio-mudas.jpg"/>
-                <div class="card-title">Projetos</div>
-                <div class="card-subtitle">Novos projetos</div>
+          <ion-slide *ngFor="let n of noticias">
+                <img [src]="n.imagem" (click)="openPageNoticiaView(n)"/>
+                <div class="card-title">{{n.titulo}}</div>
+                <div class="card-subtitle">{{n.descricao}}</div>
           </ion-slide>
       </ion-slides>
   </ion-card>
 
   <ion-card>
     Qualidade da Água
-      <!--<iframe src="../agua/agua-consulta-qualidade/agua-consulta-qualidade"></iframe>-->
+    <!--<iframe width="220" height="200" src="../agua/agua-consulta-qualidade/agua-consulta-qualidade" frameborder="0" allowfullscreen></iframe>-->
   </ion-card>
 
   <ion-card>
-      Notícias
+      Frases de Conscientização sobre a água
   </ion-card>
 
 </ion-content>
