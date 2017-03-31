@@ -19,6 +19,7 @@ import { Eventos } from '../pages/eventos/eventos';
 import { PassagemRio } from '../pages/nosso-rio/passagem-rio/passagem-rio';
 import { Estacoes } from '../pages/agua/estacoes/estacoes';
 import { Noticias } from '../pages/noticias/noticias';
+import { Tratamento } from '../pages/agua/tratamento/tratamento';
 
 @Component({
   templateUrl: 'app.html'
@@ -53,7 +54,7 @@ export class MyApp {
       { title: 'Nossa Água', component: '', icon: 'arrow-dropright', itens: [
         { title: 'Água', component: Agua, icon: 'water'},
         { title: 'Estações', component: Estacoes, icon: 'color-fill'},
-        { title: 'Tratamento', component: '', icon: 'construct'},
+        { title: 'Tratamento', component: Tratamento, icon: 'construct'},
         { title: 'Qualidade', component: AguaConsultaQualidade, icon: 'stats'},
         { title: 'Saae', component: SaaePage, icon: 'people'},
       ], showDetails: false},

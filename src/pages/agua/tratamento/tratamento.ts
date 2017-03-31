@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
-
+import { Platform } from 'ionic-angular';
 /*
   Generated class for the Tratamento page.
 
@@ -12,11 +11,15 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'tratamento.html'
 })
 export class Tratamento {
+  pet: string = "puppies";
+  isAndroid: boolean = false;
 
-  constructor(public navCtrl: NavController) {}
+    constructor(platform: Platform) {
+      this.isAndroid = platform.is('android');
+
+  }
 
   ionViewDidLoad() {
     console.log('Hello Tratamento Page');
   }
-
 }

@@ -22,7 +22,7 @@ import { SaaeHistoria } from '../pages/agua/saae/saae-historia/saae-historia';
 import { EventosView } from '../pages/eventos/eventos-view/eventos-view';
 import { DetalhesParametros } from '../pages/nosso-rio/qualidade-agua-rio/detalhes-parametros/detalhes-parametros';
 import { ProjetosView } from '../pages/projetos/projetos-view/projetos-view';
-import { Tratamento } from '../pages/tratamento/tratamento';
+import { Tratamento } from '../pages/agua/tratamento/tratamento';
 import { Cep } from '../pages/cep/cep';
 import { Estacoes } from '../pages/agua/estacoes/estacoes';
 import { Noticias } from '../pages/noticias/noticias';
