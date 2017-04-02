@@ -63,7 +63,7 @@ export class MyApp {
       { title: 'Projetos', component: Projetos, icon: 'book', itens: [], showDetails: false},
       { title: 'Configurações', component: Configuracoes, icon: 'settings', itens: [], showDetails: false},
       { title: 'Sobre', component: Sobre, icon: 'information-circle', itens: [], showDetails: false},
-      { title: 'Sair', component: '', icon: 'log-out', itens: [], showDetails: false}
+      { title: 'Sair', component: 'close', icon: 'log-out', itens: [], showDetails: false}
     ];
 
   }
@@ -87,7 +87,10 @@ export class MyApp {
   }
 
   toggleDetails(page) {
-    if(page.component == ''){
+    if(page.component == 'close'){
+        this.platform.exitApp();
+    }
+    else if(page.component == ''){
       if (page.showDetails) {
        page.showDetails = false;
           page.icon = 'arrow-dropright';
@@ -95,7 +98,7 @@ export class MyApp {
       } else {
           page.showDetails = true;
           //page.icon = 'arrow-dropdown-circle';
-          page.icon = '';
+          page.icon = 'arrow-dropdown';
       }
     } else{
         this.menu.close();

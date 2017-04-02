@@ -7,12 +7,10 @@ import { NavParams, ViewController  } from 'ionic-angular';
 })
 export class DetalhesParametros {
 
-  public op;
-  public titulo;
-  public texto
+  public parametro;
 
   constructor(public navParams: NavParams, public viewCtrl: ViewController) {
-    this.op = navParams.get('op');
+    this.parametro = navParams.get('parametro');
   }
 
   dismiss() {

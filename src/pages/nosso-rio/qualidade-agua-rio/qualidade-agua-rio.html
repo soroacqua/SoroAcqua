@@ -4,134 +4,18 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Qualidade da Água do Rio</ion-title>
+    <ion-title text-center>Qualidade da Água do Rio</ion-title>
   </ion-navbar>
-
 </ion-header>
 
 
-<ion-content padding>
-  <ion-card style="background-color: #FFF;">
+<ion-content>
+  <ion-card>
     <ion-card-content>
-      <ion-card-title text-center>
-        <b>Índices de Qualidade da Água</b>
-      </ion-card-title>
-      <hr>
-        <ion-row baseline>
-          <ion-col text-left width-50>
-            <b>Parâmetro</b>
-          </ion-col>
-          <ion-col text-left width-33>
-            <b>Permitido</b>
-          </ion-col>
-          <ion-col text-left width-25>
-            <b>Obtido</b>
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col text-left width-50 (click)="openPage(1)">
-          <b>Oxigênio dissolvido:</b>
-          </ion-col>
-          <ion-col text-left width-33>
-            superior a 5mg/L
-          </ion-col>
-          <ion-col text-left width-33>
-            7,6mg/L
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col text-left width-50 (click)="openPage(2)">
-          <b>Coliformes termotolerantes:</b>
-          </ion-col>
-          <ion-col text-left width-33>
-            1000mg/L
-          </ion-col>
-          <ion-col text-left width-33>
-            80mg/L
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col text-left width-50 (click)="openPage(3)">
-          <b>Potencial hidrogeniônico - pH:</b>
-          </ion-col>
-          <ion-col text-left width-33>
-            6,0 a 9,0
-          </ion-col>
-          <ion-col text-left width-33>
-            7,5
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col text-left width-50 (click)="openPage(4)">
-          <b>Demanda Bioquímica de Oxigênio - DBO5,20:</b>
-          </ion-col>
-          <ion-col text-left width-33>
-            menor que 5mg/L
-          </ion-col>
-          <ion-col text-left width-33>
-            1,5mg/L
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col text-left width-50 (click)="openPage(5)">
-          <b>Temperatura da água:</b>
-          </ion-col>
-          <ion-col text-left width-33>
-            Depende da estação do ano
-          </ion-col>
-          <ion-col text-left width-33>
-            N/C
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col text-left width-50 (click)="openPage(6)">
-          <b>Nitrogênio total:</b>
-          </ion-col>
-          <ion-col text-left width-33>
-            N/C
-          </ion-col>
-          <ion-col text-left width-33>
-            1,05mg/L
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col text-left width-50 (click)="openPage(7)">
-          <b>Fósforo total:</b>
-          </ion-col>
-          <ion-col text-left width-33>
-            0,030mg/L
-          </ion-col>
-          <ion-col text-left width-33>
-            *
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col text-left width-50 (click)="openPage(8)">
-          <b>Turbidez:</b>
-          </ion-col>
-          <ion-col text-left width-33>
-            100uT
-          </ion-col>
-          <ion-col text-left width-33>
-            5uT
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col text-left width-50 (click)="openPage(9)">
-          <b>Resíduo total:</b>
-          </ion-col>
-          <ion-col text-left width-33>
-            500mg/L
-          </ion-col>
-          <ion-col text-left width-33>
-            62mg/L
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>
-           * Clique sobre os parâmentos para ter mais detalhes
-           </ion-col>
-        </ion-row>
+      <ion-select [(ngModel)]="idEstacao" submitText="Ok" cancelText="Cancelar" placeholder="Selecione o ponto de medição">
+        <ion-option *ngFor="let estacao of estacoes" value="{{estacao._id}}">{{estacao.descricao}}</ion-option>
+      </ion-select>
+      <button ion-button [disabled]="!idEstacao" block (click)="openPage()">Consultar</button>
     </ion-card-content>
   </ion-card>
 </ion-content>
