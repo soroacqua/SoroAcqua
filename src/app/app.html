@@ -1,4 +1,4 @@
-<ion-menu [content]="content">
+<ion-menu type="reveal" [content]="content">
   <ion-header>
     <ion-toolbar color="head">
       <ion-title>Menu</ion-title>
@@ -13,13 +13,13 @@
         </ion-avatar>
       </ion-item>
       <ion-item padding *ngFor="let p of pages" (click)="toggleDetails(p)">
-        <ion-icon [name]="p.icon" item-left></ion-icon>
+        <ion-icon [name]="p.icon" class="icon-menu" item-left></ion-icon>
         {{p.title}}
 
          <div *ngIf="p.showDetails" text-wrap>
 
            <ion-item padding  ion-item menuClose *ngFor="let i of p.itens" (click)="openPage(i)">
-             <ion-icon [name]="i.icon" item-left></ion-icon>
+             <ion-icon [name]="i.icon" class="icon-menu" item-left></ion-icon>
              {{i.title}}
            </ion-item>
 
