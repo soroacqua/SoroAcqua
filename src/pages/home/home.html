@@ -12,8 +12,8 @@
       <ion-slides [options]="homeOptions" nextButton prevButton>
           <ion-slide *ngFor="let n of noticias">
                 <img [src]="n.imagem" (click)="openPageNoticiaView(n)"/>
-                <div class="card-title">{{n.titulo}}</div>
-                <div class="card-subtitle">{{n.descricao}}</div>
+                <div class="card-title"  (click)="openPageNoticiaView(n)">{{n.titulo}}</div>
+                <div class="card-subtitle"  (click)="openPageNoticiaView(n)">{{n.descricao}}</div>
           </ion-slide>
       </ion-slides>
   </ion-card>
