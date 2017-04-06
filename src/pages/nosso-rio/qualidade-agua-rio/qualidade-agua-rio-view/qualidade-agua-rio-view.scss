@@ -1,3 +1,27 @@
 page-qualidade-agua-rio-view {
 
+  .linha-impar{
+    background-color: #ADEAEA;
+  }
+  .linha-par{
+    background-color: #70DBDB;
+  }
+  ion-row{
+    height: 15%;
+    width: 100%;
+
+    .coluna-titulo{
+      font-weight: bold;
+      width: 60%;
+    }
+
+    .coluna-permitido{
+      width: 25%;
+    }
+
+    .coluna-obtido{
+      width: 25%;
+    }
+  }
+
 }
