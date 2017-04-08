@@ -1,4 +1,5 @@
-import {Component} from "@angular/core";
+import { Component } from "@angular/core";
+import { NavController } from 'ionic-angular';
 import {  GoogleMap,  GoogleMapsEvent,  GoogleMapsLatLng,  GoogleMapsMarker,  Geolocation} from 'ionic-native';
 
 @Component({
@@ -10,7 +11,7 @@ export class Mapa {
   private _latitude: number;
   private _longitude: number;
 
-  constructor() {}
+  constructor(public navCtrl: NavController) {}
 
   ngAfterViewInit() {
     let map = new GoogleMap(document.getElementById('map'));
@@ -28,75 +29,80 @@ export class Mapa {
           tilt: 30
         }).then(() => {
 
-          // add a marker
-          map.addMarker({
-            position: new GoogleMapsLatLng(-23.46899, -47.44033),
-            title: 'Capivara'
-          })
-          map.addMarker({
-            position: new GoogleMapsLatLng(-23.47167, -47.44231),
-            title: 'Capivara'
-          })
-          map.addMarker({
-            position: new GoogleMapsLatLng(-23.47466, -47.44226),
-            title: 'Capivara'
-          })
-          map.addMarker({
-            position: new GoogleMapsLatLng(-23.47718, -47.4402),
-            title: 'Capivara'
-          })
-          map.addMarker({
-            position: new GoogleMapsLatLng(-23.4795, -47.44068),
-            title: 'Capivara'
-          })
-          map.addMarker({
-            position: new GoogleMapsLatLng(-23.48072, -47.4384),
-            title: 'Capivara'
-          })
-          map.addMarker({
-            position: new GoogleMapsLatLng(-23.48395, -47.43767),
-            title: 'Capivara'
-          })
-          map.addMarker({
-            position: new GoogleMapsLatLng(-23.48568, -47.43754),
-            title: 'Capivara'
-          })
-          map.addMarker({
-            position: new GoogleMapsLatLng(-23.48652, -47.43759),
-            title: 'Capivara'
-          })
-          map.addMarker({
-            position: new GoogleMapsLatLng(-23.48895, -47.43842),
-            title: 'Capivara'
-          })
-          map.addMarker({
-            position: new GoogleMapsLatLng(-23.49032, -47.43995),
-            title: 'Capivara'
-          })
-          map.addMarker({
-            position: new GoogleMapsLatLng(-23.493, -47.4445),
-            title: 'Capivara'
-          })
-          map.addMarker({
-            position: new GoogleMapsLatLng(-23.49477, -47.4472),
-            title: 'Capivara'
-          })
-          map.addMarker({
-            position: new GoogleMapsLatLng(-23.49617, -47.44975),
-            title: 'Capivara'
-          })
-          map.addMarker({
-            position: new GoogleMapsLatLng(-23.49823, -47.45101),
-            title: 'Capivara'
-          })
-          map.addMarker({
-            position: new GoogleMapsLatLng(-23.50052, -47.45161),
-            title: 'Capivara'
-          })
+          // add a markers
+          var data = [
+            {'title': 'Capivara', 'position': new GoogleMapsLatLng(-23.46899, -47.44033), 
+                      'snippet': 'Descrição.', 
+                      'styles': {'text-align': 'center','font-style': 'italic', 'font-weight': 'bold', 
+                      'color': 'green','background-color': 'blue'}},
+            {'title': 'Ratão-do-banhado', 'position': new GoogleMapsLatLng(-23.47167, -47.44231), 
+                      'snippet': 'Descrição 2.', 
+                      'styles': {'text-align': 'center','font-style': 'italic', 'font-weight': 'bold', 
+                      'color': 'green','background-color': 'green'}},
+            {'title': 'Jacaré-de-papo-amarelo', 'position': new GoogleMapsLatLng(-23.47466, -47.44226), 
+                      'snippet': 'Descrição 2.', 
+                      'styles': {'text-align': 'center','font-style': 'italic', 'font-weight': 'bold', 
+                      'color': 'green','background-color': 'green'}},
+            {'title': 'Biguá', 'position': new GoogleMapsLatLng(-23.47718, -47.4402), 
+                      'snippet': 'Descrição 2.', 
+                      'styles': {'text-align': 'center','font-style': 'italic', 'font-weight': 'bold', 
+                      'color': 'green','background-color': 'green'}},
+            {'title': 'Frango dágua', 'position': new GoogleMapsLatLng(-23.4795, -47.44068), 
+                      'snippet': 'Descrição 2.', 
+                      'styles': {'text-align': 'center','font-style': 'italic', 'font-weight': 'bold', 
+                      'color': 'green','background-color': 'green'}},
+            {'title': 'Tabarana', 'position': new GoogleMapsLatLng(-23.48072, -47.4384), 
+                      'snippet': 'Descrição 2.', 
+                      'styles': {'text-align': 'center','font-style': 'italic', 'font-weight': 'bold', 
+                      'color': 'green','background-color': 'green'}},
+            {'title': 'Curimbatá', 'position': new GoogleMapsLatLng(-23.48395, -47.43767), 
+                      'snippet': 'Descrição 2.', 
+                      'styles': {'text-align': 'center','font-style': 'italic', 'font-weight': 'bold', 
+                      'color': 'green','background-color': 'green'}},
+            {'title': 'Lambari', 'position': new GoogleMapsLatLng(-23.48652, -47.43759), 
+                      'snippet': 'Descrição 2.', 
+                      'styles': {'text-align': 'center','font-style': 'italic', 'font-weight': 'bold', 
+                      'color': 'green','background-color': 'green'}},
+            {'title': 'Carcará', 'position': new GoogleMapsLatLng(-23.48895, -47.43842), 
+                      'snippet': 'Descrição 2.', 
+                      'styles': {'text-align': 'center','font-style': 'italic', 'font-weight': 'bold', 
+                      'color': 'green','background-color': 'green'}},
+            {'title': 'Cará', 'position': new GoogleMapsLatLng(-23.49123, -47.44226), 
+                      'snippet': 'Descrição 2.', 
+                      'styles': {'text-align': 'center','font-style': 'italic', 'font-weight': 'bold', 
+                      'color': 'green','background-color': 'green'}},
+            {'title': 'Cágado-de-barbicha', 'position': new GoogleMapsLatLng(-23.493, -47.4445), 
+                      'snippet': 'Descrição 2.', 
+                      'styles': {'text-align': 'center','font-style': 'italic', 'font-weight': 'bold', 
+                      'color': 'green','background-color': 'green'}},
+            {'title': 'Irerê', 'position': new GoogleMapsLatLng(-23.49477, -47.4472), 
+                      'snippet': 'Descrição 2.', 
+                      'styles': {'text-align': 'center','font-style': 'italic', 'font-weight': 'bold', 
+                      'color': 'green','background-color': 'green'}},
+            {'title': 'Lambari de rabo vermelho', 'position': new GoogleMapsLatLng(-23.49617, -47.44975), 
+                      'snippet': 'Descrição 2.', 
+                      'styles': {'text-align': 'center','font-style': 'italic', 'font-weight': 'bold', 
+                      'color': 'green','background-color': 'green'}},
+            {'title': 'Corujinha-buraqueira', 'position': new GoogleMapsLatLng(-23.49823, -47.45101), 
+                      'snippet': 'Descrição 2.', 
+                      'styles': {'text-align': 'center','font-style': 'italic', 'font-weight': 'bold', 
+                      'color': 'green','background-color': 'green'}}
+          ];
 
-            // show marker info
-          .then((marker: GoogleMapsMarker) => {
-            marker.showInfoWindow();
+          for (var i = 0; i < data.length; i++) {
+            map.addMarker(data[i])
+            
+            
+            .then((marker: GoogleMapsMarker) => {
+                 marker.showInfoWindow();
+                 //this.navCtrl.push(QualidadeAguaRioView, { image: data[i].title  });
+            });
+          }        
+
+          map.on(GoogleMapsEvent.MAP_LOADED).subscribe(
+            () => {
+              alert('Clique sobre os marcadores para ver os animais que moram ao redor do rio');
+            });
 
             // listen to all available events
             /*
@@ -190,7 +196,7 @@ export class Mapa {
                 alert('MARKER_DRAG_END');
               });
               */
-          });
+          
         });
       });
     });

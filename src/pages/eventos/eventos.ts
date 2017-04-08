@@ -22,7 +22,7 @@ export class Eventos {
   }
 
   carregarEventos(){
-    this.presentLoadingDefault();
+    //this.presentLoadingDefault();
 
     this.prvEventos.getEvento().subscribe(res=>{
       console.log(res);

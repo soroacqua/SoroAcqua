@@ -16,7 +16,34 @@
 // automatically applied to the <body> element in the app.
 
 .icon-menu{
-  position: absolute;
+    position: absolute;
     top: 0px;
     left: 10px;
+}
+
+.title-menu{
+    position: absolute;
+    top: 15px;
+    left: 40px;
+}
+
+.platform-ios{
+    .menu-item{
+        top: 10px;
+        left: 10px;
+    }
+}
+
+.platform-android{
+    .menu-item{
+        top: 10px;
+        left: -10px;
+    }
+}
+
+.platform-windows{
+    .menu-item{
+        top: 10px;
+        left: 5px;
+    }
 }

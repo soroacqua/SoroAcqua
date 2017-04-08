@@ -1,7 +1,7 @@
 <ion-menu type="reveal" [content]="content">
   <ion-header>
     <ion-toolbar color="head">
-      <ion-title>Menu</ion-title>
+      <ion-title>SoroAcqua</ion-title>
     </ion-toolbar>
   </ion-header>
 
@@ -11,20 +11,20 @@
         <ion-avatar item-left>
           <img src="imagens/avatar.png">
         </ion-avatar>
+        <div>Bem vindo(a)!</div>
       </ion-item>
       <ion-item padding *ngFor="let p of pages" (click)="toggleDetails(p)">
         <ion-icon [name]="p.icon" class="icon-menu" item-left></ion-icon>
-        {{p.title}}
+        <div class="title-menu">{{p.title}}</div>
 
          <div *ngIf="p.showDetails" text-wrap>
-
-           <ion-item padding  ion-item menuClose *ngFor="let i of p.itens" (click)="openPage(i)">
+          <br>
+           <ion-item padding  class="menu-item" ion-item menuClose *ngFor="let i of p.itens" (click)="openPage(i)">
              <ion-icon [name]="i.icon" class="icon-menu" item-left></ion-icon>
-             {{i.title}}
+             <div class="title-menu">{{i.title}}</div>
            </ion-item>
-
          </div>
-
+         
       </ion-item>
     </ion-list>
   </ion-content>
