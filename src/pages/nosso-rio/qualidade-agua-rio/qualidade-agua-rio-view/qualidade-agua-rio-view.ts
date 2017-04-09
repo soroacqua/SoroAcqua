@@ -10,8 +10,16 @@ import { PrvQualidade } from '../../../../providers/prv-qualidade';
 })
 export class QualidadeAguaRioView {
 
-  public qualidade: any;
+  public qualidade;
   public idEstacao;
+  public ph;
+  public dbo;
+  public oxigenio_dissolvido;
+  public nitrogenio;
+  public fosforo;
+  public residuo;
+  public turpidez;
+  public coliformes_termotolerantes;
 
   constructor(public modalCtrl: ModalController,
                   public navParams: NavParams, private prvQualidade: PrvQualidade) {
@@ -27,7 +35,14 @@ export class QualidadeAguaRioView {
   carregaQualidade(id){
     this.prvQualidade.getQualidade(id).subscribe(res=>{
       this.qualidade = res.qualidades[0];
-      console.log(this.qualidade.data);
+      this.dbo = this.qualidade.dbo;
+      this.ph = this.qualidade.ph;
+      this.oxigenio_dissolvido = this.qualidade.oxigenio_dissolvido;
+      this.nitrogenio = this.qualidade.nitrogenio;
+      this.fosforo = this.qualidade.fosforo;
+      this.residuo = this.qualidade.residuo;
+      this.turpidez = this.qualidade.turpidez;
+      this.coliformes_termotolerantes = this.qualidade.coliformes_termotolerantes;
     });
   }
 

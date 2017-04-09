@@ -1,64 +1,196 @@
 <ion-header>
 
-  <ion-navbar color="head">
-    <button ion-button menuToggle>
+    <ion-navbar color="head">
+        <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title text-center>Despolução</ion-title>
-    <ion-buttons end>
-      <button ion-button icon-only>
-        <ion-icon name="more"></ion-icon>
-      </button>
-    </ion-buttons>
-  </ion-navbar>
+        <ion-title text-center>Despolução</ion-title>
+    </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-  <ion-slides [options]="{pager:true}">
+    <ion-slides [options]="{pager:true}">
 
-    <ion-slide style="background-color: #00CED1">
-      <div class="capa">Programa de Despoluição do Rio Sorocaba</div>
-    <br><br>
-      <img src="imagens/rio-sorocaba.jpg" class="img"/>
-    </ion-slide>
+        <ion-slide>
+            <div class="capa">Programa de Despoluição do Rio Sorocaba</div>
+            <br><br>
+            <img src="imagens/rio-sorocaba.jpg" class="img" />
+        </ion-slide>
 
-    <ion-slide style="background-color: #00CED1">
-      <div class="titulo">Sobre o Projeto</div>
-      <div class="corpo">
-        <p class="title-corpo">Início das obras</p>
-        <p>Ano 2000</p>
-        <p class="title-corpo">Término</p> <p>Capacidade de tratamento de 100% até o final de 2016</p>
-        <p class="title-corpo">Investimento</p> <p>R$ 180 milhões (recursos próprios e
-        financiamentos de programas de saneamento do Governo Federal)</p>
-     </div>
-    </ion-slide>
+        <ion-slide>
+            <div class="titulo">Sobre o Projeto</div>
+            <div class="corpo">
+                <p class="title-corpo">Início das obras</p>
+                <p>Ano 2000</p>
+                <p class="title-corpo">Término</p>
+                <p>Capacidade de tratamento de 100% até o final de 2016</p>
+                <p class="title-corpo">Investimento</p>
+                <p>R$ 180 milhões (recursos próprios e financiamentos de programas de saneamento do Governo Federal)</p>
+            </div>
+        </ion-slide>
 
-    <ion-slide style="background-color: #00CED1">
-      <div class="capa">O que motivou</div>
-    </ion-slide>
+        <ion-slide>
+            <div class="capa">Etapas Concluídas</div>
+        </ion-slide>
 
-    <ion-slide style="background-color: #00CED1">
-      <div class="capa">Etapas Concluídas</div>
-    </ion-slide>
+        <ion-slide>
+            <div class="corpo">28 km de interceptores de esgoto implantados ao longo das duas margens do rio Sorocaba.<br><br> Início
+                <br>
+                <div style="background-color: #20B2AA">Rodovia Raposo Tavares</div>
+                <br/>
+                <img src="imagens/interceptores.jpg" />
+                <br>Fim<br>
+                <div style="background-color: #20B2AA">Parque Vitório Régia</div>
+            </div>
+        </ion-slide>
 
-    <ion-slide style="background-color: #00CED1">
-      <div class="corpo">28 km de interceptores de esgoto implantados ao
-        longo das duas margens do rio Sorocaba<br><br>
-        Início<br>
-        <div style="background-color: blue">Rodovia Raposo Tavares</div>
-        <img src="imagens/home-seta.png" class="img-seta"/>
-        <br>Fim<br>
-        <div style="background-color: blue">Parque Vitório Régia</div>
-      </div>
-      <img src="imagens/interceptor.jpg" />
-    </ion-slide>
+        <ion-slide>
+            <div class="corpo">
+                17 estações elevatórias de esgoto, construídas às margens do rio Sorocaba, cada uma delas com características 
+                de construção civil e equipamentos próprios.
+                <br/><br/><br/>
+                <img src="imagens/estação-elevatório-12.jpg"/>
+            </div>
+        </ion-slide>
 
-    <ion-slide style="background-color: #00CED1">
-      <ion-label>Etapa 1</ion-label>
-      <img src="" />
-    </ion-slide>
+        <ion-slide>
+            <div class="titulo">Coletor tronco Supiriri</div>
+            <div class="corpo">
+              <br><br>
+                O esgoto que antes era despejado no Supiriri agora é coletado a partir da avenida Dr. Afonso Vergueiro e 
+                enviado até os interceptores implantados às margens do rio Sorocaba e destes para as estações elevatórias 
+                e finalmente até a Estação de Tratamento de Esgoto Sorocaba 1 (ETE S-1), onde está sendo tratado.
+                <img src="imagens/coletor-Supiriri.jpg"/>
+            </div>
+        </ion-slide>
 
-  </ion-slides>
+        <ion-slide>
+            <div class="corpo">
+                Implantação de redes de esgoto e construção de Estações de Tratamento de Esgoto nos bairros Ipaneminha e
+                 Quintais do Imperador.
+                 <br/>
+                <img src="imagens/ipaneminha.jpg"><br/>
+                <img src="imagens/quintais-do-imperador.png"/>
+            </div>
+        </ion-slide>
+
+        <ion-slide>
+            <div class="titulo">Estação de Tratamento de Esgoto Pitico</div>
+            <div class="corpo">
+              <br/><br/>
+                Localizada na região do Parque São Bento, com 79.418 m2 de área construída e capacidade para tratar 
+                até 251 litros de esgoto por segundo, beneficiando outra parte da Zona Norte da cidade.<br/>
+                Inaugurada em junho 2009.
+                <br><br>
+                <img src="imagens/estação-tratamento-pitico.png"/>
+            </div>
+        </ion-slide>
+
+        <ion-slide>
+            <div class="titulo">Estação de Tratamento de Esgoto Itanguá</div>
+            <div class="corpo">
+              <br/> <br/> <br/>
+                Instalada nas proximidades da rodovia Emerenciano Prestes de Barros, num total de 98.103,71 m2 de área 
+                construída. Trata o esgoto da região da rodovia Raposo Tavares até a foz do rio Sorocaba, incluindo 
+                parte da Zona Norte.<br/>
+                Inaugurada em dezembro de 2009.
+                <br/>
+                <img src="imagens/estação-tratamento-itanguá.png"/>
+            </div>
+        </ion-slide>
+
+        <ion-slide>
+            <div class="titulo">Estação de Tratamento de Esgoto S-2</div>
+            <div class="corpo">
+              <br> <br><br>
+                Localizada a jusante do Parque Vitória Régia, num total de 61.020, m2 de área construída e capacidade 
+                para processar até 385 litros de efluentes por segundo. Trata tratar o esgoto de mais um setor 
+                da Zona Norte e mais a região do Éden e Cajuru.<br/>
+                Inaugurada em agosto 2010.
+                <br/><br/>
+                <img src="imagens/estação-tratamento-s2.png"/>
+            </div>
+        </ion-slide>
+
+        <ion-slide>
+            <div class="titulo">Estação de Tratamento de Esgoto S-1</div>
+            <div class="corpo">
+              <br/><br/><br/>
+                foi inaugurada em dezembro de 2004 e está em operação desde maio de 2005.
+                Localizada no final da avenida 15 de Agosto (marginal direita), possui uma
+                área de 2.240 m2, vazão atual de 620 litros de esgoto por segundo, 
+                50 milhões de litros de esgoto tratados diariamente e é a
+                maior do sistema.
+                <br/><br/>
+                <img src="imagens/estação-tratamento-s1.png"/>
+            </div>
+        </ion-slide>
+
+        <ion-slide>
+            <div class="capa">Etapa Final</div>
+        </ion-slide>
+
+        <ion-slide>
+            <div class="titulo">Estação de Tratamento de Esgoto Aparecidinha</div>
+            <div class="corpo">
+              <br/>
+                Vai tratar o esgoto do próprio bairro Aparecidinha e mais Brigadeiro Tobias.<br/>
+                Em fase final de obras.
+                <br/><br/>
+                <img src="imagens/estação-tratamento-aparecidinha.png"/>
+            </div>
+        </ion-slide>
+
+        <ion-slide>
+            <div class="titulo">Benefícios </div>
+            <div class="corpo">
+              <br/>
+               Os benefícios advindos do programa de despoluição do rio Sorocaba são inúmeros:<br/>
+                * Interrupção do processo de degradação ambiental da bacia do rio Sorocaba<br/>
+                * Redução significativa das doenças de veiculação hídrica<br/>
+                * Possibilidade de múltiplos usos do rio, como:<br/>
+                – Lazer<br/>
+                – Turismo<br/>
+                – Transporte<br/>
+                – Reurbanização da região ao seu redor e seus afluentes, e 
+                conseqüentemente a melhora substancial da qualidade de vida.
+            </div>
+        </ion-slide>
+
+        <ion-slide>
+            <div class="titulo">Outros reflexos positivos</div>
+            <div class="corpo">
+              <br/>
+               Atração de novos investimentos não somente para Sorocaba, pois o projeto proporcionará 
+               benefícios diretos também para a região, abrangendo uma área de 5.269 km2, o que 
+               significa mais de 1 milhão de pessoas beneficiadas pelas obras.
+            </div>
+        </ion-slide>
+
+        <ion-slide>
+            <div class="titulo">Recuperação do rio</div>
+            <div class="corpo">
+               Assim que todas as obras do Programa de Despoluição do Rio Sorocaba estejam encerradas – 
+               o que deverá ocorrer até o final de 2016 – e todo o sistema esteja em funcionamento, 
+               ou seja, todas as Estações Elevatórias de Esgoto (17 estações) e as Estações de 
+               Tratamento de Esgoto (7 estações) em plena operação, a recuperação do rio é relativamente 
+               rápida, dependendo logicamente do seu poder de auto-depuração.
+            </div>
+        </ion-slide>
+
+        <ion-slide>
+            <div class="titulo">Recuperação do rio</div>
+            <div class="corpo">
+               De acordo com o corpo de biólogos do Saae/Sorocaba, que acompanha o processo de 
+               recuperação do rio desde que a primeira e maior estação de tratamento do sistema 
+               entrou em operação em maio de 2005, essa recuperação tem se apresentado acima das 
+               expectativas, visto que o resultado que se esperava obter em dois anos foi alcançado 
+               em apenas um ano, fato que está demonstrado nas diversas análises periódicas que vêm 
+               sendo desenvolvidas desde então.
+            </div>
+        </ion-slide>
+
+    </ion-slides>
 </ion-content>

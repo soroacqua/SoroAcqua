@@ -6,150 +6,141 @@
 
 
 <ion-content padding>
-  <ion-card style="background-color: #FFF;">
-    <ion-card-content>
-      <ion-card-title text-center>
-        <b>Índice de Qualidade da Água (IQA)</b>
-        Data: <!--{{qualidade.data}}-->
-      </ion-card-title>
-      <hr>
-        <ion-row baseline class="linha-impar">
-          <ion-col text-left class="coluna-titulo">
-            Parâmetros
+      <ion-row baseline class="linha-impar">
+        <ion-col text-left width-50>
+          <b>Parâmetros</b>
+        </ion-col>
+        <ion-col text-left width-25>
+          <b>Permitido</b>
+        </ion-col>
+        <ion-col text-left width-25>
+          <b>Obtido</b>
+        </ion-col>
+      </ion-row>
+      <ion-row class="linha-par">
+        <ion-col text-left width-50 (click)="openPage(1)">
+        DQO (Demanda Química de Oxigênio)
+        </ion-col>
+        <ion-col text-left width-25>
+          superior a 5mg/L
+        </ion-col>
+        <ion-col text-left width-25>
+          *precisa por na tabela mg/L
+        </ion-col>
+      </ion-row>
+      <ion-row class="linha-impar">
+        <ion-col text-left width-50 (click)="openPage(2)">
+        DBO (Demanda Bioquímica de Oxigênio)
+        </ion-col>
+        <ion-col text-left width-25>
+          1000 mg/L
+        </ion-col>
+        <ion-col text-left width-25>
+         {{dbo}} mg/L
+        </ion-col>
+      </ion-row>
+      <ion-row class="linha-par">
+        <ion-col text-left width-50 (click)="openPage(3)">
+        pH (Potencial Hidrogeniônico)
+        </ion-col>
+        <ion-col text-left width-25>
+          6,0 a 9,0
+        </ion-col>
+        <ion-col text-left width-25>
+        {{ph}}
+        </ion-col>
+      </ion-row>
+      <ion-row class="linha-impar">
+        <ion-col text-left width-50 (click)="openPage(4)">
+        OD (Oxigênio Dissolvido)
+        </ion-col>
+        <ion-col text-left width-25>
+          menor que 5 mg/L
+        </ion-col>
+        <ion-col text-left width-25>
+        {{oxigenio_dissolvido}}mg/L
+        </ion-col>
+      </ion-row>
+      <ion-row class="linha-par">
+        <ion-col text-left width-50 (click)="openPage(5)">
+          NTK (Nitrogênio)
+        </ion-col>
+        <ion-col text-left width-25>
+          Depende da estação do ano
+        </ion-col>
+        <ion-col text-left width-25>
+        {{nitrogenio}}
+        </ion-col>
+      </ion-row>
+      <ion-row class="linha-impar">
+        <ion-col text-left width-50 (click)="openPage(6)">
+          PT (Fósforo)
+        </ion-col>
+        <ion-col text-left width-25>
+          N/C
+        </ion-col>
+        <ion-col text-left width-25>
+        {{fosforo}} mg/L
+        </ion-col>
+      </ion-row>
+      <ion-row class="linha-par">
+        <ion-col text-left width-50 (click)="openPage(7)">
+        Resíduos
+        </ion-col>
+        <ion-col text-left width-25>
+          0,030 mg/L
+        </ion-col>
+        <ion-col text-left width-25>
+          {{residuo}}
+        </ion-col>
+      </ion-row>
+      <ion-row class="linha-impar">
+        <ion-col text-left width-50 (click)="openPage(8)">
+        Cor
+        </ion-col>
+        <ion-col text-left width-25>
+          100uT
+        </ion-col>
+        <ion-col text-left width-25>
+          ***precisa por na tabela uT
+        </ion-col>
+      </ion-row>
+      <ion-row class="linha-par">
+        <ion-col text-left width-50 (click)="openPage(9)">
+          Turbidez
+        </ion-col>
+        <ion-col text-left width-25>
+          500mg/L
+        </ion-col>
+        <ion-col text-left width-25>
+          {{turpidez}} mg/L
+        </ion-col>
+      </ion-row>
+      <ion-row class="linha-impar">
+          <ion-col text-left width-50 (click)="openPage(10)">
+          Condutividade
           </ion-col>
-          <ion-col text-left class="coluna-permitido">
-            <b>Permitido</b>
-          </ion-col>
-          <ion-col text-left class="coluna-obtido">
-            <b>Obtido</b>
-          </ion-col>
-        </ion-row>
-        <ion-row class="linha-par">
-          <ion-col text-left width-50 (click)="openPage(1)">
-          DQO (Demanda Química de Oxigênio)
-          </ion-col>
-          <ion-col text-left width-33>
-            superior a 5mg/L
-          </ion-col>
-          <ion-col text-left width-33>
-            ****precisa por na tabela mg/L
-          </ion-col>
-        </ion-row>
-        <ion-row class="linha-impar">
-          <ion-col text-left width-50 (click)="openPage(2)">
-          DBO (Demanda Bioquímica de Oxigênio)
-          </ion-col>
-          <ion-col text-left width-33>
-            1000mg/L
-          </ion-col>
-          <ion-col text-left width-33>
-          <!--  {{qualidade.dbo}}mg/L-->
-          </ion-col>
-        </ion-row>
-        <ion-row class="linha-par">
-          <ion-col text-left width-50 (click)="openPage(3)">
-          pH (Potencial Hidrogeniônico)
-          </ion-col>
-          <ion-col text-left width-33>
-            6,0 a 9,0
-          </ion-col>
-          <ion-col text-left width-33>
-          <!--  {{qualidade.ph}}-->
-          </ion-col>
-        </ion-row>
-        <ion-row class="linha-impar">
-          <ion-col text-left width-50 (click)="openPage(4)">
-          OD (Oxigênio Dissolvido)
-          </ion-col>
-          <ion-col text-left width-33>
-            menor que 5mg/L
-          </ion-col>
-          <ion-col text-left width-33>
-          <!--  {{qualidade.oxigenio_dissolvido}}mg/L-->
-          </ion-col>
-        </ion-row>
-        <ion-row class="linha-par">
-          <ion-col text-left width-50 (click)="openPage(5)">
-            NTK (Nitrogênio)
-          </ion-col>
-          <ion-col text-left width-33>
-            Depende da estação do ano
-          </ion-col>
-          <ion-col text-left width-33>
-          <!--  {{qualidade.nitrogenio}}-->
-          </ion-col>
-        </ion-row>
-        <ion-row class="linha-impar">
-          <ion-col text-left width-50 (click)="openPage(6)">
-            PT (Fósforo)
-          </ion-col>
-          <ion-col text-left width-33>
-            N/C
-          </ion-col>
-          <ion-col text-left width-33>
-          <!--  {{qualidade.fosforo}}mg/L-->
-          </ion-col>
-        </ion-row>
-        <ion-row class="linha-par">
-          <ion-col text-left width-50 (click)="openPage(7)">
-          Resíduos
-          </ion-col>
-          <ion-col text-left width-33>
-            0,030mg/L
-          </ion-col>
-          <ion-col text-left width-33>
-            <!--{{qualidade.residuo}}-->
-          </ion-col>
-        </ion-row>
-        <ion-row class="linha-impar">
-          <ion-col text-left width-50 (click)="openPage(8)">
-          Cor
-          </ion-col>
-          <ion-col text-left width-33>
-            100uT
-          </ion-col>
-          <ion-col text-left width-33>
-            ***precisa por na tabela uT
-          </ion-col>
-        </ion-row>
-        <ion-row class="linha-par">
-          <ion-col text-left width-50 (click)="openPage(9)">
-            Turbidez
-          </ion-col>
-          <ion-col text-left width-33>
+          <ion-col text-left width-25>
             500mg/L
           </ion-col>
-          <ion-col text-left width-33>
-            <!--{{qualidade.turpidez}}mg/L-->
+          <ion-col text-left width-25>
+            ***precisa por na tabela mg/L
           </ion-col>
         </ion-row>
-        <ion-row class="linha-impar">
-            <ion-col text-left width-50 (click)="openPage(9)">
-            Condutividade
-            </ion-col>
-            <ion-col text-left width-25>
-              500mg/L
-            </ion-col>
-            <ion-col text-left width-25>
-              ***precisa por na tabela mg/L
-            </ion-col>
-          </ion-row>
-          <ion-row class="linha-par">
-            <ion-col text-left width-50 (click)="openPage(9)">
-            Bacteriológico (Coliformes Termotolerantes)
-            </ion-col>
-            <ion-col text-left width-25>
-              500mg/L
-            </ion-col>
-            <ion-col text-left width-25>
-              <!--{{qualidade.coliformes_termotolerantes}}mg/L-->
-            </ion-col>
-          </ion-row>
-          <ion-row>
-          <ion-col>
-           * Clique sobre os parâmentos para ter mais detalhes
-           </ion-col>
+        <ion-row class="linha-par">
+          <ion-col text-left width-50 (click)="openPage(11)">
+          Bacteriológico (Coliformes Termotolerantes)
+          </ion-col>
+          <ion-col text-left width-25>
+            500 mg/L
+          </ion-col>
+          <ion-col text-left width-25>
+            {{coliformes_termotolerantes}} mg/L
+          </ion-col>
         </ion-row>
-    </ion-card-content>
-  </ion-card>
+        <ion-row>
+        <ion-col>
+          * Clique sobre os parâmentos para ter mais detalhes
+          </ion-col>
+      </ion-row>
 </ion-content>

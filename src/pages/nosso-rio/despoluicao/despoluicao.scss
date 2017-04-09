@@ -1,50 +1,53 @@
 page-despoluicao {
-     ion-slides{
-
-      ion-slide{
-        .capa{
-          color: white;
-          line-height: 50px;
-          text-align: center;
-          font-size: 30px;
-          vertical-align: text-top;
+    img {
+            max-width: 150px;
+            max-height: 100px;
+            width: auto;
+            height: auto;
+            border-radius: 20px;
+            margin-left: auto;
+            margin-right: auto;
         }
-        .titulo{
-          color: white;
-          font-size: 30px;
-          position: absolute;
-          top: 0;
-          //left: 30;
-          //z-index: 50;
-          //background:#ffc;
-          padding:45px;
-          //border:1px solid #CCCCCC;
-          text-align:center;
-          font-weight:bold;
-          //width:99%;
+    ion-slides {        
+        ion-slide {
+            background-color: #00CED1;
+            .img {
+                max-width: 200px;
+                max-height: 150px;
+                width: auto;
+                height: auto;
+                border-radius: 20px;
+            }
+            .capa {
+                color: white;
+                line-height: 50px;
+                text-align: center;
+                font-size: 30px;
+                vertical-align: text-top;
+                font-weight: bold;
+            }
+            .titulo {
+                color: white;
+                font-size: 25px;
+                position: absolute;
+                top: 0;
+                padding-top: 35px;
+                padding-left: 25px;
+                text-align: left;
+                font-weight: bold;
+            }
+            .corpo {
+                color: white;
+                padding-top: 0px;
+                padding-left: 25px;
+                padding-right: 25px;
+                text-align: left;
+                font-size: 20px;
+            }
+            .title-corpo {
+                font-weight: 700;
+                font-size: 20px;
+            }
         }
-        .corpo{
-          color: white;
-          padding:25px;
-          text-align: left;
-        }
-        .title-corpo{
-          font-weight: 700;
-          font-size: 20px;
-        }
-        .img{
-          max-width:200px;
-          max-height:150px;
-          width: auto;
-          height: auto;
-          border-radius: 20px;
-        }
-        .img-seta{
-          max-width:100px;
-          max-height:50px;
-          width: auto;
-          height: auto;
-        }
-      }
     }
 }
