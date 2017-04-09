@@ -1,44 +1,44 @@
 <ion-header>
 
-  <ion-navbar color="head">
-    <button ion-button menuToggle>
+    <ion-navbar color="head">
+        <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title text-center>Projetos</ion-title>
-  </ion-navbar>
+        <ion-title text-center>Projetos</ion-title>
+    </ion-navbar>
 
 </ion-header>
 
-<ion-content padding>
-  <ion-searchbar placeholder="Digite o nome do projeto..." [(ngModel)]="query" (ionInput)="getItems()"></ion-searchbar>
-  <ion-card *ngFor="let p of projetos">
-    <img [src]="p.imagem"/>
-    <ion-card-content>
-      <ion-card-title (click)="openPage(p)">
-        {{p.titulo}}
-      </ion-card-title>
-      <div class="chamada" (click)="openPage(p)">
-        {{p.descricao}}
-      </div>
-      <ion-row>
-        <ion-col text-center>
-          <button ion-button clear icon-left small (click)="openMenu()">
+<ion-content>
+    <ion-searchbar placeholder="Digite o nome do projeto..." [(ngModel)]="query" (ionInput)="getItems()"></ion-searchbar>
+    <ion-card *ngFor="let projeto of projetos">
+        <img [src]="projeto.imagem" />
+        <ion-card-content>
+            <ion-card-title>
+                {{projeto.titulo}}
+            </ion-card-title>
+            <div class="chamada">
+                {{projeto.descricao}}
+            </div>
+            <ion-row>
+                <ion-col text-center>
+                    <button ion-button clear icon-left small (click)="openMenu()">
             <ion-icon name="md-share">
             </ion-icon>
             <div>
               Compartilhar
             </div>
           </button>
-        </ion-col>
-        <ion-col text-center>
-          <button ion-button clear small icon-left (click)="openPage(p)">
+                </ion-col>
+                <ion-col text-center>
+                    <button ion-button clear small icon-left (click)="openPageProjeto(projeto)">
             <ion-icon name="add-circle"></ion-icon>
             <div>
                 Mais
             </div>
           </button>
-        </ion-col>
-      </ion-row>
-    </ion-card-content>
-  </ion-card>
+                </ion-col>
+            </ion-row>
+        </ion-card-content>
+    </ion-card>
 </ion-content>

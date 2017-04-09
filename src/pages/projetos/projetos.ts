@@ -22,16 +22,15 @@ export class Projetos {
 
   carregarProjetos(){
     this.prvProjetos.getProjeto().subscribe(res=>{
-      console.log(res);
       for (let i = 0; i < res.length; i++) {
           this.projetos.push(res[i]);
       }
     });
   }
 
-  openPage(projeto){
+  openPageProjeto(projeto){
       this.navCtrl.push(ProjetosView, {
-        projeto: projeto
+        pProjeto: projeto
       });
   }
 

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {NavController, NavParams, ActionSheetController, Platform, AlertController } from 'ionic-angular';
+import {NavParams, ActionSheetController, AlertController } from 'ionic-angular';
 
 @Component({
   selector: 'page-noticias-view',
@@ -9,10 +9,10 @@ export class NoticiasView {
 
   public noticia;
 
-  constructor(private navController: NavController, private navParams: NavParams,
-              public platform: Platform, public actionsheetCtrl: ActionSheetController,
+  constructor(public navParams: NavParams,
+              public actionsheetCtrl: ActionSheetController,
               public alertCtrl: AlertController) {
-      this.noticia = navParams.get('noticia');
+      this.noticia = navParams.get('pNoticia');
   }
 
   openMenu() {

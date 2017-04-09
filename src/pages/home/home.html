@@ -1,30 +1,30 @@
 <ion-header>
-  <ion-navbar color="head">
-    <button ion-button menuToggle>
+    <ion-navbar color="head">
+        <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title text-center>Home</ion-title>
-  </ion-navbar>
+        <ion-title text-center>Home</ion-title>
+    </ion-navbar>
 </ion-header>
 
 <ion-content>
-  <ion-card>
-      <ion-slides [options]="homeOptions" nextButton prevButton>
-          <ion-slide *ngFor="let n of noticias">
-                <img [src]="n.imagem" (click)="openPageNoticiaView(n)"/>
-                <div class="card-title"  (click)="openPageNoticiaView(n)">{{n.titulo}}</div>
-                <div class="card-subtitle"  (click)="openPageNoticiaView(n)">{{n.descricao}}</div>
-          </ion-slide>
-      </ion-slides>
-  </ion-card>
+    <ion-card>
+        <ion-slides [options]="homeOptions" nextButton prevButton>
+            <ion-slide *ngFor="let noticia of noticias">
+                <img [src]="noticia.imagem" (click)="openPageNoticiaView(noticia)" />
+                <div class="card-title" (click)="openPageNoticiaView(noticia)">{{noticia.titulo}}</div>
+                <div class="card-subtitle" (click)="openPageNoticiaView(noticia)">{{noticia.descricao}}</div>
+            </ion-slide>
+        </ion-slides>
+    </ion-card>
 
-  <ion-card>
-    Qualidade da Água
-    <!--<iframe width="220" height="200" src="../agua/agua-consulta-qualidade/agua-consulta-qualidade" frameborder="0" allowfullscreen></iframe>-->
-  </ion-card>
+    <ion-card>
+        Qualidade da Água
+        <!--<iframe width="220" height="200" src="../agua/agua-consulta-qualidade/agua-consulta-qualidade" frameborder="0" allowfullscreen></iframe>-->
+    </ion-card>
 
-  <ion-card>
-      Frases de Conscientização sobre a água
-  </ion-card>
+    <ion-card>
+        Frases de Conscientização sobre a água
+    </ion-card>
 
 </ion-content>

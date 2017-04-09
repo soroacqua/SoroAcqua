@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Platform, NavController } from 'ionic-angular';
+import { NavController } from 'ionic-angular';
 import { ViewChild } from '@angular/core';
 import { Slides } from 'ionic-angular';
 import { NoticiasView } from '../noticias/noticias-view/noticias-view';
@@ -15,7 +15,7 @@ export class Home {
 
   public noticias: Array<any>;
 
-  constructor(platform: Platform, private prvNoticias: PrvNoticia, public navCtrl: NavController) {
+  constructor(private prvNoticias: PrvNoticia, public navCtrl: NavController) {
     this.noticias = [];
     this.carregarNoticias();
   }
@@ -41,7 +41,7 @@ export class Home {
 
     openPageNoticiaView(noticia){
         this.navCtrl.push(NoticiasView, {
-          noticia: noticia
+          pNoticia: noticia
         });
     }
 

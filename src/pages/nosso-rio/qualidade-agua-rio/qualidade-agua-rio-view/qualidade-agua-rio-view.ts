@@ -20,14 +20,15 @@ export class QualidadeAguaRioView {
   public residuo;
   public turpidez;
   public coliformes_termotolerantes;
+  public data;
 
   constructor(public modalCtrl: ModalController,
                   public navParams: NavParams, private prvQualidade: PrvQualidade) {
-    this.idEstacao = navParams.get('idEstacao');
+    this.idEstacao = navParams.get('pIdEstacao');
     this.carregaQualidade(this.idEstacao);
   }
 
-  openPage(parametro){
+  openPageDetalhes(parametro){
     let modal = this.modalCtrl.create(DetalhesParametros, {parametro: parametro});
     modal.present();
   }
@@ -43,6 +44,7 @@ export class QualidadeAguaRioView {
       this.residuo = this.qualidade.residuo;
       this.turpidez = this.qualidade.turpidez;
       this.coliformes_termotolerantes = this.qualidade.coliformes_termotolerantes;
+      this.data = this.qualidade.data;
     });
   }
 

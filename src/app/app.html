@@ -1,33 +1,33 @@
 <ion-menu type="reveal" [content]="content">
-  <ion-header>
-    <ion-toolbar color="head">
-      <ion-title>SoroAcqua</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    <ion-header>
+        <ion-toolbar color="head">
+            <ion-title>SoroAcqua</ion-title>
+        </ion-toolbar>
+    </ion-header>
 
-  <ion-content>
-    <ion-list>
-      <ion-item no-lines>
-        <ion-avatar item-left>
-          <img src="imagens/avatar.png">
-        </ion-avatar>
-        <div>Bem vindo(a)!</div>
-      </ion-item>
-      <ion-item padding *ngFor="let p of pages" (click)="toggleDetails(p)">
-        <ion-icon [name]="p.icon" class="icon-menu" item-left></ion-icon>
-        <div class="title-menu">{{p.title}}</div>
+    <ion-content>
+        <ion-list>
+            <ion-item no-lines>
+                <ion-avatar item-left>
+                    <img src="imagens/avatar.png">
+                </ion-avatar>
+                <div>Bem vindo(a)!</div>
+            </ion-item>
+            <ion-item padding *ngFor="let p of pages" (click)="toggleDetails(p)">
+                <ion-icon [name]="p.icon" class="icon-menu" item-left></ion-icon>
+                <div class="title-menu">{{p.title}}</div>
 
-         <div *ngIf="p.showDetails" text-wrap>
-          <br>
-           <ion-item padding  class="menu-item" ion-item menuClose *ngFor="let i of p.itens" (click)="openPage(i)">
-             <ion-icon [name]="i.icon" class="icon-menu" item-left></ion-icon>
-             <div class="title-menu">{{i.title}}</div>
-           </ion-item>
-         </div>
-         
-      </ion-item>
-    </ion-list>
-  </ion-content>
+                <div *ngIf="p.showDetails" text-wrap>
+                    <br>
+                    <ion-item padding class="menu-item" ion-item menuClose *ngFor="let i of p.itens" (click)="openPage(i)">
+                        <ion-icon [name]="i.icon" class="icon-menu" item-left></ion-icon>
+                        <div class="title-menu">{{i.title}}</div>
+                    </ion-item>
+                </div>
+
+            </ion-item>
+        </ion-list>
+    </ion-content>
 </ion-menu>
 
 <!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->

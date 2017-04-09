@@ -12,7 +12,7 @@ export class ProjetosView {
   constructor(private navController: NavController, private navParams: NavParams,
               public platform: Platform, public actionsheetCtrl: ActionSheetController,
               public alertCtrl: AlertController) {
-      this.projeto = navParams.get('projeto');
+      this.projeto = navParams.get('pProjeto');
   }
 
   openMenu() {
