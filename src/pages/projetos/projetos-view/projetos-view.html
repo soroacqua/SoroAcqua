@@ -1,59 +1,59 @@
 <ion-header>
 
-  <ion-navbar color="head">
-    <ion-title text-center>{{projeto.titulo}}</ion-title>
-  </ion-navbar>
+    <ion-navbar color="head">
+        <ion-title text-center>{{projeto.titulo}}</ion-title>
+    </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
-  <ion-card>
-  <img [src]="projeto.imagem"/>
-  <ion-card-content>
-    <ion-card-title>
-      {{projeto.titulo}}
-    </ion-card-title>
-    <div>
-      {{projeto.descricao}}
-    </div>
-    <br>
-    <hr>
-    <ion-row>
-      <ion-col text-left width-10>
-        <ion-icon name="calendar"></ion-icon>
-      </ion-col>
-      <ion-col text-left width-33>
-        <b>Data de Publicação:</b>
-      </ion-col>
-      <ion-col text-left width-77>
-          {{projeto.data | date: 'dd/MM/yyyy'}}
-      </ion-col>
-    </ion-row>
-    <hr>
-    <ion-row>
-      <ion-col text-left width-10>
-        <ion-icon name="pin"></ion-icon>
-      </ion-col>
-      <ion-col text-left width-33>
-      <b>Local:</b>
-      </ion-col>
-      <ion-col text-left width-77>
-      {{projeto.local}}
-      </ion-col>
-    </ion-row>
-    <hr>
-    <ion-row>
-      <ion-col text-right>
-        <button ion-button outline icon-left block (click)="openMenu()">
+<ion-content>
+    <ion-card>
+        <img [src]="projeto.imagem" />
+        <ion-card-content>
+            <ion-card-title>
+                {{projeto.titulo}}
+            </ion-card-title>
+            <div>
+                {{projeto.descricao}}
+            </div>
+            <br>
+            <hr>
+            <ion-row>
+                <ion-col text-left width-10>
+                    <ion-icon name="calendar"></ion-icon>
+                </ion-col>
+                <ion-col text-left width-33>
+                    <b>Data de Publicação:</b>
+                </ion-col>
+                <ion-col text-left width-77>
+                    {{projeto.data | date: 'dd/MM/yyyy'}}
+                </ion-col>
+            </ion-row>
+            <hr>
+            <ion-row>
+                <ion-col text-left width-10>
+                    <ion-icon name="pin"></ion-icon>
+                </ion-col>
+                <ion-col text-left width-33>
+                    <b>Local:</b>
+                </ion-col>
+                <ion-col text-left width-77>
+                    {{projeto.local}}
+                </ion-col>
+            </ion-row>
+            <hr>
+            <ion-row>
+                <ion-col text-right>
+                    <button ion-button outline icon-left block (click)="openMenu()">
           <ion-icon name="md-share">
           </ion-icon>
           <div>
             Compartilhar
           </div>
         </button>
-      </ion-col>
-    </ion-row>
-  </ion-card-content>
-</ion-card>
+                </ion-col>
+            </ion-row>
+        </ion-card-content>
+    </ion-card>
 </ion-content>

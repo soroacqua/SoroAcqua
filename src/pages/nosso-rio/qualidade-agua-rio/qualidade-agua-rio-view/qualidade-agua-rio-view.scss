@@ -1,3 +1,16 @@
 page-qualidade-agua-rio-view {
-
+    .linha-impar {
+        background-color: #ADEAEA;
+    }
+    .linha-par {
+        background-color: #70DBDB;
+    }
+    ion-row {
+        height: 8%;
+        width: 100%;
+        padding-top: 8px;
+    }
+    .corpo {
+        margin: auto;
+    }
 }

@@ -12,7 +12,7 @@ export class EventosView {
   constructor(private navController: NavController, private navParams: NavParams,
               public platform: Platform, public actionsheetCtrl: ActionSheetController,
               public alertCtrl: AlertController) {
-      this.evento = navParams.get('evento');
+      this.evento = navParams.get('pEvento');
   }
 
   openMenu() {

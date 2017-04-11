@@ -11,5 +11,17 @@
 
 
 <ion-content padding>
-  Listagem sobre a flora do Rio Sorocaba
+<ion-card *ngFor="let planta of plantas">
+    <img [src]="planta.imagem"/>
+    <ion-card-content>
+      <ion-card-title>
+        <b>{{planta.nome}}</b>
+      </ion-card-title>
+      <div >
+        {{planta.descricao}}
+      </div>
+      <br />
+      <div class="fonte">{{planta.fonte}}</div>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

@@ -1,20 +1,41 @@
 page-passagem-rio {
-     background: #fff;
-     border-color: transparent;
-
-   .slide-image {
-     height: 500px;
-     width: 500px;
-     margin: 18px 0;
-     box-shadow: 5px 5px 5px #363636;
-     border-radius: 10%;
-   }
-
-   p {
-     padding: 0 40px;
-     font-size: 16px;
-     line-height: 1.5;
-     color: #60646B;
-   }
-
+    background: #fff;
+    border-color: transparent;
+    .right {
+        position: absolute;
+        right: 0px;
+    }
+    div {
+        .center {
+            float: none;
+            display: block;
+            margin: auto;
+        }
+        .conteudo {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .image {
+            height: 200px;
+            width: 200px;
+            margin: 18px 0;
+            box-shadow: 5px 5px 5px #363636;
+            border-radius: 10%;
+            float: none;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h2 {
+            text-align: center;
+        }
+        p {
+            padding: 0 40px;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #60646B;
+            text-align: center;
+        }
+    }
 }

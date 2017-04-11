@@ -26,9 +26,9 @@ export class QualidadeAguaRio {
     });
   }
 
-  openPage(){
+  openPageQualidade(){
     this.navCtrl.push(QualidadeAguaRioView, {
-      idEstacao: this.idEstacao
+      pIdEstacao: this.idEstacao
     });
   }
 }

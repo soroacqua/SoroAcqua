@@ -22,10 +22,9 @@ export class Eventos {
   }
 
   carregarEventos(){
-    this.presentLoadingDefault();
+    //this.presentLoadingDefault();
 
     this.prvEventos.getEvento().subscribe(res=>{
-      console.log(res);
       for (let i = 0; i < res.length; i++) {
           this.eventos.push(res[i]);
       }
@@ -33,9 +32,9 @@ export class Eventos {
     });
   }
 
-  openPage(evento){
+  openPageEvento(evento){
       this.navCtrl.push(EventosView, {
-        evento: evento
+        pEvento: evento
       });
   }
 

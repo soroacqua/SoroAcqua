@@ -22,7 +22,6 @@ export class Noticias {
 
   carregarNoticias(){
     this.prvNoticias.getNoticia().subscribe(res=>{
-      console.log(res);
       for (let i = 0; i < res.length; i++) {
           this.noticias.push(res[i]);
       }
@@ -30,9 +29,9 @@ export class Noticias {
     });
   }
 
-  openPage(noticia){
+  openPageNoticia(noticia){
       this.navCtrl.push(NoticiasView, {
-        noticia: noticia
+        pNoticia: noticia
       });
   }
 

@@ -1,13 +1,11 @@
 page-eventos-rio {
-  ion-content.content-md {
-      ion-card {
+    ion-card {
         background-color: #FFF;
         .chamada {
-          overflow: hidden;
-        display: -webkit-box;
-        -webkit-line-clamp: 4;
-        -webkit-box-orient: vertical;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
         }
-      }
-  }
+    }
 }

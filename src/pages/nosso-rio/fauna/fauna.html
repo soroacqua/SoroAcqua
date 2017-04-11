@@ -11,5 +11,17 @@
 
 
 <ion-content padding>
-  Listagem sobre a fauna do Rio Sorocaba
+  <ion-card *ngFor="let animal of animais">
+    <img [src]="animal.imagem"/>
+    <ion-card-content>
+      <ion-card-title>
+        <b>{{animal.nome}}</b>
+      </ion-card-title>
+      <div >
+        {{animal.descricao}}
+      </div>
+      <br />
+      <div class="fonte">{{animal.fonte}}</div>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

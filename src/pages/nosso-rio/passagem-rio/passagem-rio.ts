@@ -6,6 +6,14 @@ import { Component } from '@angular/core';
 })
 export class PassagemRio {
 
-  constructor() {}
+  public show: any;
+
+  constructor() {
+    this.show = 0;
+  }
+
+  showDiv(value){
+    this.show = value;
+  }
 
 }

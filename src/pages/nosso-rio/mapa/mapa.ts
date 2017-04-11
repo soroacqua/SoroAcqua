@@ -1,4 +1,5 @@
-import {Component} from "@angular/core";
+import { Component } from "@angular/core";
+import { NavController } from 'ionic-angular';
 import {  GoogleMap,  GoogleMapsEvent,  GoogleMapsLatLng,  GoogleMapsMarker,  Geolocation} from 'ionic-native';
 
 @Component({
@@ -10,7 +11,7 @@ export class Mapa {
   private _latitude: number;
   private _longitude: number;
 
-  constructor() {}
+  constructor(public navCtrl: NavController) {}
 
   ngAfterViewInit() {
     let map = new GoogleMap(document.getElementById('map'));
@@ -28,75 +29,79 @@ export class Mapa {
           tilt: 30
         }).then(() => {
 
-          // add a marker
-          map.addMarker({
-            position: new GoogleMapsLatLng(-23.46899, -47.44033),
-            title: 'Capivara'
-          })
-          map.addMarker({
-            position: new GoogleMapsLatLng(-23.47167, -47.44231),
-            title: 'Capivara'
-          })
-          map.addMarker({
-            position: new GoogleMapsLatLng(-23.47466, -47.44226),
-            title: 'Capivara'
-          })
-          map.addMarker({
-            position: new GoogleMapsLatLng(-23.47718, -47.4402),
-            title: 'Capivara'
-          })
-          map.addMarker({
-            position: new GoogleMapsLatLng(-23.4795, -47.44068),
-            title: 'Capivara'
-          })
-          map.addMarker({
-            position: new GoogleMapsLatLng(-23.48072, -47.4384),
-            title: 'Capivara'
-          })
-          map.addMarker({
-            position: new GoogleMapsLatLng(-23.48395, -47.43767),
-            title: 'Capivara'
-          })
-          map.addMarker({
-            position: new GoogleMapsLatLng(-23.48568, -47.43754),
-            title: 'Capivara'
-          })
-          map.addMarker({
-            position: new GoogleMapsLatLng(-23.48652, -47.43759),
-            title: 'Capivara'
-          })
-          map.addMarker({
-            position: new GoogleMapsLatLng(-23.48895, -47.43842),
-            title: 'Capivara'
-          })
-          map.addMarker({
-            position: new GoogleMapsLatLng(-23.49032, -47.43995),
-            title: 'Capivara'
-          })
-          map.addMarker({
-            position: new GoogleMapsLatLng(-23.493, -47.4445),
-            title: 'Capivara'
-          })
-          map.addMarker({
-            position: new GoogleMapsLatLng(-23.49477, -47.4472),
-            title: 'Capivara'
-          })
-          map.addMarker({
-            position: new GoogleMapsLatLng(-23.49617, -47.44975),
-            title: 'Capivara'
-          })
-          map.addMarker({
-            position: new GoogleMapsLatLng(-23.49823, -47.45101),
-            title: 'Capivara'
-          })
-          map.addMarker({
-            position: new GoogleMapsLatLng(-23.50052, -47.45161),
-            title: 'Capivara'
-          })
+          // add a markers
+          var data = [
+            {'title': 'Capivara', 'position': new GoogleMapsLatLng(-23.46899, -47.44033), 
+                      'snippet': 'A capivara é uma espécie de mamífero roedor da família Caviidae e subfamília Hydrochoerinae. Ocorre por toda a América do Sul ao leste dos Andes em habitats associados a rios, lagos e pântanos. É o maior roedor do mundo, pesando até 91 kg e medindo até 1,2 m de comprimento e 60 cm de altura. A pelagem é densa, de cor avermelhada a marrom escuro. É possível distinguir os machos por conta da presença de uma glândula proeminente no focinho apesar do dimorfismo sexual não ser aparente.', 
+                      'styles': {'text-align': 'center','font-style': 'italic', 'font-weight': 'bold', 
+                      'color': 'green'}},
+            {'title': 'Ratão-do-banhado', 'position': new GoogleMapsLatLng(-23.47167, -47.44231), 
+                      'snippet': 'O ratão-do-banhado também conhecido por nutria, caxingui ou ratão-dágua, é uma espécie de roedor da família Echimyidae. Ocorre no sul da América do Sul. Pelagem marrom-avermelhada, cauda longa e grossa, revestida por escamas e pêlos ralos,vivendo em banhados, lagoas e rios. Dorme durante o dia. Alimenta-se de capim, raízes e plantas aquáticas e herbáceas, tubérculos, folhas, grãos, carne e peixe. O macho cuida dos filhotes no nascimento, protegendo e alimentando até a fêmea se recuperar.', 
+                      'styles': {'text-align': 'center','font-style': 'italic', 'font-weight': 'bold', 
+                      'color': 'green'}},
+            {'title': 'Jacaré-de-papo-amarelo', 'position': new GoogleMapsLatLng(-23.47466, -47.44226), 
+                      'snippet': 'O jacaré-de-papo-amarelo é um réptil crocodiliano da família Alligatoridae e gênero Caiman. É amplamente distribuído pelo sudeste da América do Sul, ocorrendo em qualquer ecossistema associado à água nas bacias dos rios Paraná, Paraguai, Uruguai e São Francisco. Também ocorre em ecossistemas costeiros, como mangues. É um animal carnívoro que vive aproximadamente cinquenta anos. São conhecidos por este nome pois, durante a fase do acasalamento, estes animais costumam ficar com a área do papo amarelada..', 
+                      'styles': {'text-align': 'center','font-style': 'italic', 'font-weight': 'bold', 
+                      'color': 'green'}},
+            {'title': 'Biguá', 'position': new GoogleMapsLatLng(-23.47718, -47.4402), 
+                      'snippet': 'O biguá também chamado corvo-marinho, cormorão, pata-dágua, biguaúna, imbiuá, mergulhão e miuá, é uma ave aquática falacrocoracídea preta, de dorso cinza. Tais aves habitam boa parte da região que vai do México à América do Sul, medindo cerca de 75 cm de comprimento e com coloração negra, saco gular amarelo e tarsos negros.', 
+                      'styles': {'text-align': 'center','font-style': 'italic', 'font-weight': 'bold', 
+                      'color': 'green'}},
+            {'title': 'Frango dágua', 'position': new GoogleMapsLatLng(-23.4795, -47.44068), 
+                      'snippet': 'A frango dágua mede aproximadamente 37 cm de comprimento. Apresenta um escudo facial vermelho, faixas brancas nos flancos, plumagem negra e patas amarelas. Os imaturos são castanho-escuros com abdome mais claro, sem o escudo facial vermelho. Alimenta-se de uma grande variedade de material vegetal, além de pequenos animais aquáticos. Freqüenta lagos, lagoas, canais, pântanos e também lagunas salobras.', 
+                      'styles': {'text-align': 'center','font-style': 'italic', 'font-weight': 'bold', 
+                      'color': 'green',}},
+            {'title': 'Tabarana', 'position': new GoogleMapsLatLng(-23.48072, -47.4384), 
+                      'snippet': 'O Salminus hilarii é um peixe prateado, comumente chamado de tabarana ou tubarana, sendo encontrada na bacia do Rio São Francisco, nos rios Grande e Tietê da bacia do Rio da Prata, nos rios Tocantins e Madeira da bacia Amazônica além da Bacia do Orinoco e rios da Colômbia (Rio Magdalena) e rios do Equador.', 
+                      'styles': {'text-align': 'center','font-style': 'italic', 'font-weight': 'bold', 
+                      'color': 'green'}},
+            {'title': 'Curimbatá', 'position': new GoogleMapsLatLng(-23.48395, -47.43767), 
+                      'snippet': 'Descrição 2.', 
+                      'styles': {'text-align': 'center','font-style': 'italic', 'font-weight': 'bold', 
+                      'color': 'green'}},
+            {'title': 'Lambari', 'position': new GoogleMapsLatLng(-23.48652, -47.43759), 
+                      'snippet': 'Descrição 2.', 
+                      'styles': {'text-align': 'center','font-style': 'italic', 'font-weight': 'bold', 
+                      'color': 'green'}},
+            {'title': 'Carcará', 'position': new GoogleMapsLatLng(-23.48895, -47.43842), 
+                      'snippet': 'Descrição 2.', 
+                      'styles': {'text-align': 'center','font-style': 'italic', 'font-weight': 'bold', 
+                      'color': 'green'}},
+            {'title': 'Cará', 'position': new GoogleMapsLatLng(-23.49123, -47.44226), 
+                      'snippet': 'Descrição 2.', 
+                      'styles': {'text-align': 'center','font-style': 'italic', 'font-weight': 'bold', 
+                      'color': 'green'}},
+            {'title': 'Cágado-de-barbicha', 'position': new GoogleMapsLatLng(-23.493, -47.4445), 
+                      'snippet': 'Descrição 2.', 
+                      'styles': {'text-align': 'center','font-style': 'italic', 'font-weight': 'bold', 
+                      'color': 'green'}},
+            {'title': 'Irerê', 'position': new GoogleMapsLatLng(-23.49477, -47.4472), 
+                      'snippet': 'Descrição 2.', 
+                      'styles': {'text-align': 'center','font-style': 'italic', 'font-weight': 'bold', 
+                      'color': 'green'}},
+            {'title': 'Lambari de rabo vermelho', 'position': new GoogleMapsLatLng(-23.49617, -47.44975), 
+                      'snippet': 'Descrição 2.', 
+                      'styles': {'text-align': 'center','font-style': 'italic', 'font-weight': 'bold', 
+                      'color': 'green'}},
+            {'title': 'Corujinha-buraqueira', 'position': new GoogleMapsLatLng(-23.49823, -47.45101), 
+                      'snippet': 'Descrição 2.', 
+                      'styles': {'text-align': 'center','font-style': 'italic', 'font-weight': 'bold', 
+                      'color': 'green'}}
+          ];
 
-            // show marker info
-          .then((marker: GoogleMapsMarker) => {
-            marker.showInfoWindow();
+          for (var i = 0; i < data.length; i++) {
+            map.addMarker(data[i])
+            
+            
+            .then((marker: GoogleMapsMarker) => {
+                 marker.showInfoWindow();
+            });
+          }        
+
+          map.on(GoogleMapsEvent.MAP_LOADED).subscribe(
+            () => {
+              alert('Clique sobre os marcadores para ver os animais que moram ao redor do rio');
+            });
 
             // listen to all available events
             /*
@@ -190,7 +195,7 @@ export class Mapa {
                 alert('MARKER_DRAG_END');
               });
               */
-          });
+          
         });
       });
     });
