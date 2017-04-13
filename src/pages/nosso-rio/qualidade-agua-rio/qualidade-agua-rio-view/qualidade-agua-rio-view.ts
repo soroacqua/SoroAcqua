@@ -36,6 +36,7 @@ export class QualidadeAguaRioView {
   carregaQualidade(id){
     this.prvQualidade.getQualidade(id).subscribe(res=>{
       this.qualidade = res.qualidades[0];
+      alert(this.qualidade.data);
       this.dbo = this.qualidade.dbo;
       this.ph = this.qualidade.ph;
       this.oxigenio_dissolvido = this.qualidade.oxigenio_dissolvido;
