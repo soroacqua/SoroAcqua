@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {NavController, NavParams, ActionSheetController, Platform, AlertController } from 'ionic-angular';
+import {NavController, NavParams, ActionSheetController, AlertController } from 'ionic-angular';
 
 @Component({
   selector: 'page-projetos-view',
@@ -10,7 +10,7 @@ export class ProjetosView {
   public projeto;
 
   constructor(private navController: NavController, private navParams: NavParams,
-              public platform: Platform, public actionsheetCtrl: ActionSheetController,
+             public actionsheetCtrl: ActionSheetController,
               public alertCtrl: AlertController) {
       this.projeto = navParams.get('pProjeto');
   }

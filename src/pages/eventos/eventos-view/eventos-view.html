@@ -1,95 +1,95 @@
 <ion-header>
 
-  <ion-navbar color="head">
-    <ion-title text-center>{{evento.titulo}}</ion-title>
-  </ion-navbar>
+    <ion-navbar color="head">
+        <ion-title text-center>{{evento.titulo}}</ion-title>
+    </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-  <ion-card>
-  <img [src]="evento.imagem"/>
-  <ion-card-content>
-    <ion-card-title>
-      {{evento.titulo}}
-    </ion-card-title>
-    <div>
-      {{evento.descricao}}
-    </div>
-    <br>
-    <hr>
-    <ion-row>
-      <ion-col text-left width-10>
-        <ion-icon name="calendar"></ion-icon>
-      </ion-col>
-      <ion-col text-left width-33>
-        <b>Data:</b>
-      </ion-col>
-      <ion-col text-left width-77>
-        {{evento.data  | date: 'dd/MM/yyyy'}}
-      </ion-col>
-    </ion-row>
-    <hr>
-    <ion-row>
-      <ion-col text-left width-10>
-        <ion-icon name="time"></ion-icon>
-      </ion-col>
-      <ion-col text-left width-33>
-      <b>Hora:</b>
-      </ion-col>
-      <ion-col text-left width-77>
-      {{evento.data | date: 'H:mm'}}
-      </ion-col>
-    </ion-row>
-    <hr>
-    <ion-row>
-      <ion-col text-left width-10>
-        <ion-icon name="cash"></ion-icon>
-      </ion-col>
-      <ion-col text-left width-33>
-      <b>Valor:</b>
-      </ion-col>
-      <ion-col text-left width-77>
-      {{evento.taxa}}
-      </ion-col>
-    </ion-row>
-    <hr>
-    <ion-row>
-      <ion-col text-left width-10>
-        <ion-icon name="calendar"></ion-icon>
-      </ion-col>
-      <ion-col text-left width-33>
-      <b>Inscrições:</b>
-      </ion-col>
-      <ion-col text-left width-77>
-      {{evento.inscricao}}
-      </ion-col>
-    </ion-row>
-    <hr>
-    <ion-row>
-      <ion-col text-left width-10>
-        <ion-icon name="pin"></ion-icon>
-      </ion-col>
-      <ion-col text-left width-33>
-      <b>Local:</b>
-      </ion-col>
-      <ion-col text-left width-77>
-      {{evento.local}}
-      </ion-col>
-    </ion-row>
-    <hr>
-    <ion-row>
-      <ion-col text-right>
-        <button ion-button outline icon-left block (click)="openMenu()">
+    <ion-card>
+        <img [src]="evento.imagem" />
+        <ion-card-content>
+            <ion-card-title>
+                {{evento.titulo}}
+            </ion-card-title>
+            <div>
+                {{evento.descricao}}
+            </div>
+            <br>
+            <hr>
+            <ion-row>
+                <ion-col text-left width-10>
+                    <ion-icon name="calendar"></ion-icon>
+                </ion-col>
+                <ion-col text-left width-33>
+                    <b>Data:</b>
+                </ion-col>
+                <ion-col text-left width-77>
+                    {{evento.data}}
+                </ion-col>
+            </ion-row>
+            <hr>
+            <ion-row>
+                <ion-col text-left width-10>
+                    <ion-icon name="time"></ion-icon>
+                </ion-col>
+                <ion-col text-left width-33>
+                    <b>Hora:</b>
+                </ion-col>
+                <ion-col text-left width-77>
+                    {{evento.data | date: 'H:mm'}}
+                </ion-col>
+            </ion-row>
+            <hr>
+            <ion-row>
+                <ion-col text-left width-10>
+                    <ion-icon name="cash"></ion-icon>
+                </ion-col>
+                <ion-col text-left width-33>
+                    <b>Valor:</b>
+                </ion-col>
+                <ion-col text-left width-77>
+                    {{evento.taxa}}
+                </ion-col>
+            </ion-row>
+            <hr>
+            <ion-row>
+                <ion-col text-left width-10>
+                    <ion-icon name="calendar"></ion-icon>
+                </ion-col>
+                <ion-col text-left width-33>
+                    <b>Inscrições:</b>
+                </ion-col>
+                <ion-col text-left width-77>
+                    {{evento.inscricao}}
+                </ion-col>
+            </ion-row>
+            <hr>
+            <ion-row>
+                <ion-col text-left width-10>
+                    <ion-icon name="pin"></ion-icon>
+                </ion-col>
+                <ion-col text-left width-33>
+                    <b>Local:</b>
+                </ion-col>
+                <ion-col text-left width-77>
+                    {{evento.local}}
+                </ion-col>
+            </ion-row>
+            <hr>
+            <ion-row>
+                <ion-col text-right>
+                    <button ion-button outline icon-left block (click)="openMenu()">
           <ion-icon name="md-share">
           </ion-icon>
           <div>
             Compartilhar
           </div>
         </button>
-      </ion-col>
-    </ion-row>
-  </ion-card-content>
-</ion-card>
+                </ion-col>
+            </ion-row>
+        </ion-card-content>
+    </ion-card>
 </ion-content>

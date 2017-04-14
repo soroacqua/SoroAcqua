@@ -14,11 +14,9 @@ export class Home {
   @ViewChild(Slides) slides: Slides;
 
   public noticias: Array<any>;
-  //public aguaQualidade;
 
   constructor(private prvNoticias: PrvNoticia, public navCtrl: NavController) {
     this.noticias = [];
-    //this.aguaQualidade = AguaConsultaQualidade;
     this.carregarNoticias();
   }
 
