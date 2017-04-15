@@ -1,6 +1,6 @@
 <ion-header>
     <ion-navbar color="head">
-        <ion-title>Qualidade do Rio Sorocaba</ion-title>
+        <ion-title>Qualidade - Rio Sorocaba</ion-title>
     </ion-navbar>
 </ion-header>
 
@@ -26,7 +26,7 @@
                 <b>DQO</b>
             </ion-col>
             <ion-col text-left width-25>
-                superior a 5mg/L
+
             </ion-col>
             <ion-col text-left width-25>
                 <!--*precisa por na tabela mg/L-->
@@ -37,10 +37,10 @@
                 <b>DBO</b>
             </ion-col>
             <ion-col text-left width-25>
-                1000 mg/L
+
             </ion-col>
             <ion-col text-left width-25>
-                {{dbo}} mg/L
+                {{qualidade?.dbo}} mg/L
             </ion-col>
         </ion-row>
         <ion-row class="linha-par">
@@ -48,10 +48,10 @@
                 <b>pH</b>
             </ion-col>
             <ion-col text-left width-25>
-                6,0 a 9,0
+
             </ion-col>
             <ion-col text-left width-25>
-                {{ph}}
+                {{qualidade?.ph}}
             </ion-col>
         </ion-row>
         <ion-row class="linha-impar">
@@ -59,10 +59,10 @@
                 <b>Oxigênio Dissolvido</b>
             </ion-col>
             <ion-col text-left width-25>
-                menor que 5 mg/L
+
             </ion-col>
             <ion-col text-left width-25>
-                {{oxigenio_dissolvido}}mg/L
+                {{qualidade?.oxigenio_dissolvido}}mg/L
             </ion-col>
         </ion-row>
         <ion-row class="linha-par">
@@ -70,10 +70,10 @@
                 <b>Nitrogênio</b>
             </ion-col>
             <ion-col text-left width-25>
-                Depende da estação do ano
+
             </ion-col>
             <ion-col text-left width-25>
-                {{nitrogenio}}
+                {{qualidade?.nitrogenio}}
             </ion-col>
         </ion-row>
         <ion-row class="linha-impar">
@@ -81,10 +81,10 @@
                 <b>Fósforo</b>
             </ion-col>
             <ion-col text-left width-25>
-                N/C
+
             </ion-col>
             <ion-col text-left width-25>
-                {{fosforo}} mg/L
+                {{qualidade?.fosforo}} mg/L
             </ion-col>
         </ion-row>
         <ion-row class="linha-par">
@@ -92,10 +92,10 @@
                 <b>Resíduos</b>
             </ion-col>
             <ion-col text-left width-25>
-                0,030 mg/L
+
             </ion-col>
             <ion-col text-left width-25>
-                {{residuo}}
+                {{qualidade?.residuo}}
             </ion-col>
         </ion-row>
         <ion-row class="linha-impar">
@@ -103,7 +103,7 @@
                 <b>Cor</b>
             </ion-col>
             <ion-col text-left width-25>
-                100uT
+
             </ion-col>
             <ion-col text-left width-25>
                 <!--***precisa por na tabela uT-->
@@ -114,10 +114,10 @@
                 <b>Turbidez</b>
             </ion-col>
             <ion-col text-left width-25>
-                500mg/L
+
             </ion-col>
             <ion-col text-left width-25>
-                {{turpidez}} mg/L
+                {{qualidade?.turpidez}} mg/L
             </ion-col>
         </ion-row>
         <ion-row class="linha-impar">
@@ -125,7 +125,7 @@
                 <b>Condutividade</b>
             </ion-col>
             <ion-col text-left width-25>
-                500mg/L
+
             </ion-col>
             <ion-col text-left width-25>
                 <!-- ***precisa por na tabela mg/L-->
@@ -136,10 +136,10 @@
                 <b>Bacteriológico</b>
             </ion-col>
             <ion-col text-left width-25>
-                500 mg/L
+
             </ion-col>
             <ion-col text-left width-25>
-                {{coliformes_termotolerantes}} mg/L
+                {{qualidade?.coliformes_termotolerantes}} mg/L
             </ion-col>
         </ion-row>
         <ion-row>
