@@ -7,12 +7,6 @@
 
     <ion-content>
         <ion-list>
-            <ion-item no-lines>
-                <ion-avatar item-left>
-                    <img src="imagens/avatar.png">
-                </ion-avatar>
-                <div>Bem vindo(a)!</div>
-            </ion-item>
             <ion-item padding *ngFor="let p of pages" (click)="toggleDetails(p)">
                 <ion-icon [name]="p.icon" class="icon-menu" item-left></ion-icon>
                 <div class="title-menu">{{p.title}}</div>

@@ -1,27 +1,27 @@
 <ion-header>
 
-  <ion-navbar color="head">
-    <button ion-button menuToggle>
+    <ion-navbar color="head">
+        <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title text-center>Flora</ion-title>
-  </ion-navbar>
+        <ion-title>Flora</ion-title>
+    </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-<ion-card *ngFor="let planta of plantas">
-    <img [src]="planta.imagem"/>
-    <ion-card-content>
-      <ion-card-title>
-        <b>{{planta.nome}}</b>
-      </ion-card-title>
-      <div >
-        {{planta.descricao}}
-      </div>
-      <br />
-      <div class="fonte">{{planta.fonte}}</div>
-    </ion-card-content>
-  </ion-card>
+    <ion-card *ngFor="let planta of plantas">
+        <img [src]="planta.imagem" />
+        <ion-card-content>
+            <ion-card-title>
+                <b>{{planta.nome}}</b>
+            </ion-card-title>
+            <div>
+                {{planta.descricao}}
+            </div>
+            <br />
+            <div class="fonte">{{planta.fonte}}</div>
+        </ion-card-content>
+    </ion-card>
 </ion-content>

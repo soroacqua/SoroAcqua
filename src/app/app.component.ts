@@ -44,11 +44,11 @@ export class MyApp {
       { title: 'Nosso Rio', component: '', icon: 'arrow-dropright', itens: [
         { title: 'Rio', component: Rio, icon: 'boat'},
         { title: 'Mapa', component: Mapa, icon: 'map'},
-        { title: 'Qualidade da Água', component: QualidadeAguaRio, icon: 'checkmark-circle'},
+        { title: 'Qualidade da Água', component: QualidadeAguaRio, icon: 'stats'},
         { title: 'Despoluição', component: Despoluicao, icon: 'thumbs-up',},
         { title: 'Flora', component: Flora, icon: 'flower'},
         { title: 'Fauna', component: Fauna, icon: 'paw'},
-        { title: 'Por Onde Passa', component: PassagemRio, icon: 'pin'}
+        { title: 'Por Onde Passa?', component: PassagemRio, icon: 'pin'}
       ], showDetails: false},
 
       { title: 'Nossa Água', component: '', icon: 'arrow-dropright', itens: [
@@ -61,9 +61,9 @@ export class MyApp {
       { title: 'Notícias', component: Noticias, icon: 'paper', itens: [], showDetails: false},
       { title: 'Eventos', component: Eventos, icon: 'calendar', itens: [], showDetails: false},
       { title: 'Projetos', component: Projetos, icon: 'book', itens: [], showDetails: false},
-      { title: 'Configurações', component: Configuracoes, icon: 'settings', itens: [], showDetails: false},
-      { title: 'Sobre', component: Sobre, icon: 'information-circle', itens: [], showDetails: false},
-      { title: 'Sair', component: '', icon: 'log-out', itens: [], showDetails: false}
+      { title: 'Configurações', component: Configuracoes, icon: '', itens: [], showDetails: false},
+      { title: 'Sobre', component: Sobre, icon: '', itens: [], showDetails: false},
+      { title: 'Sair', component: '', icon: '', itens: [], showDetails: false}
     ];
 
   }
