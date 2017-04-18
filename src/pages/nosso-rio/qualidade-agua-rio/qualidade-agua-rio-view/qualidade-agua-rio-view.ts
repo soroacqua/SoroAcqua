@@ -10,7 +10,7 @@ import { PrvQualidade } from '../../../../providers/prv-qualidade';
 })
 export class QualidadeAguaRioView {
 
-  public qualidade: Object;
+  public qualidade;
   public idEstacao;
 
   constructor(public modalCtrl: ModalController,

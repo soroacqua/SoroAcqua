@@ -18,14 +18,14 @@
         </ion-slides>
     </ion-card>
 
-    <ion-card>
+  <!--  <ion-card>
         <ion-card-content>
             <ion-select [(ngModel)]="os" submitText="Ok" cancelText="Cancelar" placeholder="Selecione seu Bairro">
                 <ion-option *ngFor="let bairro of bairros" value="{{bairro.estacao}}">{{bairro.descricao}}</ion-option>
             </ion-select>
             <button ion-button block (click)="getSelect(os)">Consultar</button>
         </ion-card-content>
-    </ion-card>
+    </ion-card> -->
 
     <ion-card>
         <ion-slides [options]="mensagemOptions">
