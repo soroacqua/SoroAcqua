@@ -54,11 +54,11 @@ import { QualidadeAguaRioView } from '../pages/nosso-rio/qualidade-agua-rio/qual
     DetalhesParametros,
     ProjetosView,
     Tratamento,
-    Cep,
     Estacoes,
     Noticias,
     NoticiasView,
-    QualidadeAguaRioView
+    QualidadeAguaRioView,
+    Cep
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -88,11 +88,11 @@ import { QualidadeAguaRioView } from '../pages/nosso-rio/qualidade-agua-rio/qual
     DetalhesParametros,
     ProjetosView,
     Tratamento,
-    Cep,
     Estacoes,
     Noticias,
     NoticiasView,
-    QualidadeAguaRioView
+    QualidadeAguaRioView,
+    Cep
   ],
   providers: []
 })

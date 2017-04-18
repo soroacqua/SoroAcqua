@@ -30,11 +30,11 @@ export class Mapa {
         }).then(() => {
 
           // add a markers
-          var data = [
+          var markersData = [
             {'title': 'Capivara', 'position': new GoogleMapsLatLng(-23.46899, -47.44033), 
-                      'snippet': 'A capivara é uma espécie de mamífero roedor da família Caviidae e subfamília Hydrochoerinae. Ocorre por toda a América do Sul ao leste dos Andes em habitats associados a rios, lagos e pântanos. É o maior roedor do mundo, pesando até 91 kg e medindo até 1,2 m de comprimento e 60 cm de altura. A pelagem é densa, de cor avermelhada a marrom escuro. É possível distinguir os machos por conta da presença de uma glândula proeminente no focinho apesar do dimorfismo sexual não ser aparente.', 
+                      'snippet':  'A capivara é uma espécie de mamífero roedor da família Caviidae e subfamília Hydrochoerinae. Ocorre por toda a América do Sul ao leste dos Andes em habitats associados a rios, lagos e pântanos. É o maior roedor do mundo, pesando até 91 kg e medindo até 1,2 m de comprimento e 60 cm de altura. A pelagem é densa, de cor avermelhada a marrom escuro. É possível distinguir os machos por conta da presença de uma glândula proeminente no focinho apesar do dimorfismo sexual não ser aparente.', 
                       'styles': {'text-align': 'center','font-style': 'italic', 'font-weight': 'bold', 
-                      'color': 'green'}},
+                      'color': 'green', icon:{url: 'www/imagens/capivara.jpg'}}},
             {'title': 'Ratão-do-banhado', 'position': new GoogleMapsLatLng(-23.47167, -47.44231), 
                       'snippet': 'O ratão-do-banhado também conhecido por nutria, caxingui ou ratão-dágua, é uma espécie de roedor da família Echimyidae. Ocorre no sul da América do Sul. Pelagem marrom-avermelhada, cauda longa e grossa, revestida por escamas e pêlos ralos,vivendo em banhados, lagoas e rios. Dorme durante o dia. Alimenta-se de capim, raízes e plantas aquáticas e herbáceas, tubérculos, folhas, grãos, carne e peixe. O macho cuida dos filhotes no nascimento, protegendo e alimentando até a fêmea se recuperar.', 
                       'styles': {'text-align': 'center','font-style': 'italic', 'font-weight': 'bold', 
@@ -89,8 +89,8 @@ export class Mapa {
                       'color': 'green'}}
           ];
 
-          for (var i = 0; i < data.length; i++) {
-            map.addMarker(data[i])
+          for (var i = 0; i < markersData.length; i++) {
+            map.addMarker(markersData[i])
             
             
             .then((marker: GoogleMapsMarker) => {

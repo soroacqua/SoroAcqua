@@ -9,7 +9,7 @@
 
 <ion-content>
     <ion-card>
-        <ion-slides [options]="homeOptions" nextButton prevButton>
+        <ion-slides [options]="noticiaOptions">
             <ion-slide *ngFor="let noticia of noticias">
                 <img [src]="noticia.imagem" (click)="openPageNoticiaView(noticia)" />
                 <div class="card-title" (click)="openPageNoticiaView(noticia)">{{noticia.titulo}}</div>
@@ -19,12 +19,20 @@
     </ion-card>
 
     <ion-card>
-        Qualidade da Água
-        <!--<iframe width="220" height="200" src="../agua/agua-consulta-qualidade/agua-consulta-qualidade" frameborder="0" allowfullscreen></iframe>-->
+        <ion-card-content>
+            <ion-select [(ngModel)]="os" submitText="Ok" cancelText="Cancelar" placeholder="Selecione seu Bairro">
+                <ion-option *ngFor="let bairro of bairros" value="{{bairro.estacao}}">{{bairro.descricao}}</ion-option>
+            </ion-select>
+            <button ion-button block (click)="getSelect(os)">Consultar</button>
+        </ion-card-content>
     </ion-card>
 
     <ion-card>
-        Frases de Conscientização sobre a água
+        <ion-slides [options]="mensagemOptions">
+            <ion-slide *ngFor="let mensagem of mensagens" class="fundo-mensagem">
+                <div class="mensagem">{{mensagem}}</div>
+            </ion-slide>
+        </ion-slides>
     </ion-card>
 
 </ion-content>
