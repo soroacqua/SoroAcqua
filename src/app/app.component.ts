@@ -41,17 +41,17 @@ export class MyApp {
     this.pages = [
       { title: 'Início', component: Home, icon: 'home', itens: [], showDetails: false},
 
-      { title: 'Nosso Rio', component: '', icon: 'arrow-dropright', itens: [
+      { title: 'Nosso Rio', component: '', icon: 'arrow-forward', itens: [
         { title: 'Rio', component: Rio, icon: 'boat'},
         { title: 'Mapa', component: Mapa, icon: 'map'},
         { title: 'Qualidade da Água', component: QualidadeAguaRio, icon: 'stats'},
-        { title: 'Despoluição', component: Despoluicao, icon: 'thumbs-up',},
+        { title: 'Despoluição', component: Despoluicao, icon: 'checkbox',},
         { title: 'Flora', component: Flora, icon: 'flower'},
         { title: 'Fauna', component: Fauna, icon: 'paw'},
         { title: 'Por Onde Passa?', component: PassagemRio, icon: 'pin'}
       ], showDetails: false},
 
-      { title: 'Nossa Água', component: '', icon: 'arrow-dropright', itens: [
+      { title: 'Nossa Água', component: '', icon: 'arrow-forward', itens: [
         { title: 'Água', component: Agua, icon: 'water'},
         { title: 'Estações', component: Estacoes, icon: 'color-fill'},
         { title: 'Tratamento', component: Tratamento, icon: 'construct'},
@@ -90,12 +90,12 @@ export class MyApp {
     if(page.component == ''){
       if (page.showDetails) {
        page.showDetails = false;
-          page.icon = 'arrow-dropright';
+          page.icon = 'arrow-forward';
 
       } else {
           page.showDetails = true;
-          //page.icon = 'arrow-dropdown-circle';
-          page.icon = '';
+          page.icon = 'arrow-down';
+          //page.icon = '';
       }
     } else{
         this.menu.close();

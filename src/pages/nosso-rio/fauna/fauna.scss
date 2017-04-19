@@ -1,16 +1,16 @@
 page-fauna {
     ion-card {
-        background-color: #FFF;
-
-        img{
-            width: 100%;
-            height: 200px;
-        }
-
-        .fonte{
-            text-align: left;
-            font-size: 12px;
-            font-weight: bold;
+        ion-card-content {
+            background-color: #FFF;
+            img {
+                width: 100%;
+                height: 200px;
+            }
+            .fonte {
+                text-align: left;
+                font-size: 12px;
+                font-weight: bold;
+            }
         }
     }
 }
