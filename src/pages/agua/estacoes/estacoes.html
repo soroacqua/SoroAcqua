@@ -9,6 +9,109 @@
 
 <ion-content padding>
 
+  <div class="conteudo">
+
+          <div *ngIf="show == 0" class="center">
+              <p>A seguir vamos conhecer as cidades por onde o rio Sorocaba passa. <br/>Clique sobre o botão Início para começar</p>
+              <button ion-button primary medium class="center" (click)="showDiv(1)">Ínicio</button>
+          </div>
+
+          <div *ngIf="show == 1">
+              <br>
+              <p>O Saae possui duas Estações de Tratamento de Água: ETA/Cerrado e a ETA/Éden</p>
+              <br>
+          </div>
+
+          <div *ngIf="show == 2">
+              <h2>Estação ETA/Éden</h2>
+              <p>Responsável por abastecer: Bairros do Éden, Aparecidinha, Cajuru e grande parte da Zona Industrial do município</p>
+              <img src="imagens/ETA_Eden.jpg" class="img"/>
+          </div>
+<!--
+          <div *ngIf="show == 3">
+              <img src="imagens/rio-sorocaba.jpg" class="image" />
+              <h2>Sorocaba</h2>
+              <p>Sorocaba é um município brasileiro da Região Metropolitana de Sorocaba, fundada em 15 de agosto de 1654 (362 anos), faz parte da Mesorregião Macro Metropolitana no estado de São Paulo.
+              </p>
+          </div>
+
+          <div *ngIf="show == 4">
+              <img src="imagens/ipero-rio-sorocaba.jpg" class="image" />
+              <h2>Iperó</h2>
+              <p>Iperó é um município brasileiro do estado de São Paulo, fundada em 21 de março de 1964 (52 anos). Em 2002, sua população era de 28.301 habitantes.</p>
+          </div>
+
+          <div *ngIf="show == 5">
+              <img src="imagens/boituva-rio-sorocaba.jpg" class="image" />
+              <h2>Boituva</h2>
+              <p>Boituva foi fundada em 1883, possui 134 anos, uma população de 48 314 habitantes e possui uma área de 249,0 km².</p>
+          </div>
+
+          <div *ngIf="show == 6">
+              <img src="imagens/tatui-rio-sorocaba.jpg" class="image" />
+              <h2>Tatuí</h2>
+              <p>Tatuí é um município brasileiro do estado de São Paulo fundada em 11 de agosto de 1826, foi elevado a município em 20 de setembro de 1861. Sua população é de 117 823 habitantes. Possui uma área de 525,44 km².
+              </p>
+          </div>
+
+          <div *ngIf="show == 7">
+              <img src="imagens/cerquilho-rio-sorocaba.jpg" class="image" />
+              <h2>Cerquilho</h2>
+              <p>Cerquilho é um município brasileiro do estado de São Paulo. Sua população é de 39.649 habitantes.</p>
+          </div>
+
+          <div *ngIf="show == 8">
+              <img src="imagens/jumirim-rio-sorocaba.jpg" class="image" />
+              <h2>Jumirim</h2>
+              <p>Jumirim é um município brasileiro do estado de São Paulo. Sua população estimada em 2004 era de 2 497 habitantes. Possui uma área de 56,7 km².</p>
+          </div>
+
+          <div *ngIf="show == 9">
+              <img src="imagens/laranjal-rio-sorocaba.jpg" class="image" />
+              <h2>Laranjal Paulista</h2>
+              <p>Laranjal Paulista é um município brasileiro do estado de São Paulo. Sua população estimada em 2014 era de 27.122 habitantes.</p>
+          </div>
+
+          <div *ngIf="show == 10">
+              <img src="imagens/rio-tiete.jpg" class="image" />
+              <h2>Desemboca no rio Tietê</h2>
+              <p>O rio Sorocaba desemboca no rio Tietê na cidade de Laranjal Paulista</p>
+          </div>
+          <button ion-button color="secondary" class="right" medium (click)="showDiv(2)" *ngIf="show == 1">Próxima</button>
+          <button ion-button color="light" class="right" medium (click)="showDiv(3)" *ngIf="show == 2">Próxima</button>
+          <button ion-button color="dark" class="right" medium (click)="showDiv(4)" *ngIf="show == 3">Próxima</button>
+          <button ion-button color="light" class="right" medium (click)="showDiv(5)" *ngIf="show == 4">Próxima</button>
+          <button ion-button color="secondary" class="right" medium (click)="showDiv(6)" *ngIf="show == 5">Próxima</button>
+          <button ion-button color="dark" class="right" medium (click)="showDiv(7)" *ngIf="show == 6">Próxima</button>
+          <button ion-button color="primary" class="right" medium (click)="showDiv(8)" *ngIf="show == 7">Próxima</button>
+          <button ion-button color="light" class="right" medium (click)="showDiv(9)" *ngIf="show == 8">Próxima</button>
+          <button ion-button color="dark" class="right" medium (click)="showDiv(10)" *ngIf="show == 9">Próxima</button>
+
+          <button ion-button color="secondary" medium (click)="showDiv(0)" *ngIf="show == 1">Anterior</button>
+          <button ion-button color="light" medium (click)="showDiv(1)" *ngIf="show == 2">Anterior</button>
+          <button ion-button color="dark" medium (click)="showDiv(2)" *ngIf="show == 3">Anterior</button>
+          <button ion-button color="light" medium (click)="showDiv(3)" *ngIf="show == 4">Anterior</button>
+          <button ion-button color="secondary" medium (click)="showDiv(4)" *ngIf="show == 5">Anterior</button>
+          <button ion-button color="dark" medium (click)="showDiv(5)" *ngIf="show == 6">Anterior</button>
+          <button ion-button color="primary" medium (click)="showDiv(6)" *ngIf="show == 7">Anterior</button>
+          <button ion-button color="light" medium (click)="showDiv(7)" *ngIf="show == 8">Anterior</button>
+          <button ion-button color="dark" medium (click)="showDiv(8)" *ngIf="show == 9">Anterior</button>
+          <button ion-button color="dark" medium (click)="showDiv(9)" *ngIf="show == 10">Anterior</button>
+      </div>
+
+
+
+
+
+
+
+
+</ion-content>
+
+-->
+
+
+
   <ion-slides [options]="{pager:true}">
 
     <ion-slide style="background-color: #E0EEEE">
