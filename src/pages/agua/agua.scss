@@ -6,6 +6,7 @@ page-agua {
 
 
       ion-slide{
+        background-color: #00CED1;
         .capa{
           color: blue;
           line-height: 50px;
@@ -14,6 +15,17 @@ page-agua {
           vertical-align: text-top;
         }
         .titulo{
+
+          color: white;
+          font-size: 25px;
+          position: absolute;
+          top: 0;
+          padding-top: 35px;
+          padding-left: 25px;
+          text-align: left;
+          font-weight: bold;
+
+          /*
           color: blue;
           font-size: 25px;
           position: relative;
@@ -26,12 +38,19 @@ page-agua {
           text-align:center;
           font-weight:bold;
           width:100%;
-          border-radius: 20px;
+          border-radius: 20px;*/
         }
         .corpo{
-          color: black;
+          color: white;
+          padding-top: 0px;
+          padding-left: 25px;
+          padding-right: 25px;
+          text-align: left;
+          font-size: 20px;
+
+        /*  color: black;
           padding:25px;
-          text-align: center;
+          text-align: center;*/
         }
         .title-corpo{
           font-weight: 590;
@@ -39,10 +58,12 @@ page-agua {
           text-align: justify;
         }
         .title-corpo2{
-          color:white;
+          font-weight: 700;
+          font-size: 20px;
+        /*  color:white;
           text-align: justify;
           font-weight: 600;
-          font-size: 20px;
+          font-size: 20px;*/
         }
         .img{
           max-width:200px;
