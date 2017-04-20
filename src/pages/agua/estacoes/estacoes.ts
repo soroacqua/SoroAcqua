@@ -1,22 +1,19 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
-/*
-  Generated class for the Estacoes page.
-
-  See http://ionicframework.com/docs/v2/components/#navigation for more info on
-  Ionic pages and navigation.
-*/
 @Component({
   selector: 'page-estacoes',
   templateUrl: 'estacoes.html'
 })
 export class Estacoes {
+  public show: any;
 
-  constructor(public navCtrl: NavController) {}
+  constructor() {
+    this.show = 0;
+  }
 
-  ionViewDidLoad() {
-    console.log('Hello Estacoes Page');
+  showDiv(value){
+    this.show = value;
   }
 
 }
