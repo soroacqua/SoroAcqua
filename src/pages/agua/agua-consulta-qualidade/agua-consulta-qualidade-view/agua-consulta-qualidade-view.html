@@ -1,48 +1,151 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>Qualidade da Água</ion-title>
-  </ion-navbar>
+    <ion-navbar color="head">
+        <ion-title>Qualidade da Água</ion-title>
+    </ion-navbar>
 </ion-header>
 
+
 <ion-content padding>
-  <ion-card>
-  <ion-card-header>
-    Período
-  </ion-card-header>
-  <ion-card-content>
+    <div class="corpo">
+        <ion-row>
+            <ion-col text-center>Índices referentes à data xxx </ion-col>
+        </ion-row>
+        <ion-row baseline class="linha-impar">
+            <ion-col text-left width-50>
+                <b>Parâmetros</b>
+            </ion-col>
+            <ion-col text-left width-25>
+                <b>Permitido</b>
+            </ion-col>
+            <ion-col text-left width-25>
+                <b>Obtido</b>
+            </ion-col>
+        </ion-row>
+        <ion-row class="linha-par">
+            <ion-col text-left width-50 (click)="openPageDetalhes(1)">
+                <b>DQO</b>
+            </ion-col>
+            <ion-col text-left width-25>
 
-    <ion-label> {{qualidade}} </ion-label>
+            </ion-col>
+            <ion-col text-left width-25>
+                <!--*precisa por na tabela mg/L-->
+            </ion-col>
+        </ion-row>
+        <ion-row class="linha-impar">
+            <ion-col text-left width-50 (click)="openPageDetalhes(2)">
+                <b>DBO</b>
+            </ion-col>
+            <ion-col text-left width-25>
 
-    <ion-row class="linha-principal">
-      <ion-col class="coluna-titulo">Indicadores</ion-col>
-      <ion-col class="coluna-titulo">Valor Real</ion-col>
-      <ion-col class="coluna-titulo">Valor Ideal</ion-col>
-    </ion-row>
+            </ion-col>
+            <ion-col text-left width-25>
+                {{qualidade?.dbo}} mg/L
+            </ion-col>
+        </ion-row>
+        <ion-row class="linha-par">
+            <ion-col text-left width-50 (click)="openPageDetalhes(3)">
+                <b>pH</b>
+            </ion-col>
+            <ion-col text-left width-25>
 
-    <ion-row class="linha-impar">
-      <ion-col class="coluna-titulo">Ácido</ion-col>
-      <ion-col>1%</ion-col>
-      <ion-col>2%</ion-col>
-    </ion-row>
+            </ion-col>
+            <ion-col text-left width-25>
+                {{qualidade?.ph}}
+            </ion-col>
+        </ion-row>
+        <ion-row class="linha-impar">
+            <ion-col text-left width-50 (click)="openPageDetalhes(4)">
+                <b>Oxigênio Dissolvido</b>
+            </ion-col>
+            <ion-col text-left width-25>
 
-    <ion-row class="linha-par">
-      <ion-col class="coluna-titulo">pH</ion-col>
-      <ion-col>2%</ion-col>
-      <ion-col>2%</ion-col>
-    </ion-row>
+            </ion-col>
+            <ion-col text-left width-25>
+                {{qualidade?.oxigenio_dissolvido}}mg/L
+            </ion-col>
+        </ion-row>
+        <ion-row class="linha-par">
+            <ion-col text-left width-50 (click)="openPageDetalhes(5)">
+                <b>Nitrogênio</b>
+            </ion-col>
+            <ion-col text-left width-25>
 
-    <ion-row class="linha-impar">
-      <ion-col class="coluna-titulo">Ácido</ion-col>
-      <ion-col>1%</ion-col>
-      <ion-col>2%</ion-col>
-    </ion-row>
+            </ion-col>
+            <ion-col text-left width-25>
+                {{qualidade?.nitrogenio}}
+            </ion-col>
+        </ion-row>
+        <ion-row class="linha-impar">
+            <ion-col text-left width-50 (click)="openPageDetalhes(6)">
+                <b>Fósforo</b>
+            </ion-col>
+            <ion-col text-left width-25>
 
-    <ion-row class="linha-par">
-      <ion-col class="coluna-titulo">pH</ion-col>
-      <ion-col>2%</ion-col>
-      <ion-col>2%</ion-col>
-    </ion-row>
+            </ion-col>
+            <ion-col text-left width-25>
+                {{qualidade?.fosforo}} mg/L
+            </ion-col>
+        </ion-row>
+        <ion-row class="linha-par">
+            <ion-col text-left width-50 (click)="openPageDetalhes(7)">
+                <b>Resíduos</b>
+            </ion-col>
+            <ion-col text-left width-25>
 
-  </ion-card-content>
-</ion-card>
+            </ion-col>
+            <ion-col text-left width-25>
+                {{qualidade?.residuo}}
+            </ion-col>
+        </ion-row>
+        <ion-row class="linha-impar">
+            <ion-col text-left width-50 (click)="openPageDetalhes(8)">
+                <b>Cor</b>
+            </ion-col>
+            <ion-col text-left width-25>
+
+            </ion-col>
+            <ion-col text-left width-25>
+                <!--***precisa por na tabela uT-->
+            </ion-col>
+        </ion-row>
+        <ion-row class="linha-par">
+            <ion-col text-left width-50 (click)="openPageDetalhes(9)">
+                <b>Turbidez</b>
+            </ion-col>
+            <ion-col text-left width-25>
+
+            </ion-col>
+            <ion-col text-left width-25>
+                {{qualidade?.turpidez}} mg/L
+            </ion-col>
+        </ion-row>
+        <ion-row class="linha-impar">
+            <ion-col text-left width-50 (click)="openPageDetalhes(10)">
+                <b>Condutividade</b>
+            </ion-col>
+            <ion-col text-left width-25>
+
+            </ion-col>
+            <ion-col text-left width-25>
+                <!-- ***precisa por na tabela mg/L-->
+            </ion-col>
+        </ion-row>
+        <ion-row class="linha-par">
+            <ion-col text-left width-50 (click)="openPageDetalhes(11)">
+                <b>Bacteriológico</b>
+            </ion-col>
+            <ion-col text-left width-25>
+
+            </ion-col>
+            <ion-col text-left width-25>
+                {{qualidade?.coliformes_termotolerantes}} mg/L
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                <b>* Clique sobre os parâmentos para ter mais detalhes</b>
+            </ion-col>
+        </ion-row>
+    </div>
 </ion-content>

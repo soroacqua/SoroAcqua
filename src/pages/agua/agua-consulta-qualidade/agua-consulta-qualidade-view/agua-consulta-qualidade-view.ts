@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { ModalController, NavParams } from 'ionic-angular';
+import {DetalhesParametrosAgua} from '../detalhes-parametros-agua/detalhes-parametros-agua';
 import { PrvQualidade } from '../../../../providers/prv-qualidade';
 
 @Component({
@@ -11,25 +12,22 @@ export class AguaConsultaQualidadeView {
   public qualidade;
   public id_estacao;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private prvQualidade: PrvQualidade) {
+  constructor(public modalCtrl: ModalController, public navParams: NavParams, private prvQualidade: PrvQualidade) {
       this.id_estacao = navParams.get('os');
 
     this.carregaQualidade(this.id_estacao);
   }
 
-  ionViewDidLoad() {
-    console.log('Hello AguaConsultaQualidadeView Page');
+  openPageDetalhes(parametro){
+    let modal = this.modalCtrl.create(DetalhesParametrosAgua, {parametro: parametro});
+    modal.present();
   }
 
   carregaQualidade(id){
     this.prvQualidade.getQualidade(id).subscribe(res=>{
       console.log(res);
-      this.qualidade = res.qualidades[0];  
+      this.qualidade = res.qualidades[0];
       console.log(this.qualidade);
     });
-
-
   }
-
-
 }

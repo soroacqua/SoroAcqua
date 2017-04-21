@@ -1,40 +1,18 @@
 page-agua-consulta-qualidade-view {
 
 
-    ion-content.content-md {
-        ion-card{
-          background-color: #FFF;
-          width: 85%;
-          margin: auto;
-          margin-bottom: 5%;
-          margin-top: 5%;
-
-          ion-card-content{
-            ion-card-title{
-              padding: 10px;
-            }
-            p{
-              text-align: justify;
-              padding: 10px;
-            }
-
-            .linha-impar{
-              background-color: #ADEAEA;
-            }
-            .linha-par{
-              background-color: #70DBDB;
-            }
-            .linha-principal{
-              background-color: #FFFFFF;
-            }
-            ion-row{
-              height: 50px;
-
-              .coluna-titulo{
-                font-weight: bold;
-              }
-            }
-          }
-        }
-    }
+  .linha-impar {
+      background-color: #ADEAEA;
+  }
+  .linha-par {
+      background-color: #70DBDB;
+  }
+  ion-row {
+      height: 8%;
+      width: 100%;
+      padding-top: 8px;
+  }
+  .corpo {
+      margin: auto;
+  }
 }
