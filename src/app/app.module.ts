@@ -28,6 +28,7 @@ import { Estacoes } from '../pages/agua/estacoes/estacoes';
 import { Noticias } from '../pages/noticias/noticias';
 import { NoticiasView } from '../pages/noticias/noticias-view/noticias-view';
 import { QualidadeAguaRioView } from '../pages/nosso-rio/qualidade-agua-rio/qualidade-agua-rio-view/qualidade-agua-rio-view';
+import { DetalhesParametrosAgua } from '../pages/agua/agua-consulta-qualidade/detalhes-parametros-agua/detalhes-parametros-agua';
 
 @NgModule({
   declarations: [
@@ -58,7 +59,8 @@ import { QualidadeAguaRioView } from '../pages/nosso-rio/qualidade-agua-rio/qual
     Noticias,
     NoticiasView,
     QualidadeAguaRioView,
-    Cep
+    Cep,
+    DetalhesParametrosAgua
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -92,7 +94,8 @@ import { QualidadeAguaRioView } from '../pages/nosso-rio/qualidade-agua-rio/qual
     Noticias,
     NoticiasView,
     QualidadeAguaRioView,
-    Cep
+    Cep,
+    DetalhesParametrosAgua
   ],
   providers: []
 })

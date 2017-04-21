@@ -1,9 +1,7 @@
 import { Component } from '@angular/core';
-import { NavController, ActionSheetController, Platform, AlertController } from 'ionic-angular';
+import { NavController } from 'ionic-angular';
 import { PrvBairro } from '../../../providers/prv-bairro';
-import {AguaConsultaQualidadeView} from './agua-consulta-qualidade-view/agua-consulta-qualidade-view';
-
-
+import { AguaConsultaQualidadeView } from './agua-consulta-qualidade-view/agua-consulta-qualidade-view';
 
 @Component({
   selector: 'page-agua-consulta-qualidade',
@@ -12,11 +10,10 @@ import {AguaConsultaQualidadeView} from './agua-consulta-qualidade-view/agua-con
   })
 
 export class AguaConsultaQualidade {
-  os : string;
+  public os = 0;
   public bairros: Array<any>;
 
-  constructor(public navCtrl: NavController, public platform: Platform, public actionsheetCtrl: ActionSheetController,
-              public alertCtrl: AlertController, private prvBairro: PrvBairro) {
+  constructor(public navCtrl: NavController, private prvBairro: PrvBairro) {
     this.bairros = [];
     this.carregarBairros();
   }
@@ -27,21 +24,12 @@ export class AguaConsultaQualidade {
       for (let i = 0; i < res.length; i++) {
           this.bairros.push(res[i]);
       }
-
     });
-  }
-
-  ionViewDidLoad() {
-    console.log('Hello AguaConsultaQualidade Page');
   }
 
   getSelect(os){
     this.navCtrl.push(AguaConsultaQualidadeView, {
-      os: os
+      os: this.os
     });
-
-    console.log("Bairro selecionado = " + this.os);
   }
-
-
 }

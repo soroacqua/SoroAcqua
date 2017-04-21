@@ -4,7 +4,6 @@
     </ion-navbar>
 </ion-header>
 
-
 <ion-content padding>
     <div class="corpo">
         <ion-row>
@@ -23,7 +22,7 @@
         </ion-row>
         <ion-row class="linha-par">
             <ion-col text-left width-50 (click)="openPageDetalhes(1)">
-                <b>DQO</b>
+                <b>Alumínio</b>
             </ion-col>
             <ion-col text-left width-25>
 
@@ -34,7 +33,7 @@
         </ion-row>
         <ion-row class="linha-impar">
             <ion-col text-left width-50 (click)="openPageDetalhes(2)">
-                <b>DBO</b>
+                <b>Alcalinidade Bicarbonatos</b>
             </ion-col>
             <ion-col text-left width-25>
 
@@ -45,7 +44,7 @@
         </ion-row>
         <ion-row class="linha-par">
             <ion-col text-left width-50 (click)="openPageDetalhes(3)">
-                <b>pH</b>
+                <b>Alcalinidade Carbonatos </b>
             </ion-col>
             <ion-col text-left width-25>
 
@@ -56,7 +55,7 @@
         </ion-row>
         <ion-row class="linha-impar">
             <ion-col text-left width-50 (click)="openPageDetalhes(4)">
-                <b>Oxigênio Dissolvido</b>
+                <b>Alcalinidade Hidróxidos</b>
             </ion-col>
             <ion-col text-left width-25>
 
@@ -67,7 +66,7 @@
         </ion-row>
         <ion-row class="linha-par">
             <ion-col text-left width-50 (click)="openPageDetalhes(5)">
-                <b>Nitrogênio</b>
+                <b>Cloreto</b>
             </ion-col>
             <ion-col text-left width-25>
 
@@ -78,7 +77,7 @@
         </ion-row>
         <ion-row class="linha-impar">
             <ion-col text-left width-50 (click)="openPageDetalhes(6)">
-                <b>Fósforo</b>
+                <b>Cor Aparente</b>
             </ion-col>
             <ion-col text-left width-25>
 
@@ -89,7 +88,7 @@
         </ion-row>
         <ion-row class="linha-par">
             <ion-col text-left width-50 (click)="openPageDetalhes(7)">
-                <b>Resíduos</b>
+                <b>Dureza</b>
             </ion-col>
             <ion-col text-left width-25>
 
@@ -100,7 +99,7 @@
         </ion-row>
         <ion-row class="linha-impar">
             <ion-col text-left width-50 (click)="openPageDetalhes(8)">
-                <b>Cor</b>
+                <b>Ferro</b>
             </ion-col>
             <ion-col text-left width-25>
 
@@ -111,7 +110,7 @@
         </ion-row>
         <ion-row class="linha-par">
             <ion-col text-left width-50 (click)="openPageDetalhes(9)">
-                <b>Turbidez</b>
+                <b>Fluoreto</b>
             </ion-col>
             <ion-col text-left width-25>
 
@@ -122,7 +121,7 @@
         </ion-row>
         <ion-row class="linha-impar">
             <ion-col text-left width-50 (click)="openPageDetalhes(10)">
-                <b>Condutividade</b>
+                <b>pH</b>
             </ion-col>
             <ion-col text-left width-25>
 
@@ -133,7 +132,7 @@
         </ion-row>
         <ion-row class="linha-par">
             <ion-col text-left width-50 (click)="openPageDetalhes(11)">
-                <b>Bacteriológico</b>
+                <b>Turbidez</b>
             </ion-col>
             <ion-col text-left width-25>
 
@@ -142,6 +141,69 @@
                 {{qualidade?.coliformes_termotolerantes}} mg/L
             </ion-col>
         </ion-row>
+        <ion-row class="linha-impar">
+            <ion-col text-left width-50 (click)="openPageDetalhes(10)">
+                <b>Cloro Residual</b>
+            </ion-col>
+            <ion-col text-left width-25>
+
+            </ion-col>
+            <ion-col text-left width-25>
+                <!-- ***precisa por na tabela mg/L-->
+            </ion-col>
+        </ion-row>
+
+        <ion-row class="linha-par">
+            <ion-col text-left width-50 (click)="openPageDetalhes(11)">
+                <b>Contagem Bactérias Heterotróficas </b>
+            </ion-col>
+            <ion-col text-left width-25>
+
+            </ion-col>
+            <ion-col text-left width-25>
+                {{qualidade?.coliformes_termotolerantes}} mg/L
+            </ion-col>
+        </ion-row>
+
+        <ion-row class="linha-impar">
+            <ion-col text-left width-50 (click)="openPageDetalhes(10)">
+                <b>Coliformes Totais</b>
+            </ion-col>
+            <ion-col text-left width-25>
+
+            </ion-col>
+            <ion-col text-left width-25>
+                <!-- ***precisa por na tabela mg/L-->
+            </ion-col>
+        </ion-row>
+
+        <ion-row class="linha-par">
+            <ion-col text-left width-50 (click)="openPageDetalhes(11)">
+                <b>Coliformes Termotolerantes</b>
+            </ion-col>
+            <ion-col text-left width-25>
+
+            </ion-col>
+            <ion-col text-left width-25>
+                {{qualidade?.coliformes_termotolerantes}} mg/L
+            </ion-col>
+        </ion-row>
+
+        <ion-row class="linha-individual">
+            <ion-col>
+                <b>CONCLUSÕES / OBSERVAÇÕES</b>
+            </ion-col>
+        </ion-row>
+        <ion-row class="linha-individual">
+                Os resultados obtidos atendem as limites estabelecidos
+        </ion-row>
+
+        <ion-row>
+            <ion-col>
+                <b>Fonte:</b> <a href="http://www.saaesorocaba.com.br/site/?page_id=308" active="">SAAE Sorocaba</a> 
+            </ion-col>
+        </ion-row>
+
         <ion-row>
             <ion-col>
                 <b>* Clique sobre os parâmentos para ter mais detalhes</b>

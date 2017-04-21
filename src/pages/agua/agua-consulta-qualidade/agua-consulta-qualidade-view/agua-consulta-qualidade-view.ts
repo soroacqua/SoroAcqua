@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ModalController, NavParams } from 'ionic-angular';
-import {DetalhesParametrosAgua} from '../detalhes-parametros-agua/detalhes-parametros-agua';
+import { DetalhesParametrosAgua } from '../detalhes-parametros-agua/detalhes-parametros-agua';
 import { PrvQualidade } from '../../../../providers/prv-qualidade';
 
 @Component({
@@ -25,9 +25,17 @@ export class AguaConsultaQualidadeView {
 
   carregaQualidade(id){
     this.prvQualidade.getQualidade(id).subscribe(res=>{
-      console.log(res);
       this.qualidade = res.qualidades[0];
-      console.log(this.qualidade);
     });
   }
+
+  .directive('active', function($location) {
+  return {
+    link: function(scope, el, attrs) {
+      if('#'+$location.path() == attrs.href) {
+        el.addClass('active');
+      }
+    }
+  }
+})
 }
