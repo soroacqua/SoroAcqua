@@ -29,7 +29,7 @@ export class AguaConsultaQualidadeView {
     });
   }
 
-  .directive('active', function($location) {
+  /*.directive('active', function($location) {
   return {
     link: function(scope, el, attrs) {
       if('#'+$location.path() == attrs.href) {
@@ -37,5 +37,5 @@ export class AguaConsultaQualidadeView {
       }
     }
   }
-})
+})*/
 }

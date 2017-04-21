@@ -1,3 +1,19 @@
 page-saae-historia {
-
+  .linha-impar {
+      background-color: #ADEAEA;
+  }
+  .linha-par {
+      background-color: #70DBDB;
+  }
+  .linha-individual {
+      background-color: #96CDCD;
+  }
+  ion-row {
+      height: 8%;
+      width: 100%;
+      padding-top: 8px;
+  }
+  .corpo {
+      margin: auto;
+  }
 }

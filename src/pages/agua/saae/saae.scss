@@ -1,3 +1,32 @@
 page-saae {
+  ion-card{
+    width: 85%;
+    margin: auto;
+    margin-bottom: 5%;
+    margin-top: 5%;
 
+    ion-card-content{
+      ion-card-title{
+        padding: 10px;
+      }
+      p{
+        text-align: justify;
+        padding: 10px;
+      }
+
+      .linha-impar{
+        background-color: #ADEAEA;
+      }
+      .linha-par{
+        background-color: #70DBDB;
+      }
+      ion-row{
+        height: 50px;
+
+        .coluna-titulo{
+          font-weight: bold;
+        }
+      }
+    }
+  }
 }

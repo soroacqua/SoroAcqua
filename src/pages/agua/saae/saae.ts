@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 //import { DataSaae } from '../../../components/data-saae/data-saae';
 
-//import { SaaeHistoria } from 'saae-historia/saae-historia';
+import { SaaeHistoria } from 'saae-historia/saae-historia';
 
 
 @Component({
@@ -18,6 +18,12 @@ import { NavController } from 'ionic-angular';
           new DataSaae('Saae', [{title: 'História', component: SaaeHistoria, icon: 'ios-albums-outline'}
                               ],'add-circle', false)
       ];*/
+    }
+
+    openPageDiretores(diretores){
+        this.navCtrl.push(SaaeHistoria, {
+          pDiretores: diretores
+        });
     }
 
   }

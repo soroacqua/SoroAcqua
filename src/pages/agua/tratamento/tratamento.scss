@@ -1,19 +1,32 @@
 page-tratamento {
-  .title-corpo{
-    color: darkblue;
-    font-family: arial;
-    font-size: larger;
-    font-weight: bold;
-    text-transform: none;
-    text-align: justify;
-    direction: ltr;
-    }
+  ion-card{
+    width: 85%;
+    margin: auto;
+    margin-bottom: 5%;
+    margin-top: 5%;
 
-  .img{
-    max-width:200px;
-    max-height:150px;
-    width: auto;
-    height: auto;
-    border-radius: 20px;
+    ion-card-content{
+      ion-card-title{
+        padding: 10px;
+      }
+      p{
+        text-align: justify;
+        padding: 10px;
+      }
+
+      .linha-impar{
+        background-color: #ADEAEA;
+      }
+      .linha-par{
+        background-color: #70DBDB;
+      }
+      ion-row{
+        height: 50px;
+
+        .coluna-titulo{
+          font-weight: bold;
+        }
+      }
+    }
   }
 }

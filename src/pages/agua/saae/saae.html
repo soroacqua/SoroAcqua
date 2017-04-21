@@ -9,9 +9,9 @@
 
 <ion-content padding>
   <!--<data-cards [data]="dataList"></data-cards>-->
-  <ion-card>
+  <ion-card class="card-body" style="background-color: #FFF">
   <ion-card-header>
-    História
+    <b>História</b>
   </ion-card-header>
   <ion-card-content align=justify>
     O Serviço Autônomo de Água e Esgoto (Saae) foi criado pela Lei número 1.390, de 31/12/65,
@@ -22,12 +22,11 @@
     ocorrido em 1885, com a primeira greve de trabalhadores do setor. Eram os pipeiros, carroceiros que retiravam
     água do rio Sorocaba e transportavam em carroções-pipa para vender à população.
   </ion-card-content>
-  <button>Ver mais</button>
 </ion-card>
 
-<ion-card>
+<ion-card class="card-body" style="background-color: #FFF">
 <ion-card-header>
-  Diretores
+  <b>Diretores</b>
 </ion-card-header>
 <ion-card-content>
   <ion-grid>
@@ -51,13 +50,23 @@
     <ion-row></ion-row><ion-row></ion-row>
   </ion-grid>
 </ion-card-content>
-<button>Ver mais</button> <!-- Colocar uma foto de todos para download-->
+
+<ion-row>
+    <ion-col text-center>
+        <button ion-button clear small icon-left (click)="openPageDiretores(diretores)">
+<ion-icon name="add-circle"></ion-icon>
+<div>
+    Mais
+</div>
+</button>
+    </ion-col>
+</ion-row>
 </ion-card>
 
 
-<ion-card>
+<ion-card class="card-body" style="background-color: #FFF">
 <ion-card-header>
-  Fale Conosco
+  <b>O SAAE</b>
 </ion-card-header>
 <ion-card-content align=justify>
   O Serviço Autônomo de Água e Esgoto também presta atendimento emergencial pelo telefone <b>0800-7701195</b>.<br/>
@@ -67,18 +76,18 @@
 </ion-card-content>
 </ion-card>
 
-<ion-card>
+<ion-card class="card-body" style="background-color: #FFF">
 <ion-card-header>
-  Endereço
+  <b>Endereço</b>
 </ion-card-header>
 <ion-card-content align=justify>
-<p><b>SAAE Central</b></p>
+<p>SAAE Central</p>
 Av. Pereira da Silva, 1285 – Jd. Santa Rosália – Sorocaba – SP<br/>
 CEP: 18095-340 – PABX: (15) 3224-5800 / FAX: (15) 3224-5891
 </ion-card-content>
 </ion-card>
 
-<ion-card>
+<ion-card class="card-body" style="background-color: #FFF">
 <ion-card-content>
   <button ion-button full icon-right>
     Fale Conosco
