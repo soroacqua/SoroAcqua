@@ -39,7 +39,7 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Início', component: Home, icon: 'home', itens: [], showDetails: false},
+      { title: 'Início', component: '', icon: 'home', itens: [], showDetails: false},
 
       { title: 'Nosso Rio', component: '', icon: 'arrow-forward', itens: [
         { title: 'Rio', component: Rio, icon: 'boat'},
@@ -82,24 +82,23 @@ export class MyApp {
     // we wouldn't want the back button to show in this scenario
 
     page.showDetails = false;
-  //  page.icon = 'add-circle';
-    this.nav.setRoot(page.component);
+    this.nav.push(page.component);
   }
 
   toggleDetails(page) {
     if(page.component == ''){
       if (page.showDetails) {
-       page.showDetails = false;
+          page.showDetails = false;
           page.icon = 'arrow-forward';
 
       } else {
           page.showDetails = true;
           page.icon = 'arrow-down';
-          //page.icon = '';
       }
     } else{
         this.menu.close();
-       this.nav.setRoot(page.component);
+        this.nav.push(page.component);
+        
     }
   }
 }

@@ -4,24 +4,30 @@ import { ViewChild } from '@angular/core';
 import { Slides } from 'ionic-angular';
 import { NoticiasView } from '../noticias/noticias-view/noticias-view';
 import { PrvNoticia } from '../../providers/prv-noticia';
+import { PrvBairro } from '../../providers/prv-bairro';
 import { AguaConsultaQualidade } from '../agua/agua-consulta-qualidade/agua-consulta-qualidade';
+import { AguaConsultaQualidadeView } from '../agua/agua-consulta-qualidade/agua-consulta-qualidade-view/agua-consulta-qualidade-view';
 
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html',
-  providers: [PrvNoticia]
+  providers: [PrvNoticia, PrvBairro]
 })
 export class Home {
   @ViewChild(Slides) slides: Slides;
 
   public noticias: Array<any>;
   public mensagens: Array<String>;
+  public idBairro = -1;
+  public bairros: Array<any>;
   
-  constructor(private prvNoticias: PrvNoticia, public navCtrl: NavController) {
+  constructor(private prvNoticias: PrvNoticia, public navCtrl: NavController, private prvBairro: PrvBairro) {
     this.noticias = [];
     this.mensagens = [];
     this.carregarMensagens();
     this.carregarNoticias();
+    this.bairros = [];
+    this.carregarBairros();
   }
 
   noticiaOptions = {
@@ -70,6 +76,25 @@ export class Home {
         this.navCtrl.push(NoticiasView, {
           pNoticia: noticia
         });
+    }
+
+    carregarBairros(){
+      this.prvBairro.getBairros().subscribe(res=>{
+        for (let i = 0; i < res.length; i++) {
+            this.bairros.push(res[i]);
+        }
+      });
+    }
+
+    getSelect(){
+      if(this.idBairro != -1){
+        this.navCtrl.push(AguaConsultaQualidadeView, {
+          os: this.idBairro
+        });
+      }
+      else{
+        alert('Selecione um bairro!');
+      }
     }
 
 }

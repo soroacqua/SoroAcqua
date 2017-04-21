@@ -1,8 +1,11 @@
 page-home {
     ion-card {
         height: 30%;
+        .card-qualidade {
+            padding-top: 10%;
+        }
         .fundo-mensagem {
-            background-color: #9db5cc;
+            background-color: #70DBDB;
         }
         .mensagem {
             position: absolute;
@@ -37,6 +40,9 @@ page-home {
                     filter: invert(20%);
                 }
             }
+        }
+        ion-select {
+            max-width: 100% !important;
         }
     }
 }

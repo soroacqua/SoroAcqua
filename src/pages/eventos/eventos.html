@@ -1,15 +1,11 @@
 <ion-header>
-
     <ion-navbar color="head">
-        <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-        <ion-title text-center>Eventos</ion-title>
+        <ion-title>EVENTOS</ion-title>
     </ion-navbar>
 
 </ion-header>
 
-<ion-content>
+<ion-content padding>
     <ion-searchbar placeholder="Digite o nome do evento..." [(ngModel)]="query" (ionInput)="getItems()"></ion-searchbar>
     <ion-card *ngFor="let evento of eventos">
         <img [src]="evento.imagem" />

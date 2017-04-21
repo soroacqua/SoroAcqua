@@ -1,16 +1,10 @@
 <ion-header>
-
     <ion-navbar color="head">
-        <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-        <ion-title>Notícias</ion-title>
+        <ion-title>NOTÍCIAS</ion-title>
     </ion-navbar>
-
 </ion-header>
 
-
-<ion-content>
+<ion-content padding>
     <ion-searchbar placeholder="Digite o nome da notícia..." [(ngModel)]="query" (ionInput)="getItems()"></ion-searchbar>
     <ion-card *ngFor="let noticia of noticias">
         <img [src]="noticia.imagem" />

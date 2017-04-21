@@ -9,7 +9,7 @@ import { PrvEstacao } from '../../../providers/prv-estacao';
   providers: [PrvEstacao]
 })
 export class QualidadeAguaRio {
-  public idEstacao = 0;
+  public idEstacao = -1;
   public estacoes: Array<any>;
 
   constructor(public navCtrl: NavController, private prvEstacao: PrvEstacao) {
@@ -27,8 +27,13 @@ export class QualidadeAguaRio {
   }
 
   openPageQualidade(){
-    this.navCtrl.push(QualidadeAguaRioView, {
-      pIdEstacao: this.idEstacao
-    });
+    if(this.idEstacao != -1){
+      this.navCtrl.push(QualidadeAguaRioView, {
+        pIdEstacao: this.idEstacao
+      });
+    }
+      else{
+        alert('Selecione um local!');
+      }
   }
 }

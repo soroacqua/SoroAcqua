@@ -3,11 +3,11 @@
         <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-        <ion-title>Início</ion-title>
+        <ion-title>INÍCIO</ion-title>
     </ion-navbar>
 </ion-header>
 
-<ion-content>
+<ion-content padding>
     <ion-card>
         <ion-slides [options]="noticiaOptions">
             <ion-slide *ngFor="let noticia of noticias">
@@ -18,14 +18,14 @@
         </ion-slides>
     </ion-card>
 
-    <!--  <ion-card>
-        <ion-card-content>
-            <ion-select [(ngModel)]="os" submitText="Ok" cancelText="Cancelar" placeholder="Selecione seu Bairro">
+    <ion-card>
+        <ion-card-content class="card-qualidade">
+            <ion-select [(ngModel)]="idBairro" submitText="Ok" cancelText="Cancelar" placeholder="Selecione seu Bairro">
                 <ion-option *ngFor="let bairro of bairros" value="{{bairro.estacao}}">{{bairro.descricao}}</ion-option>
             </ion-select>
-            <button ion-button block (click)="getSelect(os)">Consultar</button>
+            <button ion-button block (click)="getSelect()">Consultar</button>
         </ion-card-content>
-    </ion-card> -->
+    </ion-card>
 
     <ion-card>
         <ion-slides [options]="mensagemOptions">
