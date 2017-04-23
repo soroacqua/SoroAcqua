@@ -10,6 +10,7 @@ import { PrvEstacao } from '../../../providers/prv-estacao';
 })
 export class QualidadeAguaRio {
   public idEstacao = -1;
+  public nomeEstacao = '';
   public estacoes: Array<any>;
 
   constructor(public navCtrl: NavController, private prvEstacao: PrvEstacao) {
@@ -28,12 +29,22 @@ export class QualidadeAguaRio {
 
   openPageQualidade(){
     if(this.idEstacao != -1){
+        //pega o nome da estação para exibir da tela de qualidade view
+        this.prvEstacao.getEstacoes().subscribe(res=>{
+          for (let i = 0; i < res.length; i++) {
+            if(res[i]._id == this.idEstacao){
+              this.nomeEstacao = res[i].descricao;
+            }
+          }
+        });
+        console.log('nome '+this.nomeEstacao);
+
       this.navCtrl.push(QualidadeAguaRioView, {
-        pIdEstacao: this.idEstacao
+        pIdEstacao: this.idEstacao, pNomeEstacao: this.nomeEstacao
       });
     }
       else{
-        alert('Selecione um local!');
+        alert('Selecione um ponto!');
       }
   }
 }

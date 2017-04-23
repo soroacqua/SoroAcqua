@@ -12,10 +12,13 @@ export class QualidadeAguaRioView {
 
   public qualidade;
   public idEstacao;
+  public nomeEstacao;
 
   constructor(public modalCtrl: ModalController,
                   public navParams: NavParams, private prvQualidade: PrvQualidade) {
     this.idEstacao = navParams.get('pIdEstacao');
+    this.nomeEstacao = navParams.get('pNomeEstacao');
+    console.log('nome '+navParams.get('pNomeEstacao'));
     this.carregaQualidade(this.idEstacao);
   }
 

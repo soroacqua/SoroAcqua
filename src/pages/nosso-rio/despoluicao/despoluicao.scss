@@ -1,14 +1,14 @@
 page-despoluicao {
     img {
-            max-width: 150px;
-            max-height: 100px;
-            width: auto;
-            height: auto;
-            border-radius: 20px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    ion-slides {        
+        max-width: 150px;
+        max-height: 100px;
+        width: auto;
+        height: auto;
+        border-radius: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    ion-slides {
         ion-slide {
             background-color: #00CED1;
             .img {
@@ -33,7 +33,7 @@ page-despoluicao {
                 top: 0;
                 padding-top: 35px;
                 padding-left: 25px;
-                text-align: left;
+                text-align: center;
                 font-weight: bold;
             }
             .corpo {
@@ -41,7 +41,7 @@ page-despoluicao {
                 padding-top: 0px;
                 padding-left: 25px;
                 padding-right: 25px;
-                text-align: left;
+                text-align: justify;
                 font-size: 20px;
             }
             .title-corpo {

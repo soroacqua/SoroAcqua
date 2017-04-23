@@ -39,7 +39,7 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Início', component: '', icon: 'home', itens: [], showDetails: false},
+      { title: 'Início', component: 'inicio', icon: 'home', itens: [], showDetails: false},
 
       { title: 'Nosso Rio', component: '', icon: 'arrow-forward', itens: [
         { title: 'Rio', component: Rio, icon: 'boat'},
@@ -63,7 +63,7 @@ export class MyApp {
       { title: 'Projetos', component: Projetos, icon: 'book', itens: [], showDetails: false},
       { title: 'Configurações', component: Configuracoes, icon: '', itens: [], showDetails: false},
       { title: 'Sobre', component: Sobre, icon: '', itens: [], showDetails: false},
-      { title: 'Sair', component: '', icon: '', itens: [], showDetails: false}
+      { title: 'Sair', component: 'close', icon: '', itens: [], showDetails: false}
     ];
 
   }
@@ -86,19 +86,23 @@ export class MyApp {
   }
 
   toggleDetails(page) {
-    if(page.component == ''){
-      if (page.showDetails) {
-          page.showDetails = false;
-          page.icon = 'arrow-forward';
-
-      } else {
-          page.showDetails = true;
-          page.icon = 'arrow-down';
+      if(page.component == 'close'){
+        this.platform.exitApp();
       }
+      else if(page.component == 'inicio'){
+          this.menu.close();
+      }
+      else if(page.component == ''){
+        if (page.showDetails) {
+            page.showDetails = false;
+            page.icon = 'arrow-forward';
+        } else {  
+            page.showDetails = true;
+            page.icon = 'arrow-down';
+        }
     } else{
         this.menu.close();
         this.nav.push(page.component);
-        
     }
   }
 }

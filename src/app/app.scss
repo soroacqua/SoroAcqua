@@ -1,6 +1,4 @@
 // http://ionicframework.com/docs/v2/theming/
-
-
 // App Global Sass
 // --------------------------------------------------
 // Put style rules here that you want to apply globally. These
@@ -14,36 +12,46 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
-
-.icon-menu{
+.icon-menu {
     position: absolute;
     top: 0px;
     left: 10px;
 }
 
-.title-menu{
+.title-menu {
     position: absolute;
     top: 15px;
     left: 40px;
 }
 
-.platform-ios{
-    .menu-item{
+.title-menu2 {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.platform-ios {
+    .menu-item {
         top: 10px;
         left: 10px;
     }
 }
 
-.platform-android{
-    .menu-item{
+.platform-android {
+    .menu-item {
         top: 10px;
         left: -10px;
     }
 }
 
-.platform-windows{
-    .menu-item{
+.platform-windows {
+    .menu-item {
         top: 10px;
         left: 5px;
     }
+}
+
+.fonte {
+    font-size: 12px;
+    text-align: left;
 }

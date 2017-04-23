@@ -8,9 +8,12 @@
 <ion-content padding>
     <div class="corpo">
         <ion-row>
+            <ion-col text-center>Estação {{nomeEstacao}}</ion-col>
+        </ion-row>
+        <ion-row>
             <ion-col text-center>Índices referentes à {{qualidade?.data}}</ion-col>
         </ion-row>
-        <ion-row baseline class="linha-impar">
+        <ion-row baseline class="titulo">
             <ion-col text-left width-50>
                 <b>Parâmetros</b>
             </ion-col>
@@ -144,7 +147,7 @@
         </ion-row>
         <ion-row>
             <ion-col>
-                <b>* Clique sobre os parâmentos para ter mais detalhes</b>
+                <ion-icon name="information-circle"></ion-icon><b>  Clique sobre os parâmentos para ter mais detalhes</b>
             </ion-col>
         </ion-row>
     </div>

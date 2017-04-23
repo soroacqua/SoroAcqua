@@ -1,7 +1,10 @@
 page-qualidade-agua-rio {
-
-  ion-select{
-      max-width: 100% !important;
+    ion-card {
+        ion-card-content {
+            background-color: #FFF;
+            ion-select {
+                max-width: 100% !important;
+            }
+        }
     }
-    
 }
