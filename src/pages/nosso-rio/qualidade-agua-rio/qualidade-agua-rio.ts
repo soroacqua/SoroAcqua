@@ -30,21 +30,18 @@ export class QualidadeAguaRio {
   openPageQualidade(){
     if(this.idEstacao != -1){
         //pega o nome da estação para exibir da tela de qualidade view
-        this.prvEstacao.getEstacoes().subscribe(res=>{
-          for (let i = 0; i < res.length; i++) {
-            if(res[i]._id == this.idEstacao){
-              this.nomeEstacao = res[i].descricao;
-            }
+        for (let i = 0; i < this.estacoes.length; i++) {
+          if(this.estacoes[i]._id == this.idEstacao){
+            this.nomeEstacao = this.estacoes[i].descricao;
           }
-        });
-        console.log('nome '+this.nomeEstacao);
+        }
 
       this.navCtrl.push(QualidadeAguaRioView, {
         pIdEstacao: this.idEstacao, pNomeEstacao: this.nomeEstacao
       });
     }
-      else{
-        alert('Selecione um ponto!');
-      }
+    else{
+      alert('Selecione um ponto do Rio!');
+    }
   }
 }

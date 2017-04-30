@@ -5,7 +5,6 @@ import { Slides } from 'ionic-angular';
 import { NoticiasView } from '../noticias/noticias-view/noticias-view';
 import { PrvNoticia } from '../../providers/prv-noticia';
 import { PrvBairro } from '../../providers/prv-bairro';
-import { AguaConsultaQualidade } from '../agua/agua-consulta-qualidade/agua-consulta-qualidade';
 import { AguaConsultaQualidadeView } from '../agua/agua-consulta-qualidade/agua-consulta-qualidade-view/agua-consulta-qualidade-view';
 
 @Component({

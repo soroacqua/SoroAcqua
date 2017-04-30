@@ -1,5 +1,8 @@
 page-detalhes-parametros {
     ion-card-content {
         background-color: #FFF;
+        .texto {
+            text-align: justify;
+        }
     }
 }

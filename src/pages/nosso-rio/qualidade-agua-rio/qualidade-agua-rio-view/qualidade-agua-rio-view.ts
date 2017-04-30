@@ -18,7 +18,6 @@ export class QualidadeAguaRioView {
                   public navParams: NavParams, private prvQualidade: PrvQualidade) {
     this.idEstacao = navParams.get('pIdEstacao');
     this.nomeEstacao = navParams.get('pNomeEstacao');
-    console.log('nome '+navParams.get('pNomeEstacao'));
     this.carregaQualidade(this.idEstacao);
   }
 
