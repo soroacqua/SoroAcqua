@@ -1,7 +1,14 @@
 page-qualidade-agua-rio {
     ion-card {
+        position: relative;
+        top: 20vh;
         ion-card-content {
             background-color: #FFF;
+            .card-qualidade {
+                background-color: #FFF;
+                height: 100%;
+                width: 100%;
+            }
             ion-select {
                 max-width: 100% !important;
             }

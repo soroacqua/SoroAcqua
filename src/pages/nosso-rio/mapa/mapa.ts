@@ -23,7 +23,7 @@ export class Mapa {
         this._longitude = -47.440461476953146;
 
         // move the camera
-        map.moveCamera({
+        map.animateCamera({
           target: new GoogleMapsLatLng(this._latitude, this._longitude),
           zoom: 15,
           tilt: 30
@@ -96,7 +96,7 @@ export class Mapa {
             .then((marker: GoogleMapsMarker) => {
                  marker.showInfoWindow();
             });
-          }        
+          }
 
           map.on(GoogleMapsEvent.MAP_LOADED).subscribe(
             () => {

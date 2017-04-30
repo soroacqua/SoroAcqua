@@ -69,6 +69,8 @@ export class Noticias {
                 buttons: ['OK']
               });
               alert.present();
+
+              
           }
         },
         {
@@ -76,12 +78,48 @@ export class Noticias {
           icon: 'logo-whatsapp',
           handler: () => {
 
+             //compartilhar
+             /*
+            this.platform.ready()
+   .then(() =>
+   {
+      this._SHARE.canShareVia('com.apple.social.facebook', 'mensagem', null, 'this.uri')
+      .then((data) =>
+      {
+         this._SHARE.shareViaFacebook('mensagem', null, 'this.uri')
+         .then((data) =>
+         {
+            console.log('Shared via Facebook');
+         })
+         .catch((err) =>
+         {
+            console.log('Was not shared via Facebook');
+         });
+
+      })
+      .catch((err) =>
+      {
+         console.log('Not able to be shared via Facebook');
+      });
+
+   });
+   */
+/*
+             this.sharingVar.shareViaWhatsApp("Message via WhatsApp", null, "Link")
+             .then(()=>{
+               alert("Success");
+             },
+             ()=>{
+               alert("Failed");
+             })*/
               //alert
               let alert = this.alertCtrl.create({
                   subTitle: 'A notícia foi compartilhada com sucesso no WhatsApp!',
                   buttons: ['OK']
                 });
                 alert.present();
+
+               
           }
         },
         {

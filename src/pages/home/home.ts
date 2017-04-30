@@ -35,9 +35,7 @@ export class Home {
       loop: true,
       autoplay:3000,
       autoplayDisableOnInteraction: false,
-      pager:true,
-      nextButton: true,
-      prevButton: true
+      pager:true
       };
 
     mensagemOptions = {
