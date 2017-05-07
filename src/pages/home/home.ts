@@ -58,10 +58,10 @@ export class Home {
     }
 
     carregarMensagens(){
-      this.mensagens.push("Água um bem preciosa! Vamos economizar!");
-      this.mensagens.push("Água a lição é economizar.");
+      this.mensagens.push("Água um bem precioso! Vamos economizar!");
+      this.mensagens.push("Água, a lição é economizar.");
       this.mensagens.push("Faça sua parte: economize água.");
-      this.mensagens.push("Água, economizar é melhor que ficar sem");
+      this.mensagens.push("Água, economizar é melhor que ficar sem!");
       this.mensagens.push("O Rio Sorocaba é nosso bem, não polua.");
       this.mensagens.push("Escove os dentes com a torneira desligada.");
       this.mensagens.push("Tome banhos curtos.");

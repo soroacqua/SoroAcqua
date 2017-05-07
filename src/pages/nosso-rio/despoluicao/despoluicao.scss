@@ -1,52 +1,62 @@
 page-despoluicao {
-    img {
-        max-width: 150px;
-        max-height: 100px;
-        width: auto;
-        height: auto;
-        border-radius: 20px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+    font-size: 12vw;
     ion-slides {
         ion-slide {
             background-color: #00CED1;
+            color: white;
             .img {
-                max-width: 200px;
-                max-height: 150px;
+                max-width: 80vw;
+                max-height: 60vw;
                 width: auto;
                 height: auto;
                 border-radius: 20px;
             }
+            .img2 {
+                max-width: 60vw;
+                max-height: 40vw;
+                border-radius: 20px;
+                padding-top: 2vw;
+            }
             .capa {
-                color: white;
-                line-height: 50px;
+                line-height: 10vw;
                 text-align: center;
-                font-size: 30px;
+                font-size: 10vw;
                 vertical-align: text-top;
                 font-weight: bold;
             }
             .titulo {
-                color: white;
-                font-size: 25px;
+                font-size: 6vw;
                 position: absolute;
-                top: 0;
-                padding-top: 35px;
-                padding-left: 25px;
-                text-align: center;
+                top: 8vw;
+                padding-top: 1vw;
+                padding-left: 8vw;
+                padding-bottom: 1vw;
+                text-align: left;
+                font-weight: bold;
+            }
+            .titulo2 {
+                font-size: 5vw;
+                position: absolute;
+                top: 8vw;
+                padding-top: 1vw;
+                padding-left: 8vw;
+                padding-bottom: 1vw;
+                text-align: left;
                 font-weight: bold;
             }
             .corpo {
-                color: white;
-                padding-top: 0px;
-                padding-left: 25px;
-                padding-right: 25px;
+                position: absolute;
+                top: 20vw;
+                padding-top: 1vw;
+                padding-left: 8vw;
+                padding-right: 8vw;
                 text-align: justify;
-                font-size: 20px;
+                font-size: 5vw;
             }
             .title-corpo {
                 font-weight: 700;
-                font-size: 20px;
+                font-size: 5vw;
+                text-align: justify;
             }
         }
     }

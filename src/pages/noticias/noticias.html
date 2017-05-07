@@ -16,17 +16,11 @@
                 {{noticia.descricao}}
             </div>
             <ion-row>
-                <ion-col text-center>
-                    <button ion-button clear icon-left small (click)="openMenu()">
-                        <ion-icon name="md-share"></ion-icon>
-                        <div>Compartilhar</div>
-                    </button>
-                </ion-col>
-                <ion-col text-center>
-                    <button ion-button clear small icon-left (click)="openPageNoticia(noticia)">
+                <ion-col text-right>
+                    <button ion-button outline icon-left block (click)="openPageNoticia(noticia)">
                         <ion-icon name="add-circle"></ion-icon>
                         <div>
-                            Mais
+                            Ver mais
                         </div>
                     </button>
                 </ion-col>
