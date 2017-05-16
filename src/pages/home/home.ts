@@ -4,7 +4,7 @@ import { ViewChild } from '@angular/core';
 import { Slides } from 'ionic-angular';
 import { NoticiasView } from '../noticias/noticias-view/noticias-view';
 import { PrvNoticia } from '../../providers/prv-noticia';
-import { AguaConsultaQualidade } from '../agua/agua-consulta-qualidade/agua-consulta-qualidade';
+//import { AguaConsultaQualidade } from '../agua/agua-consulta-qualidade/agua-consulta-qualidade';
 
 @Component({
   selector: 'page-home',
@@ -16,7 +16,7 @@ export class Home {
 
   public noticias: Array<any>;
   public mensagens: Array<String>;
-  
+
   constructor(private prvNoticias: PrvNoticia, public navCtrl: NavController) {
     this.noticias = [];
     this.mensagens = [];
