@@ -4,12 +4,8 @@ import { ViewChild } from '@angular/core';
 import { Slides } from 'ionic-angular';
 import { NoticiasView } from '../noticias/noticias-view/noticias-view';
 import { PrvNoticia } from '../../providers/prv-noticia';
-<<<<<<< HEAD
-//import { AguaConsultaQualidade } from '../agua/agua-consulta-qualidade/agua-consulta-qualidade';
-=======
 import { PrvBairro } from '../../providers/prv-bairro';
 import { AguaConsultaQualidadeView } from '../agua/agua-consulta-qualidade/agua-consulta-qualidade-view/agua-consulta-qualidade-view';
->>>>>>> 51076a1fd180cc9a0eaefa7cab24ac5557bae99b
 
 @Component({
   selector: 'page-home',
@@ -21,15 +17,10 @@ export class Home {
 
   public noticias: Array<any>;
   public mensagens: Array<String>;
-<<<<<<< HEAD
-
-  constructor(private prvNoticias: PrvNoticia, public navCtrl: NavController) {
-=======
   public idBairro = -1;
   public bairros: Array<any>;
-  
+
   constructor(private prvNoticias: PrvNoticia, public navCtrl: NavController, private prvBairro: PrvBairro) {
->>>>>>> 51076a1fd180cc9a0eaefa7cab24ac5557bae99b
     this.noticias = [];
     this.mensagens = [];
     this.carregarMensagens();
