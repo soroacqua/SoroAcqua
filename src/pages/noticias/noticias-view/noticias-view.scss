@@ -1,8 +1,10 @@
 page-noticias-view {
     ion-card {
-        background-color: #FFF;
-        ion-item {
+        ion-card-content {
             background-color: #FFF;
+            ion-item {
+                background-color: #FFF;
+            }
         }
     }
 }

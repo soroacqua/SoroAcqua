@@ -3,31 +3,30 @@
         <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-        <ion-title>Início</ion-title>
+        <ion-title>INÍCIO</ion-title>
     </ion-navbar>
 </ion-header>
 
-<ion-content>
-    <ion-card>
+<ion-content padding>
+    <ion-card responsive-sm>
         <ion-slides [options]="noticiaOptions">
             <ion-slide *ngFor="let noticia of noticias">
                 <img [src]="noticia.imagem" (click)="openPageNoticiaView(noticia)" />
                 <div class="card-title" (click)="openPageNoticiaView(noticia)">{{noticia.titulo}}</div>
-                <div class="card-subtitle" (click)="openPageNoticiaView(noticia)">{{noticia.descricao}}</div>
             </ion-slide>
         </ion-slides>
     </ion-card>
 
-    <!--  <ion-card>
-        <ion-card-content>
-            <ion-select [(ngModel)]="os" submitText="Ok" cancelText="Cancelar" placeholder="Selecione seu Bairro">
+    <ion-card responsive-sm>
+        <div class="card-qualidade">
+            <ion-select [(ngModel)]="idBairro" submitText="Ok" cancelText="Cancelar" placeholder="Selecione seu Bairro">
                 <ion-option *ngFor="let bairro of bairros" value="{{bairro.estacao}}">{{bairro.descricao}}</ion-option>
             </ion-select>
-            <button ion-button block (click)="getSelect(os)">Consultar</button>
-        </ion-card-content>
-    </ion-card> -->
+            <button ion-button block (click)="getSelect()">Consultar</button>
+        </div>
+    </ion-card>
 
-    <ion-card>
+    <ion-card responsive-sm>
         <ion-slides [options]="mensagemOptions">
             <ion-slide *ngFor="let mensagem of mensagens" class="fundo-mensagem">
                 <div class="mensagem">{{mensagem}}</div>

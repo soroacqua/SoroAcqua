@@ -4,24 +4,38 @@ import { ViewChild } from '@angular/core';
 import { Slides } from 'ionic-angular';
 import { NoticiasView } from '../noticias/noticias-view/noticias-view';
 import { PrvNoticia } from '../../providers/prv-noticia';
+<<<<<<< HEAD
 //import { AguaConsultaQualidade } from '../agua/agua-consulta-qualidade/agua-consulta-qualidade';
+=======
+import { PrvBairro } from '../../providers/prv-bairro';
+import { AguaConsultaQualidadeView } from '../agua/agua-consulta-qualidade/agua-consulta-qualidade-view/agua-consulta-qualidade-view';
+>>>>>>> 51076a1fd180cc9a0eaefa7cab24ac5557bae99b
 
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html',
-  providers: [PrvNoticia]
+  providers: [PrvNoticia, PrvBairro]
 })
 export class Home {
   @ViewChild(Slides) slides: Slides;
 
   public noticias: Array<any>;
   public mensagens: Array<String>;
+<<<<<<< HEAD
 
   constructor(private prvNoticias: PrvNoticia, public navCtrl: NavController) {
+=======
+  public idBairro = -1;
+  public bairros: Array<any>;
+  
+  constructor(private prvNoticias: PrvNoticia, public navCtrl: NavController, private prvBairro: PrvBairro) {
+>>>>>>> 51076a1fd180cc9a0eaefa7cab24ac5557bae99b
     this.noticias = [];
     this.mensagens = [];
     this.carregarMensagens();
     this.carregarNoticias();
+    this.bairros = [];
+    this.carregarBairros();
   }
 
   noticiaOptions = {
@@ -29,9 +43,7 @@ export class Home {
       loop: true,
       autoplay:3000,
       autoplayDisableOnInteraction: false,
-      pager:true,
-      nextButton: true,
-      prevButton: true
+      pager:true
       };
 
     mensagemOptions = {
@@ -55,10 +67,10 @@ export class Home {
     }
 
     carregarMensagens(){
-      this.mensagens.push("Água um bem preciosa! Vamos economizar!");
-      this.mensagens.push("Água a lição é economizar.");
+      this.mensagens.push("Água um bem precioso! Vamos economizar!");
+      this.mensagens.push("Água, a lição é economizar.");
       this.mensagens.push("Faça sua parte: economize água.");
-      this.mensagens.push("Água, economizar é melhor que ficar sem");
+      this.mensagens.push("Água, economizar é melhor que ficar sem!");
       this.mensagens.push("O Rio Sorocaba é nosso bem, não polua.");
       this.mensagens.push("Escove os dentes com a torneira desligada.");
       this.mensagens.push("Tome banhos curtos.");
@@ -70,6 +82,25 @@ export class Home {
         this.navCtrl.push(NoticiasView, {
           pNoticia: noticia
         });
+    }
+
+    carregarBairros(){
+      this.prvBairro.getBairros().subscribe(res=>{
+        for (let i = 0; i < res.length; i++) {
+            this.bairros.push(res[i]);
+        }
+      });
+    }
+
+    getSelect(){
+      if(this.idBairro != -1){
+        this.navCtrl.push(AguaConsultaQualidadeView, {
+          os: this.idBairro
+        });
+      }
+      else{
+        alert('Selecione um bairro!');
+      }
     }
 
 }

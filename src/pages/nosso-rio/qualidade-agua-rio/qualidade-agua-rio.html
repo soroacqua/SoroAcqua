@@ -1,21 +1,20 @@
 <ion-header>
-
     <ion-navbar color="head">
-        <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-        <ion-title>Qualidade da Água do Rio</ion-title>
+        <ion-title>QUALIDADE ÁGUA RIO
+        </ion-title>
     </ion-navbar>
 </ion-header>
 
 
-<ion-content>
+<ion-content padding>
     <ion-card>
         <ion-card-content>
-            <ion-select [(ngModel)]="idEstacao" submitText="Ok" cancelText="Cancelar" placeholder="Selecione o ponto de medição">
+            <ion-select [(ngModel)]="idEstacao" submitText="Ok" cancelText="Cancelar" placeholder="Selecione um ponto do Rio">
                 <ion-option *ngFor="let estacao of estacoes" value="{{estacao._id}}">{{estacao.descricao}}</ion-option>
             </ion-select>
-            <button ion-button [disabled]="!idEstacao" block (click)="openPageQualidade()">Consultar</button>
+            <button ion-button block (click)="openPageQualidade()">Consultar</button>
+            <!--Desabilitar botão-->
+            <!--<button ion-button [disabled]="!idEstacao" block (click)="openPageQualidade()">Consultar</button>-->
         </ion-card-content>
     </ion-card>
 </ion-content>

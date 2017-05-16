@@ -1,32 +1,40 @@
 page-rio {
-    ion-card{
-      width: 85%;
-      margin: auto;
-      margin-bottom: 5%;
-      margin-top: 5%;
-
-      ion-card-content{
-        ion-card-title{
-          padding: 10px;
+    font-size: 12vw;
+    ion-card {
+        width: 8vw;
+        margin: auto;
+        margin-bottom: 5vh;
+        margin-top: 5vh;
+        ion-card-content {
+            background-color: #FFF;
+            ion-card-title {
+                padding: 1vw;
+            }
+            p {
+                text-align: justify;
+                padding-left: 0.2vw;
+                padding-right: 0.2vw;
+                font-size: 2.8vw;
+            }
+            .titulo {
+                background-color: #00CCCC;
+                text-align: center;
+                font-size: 4vw;
+            }
+            .linha-impar {
+                background-color: #ADEAEA;
+                font-size: 2.8vw;
+            }
+            .linha-par {
+                background-color: #70DBDB;
+                font-size: 2.8vw;
+            }
+            ion-row {
+                height: 9vw;
+                .coluna-titulo {
+                    font-weight: bold;
+                }
+            }
         }
-        p{
-          text-align: justify;
-          padding: 10px;
-        }
-
-        .linha-impar{
-          background-color: #ADEAEA;
-        }
-        .linha-par{
-          background-color: #70DBDB;
-        }
-        ion-row{
-          height: 50px;
-
-          .coluna-titulo{
-            font-weight: bold;
-          }
-        }
-      }
     }
 }

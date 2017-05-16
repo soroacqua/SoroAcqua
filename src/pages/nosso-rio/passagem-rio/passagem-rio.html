@@ -1,21 +1,15 @@
 <ion-header>
-
     <ion-navbar color="head">
-        <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-        <ion-title>Por Onde Passa?</ion-title>
+        <ion-title>POR ONDE PASSA?</ion-title>
     </ion-navbar>
-
 </ion-header>
 
 
 <ion-content padding>
     <div class="conteudo">
-
         <div *ngIf="show == 0" class="center">
-            <p>A seguir vamos conhecer as cidades por onde o rio Sorocaba passa. <br/>Clique sobre o botão Início para começar</p>
-            <button ion-button primary medium class="center" (click)="showDiv(1)">Ínicio</button>
+            <p>A seguir vamos conhecer as cidades por onde o Rio Sorocaba passa. <br/>Clique sobre o botão Início para começar</p>
+            <button ion-button color="primary" large class="center" (click)="showDiv(1)">Início</button>
         </div>
 
         <div *ngIf="show == 1">
@@ -81,25 +75,26 @@
             <h2>Desemboca no rio Tietê</h2>
             <p>O rio Sorocaba desemboca no rio Tietê na cidade de Laranjal Paulista</p>
         </div>
-        <button ion-button color="secondary" class="right" medium (click)="showDiv(2)" *ngIf="show == 1">Próxima</button>
-        <button ion-button color="light" class="right" medium (click)="showDiv(3)" *ngIf="show == 2">Próxima</button>
-        <button ion-button color="dark" class="right" medium (click)="showDiv(4)" *ngIf="show == 3">Próxima</button>
-        <button ion-button color="light" class="right" medium (click)="showDiv(5)" *ngIf="show == 4">Próxima</button>
-        <button ion-button color="secondary" class="right" medium (click)="showDiv(6)" *ngIf="show == 5">Próxima</button>
-        <button ion-button color="dark" class="right" medium (click)="showDiv(7)" *ngIf="show == 6">Próxima</button>
-        <button ion-button color="primary" class="right" medium (click)="showDiv(8)" *ngIf="show == 7">Próxima</button>
-        <button ion-button color="light" class="right" medium (click)="showDiv(9)" *ngIf="show == 8">Próxima</button>
-        <button ion-button color="dark" class="right" medium (click)="showDiv(10)" *ngIf="show == 9">Próxima</button>
+        <button ion-button color="secondary" class="right" large (click)="showDiv(2)" *ngIf="show == 1">Próxima</button>
+        <button ion-button color="light" class="right" large (click)="showDiv(3)" *ngIf="show == 2">Próxima</button>
+        <button ion-button color="dark" class="right" large (click)="showDiv(4)" *ngIf="show == 3">Próxima</button>
+        <button ion-button color="light" class="right" large (click)="showDiv(5)" *ngIf="show == 4">Próxima</button>
+        <button ion-button color="secondary" class="right" large (click)="showDiv(6)" *ngIf="show == 5">Próxima</button>
+        <button ion-button color="dark" class="right" large (click)="showDiv(7)" *ngIf="show == 6">Próxima</button>
+        <button ion-button color="primary" class="right" large (click)="showDiv(8)" *ngIf="show == 7">Próxima</button>
+        <button ion-button color="light" class="right" large (click)="showDiv(9)" *ngIf="show == 8">Próxima</button>
+        <button ion-button color="dark" class="right" large (click)="showDiv(10)" *ngIf="show == 9">Próxima</button>
 
-        <button ion-button color="secondary" medium (click)="showDiv(0)" *ngIf="show == 1">Anterior</button>
-        <button ion-button color="light" medium (click)="showDiv(1)" *ngIf="show == 2">Anterior</button>
-        <button ion-button color="dark" medium (click)="showDiv(2)" *ngIf="show == 3">Anterior</button>
-        <button ion-button color="light" medium (click)="showDiv(3)" *ngIf="show == 4">Anterior</button>
-        <button ion-button color="secondary" medium (click)="showDiv(4)" *ngIf="show == 5">Anterior</button>
-        <button ion-button color="dark" medium (click)="showDiv(5)" *ngIf="show == 6">Anterior</button>
-        <button ion-button color="primary" medium (click)="showDiv(6)" *ngIf="show == 7">Anterior</button>
-        <button ion-button color="light" medium (click)="showDiv(7)" *ngIf="show == 8">Anterior</button>
-        <button ion-button color="dark" medium (click)="showDiv(8)" *ngIf="show == 9">Anterior</button>
-        <button ion-button color="dark" medium (click)="showDiv(9)" *ngIf="show == 10">Anterior</button>
+        <button ion-button color="secondary" large (click)="showDiv(0)" *ngIf="show == 1">Anterior</button>
+        <button ion-button color="light" large (click)="showDiv(1)" *ngIf="show == 2">Anterior</button>
+        <button ion-button color="dark" large (click)="showDiv(2)" *ngIf="show == 3">Anterior</button>
+        <button ion-button color="light" large (click)="showDiv(3)" *ngIf="show == 4">Anterior</button>
+        <button ion-button color="secondary" large (click)="showDiv(4)" *ngIf="show == 5">Anterior</button>
+        <button ion-button color="dark" large (click)="showDiv(5)" *ngIf="show == 6">Anterior</button>
+        <button ion-button color="primary" large (click)="showDiv(6)" *ngIf="show == 7">Anterior</button>
+        <button ion-button color="light" large (click)="showDiv(7)" *ngIf="show == 8">Anterior</button>
+        <button ion-button color="dark" large (click)="showDiv(8)" *ngIf="show == 9">Anterior</button>
+        <button ion-button color="dark" large (click)="showDiv(9)" *ngIf="show == 10">Anterior</button>
+        <button ion-button color="dark" class="right" large (click)="showDiv(0)" *ngIf="show == 10">Início</button>
     </div>
 </ion-content>

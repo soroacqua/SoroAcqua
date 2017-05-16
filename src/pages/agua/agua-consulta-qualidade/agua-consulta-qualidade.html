@@ -1,20 +1,20 @@
 <ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
+    <ion-navbar color="head">
+        <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Consulta da Qualidade</ion-title>
-  </ion-navbar>
+        <ion-title>CONSULTA DA QUALIDADE</ion-title>
+    </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <br><br><br><br><br><br><br><br><br>
-  <ion-card>
-    <ion-card-content>
-      <ion-select [(ngModel)]="os" submitText = "Ok" cancelText="Cancelar" placeholder="Selecione seu Bairro">
-        <ion-option *ngFor="let bairro of bairros" value="{{bairro.estacao}}">{{bairro.descricao}}</ion-option>
-      </ion-select>
-      <button ion-button block (click)="getSelect(os)" >Consultar</button>
-    </ion-card-content>
-  </ion-card>
+    <br><br><br><br><br><br><br><br><br>
+    <ion-card>
+        <ion-card-content>
+            <ion-select [(ngModel)]="os" submitText="Ok" cancelText="Cancelar" placeholder="Selecione seu Bairro">
+                <ion-option *ngFor="let bairro of bairros" value="{{bairro.estacao}}">{{bairro.descricao}}</ion-option>
+            </ion-select>
+            <button ion-button block (click)="getSelect(os)">Consultar</button>
+        </ion-card-content>
+    </ion-card>
 </ion-content>

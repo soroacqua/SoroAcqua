@@ -1,27 +1,21 @@
 <ion-header>
-
-  <ion-navbar color="head">
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title text-center>Fauna</ion-title>
-  </ion-navbar>
-
+    <ion-navbar color="head">
+        <ion-title>FAUNA</ion-title>
+    </ion-navbar>
 </ion-header>
 
-
 <ion-content padding>
-  <ion-card *ngFor="let animal of animais">
-    <img [src]="animal.imagem"/>
-    <ion-card-content>
-      <ion-card-title>
-        <b>{{animal.nome}}</b>
-      </ion-card-title>
-      <div >
-        {{animal.descricao}}
-      </div>
-      <br />
-      <div class="fonte">{{animal.fonte}}</div>
-    </ion-card-content>
-  </ion-card>
+    <ion-card *ngFor="let animal of animais">
+        <img [src]="animal.imagem" />
+        <ion-card-content>
+            <ion-card-title>
+                <b>{{animal.nome}}</b>
+            </ion-card-title>
+            <div class="corpo">
+                {{animal.descricao}}
+            </div>
+            <br />
+            <div class="fonte"><b>Fonte:</b> {{animal.fonte}}</div>
+        </ion-card-content>
+    </ion-card>
 </ion-content>

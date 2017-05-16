@@ -1,49 +1,49 @@
 <ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
+    <ion-navbar color="head">
+        <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Estações</ion-title>
-  </ion-navbar>
+        <ion-title>ESTAÇÕES</ion-title>
+    </ion-navbar>
 </ion-header>
 
 <ion-content padding>
 
-  <div class="conteudo">
+    <div class="conteudo">
 
-          <div *ngIf="show == 0" class="center">
-              <p>A seguir vamos conhecer as estações de Tratamento de Água de Sorocaba. <br/>Clique sobre o botão Início para começar</p>
-              <button ion-button primary medium class="center" (click)="showDiv(1)">Início</button>
-          </div>
+        <div *ngIf="show == 0" class="center">
+            <p>A seguir vamos conhecer as estações de Tratamento de Água de Sorocaba. <br/>Clique sobre o botão Início para começar</p>
+            <button ion-button primary medium class="center" (click)="showDiv(1)">Início</button>
+        </div>
 
-          <div *ngIf="show == 1">
-              <br>
-              <p>O Saae possui duas Estações de Tratamento de Água: ETA/Cerrado e a ETA/Éden</p>
-              <br>
-          </div>
+        <div *ngIf="show == 1">
+            <br>
+            <p>O Saae possui duas Estações de Tratamento de Água: ETA/Cerrado e a ETA/Éden</p>
+            <br>
+        </div>
 
-          <div *ngIf="show == 2">
-              <h2>Estação ETA/Éden</h2>
-              <p>Responsável por abastecer: Bairros do Éden, Aparecidinha, Cajuru e grande parte da Zona Industrial do município</p>
-              <img src="imagens/ETA_Eden.jpg" class="img"/>
-          </div>
+        <div *ngIf="show == 2">
+            <h2>Estação ETA/Éden</h2>
+            <p>Responsável por abastecer: Bairros do Éden, Aparecidinha, Cajuru e grande parte da Zona Industrial do município</p>
+            <img src="imagens/ETA_Eden.jpg" class="img" />
+        </div>
 
-          <div *ngIf="show == 3">
-              <h2>ETA/Cerrado</h2>
-              <p>Localização: Avenida General Carneiro, bairro Cerrado</p>
-               <img src="imagens/ETA_Cerrado.jpg" class="img"/>
-          </div>
-
-
-          <button ion-button color="secondary" class="right" medium (click)="showDiv(2)" *ngIf="show == 1">Próxima</button>
-          <button ion-button color="secondary" class="right" medium (click)="showDiv(3)" *ngIf="show == 2">Próxima</button>
-    <!--      <button ion-button color="dark" class="right" medium (click)="showDiv(4)" *ngIf="show == 3">Próxima</button> -->
+        <div *ngIf="show == 3">
+            <h2>ETA/Cerrado</h2>
+            <p>Localização: Avenida General Carneiro, bairro Cerrado</p>
+            <img src="imagens/ETA_Cerrado.jpg" class="img" />
+        </div>
 
 
-          <button ion-button color="secondary" medium (click)="showDiv(0)" *ngIf="show == 1">Anterior</button>
-          <button ion-button color="secondary" medium (click)="showDiv(1)" *ngIf="show == 2">Anterior</button>
-          <button ion-button color="secondary" medium (click)="showDiv(2)" *ngIf="show == 3">Anterior</button>
-      </div>
+        <button ion-button color="secondary" class="right" medium (click)="showDiv(2)" *ngIf="show == 1">Próxima</button>
+        <button ion-button color="secondary" class="right" medium (click)="showDiv(3)" *ngIf="show == 2">Próxima</button>
+        <!--      <button ion-button color="dark" class="right" medium (click)="showDiv(4)" *ngIf="show == 3">Próxima</button> -->
+
+
+        <button ion-button color="secondary" medium (click)="showDiv(0)" *ngIf="show == 1">Anterior</button>
+        <button ion-button color="secondary" medium (click)="showDiv(1)" *ngIf="show == 2">Anterior</button>
+        <button ion-button color="secondary" medium (click)="showDiv(2)" *ngIf="show == 3">Anterior</button>
+    </div>
 
 
 

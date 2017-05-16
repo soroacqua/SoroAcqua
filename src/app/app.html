@@ -8,13 +8,14 @@
     <ion-content>
         <ion-list>
             <ion-item padding *ngFor="let p of pages" (click)="toggleDetails(p)">
-                <ion-icon [name]="p.icon" class="icon-menu" item-left></ion-icon>
-                <div class="title-menu">{{p.title}}</div>
+                <ion-icon *ngIf="p.icon != ''" [name]="p.icon" class="icon-menu" item-left></ion-icon>
+                <div *ngIf="p.icon == ''" class="title-menu2">{{p.title}}</div>
+                <div *ngIf="p.icon != ''" class="title-menu">{{p.title}}</div>
 
                 <div *ngIf="p.showDetails" text-wrap>
                     <br>
                     <ion-item padding class="menu-item" ion-item menuClose *ngFor="let i of p.itens" (click)="openPage(i)">
-                        <ion-icon [name]="i.icon" class="icon-menu" item-left></ion-icon>
+                        <ion-icon [name]=" i.icon " class="icon-menu " item-left></ion-icon>
                         <div class="title-menu">{{i.title}}</div>
                     </ion-item>
                 </div>
@@ -25,4 +26,4 @@
 </ion-menu>
 
 <!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
-<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
+<ion-nav [root]="rootPage " #content swipeBackEnabled="true "></ion-nav>

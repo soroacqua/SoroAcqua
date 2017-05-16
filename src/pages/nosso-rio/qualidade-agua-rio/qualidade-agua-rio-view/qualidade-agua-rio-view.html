@@ -1,6 +1,6 @@
 <ion-header>
     <ion-navbar color="head">
-        <ion-title>Qualidade da Água do Rio</ion-title>
+        <ion-title>QUALIDADE ÁGUA RIO</ion-title>
     </ion-navbar>
 </ion-header>
 
@@ -8,9 +8,12 @@
 <ion-content padding>
     <div class="corpo">
         <ion-row>
-            <ion-col text-center>Índices referentes à data </ion-col>
+            <ion-col text-center>Ponto de coleta da água: <b>{{nomeEstacao}}</b></ion-col>
         </ion-row>
-        <ion-row baseline class="linha-impar">
+        <ion-row>
+            <ion-col text-center>Índices referentes à {{qualidade?.data}}</ion-col>
+        </ion-row>
+        <ion-row baseline class="titulo">
             <ion-col text-left width-50>
                 <b>Parâmetros</b>
             </ion-col>
@@ -22,7 +25,7 @@
             </ion-col>
         </ion-row>
         <ion-row class="linha-par">
-            <ion-col text-left width-50 (click)="openPageDetalhes(1)">
+            <ion-col text-left width-50 (click)="openPageDetalhes('DQO')">
                 <b>DQO</b>
             </ion-col>
             <ion-col text-left width-25>
@@ -33,7 +36,7 @@
             </ion-col>
         </ion-row>
         <ion-row class="linha-impar">
-            <ion-col text-left width-50 (click)="openPageDetalhes(2)">
+            <ion-col text-left width-50 (click)="openPageDetalhes('DBO')">
                 <b>DBO</b>
             </ion-col>
             <ion-col text-left width-25>
@@ -44,7 +47,7 @@
             </ion-col>
         </ion-row>
         <ion-row class="linha-par">
-            <ion-col text-left width-50 (click)="openPageDetalhes(3)">
+            <ion-col text-left width-50 (click)="openPageDetalhes('pH - Potencial Hidrogeniônico')">
                 <b>pH</b>
             </ion-col>
             <ion-col text-left width-25>
@@ -55,7 +58,7 @@
             </ion-col>
         </ion-row>
         <ion-row class="linha-impar">
-            <ion-col text-left width-50 (click)="openPageDetalhes(4)">
+            <ion-col text-left width-50 (click)="openPageDetalhes('Oxigênio Dissolvido')">
                 <b>Oxigênio Dissolvido</b>
             </ion-col>
             <ion-col text-left width-25>
@@ -66,7 +69,7 @@
             </ion-col>
         </ion-row>
         <ion-row class="linha-par">
-            <ion-col text-left width-50 (click)="openPageDetalhes(5)">
+            <ion-col text-left width-50 (click)="openPageDetalhes('Nitrogênio')">
                 <b>Nitrogênio</b>
             </ion-col>
             <ion-col text-left width-25>
@@ -77,7 +80,7 @@
             </ion-col>
         </ion-row>
         <ion-row class="linha-impar">
-            <ion-col text-left width-50 (click)="openPageDetalhes(6)">
+            <ion-col text-left width-50 (click)="openPageDetalhes('Fósforo')">
                 <b>Fósforo</b>
             </ion-col>
             <ion-col text-left width-25>
@@ -88,7 +91,7 @@
             </ion-col>
         </ion-row>
         <ion-row class="linha-par">
-            <ion-col text-left width-50 (click)="openPageDetalhes(7)">
+            <ion-col text-left width-50 (click)="openPageDetalhes('Resíduos')">
                 <b>Resíduos</b>
             </ion-col>
             <ion-col text-left width-25>
@@ -99,7 +102,7 @@
             </ion-col>
         </ion-row>
         <ion-row class="linha-impar">
-            <ion-col text-left width-50 (click)="openPageDetalhes(8)">
+            <ion-col text-left width-50 (click)="openPageDetalhes('Cor')">
                 <b>Cor</b>
             </ion-col>
             <ion-col text-left width-25>
@@ -110,7 +113,7 @@
             </ion-col>
         </ion-row>
         <ion-row class="linha-par">
-            <ion-col text-left width-50 (click)="openPageDetalhes(9)">
+            <ion-col text-left width-50 (click)="openPageDetalhes('Turbidez')">
                 <b>Turbidez</b>
             </ion-col>
             <ion-col text-left width-25>
@@ -121,7 +124,7 @@
             </ion-col>
         </ion-row>
         <ion-row class="linha-impar">
-            <ion-col text-left width-50 (click)="openPageDetalhes(10)">
+            <ion-col text-left width-50 (click)="openPageDetalhes('Condutividade')">
                 <b>Condutividade</b>
             </ion-col>
             <ion-col text-left width-25>
@@ -132,7 +135,7 @@
             </ion-col>
         </ion-row>
         <ion-row class="linha-par">
-            <ion-col text-left width-50 (click)="openPageDetalhes(11)">
+            <ion-col text-left width-50 (click)="openPageDetalhes('Bacteriológico')">
                 <b>Bacteriológico</b>
             </ion-col>
             <ion-col text-left width-25>
@@ -144,7 +147,12 @@
         </ion-row>
         <ion-row>
             <ion-col>
-                <b>Clique sobre os parâmentos para ter mais detalhes</b>
+                <b>Fonte:</b> <a href="http://www.saaesorocaba.com.br/site/?page_id=308" active="">SAAE Sorocaba</a>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                <ion-icon name="information-circle"></ion-icon><b>  Clique sobre os parâmentos para ter mais detalhes</b>
             </ion-col>
         </ion-row>
     </div>

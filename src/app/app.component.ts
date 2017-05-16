@@ -39,7 +39,7 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Início', component: Home, icon: 'home', itens: [], showDetails: false},
+      { title: 'Início', component: 'inicio', icon: 'home', itens: [], showDetails: false},
 
       { title: 'Nosso Rio', component: '', icon: 'arrow-forward', itens: [
         { title: 'Rio', component: Rio, icon: 'boat'},
@@ -61,9 +61,8 @@ export class MyApp {
       { title: 'Notícias', component: Noticias, icon: 'paper', itens: [], showDetails: false},
       { title: 'Eventos', component: Eventos, icon: 'calendar', itens: [], showDetails: false},
       { title: 'Projetos', component: Projetos, icon: 'book', itens: [], showDetails: false},
-      { title: 'Configurações', component: Configuracoes, icon: '', itens: [], showDetails: false},
       { title: 'Sobre', component: Sobre, icon: '', itens: [], showDetails: false},
-      { title: 'Sair', component: '', icon: '', itens: [], showDetails: false}
+      { title: 'Sair', component: 'close', icon: '', itens: [], showDetails: false}
     ];
 
   }
@@ -82,24 +81,27 @@ export class MyApp {
     // we wouldn't want the back button to show in this scenario
 
     page.showDetails = false;
-  //  page.icon = 'add-circle';
-    this.nav.setRoot(page.component);
+    this.nav.push(page.component);
   }
 
   toggleDetails(page) {
-    if(page.component == ''){
-      if (page.showDetails) {
-       page.showDetails = false;
-          page.icon = 'arrow-forward';
-
-      } else {
-          page.showDetails = true;
-          page.icon = 'arrow-down';
-          //page.icon = '';
+      if(page.component == 'close'){
+        this.platform.exitApp();
       }
+      else if(page.component == 'inicio'){
+          this.menu.close();
+      }
+      else if(page.component == ''){
+        if (page.showDetails) {
+            page.showDetails = false;
+            page.icon = 'arrow-forward';
+        } else {  
+            page.showDetails = true;
+            page.icon = 'arrow-down';
+        }
     } else{
         this.menu.close();
-       this.nav.setRoot(page.component);
+        this.nav.push(page.component);
     }
   }
 }
