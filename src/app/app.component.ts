@@ -61,7 +61,6 @@ export class MyApp {
       { title: 'Notícias', component: Noticias, icon: 'paper', itens: [], showDetails: false},
       { title: 'Eventos', component: Eventos, icon: 'calendar', itens: [], showDetails: false},
       { title: 'Projetos', component: Projetos, icon: 'book', itens: [], showDetails: false},
-      { title: 'Configurações', component: Configuracoes, icon: '', itens: [], showDetails: false},
       { title: 'Sobre', component: Sobre, icon: '', itens: [], showDetails: false},
       { title: 'Sair', component: 'close', icon: '', itens: [], showDetails: false}
     ];

@@ -1,100 +1,97 @@
 <ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
+    <ion-navbar color="head">
+        <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>SAAE</ion-title>
-  </ion-navbar>
+        <ion-title>SAAE</ion-title>
+    </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <!--<data-cards [data]="dataList"></data-cards>-->
-  <ion-card class="card-body" style="background-color: #FFF">
-  <ion-card-header>
-    <b>História</b>
-  </ion-card-header>
-  <ion-card-content align=justify>
-    O Serviço Autônomo de Água e Esgoto (Saae) foi criado pela Lei número 1.390, de 31/12/65,
-    como entidade autárquica municipal, com personalidade jurídica própria, sede e foro na cidade de Sorocaba,
-    dispondo de autonomia financeira e administrativa dentro dos limites estabelecidos pela referida Lei. <br/>
+    <!--<data-cards [data]="dataList"></data-cards>-->
+    <ion-card class="card-body" style="background-color: #FFF">
+        <ion-card-header>
+            <b>História</b>
+        </ion-card-header>
+        <ion-card-content align=justify>
+            O Serviço Autônomo de Água e Esgoto (Saae) foi criado pela Lei número 1.390, de 31/12/65, como entidade autárquica municipal, com personalidade jurídica própria, sede e foro na cidade de Sorocaba, dispondo de autonomia financeira e administrativa dentro
+            dos limites estabelecidos pela referida Lei. <br/> A história do sistema de distribuição de água no município de Sorocaba, porém, tem como marco um sobressalto ocorrido em 1885, com a primeira greve de trabalhadores do setor. Eram
+            os pipeiros, carroceiros que retiravam água do rio Sorocaba e transportavam em carroções-pipa para vender à população.
+        </ion-card-content>
+    </ion-card>
 
-    A história do sistema de distribuição de água no município de Sorocaba, porém, tem como marco um sobressalto
-    ocorrido em 1885, com a primeira greve de trabalhadores do setor. Eram os pipeiros, carroceiros que retiravam
-    água do rio Sorocaba e transportavam em carroções-pipa para vender à população.
-  </ion-card-content>
-</ion-card>
+    <ion-card class="card-body" style="background-color: #FFF">
+        <ion-card-header>
+            <b>Diretores</b>
+        </ion-card-header>
+        <ion-card-content>
+            <ion-grid>
+                <ion-row>
+                    <ion-col width-33>Período</ion-col>
+                    <ion-col width-33>Diretor Geral</ion-col>
+                    <ion-col width-33>Prefeito</ion-col>
+                </ion-row>
+                <ion-row></ion-row>
+                <ion-row></ion-row>
+                <ion-row>
+                    <ion-col width-33>01/01/17 a atual</ion-col>
+                    <ion-col width-33>Ronald Pereira da Silva</ion-col>
+                    <ion-col width-33>José Antônio Caldini Crespo</ion-col>
+                </ion-row>
+                <ion-row></ion-row>
+                <ion-row></ion-row>
+                <ion-row>
+                    <ion-col width-33>21/08/15 a 31/12/16</ion-col>
+                    <ion-col width-33>Rodrigo Antonio Maldonado Silveira</ion-col>
+                    <ion-col width-33>Antônio Carlos Pannunzio</ion-col>
+                </ion-row>
+                <ion-row></ion-row>
+                <ion-row></ion-row>
+            </ion-grid>
+        </ion-card-content>
 
-<ion-card class="card-body" style="background-color: #FFF">
-<ion-card-header>
-  <b>Diretores</b>
-</ion-card-header>
-<ion-card-content>
-  <ion-grid>
-    <ion-row>
-      <ion-col width-33>Período</ion-col>
-      <ion-col width-33>Diretor Geral</ion-col>
-      <ion-col width-33>Prefeito</ion-col>
-    </ion-row>
-    <ion-row></ion-row><ion-row></ion-row>
-    <ion-row>
-      <ion-col width-33>01/01/17 a atual</ion-col>
-      <ion-col width-33>Ronald Pereira da Silva</ion-col>
-      <ion-col width-33>José Antônio Caldini Crespo</ion-col>
-    </ion-row>
-    <ion-row></ion-row><ion-row></ion-row>
-    <ion-row>
-      <ion-col width-33>21/08/15 a 31/12/16</ion-col>
-      <ion-col width-33>Rodrigo Antonio Maldonado Silveira</ion-col>
-      <ion-col width-33>Antônio Carlos Pannunzio</ion-col>
-    </ion-row>
-    <ion-row></ion-row><ion-row></ion-row>
-  </ion-grid>
-</ion-card-content>
-
-<ion-row>
-    <ion-col text-center>
-        <button ion-button clear small icon-left (click)="openPageDiretores(diretores)">
-<ion-icon name="add-circle"></ion-icon>
-<div>
-    Mais
-</div>
-</button>
-    </ion-col>
-</ion-row>
-</ion-card>
+        <!--<ion-row>
+            <ion-col text-center>
+                <button ion-button clear small icon-left (click)="openPageDiretores(diretores)">
+                <ion-icon name="add-circle"></ion-icon>
+                <div>
+                    Mais
+                </div>
+                </button>
+            </ion-col>
+        </ion-row>-->
+    </ion-card>
 
 
-<ion-card class="card-body" style="background-color: #FFF">
-<ion-card-header>
-  <b>O SAAE</b>
-</ion-card-header>
-<ion-card-content align=justify>
-  O Serviço Autônomo de Água e Esgoto também presta atendimento emergencial pelo telefone <b>0800-7701195</b>.<br/>
-  Completando os canais de comunicação com a autarquia, o munícipe pode fazer o seu contato via internet, utilizando o Fale Conosco
-  site <b>www.saaesorocaba.com.br</b> ou diretamente pelo <br/>
-  <b>fale@saaesorocaba.sp.gov.br</b>.
-</ion-card-content>
-</ion-card>
+    <ion-card class="card-body" style="background-color: #FFF">
+        <ion-card-header>
+            <b>O SAAE</b>
+        </ion-card-header>
+        <ion-card-content align=justify>
+            O Serviço Autônomo de Água e Esgoto também presta atendimento emergencial pelo telefone <b>0800-7701195</b>.<br/> Completando os canais de comunicação com a autarquia, o munícipe pode fazer o seu contato via internet, utilizando o Fale Conosco
+            site <b>www.saaesorocaba.com.br</b> ou diretamente pelo <br/>
+            <b>fale@saaesorocaba.sp.gov.br</b>.
+        </ion-card-content>
+    </ion-card>
 
-<ion-card class="card-body" style="background-color: #FFF">
-<ion-card-header>
-  <b>Endereço</b>
-</ion-card-header>
-<ion-card-content align=justify>
-<p>SAAE Central</p>
-Av. Pereira da Silva, 1285 – Jd. Santa Rosália – Sorocaba – SP<br/>
-CEP: 18095-340 – PABX: (15) 3224-5800 / FAX: (15) 3224-5891
-</ion-card-content>
-</ion-card>
+    <ion-card class="card-body" style="background-color: #FFF">
+        <ion-card-header>
+            <b>Endereço</b>
+        </ion-card-header>
+        <ion-card-content align=justify>
+            <p>SAAE Central</p>
+            Av. Pereira da Silva, 1285 – Jd. Santa Rosália – Sorocaba – SP<br/> CEP: 18095-340 – PABX: (15) 3224-5800 / FAX: (15) 3224-5891
+        </ion-card-content>
+    </ion-card>
 
-<ion-card class="card-body" style="background-color: #FFF">
-<ion-card-content>
-  <button ion-button full icon-right>
+    <ion-card class="card-body" style="background-color: #FFF">
+        <ion-card-content>
+            <button ion-button full icon-right>
     Fale Conosco
     <ion-icon name="ios-chatbubbles-outline"></ion-icon>
   </button>
 
-</ion-card-content>
-</ion-card>
+        </ion-card-content>
+    </ion-card>
 
 </ion-content>

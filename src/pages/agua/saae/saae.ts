@@ -19,11 +19,11 @@ import { SaaeHistoria } from 'saae-historia/saae-historia';
                               ],'add-circle', false)
       ];*/
     }
-
+/*
     openPageDiretores(diretores){
         this.navCtrl.push(SaaeHistoria, {
           pDiretores: diretores
         });
-    }
+    }*/
 
   }

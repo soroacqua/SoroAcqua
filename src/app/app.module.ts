@@ -13,7 +13,6 @@ import { Projetos } from '../pages/projetos/projetos';
 import { AguaDetalhes } from '../pages/agua/agua-detalhes/agua-detalhes';
 import { AguaConsultaQualidade } from '../pages/agua/agua-consulta-qualidade/agua-consulta-qualidade';
 import { AguaConsultaQualidadeView } from '../pages/agua/agua-consulta-qualidade/agua-consulta-qualidade-view/agua-consulta-qualidade-view';
-import { Configuracoes } from '../pages/configuracoes/configuracoes';
 import { Sobre } from '../pages/sobre/sobre';
 import { QualidadeAguaRio } from '../pages/nosso-rio/qualidade-agua-rio/qualidade-agua-rio';
 import { Eventos } from '../pages/eventos/eventos';
@@ -23,7 +22,6 @@ import { EventosView } from '../pages/eventos/eventos-view/eventos-view';
 import { DetalhesParametros } from '../pages/nosso-rio/qualidade-agua-rio/detalhes-parametros/detalhes-parametros';
 import { ProjetosView } from '../pages/projetos/projetos-view/projetos-view';
 import { Tratamento } from '../pages/agua/tratamento/tratamento';
-import { Cep } from '../pages/cep/cep';
 import { Estacoes } from '../pages/agua/estacoes/estacoes';
 import { Noticias } from '../pages/noticias/noticias';
 import { NoticiasView } from '../pages/noticias/noticias-view/noticias-view';
@@ -45,7 +43,6 @@ import { DetalhesParametrosAgua } from '../pages/agua/agua-consulta-qualidade/de
     AguaDetalhes,
     AguaConsultaQualidade,
     AguaConsultaQualidadeView,
-    Configuracoes,
     Sobre,
     QualidadeAguaRio,
     Eventos,
@@ -59,7 +56,6 @@ import { DetalhesParametrosAgua } from '../pages/agua/agua-consulta-qualidade/de
     Noticias,
     NoticiasView,
     QualidadeAguaRioView,
-    Cep,
     DetalhesParametrosAgua
   ],
   imports: [
@@ -80,7 +76,6 @@ import { DetalhesParametrosAgua } from '../pages/agua/agua-consulta-qualidade/de
     AguaDetalhes,
     AguaConsultaQualidade,
     AguaConsultaQualidadeView,
-    Configuracoes,
     Sobre,
     QualidadeAguaRio,
     Eventos,
@@ -94,7 +89,6 @@ import { DetalhesParametrosAgua } from '../pages/agua/agua-consulta-qualidade/de
     Noticias,
     NoticiasView,
     QualidadeAguaRioView,
-    Cep,
     DetalhesParametrosAgua
   ],
   providers: []
