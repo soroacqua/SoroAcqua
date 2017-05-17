@@ -53,10 +53,23 @@ page-despoluicao {
                 text-align: justify;
                 font-size: 5vw;
             }
+            .corpo-item{
+                position: absolute;
+                top: 20vw;
+                padding-top: 1vw;
+                padding-left: 8vw;
+                padding-right: 8vw;
+                text-align: left;
+                font-size: 5vw;
+            }
             .title-corpo {
                 font-weight: 700;
                 font-size: 5vw;
                 text-align: justify;
+            }
+            .div{
+              background-color: #20B2AA;
+              width: 90%;
             }
         }
     }
