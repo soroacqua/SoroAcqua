@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 //import { DataSaae } from '../../../components/data-saae/data-saae';
 
-import { SaaeHistoria } from 'saae-historia/saae-historia';
+//import { SaaeHistoria } from 'saae-historia/saae-historia';
 
 
 @Component({

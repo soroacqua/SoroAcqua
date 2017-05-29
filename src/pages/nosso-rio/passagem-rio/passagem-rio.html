@@ -7,9 +7,9 @@
 
 <ion-content padding>
     <div class="conteudo">
-        <div *ngIf="show == 0" class="center">
-            <p>A seguir vamos conhecer as cidades por onde o Rio Sorocaba passa. <br/>Clique sobre o botão Início para começar</p>
-            <button ion-button color="primary" large class="center" (click)="showDiv(1)">Início</button>
+        <div *ngIf="show == 0">
+            <p class="inicio">A seguir vamos conhecer as cidades por onde o Rio Sorocaba passa. <br/><br/>Clique sobre o botão Início para começar</p>
+            <button ion-button color="primary" class="button1" large (click)="showDiv(1)">Início</button>
         </div>
 
         <div *ngIf="show == 1">
@@ -20,59 +20,59 @@
         </div>
 
         <div *ngIf="show == 2">
-            <img src="imagens/votorantim-rio-sorocaba.jpg" class="image" />
             <h2>Votorantim</h2>
+            <img src="imagens/votorantim-rio-sorocaba.jpg" class="image" />
             <p>Votorantim é um município brasileiro no interior estado de São Paulo, fundada em 27 de março de 1965 e possui uma população de 117.794 habitantes.
             </p>
         </div>
 
         <div *ngIf="show == 3">
-            <img src="imagens/rio-sorocaba.jpg" class="image" />
             <h2>Sorocaba</h2>
+            <img src="imagens/rio-sorocaba.jpg" class="image" />
             <p>Sorocaba é um município brasileiro da Região Metropolitana de Sorocaba, fundada em 15 de agosto de 1654 (362 anos), faz parte da Mesorregião Macro Metropolitana no estado de São Paulo.
             </p>
         </div>
 
         <div *ngIf="show == 4">
-            <img src="imagens/ipero-rio-sorocaba.jpg" class="image" />
             <h2>Iperó</h2>
+            <img src="imagens/ipero-rio-sorocaba.jpg" class="image" />
             <p>Iperó é um município brasileiro do estado de São Paulo, fundada em 21 de março de 1964 (52 anos). Em 2002, sua população era de 28.301 habitantes.</p>
         </div>
 
         <div *ngIf="show == 5">
-            <img src="imagens/boituva-rio-sorocaba.jpg" class="image" />
             <h2>Boituva</h2>
+            <img src="imagens/boituva-rio-sorocaba.jpg" class="image" />
             <p>Boituva foi fundada em 1883, possui 134 anos, uma população de 48 314 habitantes e possui uma área de 249,0 km².</p>
         </div>
 
         <div *ngIf="show == 6">
-            <img src="imagens/tatui-rio-sorocaba.jpg" class="image" />
             <h2>Tatuí</h2>
+            <img src="imagens/tatui-rio-sorocaba.JPG" class="image" />
             <p>Tatuí é um município brasileiro do estado de São Paulo fundada em 11 de agosto de 1826, foi elevado a município em 20 de setembro de 1861. Sua população é de 117 823 habitantes. Possui uma área de 525,44 km².
             </p>
         </div>
 
         <div *ngIf="show == 7">
-            <img src="imagens/cerquilho-rio-sorocaba.jpg" class="image" />
             <h2>Cerquilho</h2>
+            <img src="imagens/cerquilho-rio-sorocaba.jpg" class="image" />
             <p>Cerquilho é um município brasileiro do estado de São Paulo. Sua população é de 39.649 habitantes.</p>
         </div>
 
         <div *ngIf="show == 8">
-            <img src="imagens/jumirim-rio-sorocaba.jpg" class="image" />
             <h2>Jumirim</h2>
+            <img src="imagens/jumirim-rio-sorocaba.jpg" class="image" />
             <p>Jumirim é um município brasileiro do estado de São Paulo. Sua população estimada em 2004 era de 2 497 habitantes. Possui uma área de 56,7 km².</p>
         </div>
 
         <div *ngIf="show == 9">
-            <img src="imagens/laranjal-rio-sorocaba.jpg" class="image" />
             <h2>Laranjal Paulista</h2>
+            <img src="imagens/laranjal-rio-sorocaba.jpg" class="image" />
             <p>Laranjal Paulista é um município brasileiro do estado de São Paulo. Sua população estimada em 2014 era de 27.122 habitantes.</p>
         </div>
 
         <div *ngIf="show == 10">
+            <h2>Desemboca no Rio Tietê</h2>
             <img src="imagens/rio-tiete.jpg" class="image" />
-            <h2>Desemboca no rio Tietê</h2>
             <p>O rio Sorocaba desemboca no rio Tietê na cidade de Laranjal Paulista</p>
         </div>
         <button ion-button color="secondary" class="right" large (click)="showDiv(2)" *ngIf="show == 1">Próxima</button>
@@ -85,16 +85,16 @@
         <button ion-button color="light" class="right" large (click)="showDiv(9)" *ngIf="show == 8">Próxima</button>
         <button ion-button color="dark" class="right" large (click)="showDiv(10)" *ngIf="show == 9">Próxima</button>
 
-        <button ion-button color="secondary" large (click)="showDiv(0)" *ngIf="show == 1">Anterior</button>
-        <button ion-button color="light" large (click)="showDiv(1)" *ngIf="show == 2">Anterior</button>
-        <button ion-button color="dark" large (click)="showDiv(2)" *ngIf="show == 3">Anterior</button>
-        <button ion-button color="light" large (click)="showDiv(3)" *ngIf="show == 4">Anterior</button>
-        <button ion-button color="secondary" large (click)="showDiv(4)" *ngIf="show == 5">Anterior</button>
-        <button ion-button color="dark" large (click)="showDiv(5)" *ngIf="show == 6">Anterior</button>
-        <button ion-button color="primary" large (click)="showDiv(6)" *ngIf="show == 7">Anterior</button>
-        <button ion-button color="light" large (click)="showDiv(7)" *ngIf="show == 8">Anterior</button>
-        <button ion-button color="dark" large (click)="showDiv(8)" *ngIf="show == 9">Anterior</button>
-        <button ion-button color="dark" large (click)="showDiv(9)" *ngIf="show == 10">Anterior</button>
-        <button ion-button color="dark" class="right" large (click)="showDiv(0)" *ngIf="show == 10">Início</button>
+        <button ion-button color="secondary" class="left" large (click)="showDiv(0)" *ngIf="show == 1">Anterior</button>
+        <button ion-button color="light" class="left" large (click)="showDiv(1)" *ngIf="show == 2">Anterior</button>
+        <button ion-button color="dark" class="left" large (click)="showDiv(2)" *ngIf="show == 3">Anterior</button>
+        <button ion-button color="light" class="left" large (click)="showDiv(3)" *ngIf="show == 4">Anterior</button>
+        <button ion-button color="secondary" class="left" large (click)="showDiv(4)" *ngIf="show == 5">Anterior</button>
+        <button ion-button color="dark" class="left" large (click)="showDiv(5)" *ngIf="show == 6">Anterior</button>
+        <button ion-button color="primary" class="left" large (click)="showDiv(6)" *ngIf="show == 7">Anterior</button>
+        <button ion-button color="light" class="left" large (click)="showDiv(7)" *ngIf="show == 8">Anterior</button>
+        <button ion-button color="dark" class="left" large (click)="showDiv(8)" *ngIf="show == 9">Anterior</button>
+        <button ion-button color="dark" class="left" large (click)="showDiv(9)" *ngIf="show == 10">Anterior</button>
+        <button ion-button color="primary" class="right" large (click)="showDiv(0)" *ngIf="show == 10">Início</button>
     </div>
 </ion-content>

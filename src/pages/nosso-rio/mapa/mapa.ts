@@ -1,6 +1,7 @@
 import { Component } from "@angular/core";
 import { NavController } from 'ionic-angular';
 import {  GoogleMap,  GoogleMapsEvent,  GoogleMapsLatLng,  GoogleMapsMarker,  Geolocation} from 'ionic-native';
+//import { AlertController } from 'ionic-angular';
 
 @Component({
   selector: 'page-mapa',
@@ -13,6 +14,18 @@ export class Mapa {
 
   constructor(public navCtrl: NavController) {}
 
+  /*presentAlert() {
+        let alert = this.alertCtrl.create({
+          title: 'Mapa',
+          subTitle: 'Clique sobre os marcadores para ver os animais que moram ao redor do rio.',
+          buttons: [{
+                text: 'OK',
+                role: 'cancel'
+                 }]
+        });
+        alert.present();
+      }*/
+
   ngAfterViewInit() {
     let map = new GoogleMap(document.getElementById('map'));
 
@@ -23,18 +36,18 @@ export class Mapa {
         this._longitude = -47.440461476953146;
 
         // move the camera
-        map.animateCamera({
+        map.moveCamera({
           target: new GoogleMapsLatLng(this._latitude, this._longitude),
           zoom: 15,
           tilt: 30
         }).then(() => {
 
           // add a markers
-          var markersData = [
+          var data = [
             {'title': 'Capivara', 'position': new GoogleMapsLatLng(-23.46899, -47.44033), 
-                      'snippet':  'A capivara é uma espécie de mamífero roedor da família Caviidae e subfamília Hydrochoerinae. Ocorre por toda a América do Sul ao leste dos Andes em habitats associados a rios, lagos e pântanos. É o maior roedor do mundo, pesando até 91 kg e medindo até 1,2 m de comprimento e 60 cm de altura. A pelagem é densa, de cor avermelhada a marrom escuro. É possível distinguir os machos por conta da presença de uma glândula proeminente no focinho apesar do dimorfismo sexual não ser aparente.', 
+                      'snippet': 'A capivara é uma espécie de mamífero roedor da família Caviidae e subfamília Hydrochoerinae. Ocorre por toda a América do Sul ao leste dos Andes em habitats associados a rios, lagos e pântanos. É o maior roedor do mundo, pesando até 91 kg e medindo até 1,2 m de comprimento e 60 cm de altura. A pelagem é densa, de cor avermelhada a marrom escuro. É possível distinguir os machos por conta da presença de uma glândula proeminente no focinho apesar do dimorfismo sexual não ser aparente.', 
                       'styles': {'text-align': 'center','font-style': 'italic', 'font-weight': 'bold', 
-                      'color': 'green', icon:{url: 'www/imagens/capivara.jpg'}}},
+                      'color': 'green'}},
             {'title': 'Ratão-do-banhado', 'position': new GoogleMapsLatLng(-23.47167, -47.44231), 
                       'snippet': 'O ratão-do-banhado também conhecido por nutria, caxingui ou ratão-dágua, é uma espécie de roedor da família Echimyidae. Ocorre no sul da América do Sul. Pelagem marrom-avermelhada, cauda longa e grossa, revestida por escamas e pêlos ralos,vivendo em banhados, lagoas e rios. Dorme durante o dia. Alimenta-se de capim, raízes e plantas aquáticas e herbáceas, tubérculos, folhas, grãos, carne e peixe. O macho cuida dos filhotes no nascimento, protegendo e alimentando até a fêmea se recuperar.', 
                       'styles': {'text-align': 'center','font-style': 'italic', 'font-weight': 'bold', 
@@ -56,146 +69,53 @@ export class Mapa {
                       'styles': {'text-align': 'center','font-style': 'italic', 'font-weight': 'bold', 
                       'color': 'green'}},
             {'title': 'Curimbatá', 'position': new GoogleMapsLatLng(-23.48395, -47.43767), 
-                      'snippet': 'Descrição 2.', 
+                      'snippet': 'O curimbatá, também chamado papa-terra, curibatá, curimatá, curimatã, curimataú, curimba, curumbatá, crumatá, grumatá e grumatã, é um peixe teleósteo caraciforme da família dos caracídeos, da subfamília dos proquilodontídeos, especialmente do gênero Prochilodus. Vive em todo o território brasileiro. Alimenta-se de vegetais e de lodo. Pode ser aproveitado para aquacultura', 
                       'styles': {'text-align': 'center','font-style': 'italic', 'font-weight': 'bold', 
                       'color': 'green'}},
             {'title': 'Lambari', 'position': new GoogleMapsLatLng(-23.48652, -47.43759), 
-                      'snippet': 'Descrição 2.', 
+                      'snippet': 'Lambari é a designação vulgar de várias espécies de peixes do gênero Astyanax, da família Characidae, comum nos rios, lagoas, córregos e represas do Brasil. Seu tamanho médio é entre os 10 e os 15 centímetros de comprimento, possuindo um corpo prateado e nadadeiras com cores que variam conforme as espécies, sendo mais comuns os tons de amarelo, vermelho e preto. São peixes onívoros e a base da alimentação de diversos peixes predadores.', 
                       'styles': {'text-align': 'center','font-style': 'italic', 'font-weight': 'bold', 
                       'color': 'green'}},
             {'title': 'Carcará', 'position': new GoogleMapsLatLng(-23.48895, -47.43842), 
-                      'snippet': 'Descrição 2.', 
+                      'snippet': 'Carcará ou caracará (nome científico: Caracara plancus) é uma espécie de ave de rapina da família dos falconídeos. Mede até 60 cm de altura e sua envergadura chega a 123 cm. Habita o centro e o sul de toda a América do Sul.', 
                       'styles': {'text-align': 'center','font-style': 'italic', 'font-weight': 'bold', 
                       'color': 'green'}},
             {'title': 'Cará', 'position': new GoogleMapsLatLng(-23.49123, -47.44226), 
-                      'snippet': 'Descrição 2.', 
+                      'snippet': 'Cará (Pterophyllum) é um gênero de peixes de água doce, pertencente à família Cichlidae. Vive em cardume e alimenta-se predominantemente de pequenos crustáceos, peixes, larvas, insetos e outras matérias orgânicas. Nativos da bacia Amazônica podem chegar a 15 centímetros de comprimento e habita pequenos rios e lagos com densa vegetação aquática. As suas principais características são as suas variadas colorações, que se desenvolveram ao longo do tempo, o formato triangular do seu corpo e as suas longas barbatanas dorsal e caudal.', 
                       'styles': {'text-align': 'center','font-style': 'italic', 'font-weight': 'bold', 
                       'color': 'green'}},
             {'title': 'Cágado-de-barbicha', 'position': new GoogleMapsLatLng(-23.493, -47.4445), 
-                      'snippet': 'Descrição 2.', 
+                      'snippet': 'A espécie distribui-se pela América Latina sendo encontrada na Bolívia, Venezuela, Colômbia, Peru, Equador, Guiana, Paraguai, Argentina e Brasil. Habita lagos, lagoas, pântanos e rios de correnteza fraca como trechos da Bacia Amazônica, rio Paraná e São Francisco. O casco tem coloração dorsal cinza-esverdeada e ventral avermelhada com manchas pretas, ele é largo e achatado dorsiventralmente. Ótimo nadador, os dedos são ligados por membranas que auxiliam na natação.', 
                       'styles': {'text-align': 'center','font-style': 'italic', 'font-weight': 'bold', 
                       'color': 'green'}},
             {'title': 'Irerê', 'position': new GoogleMapsLatLng(-23.49477, -47.4472), 
-                      'snippet': 'Descrição 2.', 
+                      'snippet': 'A Dendrocygna viduata é uma espécie de marreca encontrada na África tropical, nas Antilhas e na América do Sul. Tais aves medem cerca de 44 centímetros de comprimento e têm plumagem em máscara, calça e luva brancas, nuca e asas negras, flancos listrados, bicos e pés plúmbeos. A ave, que comumente é chamada irerê mas também é conhecido como paturi, marrecão (Rio Grande do Sul) e siriri ou marreca-viúva (Paraíba).', 
                       'styles': {'text-align': 'center','font-style': 'italic', 'font-weight': 'bold', 
                       'color': 'green'}},
             {'title': 'Lambari de rabo vermelho', 'position': new GoogleMapsLatLng(-23.49617, -47.44975), 
-                      'snippet': 'Descrição 2.', 
+                      'snippet': 'Da família Characidae (Caracídeos), o Lambari de rabo vermelho tem origem na América do Norte, Central e do Sul. Encontrado desde o México até Argentina. Quando adulto pode chegar até 17 cm e possui uma expectativa de Vida de 5 anos.', 
                       'styles': {'text-align': 'center','font-style': 'italic', 'font-weight': 'bold', 
                       'color': 'green'}},
             {'title': 'Corujinha-buraqueira', 'position': new GoogleMapsLatLng(-23.49823, -47.45101), 
-                      'snippet': 'Descrição 2.', 
+                      'snippet': 'A coruja-buraqueira (Athene cunicularia, anteriormente Speotyto cunicularia), também chamada caburé-do-campo, coruja-do-campo, coruja-mineira, corujinha-buraqueira, corujinha-do-buraco, guedé, urucuera, urucureia e urucuriá, recebe o nome de "buraqueira" por viver em buracos cavados no solo. Embora seja capaz de cavar seu próprio buraco, prefere os buracos abandonados de outros animais, como os dos tatus. É uma coruja terrícola e de hábitos diurnos, embora tenda a evitar o calor do meio-dia. Ocorre do Canadá à Terra do Fogo, bem como em quase todo o Brasil, mas com a exceção da Amazônia. Tais aves chegam a medir até 27 centímetros de comprimento. Costumam viver em campos, pastos, restingas, desertos, planícies, praias e aeroportos.', 
                       'styles': {'text-align': 'center','font-style': 'italic', 'font-weight': 'bold', 
                       'color': 'green'}}
           ];
 
-          for (var i = 0; i < markersData.length; i++) {
-            map.addMarker(markersData[i])
+          for (var i = 0; i < data.length; i++) {
+            map.addMarker(data[i])
             
             
             .then((marker: GoogleMapsMarker) => {
                  marker.showInfoWindow();
             });
-          }
+          } 
 
           map.on(GoogleMapsEvent.MAP_LOADED).subscribe(
             () => {
-              alert('Clique sobre os marcadores para ver os animais que moram ao redor do rio');
-            });
-
-            // listen to all available events
-            /*
-            map.on(GoogleMapsEvent.MAP_CLICK).subscribe(
-              () => {
-                alert('MAP_CLICK');
-              });
-
-            map.on(GoogleMapsEvent.MAP_LONG_CLICK).subscribe(
-              () => {
-                alert('MAP_LONG_CLICK');
-              });
-
-            map.on(GoogleMapsEvent.MY_LOCATION_CHANGE).subscribe(
-              () => {
-                alert('MY_LOCATION_CHANGE');
-              });
-
-            map.on(GoogleMapsEvent.MY_LOCATION_BUTTON_CLICK).subscribe(
-              () => {
-                alert('MY_LOCATION_BUTTON_CLICK');
-              });
-
-            map.on(GoogleMapsEvent.INDOOR_BUILDING_FOCUSED).subscribe(
-              () => {
-                alert('INDOOR_BUILDING_FOCUSED');
-              });
-
-            map.on(GoogleMapsEvent.INDOOR_LEVEL_ACTIVATED).subscribe(
-              () => {
-                alert('INDOOR_LEVEL_ACTIVATED');
-              });
-
-            map.on(GoogleMapsEvent.CAMERA_CHANGE).subscribe(
-              () => {
-                alert('CAMERA_CHANGE');
-              });
-
-            map.on(GoogleMapsEvent.CAMERA_IDLE).subscribe(
-              () => {
-                alert('CAMERA_IDLE');
-              });
-
-            map.on(GoogleMapsEvent.MAP_READY).subscribe(
-              () => {
-                alert('MAP_READY');
-              });
-
-            map.on(GoogleMapsEvent.MAP_LOADED).subscribe(
-              () => {
-                alert('MAP_LOADED');
-              });
-
-            map.on(GoogleMapsEvent.MAP_WILL_MOVE).subscribe(
-              () => {
-                alert('MAP_WILL_MOVE');
-              });
-
-            map.on(GoogleMapsEvent.MAP_CLOSE).subscribe(
-              () => {
-                alert('MAP_CLOSE');
-              });
-
-            map.on(GoogleMapsEvent.MARKER_CLICK).subscribe(
-              () => {
-                alert('MARKER_CLICK');
-              });
-
-            map.on(GoogleMapsEvent.OVERLAY_CLICK).subscribe(
-              () => {
-                alert('OVERLAY_CLICK');
-              });
-
-            map.on(GoogleMapsEvent.INFO_CLICK).subscribe(
-              () => {
-                alert('INFO_CLICK');
-              });
-
-            map.on(GoogleMapsEvent.MARKER_DRAG).subscribe(
-              () => {
-                alert('MARKER_DRAG');
-              });
-
-            map.on(GoogleMapsEvent.MARKER_DRAG_START).subscribe(
-              () => {
-                alert('MARKER_DRAG_START');
-              });
-
-            map.on(GoogleMapsEvent.MARKER_DRAG_END).subscribe(
-              () => {
-                alert('MARKER_DRAG_END');
-              });
-              */
-          
+                //this.presentAlert();
+                alert("Clique sobre os marcadores para ver os animais que moram ao redor do rio.");
+            }); 
         });
       });
     });

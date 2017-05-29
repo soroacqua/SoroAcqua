@@ -12,7 +12,6 @@ import { Fauna } from '../pages/nosso-rio/fauna/fauna';
 import { Despoluicao } from '../pages/nosso-rio/despoluicao/despoluicao';
 import { Projetos } from '../pages/projetos/projetos';
 import { AguaConsultaQualidade } from '../pages/agua/agua-consulta-qualidade/agua-consulta-qualidade';
-import { Configuracoes } from '../pages/configuracoes/configuracoes';
 import { Sobre } from '../pages/sobre/sobre';
 import { QualidadeAguaRio } from '../pages/nosso-rio/qualidade-agua-rio/qualidade-agua-rio';
 import { Eventos } from '../pages/eventos/eventos';
