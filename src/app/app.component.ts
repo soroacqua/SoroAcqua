@@ -4,21 +4,21 @@ import { StatusBar, Splashscreen } from 'ionic-native';
 
 import { Home } from '../pages/home/home';
 import { Rio } from '../pages/nosso-rio/rio/rio';
-import { Agua } from '../pages/agua/agua';
-import { SaaePage } from '../pages/agua/saae/saae';
+import { Agua } from '../pages/nossa-agua/agua';
+import { SaaePage } from '../pages/nossa-agua/saae/saae';
 import { Mapa } from '../pages/nosso-rio/mapa/mapa';
 import { Flora } from '../pages/nosso-rio/flora/flora';
 import { Fauna } from '../pages/nosso-rio/fauna/fauna';
 import { Despoluicao } from '../pages/nosso-rio/despoluicao/despoluicao';
 import { Projetos } from '../pages/projetos/projetos';
-import { AguaConsultaQualidade } from '../pages/agua/agua-consulta-qualidade/agua-consulta-qualidade';
+import { AguaConsultaQualidade } from '../pages/nossa-agua/agua-consulta-qualidade/agua-consulta-qualidade';
 import { Sobre } from '../pages/sobre/sobre';
 import { QualidadeAguaRio } from '../pages/nosso-rio/qualidade-agua-rio/qualidade-agua-rio';
 import { Eventos } from '../pages/eventos/eventos';
 import { PassagemRio } from '../pages/nosso-rio/passagem-rio/passagem-rio';
-import { Estacoes } from '../pages/agua/estacoes/estacoes';
+import { Estacoes } from '../pages/nossa-agua/estacoes/estacoes';
 import { Noticias } from '../pages/noticias/noticias';
-import { Tratamento } from '../pages/agua/tratamento/tratamento';
+import { Tratamento } from '../pages/nossa-agua/tratamento/tratamento';
 
 @Component({
   templateUrl: 'app.html'
@@ -94,7 +94,7 @@ export class MyApp {
         if (page.showDetails) {
             page.showDetails = false;
             page.icon = 'arrow-forward';
-        } else {  
+        } else {
             page.showDetails = true;
             page.icon = 'arrow-down';
         }
