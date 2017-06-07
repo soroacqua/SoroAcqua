@@ -12,7 +12,7 @@ export class Mapa {
   private _latitude: number;
   private _longitude: number;
 
-  constructor(public navCtrl: NavController) {}
+  constructor(public navCtrl: NavController) {  }
 
   /*presentAlert() {
         let alert = this.alertCtrl.create({
