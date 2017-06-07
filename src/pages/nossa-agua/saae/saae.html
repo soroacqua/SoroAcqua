@@ -11,7 +11,7 @@
     <!--<data-cards [data]="dataList"></data-cards>-->
     <ion-card class="card-body" style="background-color: #FFF">
         <ion-card-header>
-            <b>História</b>
+            <ion-card-title>História</ion-card-title>
         </ion-card-header>
         <ion-card-content align=justify>
             O Serviço Autônomo de Água e Esgoto (Saae) foi criado pela Lei número 1.390, de 31/12/65, como entidade autárquica municipal, com personalidade jurídica própria, sede e foro na cidade de Sorocaba, dispondo de autonomia financeira e administrativa dentro
@@ -21,58 +21,34 @@
     </ion-card>
 
     <ion-card class="card-body" style="background-color: #FFF">
-      <div class="corpo">
-        <ion-row>
-            <ion-col text-center>Diretores</ion-col>
+        <ion-card-content>
+          <ion-row class="titulo">
+              <ion-col class="coluna-titulo">Período</ion-col>
+              <ion-col class="coluna-titulo">Diretores</ion-col>
+          </ion-row>
+        <ion-row class="linha-par ">
+            <ion-col class="coluna-corpo"><b>01/01/17 à Atual</b></ion-col>
+            <ion-col>Ronald Pereira da Silva</ion-col>
         </ion-row>
-
-        <ion-row baseline class="linha-impar">
-            <ion-col text-left width-50>
-                <b>Período</b>
-            </ion-col>
-            <ion-col text-left width-25>
-                <b>Diretor Geral</b>
-            </ion-col>
-            <ion-col text-left width-25>
-                <b>Prefeito</b>
-            </ion-col>
+        <ion-row class="linha-impar ">
+            <ion-col class="coluna-corpo"><b>21/08/15 à 31/12/16</b></ion-col>
+            <ion-col>Rodrigo Antonio Maldonado Silveira</ion-col>
         </ion-row>
-
-        <ion-row class="linha-par">
-            <ion-col text-left width-50>
-                <b>01/01/17
-                à
-                Atual</b>
-            </ion-col>
-      			<ion-col text-left width-50>
-      				Ronald Pereira da Silva
-      			 </ion-col>
-            <ion-col text-left width-25>
-				     José Antônio Caldini Crespo
-            </ion-col>
+        <ion-row class="linha-par ">
+            <ion-col class="coluna-corpo"><b>03/02/14 à 20/08/15</b></ion-col>
+            <ion-col>Adhemar José Spinelli Júnior</ion-col>
         </ion-row>
-
-        <ion-row class="linha-impar">
-          <ion-col text-left width-50>
-             <b>21/08/15
-               à
-               31/12/16</b>
-            </ion-col>
-      			<ion-col text-left width-50>
-      			Rodrigo Antonio Maldonado Silveira
-      			 </ion-col>
-            <ion-col text-left width-25>
-      			Antônio Carlos Pannunzio
-            </ion-col>
+        <ion-row class="linha-impar ">
+            <ion-col class="coluna-corpo"><b>01/01/13 à 31/01/14</b></ion-col>
+            <ion-col>Wilson Unterkircher Filho</ion-col>
         </ion-row>
-
 
         <ion-row>
             <ion-col>
                   <b>Fonte:</b> <a href="http://www.saaesorocaba.com.br/site/?page_id=308" active="">SAAE Sorocaba</a>
             </ion-col>
         </ion-row>
-    </div>
+      </ion-card-content>
 
         <!--<ion-row>
             <ion-col text-center>
@@ -89,7 +65,7 @@
 
     <ion-card class="card-body" style="background-color: #FFF">
         <ion-card-header>
-            <b>O SAAE</b>
+            <ion-card-title>O SAAE</ion-card-title>
         </ion-card-header>
         <ion-card-content align=justify>
             O Serviço Autônomo de Água e Esgoto também presta atendimento emergencial pelo telefone <b>0800-7701195</b>.<br/> Completando os canais de comunicação com a autarquia, o munícipe pode fazer o seu contato via internet, utilizando o Fale Conosco
@@ -100,7 +76,7 @@
 
     <ion-card class="card-body" style="background-color: #FFF">
         <ion-card-header>
-            <b>Endereço</b>
+            <ion-card-title>Endereço</ion-card-title>
         </ion-card-header>
         <ion-card-content align=justify>
             <p>SAAE Central</p>
@@ -108,7 +84,7 @@
         </ion-card-content>
     </ion-card>
 
-    <ion-card class="card-body" style="background-color: #FFF">
+  <!--  <ion-card class="card-body" style="background-color: #FFF">
         <ion-card-content>
             <button ion-button full icon-right>
     Fale Conosco
@@ -116,6 +92,6 @@
   </button>
 
         </ion-card-content>
-    </ion-card>
+    </ion-card> !-->
 
 </ion-content>
